@@ -23,8 +23,7 @@ Les corrélations initialement observées entre le gradient thermique du fond di
 | **Permutation naïve** | p ≈ 0.142 | p ≈ 0.0 |
 | **Masque galactique** | appliqué | effet négligeable (99,4 % des objets déjà hors du plan galactique) |
 | **Test méthodologique décisif** | Analyse de la couverture par quadrants RA | Permutation par blocs spatiaux (HEALPix NSIDE=8) |
-| **Résultat du contrôle** 
-| Forte concentration des observations dans un seul quadrant | Le signal devient compatible avec l'hypothèse nulle Permutation par blocs spatiaux :r = −0.0237 p = 0.671 |
+| **Résultat du contrôle** | Forte concentration des observations dans un seul quadrant | Le signal devient compatible avec l'hypothèse nulle Permutation par blocs spatiaux :r = −0.0237 p = 0.671 |
 | **Conclusion** | Biais de couverture du survey | Biais de sélection spatial et temporel du survey |
 
 ⸻
