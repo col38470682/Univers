@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+
+title: "GVH Dynamic 0.1"
+
+message: "Si vous utilisez ce travail, merci de le citer."
+
+type: software
+
+authors:
+  - family-names: "Laurince"
+    given-names: "Charles"
+
+version: "0.1"
+
+date-released: "2026-06-26"
+
+license: "CC-BY-4.0"
+
+abstract: >
+  Fondations conceptuelles du cadre GVH Dynamic.
+  Cette première version introduit les trois observables
+  fondamentales D(t), S(t) et R_super destinées à
+  caractériser qualitativement les régimes dynamiques.
+
+repository-code: "https://github.com/col38470682/Univers/tree/main/gvh_dynamic"
