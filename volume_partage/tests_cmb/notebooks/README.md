@@ -13,18 +13,16 @@ Après application des différents contrôles méthodologiques, aucune corrélat
 
 ⸻
 
-Liste des notebooks
+## Liste des notebooks
 
-Les noms ci-dessous correspondent à l’organisation recommandée du projet.
-
-Notebook	Description
-01_load_cmb_map.ipynb	Chargement de la carte CMB Planck (Commander-Ruler, NSIDE=256, HEALPix NESTED, coordonnées galactiques). Calcul du gradient thermique `D_T =
-02_pantheon_pipeline.ipynb	Chargement de Pantheon+SH0ES.dat (1701 lignes brutes, 1543 supernovae uniques après dédoublonnage). Conversion RA/DEC → coordonnées galactiques. Association de chaque supernova à son D_T local par interpolation ou voisin HEALPix.
-03_pantheon_tests.ipynb	Analyses statistiques sur Pantheon+ : corrélations de Pearson et Spearman, test de permutation naïf, masque galactique (`
-04_sdss_qso_pipeline.ipynb	Téléchargement des quasars SDSS DR16 via SkyServer SQL (SpecObj, class='QSO', zWarning=0, 50 000 objets). Association de chaque quasar à son D_T local à partir de la même carte CMB.
-05_sdss_qso_tests.ipynb	Analyses statistiques sur SDSS DR16 : corrélations globales, permutation naïve, masque galactique, analyse par quadrants RA et permutation par blocs spatiaux (HEALPix NSIDE=8, 273 blocs), utilisée comme contrôle principal des biais de sélection spatiaux.
-06_comparison_summary.ipynb	Comparaison finale entre Pantheon+ et SDSS DR16, synthèse des résultats et conclusion méthodologique.
-
+| Notebook | Description |
+|----------|-------------|
+| 01_load_cmb_map.ipynb | Chargement de la carte CMB Planck et calcul du gradient thermique D_T. |
+| 02_pantheon_pipeline.ipynb | Chargement de Pantheon+, conversion RA/DEC et association de D_T. |
+| 03_pantheon_tests.ipynb | Corrélations, permutations, masque galactique, quadrants RA. |
+| 04_sdss_qso_pipeline.ipynb | Téléchargement des quasars SDSS et association de D_T. |
+| 05_sdss_qso_tests.ipynb | Corrélations, permutations, blocs spatiaux HEALPix. |
+| 06_comparison_summary.ipynb | Comparaison finale et synthèse des résultats. |
 ⸻
 
 Méthodologie commune
@@ -77,7 +75,7 @@ Versions logicielles recommandées :
 * astropy
 * matplotlib
 
-Aucune donnée simulée n’a été utilisée au cours de cette étude.
+Toutes les analyses présentées reposent exclusivement sur des données observationnelles publiques. Aucune donnée simulée n’a été utilisée.
 
 ⸻
 
