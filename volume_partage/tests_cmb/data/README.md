@@ -25,4 +25,3 @@ Les fichiers ne sont pas redistribués dans ce dépôt. Les utilisateurs doivent
 - ESA Planck Legacy Archive
   https://pla.esac.esa.int/
 
-- 
