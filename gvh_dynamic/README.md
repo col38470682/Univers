@@ -26,4 +26,4 @@ Les définitions mathématiques opérationnelles seront introduites dans les ver
 
 ## Auteur
 
-Charles Laurince
+Charlemagne O Laurince
