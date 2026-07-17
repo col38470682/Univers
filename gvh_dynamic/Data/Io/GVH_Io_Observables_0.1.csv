@@ -1,0 +1,17 @@
+Observable,Valeur
+N_observations,8761.0
+N_transitions,8760.0
+D_T_mean_km,62356.22015260322
+D_T_std_km,182.10216187424356
+D_T_norm_std,0.002920352796057688
+D_T_min_km,62095.61974652721
+D_T_median_km,62354.853614233536
+D_T_max_km,62619.610045633795
+D_c_km,62611.51678849863
+R_super,0.05
+theta_mean_deg,8.478703799351686
+theta_std_deg,0.024558708820234074
+theta_min_deg,8.44362807834666
+theta_median_deg,8.478489363646457
+theta_max_deg,8.514491718621285
+R_180,0.0
