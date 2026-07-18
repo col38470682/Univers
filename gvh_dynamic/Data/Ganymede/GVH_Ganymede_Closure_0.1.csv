@@ -1,0 +1,20 @@
+Observable,Valeur
+Nombre d'états originaux,8761.0
+Nombre de paires utilisées,8589.0
+Pas temporel original (h),1.0
+Rayon médian de référence (km),1070435.4756849115
+Période minimale sur grille (h),171.70680403949308
+Période de fermeture optimisée (h),171.70918592040616
+Période de fermeture optimisée (j),7.1545494133502565
+C_best (km),334.00188583391116
+C_best_norm,0.00031202430545400426
+Angle fermeture RMS (deg),0.014377902609075654
+Angle fermeture médian (deg),0.010117373812899882
+Angle fermeture maximal (deg),0.0374814969173023
+Période géométrique (h),171.70916301089187
+Période FFT (h),171.7044450680943
+Écart fermeture - géométrique (h),2.2909514285629484e-05
+Écart fermeture - géométrique (s),0.08247425142826614
+Écart fermeture - FFT (h),0.004740852311869048
+Écart fermeture - FFT (s),17.067068322728574
+Erreur relative fermeture/géométrie (%),1.3342045283964424e-05
