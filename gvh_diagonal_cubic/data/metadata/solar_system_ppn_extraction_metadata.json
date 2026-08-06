@@ -1,0 +1,15 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.0.1_Solar_System_PPN_Reference_Extraction",
+  "status": "PASS-SOLAR-SYSTEM-REFERENCE-EXTRACTION",
+  "extraction_version": "0.3.0.1",
+  "extraction_date_utc": "2026-08-06",
+  "source_count": 6,
+  "constraint_count": 7,
+  "primary_constraint_count": 4,
+  "raw_instrument_data_used": false,
+  "published_summary_constraints_used": true,
+  "excluded_source_ids": [
+    "SERRET2018"
+  ],
+  "future_forecasts_used_in_likelihood": false
+}
