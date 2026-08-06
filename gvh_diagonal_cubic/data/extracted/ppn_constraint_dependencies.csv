@@ -1,3 +1,0 @@
-constraint_a,constraint_b,dependency,default_action
-PPN_CASSINI_GAMMA_LIMIT,PPN_LLR_BETA_DERIVED,Derived beta uses Cassini gamma.,Do not use both as independent factors.
-PPN_LLR_ETA_N,PPN_LLR_BETA_DERIVED,Derived beta uses eta_N.,"Use eta_N plus independent gamma, or derived beta alone."

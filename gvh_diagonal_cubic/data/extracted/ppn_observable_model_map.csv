@@ -1,5 +1,0 @@
-observable,model_expression,GR_value
-gamma_minus_1,gamma(theta)-1,0.0
-beta_minus_1,beta(theta)-1,0.0
-eta_N,4*beta(theta)-gamma(theta)-3,0.0
-perihelion_ppn_factor,(2+2*gamma(theta)-beta(theta))/3,1.0

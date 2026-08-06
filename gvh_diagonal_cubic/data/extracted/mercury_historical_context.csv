@@ -1,5 +1,0 @@
-context_id,quantity,value,unit,source_id,source_page,data_level,use_in_likelihood
-MERCURY_TOTAL_PRECESSION,Observed Mercury perihelion advance,5599.745,arcsec/century,BERCHE_MEDINA2024,4,PEDAGOGICAL_SUMMARY,False
-MERCURY_EQUINOX_COMPONENT,Equinox-precession contribution,5025.645,arcsec/century,BERCHE_MEDINA2024,4,PEDAGOGICAL_SUMMARY,False
-MERCURY_PLANETARY_COMPONENT,External-planet contribution,531.54,arcsec/century,BERCHE_MEDINA2024,1,PEDAGOGICAL_SUMMARY,False
-MERCURY_RESIDUAL,Residual unexplained by Newtonian components,42.56,arcsec/century,BERCHE_MEDINA2024,1,PEDAGOGICAL_SUMMARY,False
