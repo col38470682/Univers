@@ -1,0 +1,7 @@
+source_id,file_name,title,authors,year,publication,doi,peer_review_status,source_role,use_in_constraints
+WILL2014_LRR,lrr-2014-4(1).pdf,The Confrontation between General Relativity and Experiment,Clifford M. Will,2014,"Living Reviews in Relativity 17, 4",10.12942/lrr-2014-4,PEER_REVIEWED,PEER_REVIEWED_REVIEW,True
+WILLIAMS_LLR,0507083.pdf,Lunar Laser Ranging Tests of the Equivalence Principle with the Earth and Moon,James G. Williams; Slava G. Turyshev; Dale H. Boggs,2009,International Journal of Modern Physics D / gr-qc/0507083,,PUBLISHED_ARTICLE,PRIMARY_CONSTRAINT_SOURCE,True
+BERCHE_MEDINA2024,2402.04643.pdf,The advance of Mercury’s perihelion,Bertrand Berche; Ernesto Medina,2024,European Journal of Physics submission / arXiv,,PUBLICATION_STATUS_TO_VERIFY,SUPPORTING_PEDAGOGICAL_SOURCE,False
+LI_SKA2026,2606.25549.pdf,Gravitational Light Deflection with SKA-VLBI and Its Application to Precision Tests of General Relativity,Y. J. Li et al.,2026,Advancing Astrophysics with the SKA II,,CHAPTER_OR_PREPRINT,FUTURE_FORECAST_SOURCE,False
+SANGHAI_CLIFTON2017,1610.08039.pdf,Parameterized Post-Newtonian Cosmology,Viraj A. A. Sanghai; Timothy Clifton,2017,Journal article / arXiv:1610.08039,,PUBLISHED_RESEARCH,THEORY_CONTEXT,False
+SERRET2018,ShapiroSERRETMillenniumjuillet2018.pdf,Shapiro Time Delay derivates from Refraction,O. Serret,2018,Millennium Relativity,,NOT_ESTABLISHED,EXCLUDED_ALTERNATIVE_SOURCE,False
