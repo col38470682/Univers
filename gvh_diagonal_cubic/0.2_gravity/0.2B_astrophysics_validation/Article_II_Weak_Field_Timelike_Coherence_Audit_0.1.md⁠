@@ -1,0 +1,716 @@
+# Article II — Secteur weak\-field/timelike du GVH Diagonal Cubic et audit de cohérence
+
+**Sous\-titre :** Extraction PPN, projecteur covariant de source, dynamique timelike, sélection de modèles et falsifiabilité
+
+**Author:** Charlemagne O Laurince
+**ORCID:** 0009\-0007\-6720\-4023
+**Affiliation:** Harmonic Physics Research Initiative \(Independent\)
+**Version:** 0\.1
+**Date:** 7 August 2026
+**DOI:** 10\.5281/zenodo\.21838027
+**Document type:** Preprint
+
+---
+
+## Résumé
+
+Ce travail examine le secteur **weak\-field/timelike** du programme GVH Diagonal Cubic à partir de la sous\-chaîne computationnelle :
+
+```text
+0.2.23
+→ 0.2.23.1
+→ 0.2.23.2
+→ 0.2.23.3.1
+→ 0.2.23.4.1
+→ 0.2.23.5.1
+```
+
+L’objectif n’est pas de présenter GVH comme une théorie gravitationnelle expérimentalement validée, mais d’établir précisément ce que cette chaîne démontre, ce qu’elle ne démontre pas, et à quel endroit une nouvelle hypothèse physique devrait intervenir\.
+
+Le secteur weak\-field fournit une correspondance entre les coefficients d’une famille métrique statique et les paramètres PPN \(\\gamma\_\{\\rm GVH\}\) et \(\\beta\_\{\\rm GVH\}\)\. Le secteur de source construit un projecteur spatial symétrique sans trace et identifie le canal correspondant au stress anisotrope\. La suite met alors en évidence un verrou conceptuel : ce projecteur suppose un champ temporel unitaire \(u^\\mu\), mais la chaîne existante ne dérive ni une dynamique timelike unique ni une origine physique unique pour ce champ\.
+
+Trois classes principales de modèles sont comparées — quadrivitesse de la matière, gradient scalaire normalisé, champ vectoriel unitaire indépendant — sans sélection physique unique par les postulats actuels\. Une étape ultérieure examine plusieurs origines possibles, notamment un vecteur propre timelike d’un tenseur GVH et le gradient normalisé d’un scalaire covariant \(\\tau\_G\)\. Aucune de ces options n’est acceptée comme loi physique définitive\.
+
+Le résultat central de l’audit est donc négatif mais utile : la chaîne établit une **carte weak\-field et une structure covariante de fermeture**, mais impose qu’un nouveau postulat physique soit formulé de manière falsifiable avant de poursuivre vers une nouvelle prédiction gravitationnelle distincte de la relativité générale\.
+
+**Mots\-clés :** GVH Diagonal Cubic, weak field, PPN, champ timelike, covariance, stress anisotrope, falsifiabilité, théorie de la gravitation candidate\.
+
+---
+
+## 1\. Introduction
+
+Une théorie gravitationnelle candidate doit être capable de relier ses objets fondamentaux aux régimes où la relativité générale est fortement testée\. Le régime de champ faible constitue donc une interface essentielle entre construction théorique et confrontation observationnelle\.
+
+Dans le programme GVH Diagonal Cubic, la sous\-chaîne étudiée ici cherche à répondre à deux questions distinctes :
+
+1. comment relier une famille métrique statique aux paramètres post\-newtoniens ;
+2. comment définir physiquement le champ temporel \(u^\\mu\) utilisé dans les projections covariantes du secteur directionnel\.
+
+Ces deux questions sont liées mais ne doivent pas être confondues\.
+
+Une carte PPN peut être mathématiquement dérivée sans que la théorie fournisse encore des valeurs numériques nouvelles pour les paramètres\. De même, un projecteur covariant peut être correctement construit sans que l’origine physique du vecteur temporel qui le définit soit déterminée\.
+
+Le but du présent article est donc de figer cette séparation\.
+
+---
+
+## 2\. Gouvernance scientifique de la chaîne
+
+L’audit adopte quatre catégories :
+
+- **dérivé/démontré** ;
+- **mathématiquement compatible mais non sélectionné physiquement** ;
+- **hypothétique ou postulé** ;
+- **falsifiable par une condition théorique ou une observation**\.
+
+La règle centrale est :
+
+> Un `PASS` computationnel ou algébrique ne constitue pas automatiquement une validation physique expérimentale.
+
+Cette règle est appliquée à toute la sous\-chaîne\.
+
+---
+
+## 3\. Couche 0\.2\.23 — Covariant Static Field Equations Source Matching
+
+Le notebook `0.2.23` joue le rôle de couche de **source matching covariant** entre la solution statique et les étapes weak\-field ultérieures\.
+
+Il sert d’interface pour la détermination des coefficients de la famille statique utilisés par `0.2.23.1`\.
+
+Ce rôle est important car les paramètres PPN ne doivent pas être introduits arbitrairement après coup\. Les coefficients pertinents doivent provenir de la structure statique/source\-matching\.
+
+À ce stade, `0.2.23` ne démontre pas :
+
+- une nouvelle loi gravitationnelle observée ;
+- une origine physique de \(u^\\mu\) ;
+- une dynamique unique du secteur timelike ;
+- une déviation mesurée par rapport à la relativité générale\.
+
+Le statut de cette couche est donc :
+
+```text
+SOURCE-MATCHING-LAYER-ESTABLISHED
+PHYSICAL-TIMELIKE-ORIGIN-NOT-YET-DERIVED
+```
+
+---
+
+## 4\. Couche 0\.2\.23\.1 — Extraction weak\-field et interface PPN
+
+### 4\.1 Paramètres métriques
+
+Pour la famille statique paramétrique, la chaîne utilise des coefficients faibles \(a\_1\), \(a\_2\) et \(b\_1\)\.
+
+La carte PPN est
+
+&#91;
+\\boxed\{
+\\gamma\_\{\\rm GVH\}=\\frac\{b\_1\}\{a\_1\}
+\}
+&#93;
+
+et
+
+&#91;
+\\boxed\{
+\\beta\_\{\\rm GVH\}=\\frac\{a\_2\}\{a\_1^2\}
+\}\.
+&#93;
+
+Cette relation est le résultat mathématique principal de l’étape weak\-field\.
+
+### 4\.2 Expansion perturbative
+
+À premier ordre, en écrivant
+
+&#91;
+a\_1=1\+\\epsilon\_D\\alpha\_1,
+\\qquad
+a\_2=1\+\\epsilon\_D\\alpha\_2,
+\\qquad
+b\_1=1\+\\epsilon\_D\\sigma\_1,
+&#93;
+
+on obtient
+
+# &#91; \\gamma\_\{\\rm GVH\}\-1
+
+\\epsilon\_D\(\\sigma\_1\-\\alpha\_1\)
+\+\\mathcal O\(\\epsilon\_D^2\),
+&#93;
+
+et
+
+# &#91; \\beta\_\{\\rm GVH\}\-1
+
+\\epsilon\_D\(\\alpha\_2\-2\\alpha\_1\)
+\+\\mathcal O\(\\epsilon\_D^2\)\.
+&#93;
+
+### 4\.3 Résultat démontré
+
+La chaîne dérive donc la **carte entre coefficients métriques faibles et paramètres PPN**\.
+
+### 4\.4 Résultat non démontré
+
+Une valeur non nulle de
+
+&#91;
+\\gamma\_\{\\rm GVH\}\-1
+&#93;
+
+ou
+
+&#91;
+\\beta\_\{\\rm GVH\}\-1
+&#93;
+
+n’est pas encore une prédiction indépendante simplement parce que cette paramétrisation existe\.
+
+Il faut que la dynamique GVH fixe les coefficients avant confrontation aux observations\.
+
+Le statut est :
+
+```text
+PASS-WEAK-FIELD-COEFFICIENT-MAP
+NO-INDEPENDENT-NON-GR-PREDICTION-YET
+```
+
+---
+
+## 5\. Couche 0\.2\.23\.2 — Projecteur covariant de source
+
+La chaîne introduit un vecteur temporel unitaire \(u^\\mu\) satisfaisant
+
+&#91;
+u^\\mu u\_\\mu=\-1\.
+&#93;
+
+Le projecteur spatial associé est
+
+&#91;
+h\_\{\\mu\\nu\}=g\_\{\\mu\\nu\}\+u\_\\mu u\_\\nu\.
+&#93;
+
+Le projecteur symétrique spatial sans trace est
+
+# &#91; \\mathcal P\_\{\\mu\\nu\}\{\}^\{\\alpha\\beta\}
+
+## h\_\{\(\\mu\}\{\}^\\alpha h\_\{\\nu\)\}\{\}^\\beta
+
+\\frac13 h\_\{\\mu\\nu\}h^\{\\alpha\\beta\}\.
+&#93;
+
+Le canal projeté de la source est alors
+
+# &#91; \\Pi\_\{\\mu\\nu\}&#91;T&#93;
+
+\\mathcal P\_\{\\mu\\nu\}\{\}^\{\\alpha\\beta\}T\_\{\\alpha\\beta\}\.
+&#93;
+
+Pour une décomposition
+
+# &#91; T\_\{\\mu\\nu\}
+
+\\rho u\_\\mu u\_\\nu
+\+
+ph\_\{\\mu\\nu\}
+\+
+2u\_\{\(\\mu\}q\_\{\\nu\)\}
+\+
+\\pi\_\{\\mu\\nu\},
+&#93;
+
+la chaîne identifie
+
+&#91;
+\\boxed\{
+\\Pi\_\{\\mu\\nu\}&#91;T&#93;=\\pi\_\{\\mu\\nu\}
+\}\.
+&#93;
+
+Le canal directionnel correspondant sélectionne donc le **stress anisotrope**, et non directement la densité isotrope \(\\rho\) ou la pression isotrope \(p\)\.
+
+### Verrou conceptuel
+
+Le projecteur suppose déjà l’existence de \(u^\\mu\)\.
+
+Ainsi,
+
+&#91;
+\\text\{projecteur covariant\}
+\\not\\Rightarrow
+\\text\{origine physique de \}u^\\mu\.
+&#93;
+
+Le statut est :
+
+```text
+PASS-COVARIANT-STF-PROJECTOR
+TIMELIKE-FIELD-ORIGIN-OPEN
+```
+
+---
+
+## 6\. Couche 0\.2\.23\.3\.1 — Dynamique timelike et fermeture covariante
+
+La question suivante devient alors explicite :
+
+&#91;
+\\boxed\{u^\\mu\}
+&#93;
+
+représente\-t\-il :
+
+- la quadrivitesse de la matière ;
+- un objet géométrique dérivé ;
+- un champ dynamique indépendant ?
+
+La contrainte
+
+&#91;
+u^\\mu u\_\\mu=\-1
+&#93;
+
+peut être imposée de manière covariante\.
+
+Mais la normalisation ne détermine pas la dynamique\.
+
+Le notebook distingue donc plusieurs niveaux de fermeture :
+
+- fermeture cinématique ;
+- contrainte unitaire ;
+- dynamique timelike unique ;
+- fermeture covariante complète\.
+
+La conclusion consolidée est que les postulats antérieurs ne suffisent pas à sélectionner une dynamique unique\.
+
+Le statut est :
+
+```text
+COVARIANT-CLOSURE-STRUCTURE-DEFINED
+UNIQUE-TIMELIKE-DYNAMICS-NOT-DERIVED
+```
+
+La version `0.2.23.3.1` est retenue comme version canonique de traçabilité de cette étape\.
+
+---
+
+## 7\. Couche 0\.2\.23\.4\.1 — Sélection de modèles et falsifiabilité
+
+Trois interprétations principales sont comparées\.
+
+### 7\.1 Modèle matière
+
+&#91;
+u^\\mu=u^\\mu\_\{\\rm matter\}\.
+&#93;
+
+### 7\.2 Modèle gradient scalaire
+
+# &#91; u\_\\mu
+
+\-\\frac\{\\nabla\_\\mu\\phi\}
+\{\\sqrt\{\-\\nabla\_\\alpha\\phi\\nabla^\\alpha\\phi\}\}\.
+&#93;
+
+### 7\.3 Champ vectoriel indépendant
+
+Dans cette classe, \(u^\\mu\) constitue un nouveau degré de liberté fondamental avec une dynamique propre et une contrainte de normalisation\.
+
+### 7\.4 Résultat
+
+La comparaison technique ne fournit pas de sélection physique unique à partir des postulats GVH actuels\.
+
+Le classement technique ne doit donc pas être transformé en loi fondamentale\.
+
+Les statuts sont :
+
+```text
+PASS-MODEL-CLASSIFICATION-NO-UNIQUE-SELECTION
+BLOCKED-NO-UNIQUE-MODEL-FROM-CURRENT-POSTULATES
+NEW-FALSIFIABLE-POSTULATE-REQUIRED
+```
+
+Ce résultat négatif constitue une contrainte scientifique utile : il empêche une sélection ad hoc\.
+
+---
+
+## 8\. Couche 0\.2\.23\.5\.1 — Origine physique du champ timelike
+
+La question finale de la chaîne est
+
+&#91;
+\\boxed\{
+u^\\mu\\ \\text\{peut\-il être dérivé d’une structure GVH existante ?\}\}
+&#93;
+
+Les origines candidates examinées sont :
+
+1. direction temporelle propre de l’observateur ;
+2. gradient d’un champ scalaire d’horloge ;
+3. vecteur propre temporel principal d’un tenseur GVH ;
+4. quadrivitesse de la matière ;
+5. champ vectoriel indépendant ajouté par postulat\.
+
+### 8\.1 Critères d’acceptation
+
+Une origine physique est considérée comme dérivée seulement si elle satisfait simultanément :
+
+&#91;
+u^\\mu u\_\\mu=\-1,
+&#93;
+
+une définition covariante, une direction unique dans le vide et dans la matière, une limite GR contrôlée et au moins une conséquence falsifiable\.
+
+Une construction possible n’est donc pas assimilée à une dérivation\.
+
+### 8\.2 Résultat consolidé
+
+```text
+PASS-CANDIDATE-TIMELIKE-ORIGINS-IDENTIFIED
+BLOCKED-UNIQUE-PHYSICAL-ORIGIN
+NEW-PHYSICAL-POSTULATE-REQUIRED
+```
+
+Deux pistes sont particulièrement conservées pour étude ultérieure :
+
+- un vecteur propre timelike normalisé d’un tenseur \(D^\\mu\{\}\_\{\\nu\}\) ;
+- le gradient normalisé d’un scalaire covariant \(\\tau\_G\)\.
+
+---
+
+## 9\. Postulat candidat P\-GVH\-TIME\-1
+
+Une forme candidate est enregistrée :
+
+# &#91; \\boxed\{ u\_\\mu
+
+\-\\frac\{\\nabla\_\\mu\\tau\_G\}
+\{\\sqrt\{\-\\nabla\_\\alpha\\tau\_G\\nabla^\\alpha\\tau\_G\}\}\}
+&#93;
+
+avec le statut :
+
+```text
+P-GVH-TIME-1
+accepted = False
+```
+
+Cette précision est fondamentale\.
+
+Le postulat n’est pas une loi GVH établie\.
+
+Les points bloquants sont :
+
+- \(\\tau\_G\) n’est pas encore dérivé comme scalaire dynamique covariant ;
+- \(D\_\{\\mu\\nu\}\) ne garantit pas encore un vecteur propre timelike unique ;
+- aucun candidat ne possède encore une action complète dérivée de GVH ;
+- la régularité de la limite GR reste à démontrer\.
+
+---
+
+## 10\. Audit de cohérence global
+
+La chaîne peut être résumée par la matrice suivante\.
+
+|Étape       |Résultat acquis                              |Résultat non acquis                    |
+|------------|---------------------------------------------|---------------------------------------|
+|`0.2.23`    |source matching covariant                    |origine de (u^\mu), nouvelle prédiction|
+|`0.2.23.1`  |carte weak-field → PPN                       |valeurs PPN non-GR indépendantes       |
+|`0.2.23.2`  |projecteur STF covariant et canal anisotrope |origine/dynamique de (u^\mu)           |
+|`0.2.23.3.1`|structure de fermeture covariante            |dynamique timelike unique              |
+|`0.2.23.4.1`|classification des modèles                   |sélection physique unique              |
+|`0.2.23.5.1`|candidats d’origine et critères d’acceptation|origine physique unique                |
+
+La conclusion autorisée est
+
+&#91;
+\\boxed\{
+\\text\{la structure covariante atteint le problème de \}u^\\mu,
+\\text\{ mais les postulats actuels n’en fixent pas l’origine physique unique\.\}
+\}
+&#93;
+
+La chaîne ne démontre donc ni
+
+&#91;
+\\text\{GVH remplace la relativité générale\},
+&#93;
+
+ni
+
+&#91;
+\\text\{une nouvelle prédiction gravitationnelle distincte de GR est déjà établie\}\.
+&#93;
+
+---
+
+## 11\. Falsifiabilité théorique du postulat timelike
+
+Une prochaine hypothèse physique doit pouvoir échouer\.
+
+### F1 — Absence de caractère timelike
+
+Si une solution admissible donne
+
+&#91;
+\\nabla\_\\mu\\tau\_G\\nabla^\\mu\\tau\_G\\ge 0,
+&#93;
+
+le gradient n’est pas timelike et la normalisation proposée ne définit pas le champ voulu\.
+
+Dans son domaine revendiqué, le postulat serait alors réfuté\.
+
+### F2 — Non\-unicité
+
+Si les mêmes données physiques et les mêmes conditions aux limites conduisent à plusieurs champs \(u^\\mu\) physiquement inequivalents sans règle supplémentaire dérivée, l’origine unique n’est pas établie\.
+
+### F3 — Limite GR irrégulière
+
+Si la branche proposée ne possède pas une limite régulière reproduisant le secteur GR requis, elle doit être rejetée comme fermeture de cette construction\.
+
+---
+
+## 12\. Falsifiabilité observationnelle
+
+### 12\.1 Test PPN
+
+Une fois la dynamique fixée indépendamment des données, elle doit déterminer les coefficients faibles, puis
+
+&#91;
+\\gamma\_\{\\rm GVH\},
+\\qquad
+\\beta\_\{\\rm GVH\}\.
+&#93;
+
+La carte dérivée par `0.2.23.1` permet alors une confrontation aux contraintes expérimentales\.
+
+Si la prédiction est incompatible avec les observations, la branche correspondante est exclue\.
+
+### 12\.2 Référentiel préféré
+
+Une dynamique timelike fondamentale peut potentiellement introduire des effets de référentiel préféré\.
+
+Ces effets doivent être dérivés à partir des équations de la théorie, et non ajoutés comme paramètres libres indépendants après confrontation aux données\.
+
+Une prédiction inévitable incompatible avec les limites observationnelles réfuterait la branche\.
+
+### 12\.3 Canal anisotrope
+
+Puisque
+
+&#91;
+\\Pi\_\{\\mu\\nu\}&#91;T&#93;=\\pi\_\{\\mu\\nu\},
+&#93;
+
+une future loi reliant directement le secteur timelike au projecteur de source devra être testée dans des configurations où le stress anisotrope est non nul\.
+
+Une relation universelle annoncée par le modèle et absente des observations constituerait un test de réfutation\.
+
+---
+
+## 13\. Relation avec la limite GR
+
+Dans une théorie candidate viable, la limite GR doit apparaître comme conséquence de la structure dynamique, non comme choix a posteriori\.
+
+Le secteur weak\-field est particulièrement contraignant car une solution statique doit conduire à des paramètres compatibles avec les tests post\-newtoniens\.
+
+La récupération d’une branche
+
+&#91;
+\\gamma\_\{\\rm GVH\}=1,
+\\qquad
+\\beta\_\{\\rm GVH\}=1
+&#93;
+
+serait une condition de cohérence avec GR dans ce régime, mais ne constituerait pas une nouvelle prédiction\.
+
+Une nouvelle prédiction exige une correction calculable et indépendante :
+
+# &#91; \\delta\\gamma\_\{\\rm GVH\}
+
+\\gamma\_\{\\rm GVH\}\-1,
+&#93;
+
+# &#91; \\delta\\beta\_\{\\rm GVH\}
+
+\\beta\_\{\\rm GVH\}\-1,
+&#93;
+
+ou une autre observable dérivée, dont la valeur est fixée avant comparaison finale avec les données\.
+
+---
+
+## 14\. Pourquoi le blocage actuel est scientifiquement utile
+
+Le résultat
+
+```text
+BLOCKED-UNIQUE-PHYSICAL-ORIGIN
+```
+
+n’est pas un échec numérique\.
+
+Il signifie que la chaîne de calcul est allée assez loin pour révéler un manque de détermination physique qui aurait autrement pu rester caché\.
+
+Il distingue :
+
+&#91;
+\\text\{structure mathématique admissible\}
+&#93;
+
+et
+
+&#91;
+\\text\{loi physique dérivée\}\.
+&#93;
+
+Cette distinction protège le programme contre un choix arbitraire du modèle qui reproduirait simplement les observations souhaitées\.
+
+---
+
+## 15\. Condition préalable à une extension 0\.2\.23\.6
+
+Avant toute nouvelle confrontation aux données, la prochaine étape doit spécifier :
+
+```text
+[ ] définition covariante exacte du candidat retenu
+[ ] action ou équations dynamiques explicites
+[ ] paramètres libres et unités
+[ ] conditions d'existence de u^mu
+[ ] critère d'unicité
+[ ] limite GR calculable
+[ ] observable indépendante
+[ ] prédiction quantitative pré-enregistrée
+[ ] dataset de test choisi avant l'ajustement final
+[ ] critère numérique de rejet
+```
+
+La séquence correcte est :
+
+&#91;
+\\boxed\{
+\\text\{postulat\}
+\\rightarrow
+\\text\{équations\}
+\\rightarrow
+\\text\{observable\}
+\\rightarrow
+\\text\{prédiction\}
+\\rightarrow
+\\text\{test\}
+\}
+&#93;
+
+et non
+
+&#91;
+\\text\{données\}
+\\rightarrow
+\\text\{forme ajustée\}
+\\rightarrow
+\\text\{postulat a posteriori\}\.
+&#93;
+
+---
+
+## 16\. Discussion
+
+Le secteur weak\-field/timelike du GVH Diagonal Cubic possède aujourd’hui trois acquis principaux\.
+
+Premièrement, une interface formelle entre coefficients faibles et paramètres PPN est disponible\.
+
+Deuxièmement, la projection covariante de la source distingue clairement le canal anisotrope\.
+
+Troisièmement, l’audit du champ temporel montre qu’une contrainte unitaire et une construction covariante ne suffisent pas à identifier une origine physique\.
+
+Le verrou actuel est donc localisé avec précision : une nouvelle hypothèse physique doit intervenir au niveau de la dynamique/origine de \(u^\\mu\), et cette hypothèse doit produire une conséquence falsifiable\.
+
+Ce résultat est plus robuste méthodologiquement qu’une sélection de modèle fondée uniquement sur un meilleur score technique\.
+
+---
+
+## 17\. Conclusion
+
+La chaîne
+
+```text
+0.2.23
+→ 0.2.23.1
+→ 0.2.23.2
+→ 0.2.23.3.1
+→ 0.2.23.4.1
+→ 0.2.23.5.1
+```
+
+est consolidée comme une chaîne de dérivation partielle et de blocage contrôlé\.
+
+Son bilan peut être résumé par :
+
+```text
+CHAIN_STRUCTURE                         PASS
+WEAK_FIELD_PARAMETER_MAP               PASS
+COVARIANT_STF_SOURCE_PROJECTOR         PASS
+TIMELIKE_UNIT_CONSTRAINT               AVAILABLE
+UNIQUE_TIMELIKE_DYNAMICS               NOT DERIVED
+UNIQUE_PHYSICAL_ORIGIN                 BLOCKED
+NEW_PHYSICAL_POSTULATE                 REQUIRED
+INDEPENDENT_NON_GR_PREDICTION          NOT YET ESTABLISHED
+FALSIFICATION_GATE                     DEFINED
+```
+
+La contribution principale de ce secteur n’est donc pas encore une nouvelle correction gravitationnelle confirmée\.
+
+Elle est l’identification rigoureuse de l’endroit où une nouvelle physique doit entrer et des conditions sous lesquelles cette nouvelle physique pourra être réfutée\.
+
+---
+
+## 18\. Déclaration de statut scientifique
+
+**Carte weak\-field → PPN :** dérivée pour la famille paramétrique\.
+**Projecteur de source anisotrope :** dérivé\.
+**Contrainte timelike unitaire :** disponible\.
+**Dynamique unique de \(u^\\mu\) :** non dérivée\.
+**Origine physique unique de \(u^\\mu\) :** non dérivée\.
+**P\-GVH\-TIME\-1 :** candidat non accepté\.
+**Nouvelle prédiction non\-GR indépendante :** non établie\.
+**Statut global :** secteur théorique candidat prêt pour une étape de postulat falsifiable\.
+
+---
+
+## 19\. Traçabilité computationnelle
+
+|Élément                    |Notebook canonique                                              |Statut                               |
+|---------------------------|----------------------------------------------------------------|-------------------------------------|
+|Source matching covariant  |`0.2.23`                                                        |couche établie                       |
+|Extraction weak-field / PPN|`0.2.23.1`                                                      |dérivée                              |
+|Projecteur STF de source   |`0.2.23.2`                                                      |dérivé                               |
+|Fermeture timelike         |`0.2.23.3.1`                                                    |dynamique unique bloquée             |
+|Sélection de modèles       |`0.2.23.4.1`                                                    |aucune sélection unique              |
+|Origine physique           |`0.2.23.5.1`                                                    |candidats identifiés, origine bloquée|
+|Audit consolidé            |`GVH_Diagonal_Cubic_0.2.23_to_0.2.23.5.1_Consolidation_Audit.md`|référence de gouvernance             |
+
+Avant soumission, les équations et affirmations devront être reliées à des cellules/extractions reproductibles précises\.
+
+---
+
+## 20\. Références — à compléter avant soumission
+
+La version destinée à une revue devra inclure une bibliographie externe couvrant au minimum :
+
+- formalisme PPN ;
+- tests du principe d’équivalence ;
+- théories avec vecteur timelike ou référentiel préféré ;
+- théories scalaire\-tenseur et champs d’horloge ;
+- décomposition covariante des sources anisotropes ;
+- contraintes weak\-field du système solaire ;
+- stabilité et causalité des théories gravitationnelles modifiées\.
+
+Les références externes devront être utilisées pour comparer le cadre GVH à la littérature, sans modifier rétroactivement les résultats de la chaîne computationnelle\.
+
+---
+
+### Note éditoriale
+
+Ce manuscrit est une **prépublication \(Preprint\), version 0\.1**, basée sur l’audit consolidé de la chaîne `0.2.23 → 0.2.23.5.1`\. Il est plus proche d’un article de méthodologie théorique et de cohérence que d’un article annonçant une nouvelle prédiction\. Une version soumissible nécessitera notamment : bibliographie, notation unifiée, figures/diagrammes de la chaîne, table complète de provenance des équations, et une vérification indépendante de la reproductibilité des notebooks canoniques\.
