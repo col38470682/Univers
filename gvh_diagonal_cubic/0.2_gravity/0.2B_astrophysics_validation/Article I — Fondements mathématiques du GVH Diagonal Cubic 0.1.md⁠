@@ -1,0 +1,661 @@
+Article I — Fondements mathématiques du GVH Diagonal Cubic
+
+Sous-titre : Cadre géométrique candidat, structure covariante,
+invariants, dynamique effective et critères de falsification
+
+Author: Charlemagne O Laurince
+ORCID: 0009-0007-6720-4023
+Affiliation: Harmonic Physics Research Initiative (Independent)
+Version: 0.1
+Date: 7 August 2026
+DOI: 10.5281/zenodo.21838992
+Document type: Preprint
+
+────────
+
+Résumé
+
+Le programme GVH Diagonal Cubic étudie une famille de constructions
+géométriques diagonales afin de déterminer si une structure
+directionnelle peut être formulée de manière covariante et confrontée
+aux exigences d’une théorie métrique de la gravitation.
+
+La chaîne théorique 0.2 construit progressivement une métrique
+candidate, sa connexion de Levi-Civita, les tenseurs de courbure, le
+tenseur d’Einstein, des invariants de courbure et une source effective.
+Les développements ultérieurs examinent la covariance, les
+perturbations, la stabilité effective, des actions covariantes
+candidates, le principe variationnel et la dynamique d’objets
+directionnels tensoriels.
+
+Le présent article ne revendique ni une nouvelle théorie fondamentale
+de la gravitation établie, ni une validation expérimentale du GVH
+Diagonal Cubic. En particulier, aucune action GVH fondamentale unique
+n’est dérivée à ce stade, et la reconstruction d’une source effective à
+partir d’une métrique ne détermine pas de façon unique une dynamique
+fondamentale.
+
+L’objectif est donc de présenter le noyau mathématique actuellement
+construit, de distinguer les résultats de cohérence des hypothèses
+physiques, et de définir les conditions de falsifiabilité nécessaires
+pour transformer ce cadre géométrique candidat en théorie
+gravitationnelle testable.
+
+Mots-clés : gravitation, géométrie différentielle, covariance,
+métrique diagonale, invariants de courbure, principe variationnel,
+théorie effective, GVH.
+
+────────
+
+1. Introduction
+
+La relativité générale décrit la gravitation par la géométrie de
+l’espace-temps. Toute extension ou alternative candidate doit au minimum
+être examinée selon plusieurs critères : définition non ambiguë des
+degrés de liberté, covariance, structure géométrique, dynamique, limite
+relativiste contrôlée, stabilité, causalité et prédictions observables
+falsifiables.
+
+Le programme GVH Diagonal Cubic suit cette progression. La chaîne
+géométrique de base est
+
+$$
+g_{\mu\nu}
+\longrightarrow
+\Gamma^\rho_{\mu\nu}
+\longrightarrow
+R^\rho{}{\sigma\mu\nu}
+\longrightarrow
+R{\mu\nu}
+\longrightarrow
+R
+\longrightarrow
+G_{\mu\nu}.
+$$
+
+Une source effective peut ensuite être reconstruite à partir de la
+géométrie. Cette opération doit toutefois être distinguée du problème
+plus fort
+
+$$
+S_{\rm GVH}
+\longrightarrow
+\delta S_{\rm GVH}=0
+\longrightarrow
+\text{équations de champ}
+\longrightarrow
+g_{\mu\nu}.
+$$
+
+Les actions examinées dans la chaîne actuelle restent donc des actions
+candidates ou bancs d’essai, et non une dérivation définitive d’une
+action fondamentale GVH.
+
+────────
+
+2. Statut scientifique et portée
+
+2.1 Objets mathématiques construits
+
+La chaîne 0.2 permet notamment de construire ou manipuler :
+
+• une famille de métriques diagonales candidates ;
+• les symboles de Christoffel associés ;
+• le tenseur de Riemann ;
+• le tenseur de Ricci ;
+• le scalaire de Ricci ;
+• le tenseur d’Einstein ;
+• des sources effectives ;
+• des invariants de courbure, dont le scalaire de Kretschmann ;
+• des diagnostics de perturbation et de stabilité effective ;
+• des actions covariantes candidates ;
+• des objets directionnels/tensoriels candidats.
+
+2.2 Résultats de cohérence
+
+Les notebooks fournissent un environnement permettant des calculs
+symboliques et numériques de cohérence interne : tenseurs géométriques,
+invariants, limites et diagnostics de stabilité effective.
+
+2.3 Hypothèse physique centrale
+
+L’interprétation d’une structure directionnelle comme nouveau degré de
+liberté gravitationnel demeure une hypothèse tant qu’elle n’est pas
+reliée de manière unique à une dynamique fondamentale et à des
+observables indépendantes.
+
+2.4 Ce qui n’est pas revendiqué
+
+Cet article ne démontre pas :
+
+• que GVH remplace la relativité générale ;
+• qu’une action fondamentale GVH unique a été dérivée ;
+• l’absence générale de ghosts ;
+• que les variables directionnelles sont nécessairement de nouveaux
+degrés de liberté physiques ;
+• qu’une anomalie observationnelle exige GVH ;
+• qu’une nouvelle prédiction observationnelle GVH a déjà été
+confirmée.
+
+────────
+
+3. Construction géométrique
+
+Soit une variété espace-temps $\mathcal{M}$ munie d’une métrique
+lorentzienne candidate
+
+$$
+g_{\mu\nu}.
+$$
+
+Dans la branche Diagonal Cubic, la structure est étudiée dans une classe
+diagonale adaptée à l’analyse directionnelle.
+
+La connexion de Levi-Civita est
+
+$$ \Gamma^\rho_{\mu\nu}
+
+\frac{1}{2}g^{\rho\sigma} \left( \partial_\mu g_{\sigma\nu} + \partial_\nu g_{\sigma\mu}
+
+\partial_\sigma g_{\mu\nu}
+\right).
+$$
+
+Le tenseur de Riemann est
+
+$$ R^\rho{}_{\sigma\mu\nu}
+
+\partial_\mu\Gamma^\rho_{\nu\sigma}
+
+\partial_\nu\Gamma^\rho_{\mu\sigma} + \Gamma^\rho_{\mu\lambda}\Gamma^\lambda_{\nu\sigma}
+
+\Gamma^\rho_{\nu\lambda}\Gamma^\lambda_{\mu\sigma}.
+$$
+
+Par contraction,
+
+$$
+R_{\mu\nu}=R^\rho{}_{\mu\rho\nu},
+$$
+
+puis
+
+$$
+R=g^{\mu\nu}R_{\mu\nu}.
+$$
+
+Le tenseur d’Einstein est
+
+$$ G_{\mu\nu}
+
+R_{\mu\nu}
+-\frac{1}{2}g_{\mu\nu}R.
+$$
+
+Ces objets constituent le socle géométrique des tests ultérieurs.
+
+────────
+
+4. Covariance et invariants de courbure
+
+Un objectif essentiel est de distinguer une modification physique de la
+géométrie d’un simple changement de coordonnées.
+
+Les composantes tensorielles peuvent dépendre du système de coordonnées,
+tandis que les scalaires géométriques évalués au même événement doivent
+être invariants sous les transformations admissibles.
+
+Deux quantités importantes sont
+
+$$
+R
+$$
+
+et le scalaire de Kretschmann
+
+$$ K
+
+R_{\alpha\beta\gamma\delta}
+R^{\alpha\beta\gamma\delta}.
+$$
+
+Une différence d’invariants fournit une indication forte de
+non-équivalence géométrique. Inversement, l’égalité d’un ensemble limité
+d’invariants ne suffit pas à démontrer une équivalence globale complète.
+
+────────
+
+5. Source effective
+
+Pour une géométrie donnée, une écriture de type Einstein permet de
+définir
+
+$$ G_{\mu\nu}
+
+\frac{8\pi G}{c^4}
+T_{\mu\nu}^{\rm eff},
+$$
+
+donc
+
+$$ T_{\mu\nu}^{\rm eff}
+
+\frac{c^4}{8\pi G}
+G_{\mu\nu}.
+$$
+
+Cette construction permet d’étudier la densité, les pressions,
+anisotropies ou flux que la géométrie candidate imiterait
+effectivement.
+
+Elle ne démontre pas que $T_{\mu\nu}^{\rm eff}$ représente une nouvelle
+matière fondamentale. Il s’agit de la reconstruction
+
+$$
+g_{\mu\nu}
+\rightarrow
+G_{\mu\nu}
+\rightarrow
+T_{\mu\nu}^{\rm eff},
+$$
+
+et non nécessairement d’une dérivation dynamique fondamentale.
+
+────────
+
+6. Perturbations, stabilité et causalité
+
+Les diagnostics développés dans la chaîne 0.2 examinent la réponse
+effective à certaines perturbations et la sensibilité aux paramètres.
+
+Un diagnostic favorable signifie seulement qu’aucune instabilité
+évidente n’a été détectée dans le domaine testé :
+
+$$
+\text{diagnostic stable}
+;\not\Rightarrow;
+\text{absence générale démontrée de ghosts}.
+$$
+
+Une analyse fondamentale nécessiterait notamment une action spécifiée,
+l’identification des degrés de liberté propagatifs, une expansion
+perturbative appropriée et l’étude de la structure cinétique ou
+Hamiltonienne.
+
+────────
+
+7. Action et principe variationnel
+
+Une formulation fondamentale devrait idéalement fournir une action
+
+$$ S[g_{\mu\nu},\Phi,\ldots]
+
+\int d^4x,\sqrt{-g},\mathcal{L},
+$$
+
+où $\Phi$ représente d’éventuels champs supplémentaires.
+
+Les équations dynamiques seraient obtenues par
+
+$$
+\delta S=0.
+$$
+
+La chaîne actuelle examine l’existence possible d’actions covariantes
+candidates compatibles avec la structure Diagonal Cubic et une limite
+relativiste contrôlée.
+
+Elle ne fixe cependant pas encore une action fondamentale unique
+
+$$
+S_{\rm GVH}=S_\star.
+$$
+
+Cette égalité ne doit pas être considérée comme établie tant qu’une
+dérivation indépendante n’a pas sélectionné $S_\star$.
+
+────────
+
+8. Degrés de liberté directionnels
+
+Une motivation du programme est d’étudier si une décomposition
+directionnelle peut porter une information physique supplémentaire.
+
+On peut schématiquement introduire
+
+$$
+D_{\mu\nu}.
+$$
+
+Pour que cet objet devienne un champ physique fondamental, il faut
+déterminer de façon cohérente :
+
+• sa loi de transformation ;
+• ses équations de mouvement ;
+• ses contraintes ;
+• ses degrés de liberté propagatifs ;
+• ses couplages ;
+• ses observables.
+
+Sans ces éléments, $D_{\mu\nu}$ doit rester un objet géométrique
+candidat.
+
+────────
+
+9. Limite relativiste
+
+Une condition minimale est l’existence d’un secteur dans lequel
+
+$$
+g_{\mu\nu}^{\rm GVH}
+\longrightarrow
+g_{\mu\nu}^{\rm GR}.
+$$
+
+Cette limite doit être contrôlée mathématiquement et non imposée
+seulement après comparaison aux observations.
+
+La récupération d’une solution connue de la relativité générale
+constitue un test de cohérence important, mais ne constitue pas à elle
+seule une nouvelle prédiction.
+
+────────
+
+10. Résultats actuellement établis au niveau du programme mathématique
+
+La chaîne fournit un cadre permettant de :
+
+1. définir une géométrie diagonale candidate ;
+2. calculer systématiquement connexion et courbure ;
+3. construire $R_{\mu\nu}$, $R$ et $G_{\mu\nu}$ ;
+4. calculer des invariants tels que $K$ ;
+5. distinguer partiellement effets de coordonnées et différences
+géométriques ;
+6. reconstruire une source effective ;
+7. appliquer certains diagnostics de stabilité ;
+8. examiner des actions covariantes candidates ;
+9. rechercher une limite relativiste ;
+10. préparer une interface avec des tests observationnels.
+
+Ces éléments constituent un programme mathématique cohérent de
+recherche, et non encore une validation physique complète.
+
+────────
+
+11. Questions fondamentales non résolues
+
+Q1 — Action fondamentale
+
+Existe-t-il une action GVH unique ou naturellement sélectionnée ?
+
+Q2 — Nouveaux degrés de liberté
+
+Les variables directionnelles représentent-elles de nouveaux degrés de
+liberté ou une reparamétrisation de structures déjà connues ?
+
+Q3 — Ghosts et stabilité fondamentale
+
+La dynamique complète est-elle libre de degrés de liberté pathologiques
+?
+
+Q4 — Causalité
+
+Les modes physiques respectent-ils une structure causale compatible avec
+les contraintes relativistes ?
+
+Q5 — Limite GR
+
+La récupération de GR est-elle générique, naturelle et stable ?
+
+Q6 — Observable nouvelle
+
+Existe-t-il au moins une quantité mesurable telle que
+
+$$
+O_{\rm GVH}\neq O_{\rm GR}
+$$
+
+dans un domaine accessible ?
+
+Cette dernière question est déterminante.
+
+────────
+
+12. Critère de falsifiabilité
+
+Définissons
+
+$$ \Delta O
+
+O_{\rm GVH}-O_{\rm GR}.
+$$
+
+Une prédiction GVH indépendante devrait prendre la forme
+
+$$ \Delta O
+
+F(\theta_{\rm GVH}),
+$$
+
+où les paramètres $\theta_{\rm GVH}$ sont définis indépendamment des
+données utilisées pour tester $\Delta O$.
+
+Une hypothèse GVH spécifique devient alors réfutable : si sa région de
+paramètres admissible ne peut simultanément satisfaire les observations
+indépendantes pertinentes, cette formulation doit être rejetée ou
+restreinte.
+
+────────
+
+13. Programme observationnel
+
+Les régimes naturels de confrontation comprennent notamment :
+
+• champ faible ;
+• système solaire ;
+• paramètres post-newtoniens ;
+• propagation de la lumière ;
+• délais temporels ;
+• précession ;
+• objets compacts ;
+• ondes gravitationnelles ;
+• cosmologie, lorsqu’une extension cosmologique cohérente est définie.
+
+L’objectif ne doit pas seulement être de reproduire GR. Il faut
+déterminer si le cadre impose
+
+$$
+\Delta O=0
+$$
+
+dans certains régimes, ou prédit une correction calculable
+
+$$
+\Delta O\neq0
+$$
+
+dont le signe et l’amplitude ne sont pas choisis après inspection des
+données.
+
+────────
+
+14. Relation avec la relativité générale
+
+Dans son état actuel, GVH Diagonal Cubic doit être présenté comme un
+cadre géométrique candidat en développement.
+
+La relativité générale demeure le modèle de référence.
+
+Une formulation GVH ne deviendrait physiquement distincte que si elle
+possède simultanément une dynamique bien définie, des degrés de liberté
+identifiables, une limite GR contrôlée, une cohérence mathématique, au
+moins une prédiction indépendante et une confrontation quantitative aux
+observations.
+
+Une simple reparamétrisation d’une métrique GR ne constituerait pas une
+nouvelle théorie.
+
+────────
+
+15. Résultats négatifs et falsification
+
+Les résultats négatifs sont scientifiquement informatifs.
+
+Si covariance, stabilité, limite GR et observations imposent
+
+$$
+D_{\mu\nu}\rightarrow0
+$$
+
+ou réduisent toutes les corrections GVH à des transformations de
+variables sans observable indépendante, alors l’hypothèse d’une nouvelle
+physique directionnelle serait fortement restreinte ou réfutée dans
+cette formulation.
+
+Inversement, toute correction irréductible survivant à ces tests devra
+être confrontée quantitativement aux observations.
+
+────────
+
+16. Discussion
+
+La contribution principale de la chaîne actuelle n’est pas une nouvelle
+loi gravitationnelle confirmée. Elle est la construction progressive
+d’un environnement mathématique permettant de poser rigoureusement la
+question :
+
+> Une structure diagonale directionnelle peut-elle devenir un secteur
+> gravitationnel covariant, dynamique, stable et empiriquement distinct
+> de la relativité générale ?
+
+La distinction suivante doit être maintenue :
+
+$$
+\text{géométrie}
+\neq
+\text{source effective}
+\neq
+\text{action fondamentale}
+\neq
+\text{prédiction observationnelle}.
+$$
+
+Elle évite de confondre reconstruction mathématique et découverte
+physique.
+
+────────
+
+17. Conclusion
+
+Le programme GVH Diagonal Cubic possède une base mathématique
+suffisamment structurée pour être exposée comme cadre théorique
+candidat.
+
+La chaîne étudiée fournit une métrique candidate, ses objets
+différentiels, des invariants de courbure, une source effective, des
+diagnostics de stabilité et un cadre d’examen d’actions candidates.
+
+Trois étapes demeurent décisives :
+
+$$
+\boxed{
+\text{action/dynamique fondamentale}
+\rightarrow
+\text{prédiction indépendante}
+\rightarrow
+\text{test observationnel falsifiable}
+}
+$$
+
+Tant que cette chaîne n’est pas achevée, GVH Diagonal Cubic ne doit pas
+être présenté comme une théorie gravitationnelle expérimentalement
+établie.
+
+────────
+
+18. Déclaration de statut
+
+Résultats mathématiques : construits à plusieurs niveaux et encore
+en consolidation globale.
+Action GVH fondamentale : non dérivée à ce stade.
+Absence générale de ghosts : non démontrée.
+Nouvelle prédiction observationnelle confirmée : non établie dans
+cet article.
+Statut du modèle : cadre géométrique et gravitationnel candidat
+soumis à falsification.
+
+────────
+
+19. Traçabilité computationnelle
+
+────────
+
+Sujet                   Notebook source         Statut
+
+────────
+
+Géométrie candidate     chaîne 0.2.x            construit / à
+consolider globalement
+
+Connexion et courbure   chaîne 0.2.x            calcul symbolique
+
+Invariants et           0.2.7                   construit
+covariance
+
+Source effective        0.2.8                   construit
+
+Perturbations et        0.2.9                   diagnostic effectif
+stabilité
+
+Action / principe       0.2.10                  cadre candidat
+variationnel
+
+Structure covariante    0.2.11+                 en consolidation
+directionnelle
+
+Limites physiques       chaîne ultérieure       à consolider
+
+Prédictions et          phase observationnelle  à établir falsification
+
+Cette traçabilité doit continuer à être renforcée équation par équation
+dans les versions ultérieures.
+
+────────
+
+20. Références et positionnement
+
+Une version destinée à une revue devra comporter une bibliographie
+scientifique complète couvrant au minimum :
+
+• relativité générale et action d’Einstein–Hilbert ;
+• géométrie différentielle et invariants de courbure ;
+• théories métriques alternatives ;
+• formalisme post-newtonien paramétré ;
+• stabilité et degrés de liberté des théories gravitationnelles
+modifiées ;
+• contraintes expérimentales contemporaines.
+
+Chaque comparaison devra distinguer explicitement les résultats
+standards, les constructions adaptées et les éléments propres au
+programme GVH.
+
+────────
+
+Citation suggérée
+
+Laurince, Charlemagne O. (2026). Article I — Fondements mathématiques
+du GVH Diagonal Cubic: Cadre géométrique candidat, structure covariante,
+invariants, dynamique effective et critères de falsification (Version
+0.1) [Preprint]. Zenodo. DOI: 10.5281/zenodo.21838992.
+
+────────
+
+Identifiants
+
+Author: Charlemagne O Laurince
+ORCID: 0009-0007-6720-4023
+Affiliation: Harmonic Physics Research Initiative (Independent)
+Version: 0.1
+Publication date: 7 August 2026
+DOI: 10.5281/zenodo.21838992
+Document type: Preprint
