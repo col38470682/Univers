@@ -1,0 +1,386 @@
+# État scientifique corrigé — Observations, GW170817, chaîne HH
+
+**Projet :** GVH Diagonal Cubic
+**Auteur :** Charlemagne O Laurince
+**Date d’archivage :** 2026\-08\-11
+**Statut :** note canonique d’état scientifique
+**Portée :** branche observationnelle RACC, branche multimessager GW170817, chaîne centrale HH
+
+---
+
+## 1\. Corrections explicitement intégrées
+
+### 1\.1 Stratification `REAL-OBS-READY` vs `TIMING-VALIDATED`
+
+La valeur
+
+&#91;
+\\widehat\{\\Delta t\}\_\{H1L1\}=6\.1035\\ \\mathrm\{ms\}
+&#93;
+
+est obtenue dans `RACC-C.4 REAL V2`, qui satisfait les gates techniques de la couche observationnelle réelle\.
+
+Cependant, `RACC-C.4-real.1` montre un désaccord entre plusieurs estimateurs temporels :
+
+- corrélation directe signée : \(\\approx \+6\.14\\ \\mathrm\{ms\}\) ;
+- GCC\-PHAT : \(\\approx \-0\.043\\ \\mathrm\{ms\}\) ;
+- pente de phase : \(\\approx \+2\.075\\ \\mathrm\{ms\}\)\.
+
+Le verdict scientifique conservé est donc :
+
+&#91;
+\\boxed\{\\texttt\{TIMING\-AMBIGUOUS\}\}
+&#93;
+
+et non `TIMING-CERTIFIED`\.
+
+Ainsi :
+
+&#91;
+\\boxed\{
+\\begin\{aligned\}
+\\texttt\{REAL\-OBS\-READY\} &= \\texttt\{True\},\\
+\\texttt\{TIMING\-VALIDATED\} &= \\texttt\{False\}\.
+\\end\{aligned\}\}
+&#93;
+
+La chaîne observationnelle réelle est opérationnelle, mais le timing physique H1/L1 n’est pas encore certifié en multi\-estimateurs\.
+
+---
+
+### 1\.2 Aucune borne PPN dérivée de GW150914 H1/L1
+
+La formulation suivante est explicitement rejetée :
+
+&#91;
+\\widehat\{\\Delta t\}\_\{H1L1\}=6\.1035\\ \\mathrm\{ms\}
+;\\not\\Rightarrow;
+\\text\{borne PPN\}\.
+&#93;
+
+GW150914 ne disposait pas d’une contrepartie électromagnétique confirmée permettant un test différentiel direct entre propagation GW et EM\.
+
+Le délai H1/L1 de GW150914 est un contrôle :
+
+- instrumental ;
+- géométrique ;
+- inter\-détecteurs terrestres\.
+
+Il ne dérive directement aucun paramètre PPN tel que :
+
+&#91;
+\\gamma,\\ \\beta,\\ \\alpha\_i,\\ \\xi,\\ \\eta\_N\.
+&#93;
+
+---
+
+### 1\.3 Les erreurs 404 ne prouvent pas un retrait des données GWOSC
+
+Les chemins reconstruits manuellement qui renvoyaient HTTP 404 étaient invalides\.
+
+La conclusion correcte est :
+
+&#91;
+\\boxed\{
+\\text\{404 sur URL reconstruite\}
+\\not\\Rightarrow
+\\text\{retrait des données GWOSC\}\.
+\}
+&#93;
+
+Les données GW170817 restent accessibles via le catalogue officiel GWOSC et ses liens publiés\.
+
+---
+
+## 2\. État scientifique figé
+
+&#91;
+\\boxed\{
+\\begin\{array\}\{ll\}
+\\texttt\{RACC\-C\.3\} & \\text\{synthétique validé\}\\&#91;2pt&#93;
+\\texttt\{RACC\-C\.4\} & \\text\{synthétique multiprofil validé\}\\&#91;2pt&#93;
+\\texttt\{RACC\-C\.4 REAL V2\} & \\texttt\{REAL\-OBS\-READY\}\\&#91;2pt&#93;
+\\texttt\{RACC\-C\.4\-real\.1\} & \\texttt\{TIMING\-AMBIGUOUS\}\\&#91;2pt&#93;
+\\texttt\{TIMING\-VALIDATED\} & \\texttt\{False\}\\&#91;2pt&#93;
+D\_T^\{\\rm ref\} & \\texttt\{NOT\-AUTHORIZED\}\\&#91;2pt&#93;
+\\texttt\{DISPERSION\_READY\} & \\text\{inchangé\}
+\\end\{array\}\}
+&#93;
+
+### Notes de lecture
+
+- `REAL-OBS-READY=True` signifie que la couche de lecture, intégrité, prétraitement et mesure réelle est techniquement opérationnelle\.
+- `TIMING-VALIDATED=False` signifie que la valeur physique du retard H1/L1 n’est pas encore certifiée par convergence multi\-estimateurs\.
+- \(D\_T^\{\\rm ref\}=\\texttt\{NOT\-AUTHORIZED\}\) signifie qu’aucune référence physique indépendante ne doit encore être construite à partir du timing\.
+- `DISPERSION_READY` reste strictement indépendant de la branche observationnelle RACC\.
+
+---
+
+## 3\. Branche GW170817 — multimessager indépendante
+
+### 3\.1 Architecture canonique
+
+&#91;
+\\boxed\{
+\\begin\{aligned\}
+&\\texttt\{GW170817\}\\
+&\\downarrow\\
+&\\text\{GW timing\}\\
+&\\downarrow\\
+&\\text\{GRB timing\}\\
+&\\downarrow\\
+&\\Delta t\_\{\\rm GW\-EM\}\\
+&\\downarrow\\
+&\\text\{test de vitesse de propagation\}\\
+&\\downarrow\\
+&\\text\{test différentiel d’équivalence / délai de Shapiro\}
+\\end\{aligned\}\}
+&#93;
+
+Les deux tests doivent rester distincts\.
+
+### 3\.2 Test de vitesse de propagation
+
+À partir du délai multimessager GW–GRB :
+
+&#91;
+\-3\\times10^\{\-15\}
+\\le
+\\frac\{c\_\{\\rm gw\}\-c\}\{c\}
+\\le
+\+7\\times10^\{\-16\}\.
+&#93;
+
+Cette borne concerne la différence relative entre vitesse de propagation des ondes gravitationnelles et celle de la lumière\.
+
+### 3\.3 Test différentiel d’équivalence / Shapiro
+
+En ajoutant un modèle de délai gravitationnel de type Shapiro, on obtient une contrainte différentielle :
+
+&#91;
+\-2\.6\\times10^\{\-7\}
+\\le
+\\gamma\_\{\\rm gw\}\-\\gamma\_\{\\rm em\}
+\\le
+\+1\.2\\times10^\{\-6\}\.
+&#93;
+
+Cette borne ne doit pas être confondue avec la borne de vitesse précédente\.
+
+---
+
+## 4\. Paramètres physiques de référence — GW170817
+
+|Paramètre                 |Valeur de référence                         |
+|--------------------------|-------------------------------------------:|
+|Type de source            |BNS                                         |
+|(m_1)                     |(1.46^{+0.12}*{-0.10},M*\odot)              |
+|(m_2)                     |(1.27^{+0.09}*{-0.09},M*\odot)              |
+|(\mathcal M)              |(\approx 1.188,M_\odot)                     |
+|(d_L)                     |(40^{+7}_{-15},\mathrm{Mpc})                |
+|GPS merger                |(1,187,008,882.4\ \mathrm{s})               |
+|SNR réseau                |(\approx 32.4)                              |
+|Délai GW (\rightarrow) GRB|(\approx 1.7\ \mathrm{s})                   |
+|Localisation 90 %         |(\approx 28,\mathrm{deg}^2)                 |
+|Hôte                      |NGC 4993                                    |
+|Glitch L1 pré-merger      |présent, (\sim 1.1\ \mathrm{s}) avant merger|
+
+---
+
+## 5\. Distinction opérationnelle entre GW150914 et GW170817
+
+Les deux observables suivantes sont **distinctes** :
+
+&#91;
+\\boxed\{
+D\_T^\{H1L1\}\(\\mathrm\{GW150914\}\)
+\\not\\equiv
+\\Delta t\_\{\\rm GW\-EM\}\(\\mathrm\{GW170817\}\)\.
+\}
+&#93;
+
+### GW150914
+
+&#91;
+D\_T^\{H1L1\}
+&#93;
+
+porte sur deux interféromètres terrestres **spatialement séparés** :
+
+- H1 Hanford ;
+- L1 Livingston\.
+
+Le délai est de l’ordre de quelques millisecondes à une dizaine de millisecondes selon la direction d’arrivée\.
+
+### GW170817
+
+&#91;
+\\Delta t\_\{\\rm GW\-EM\}
+&#93;
+
+porte sur deux messagers différents :
+
+- ondes gravitationnelles ;
+- photons gamma\.
+
+Le délai est de l’ordre de \(1\.7\\ \\mathrm\{s\}\) sur une propagation cosmologique\.
+
+Aucune de ces quantités ne peut être substituée à l’autre\.
+
+---
+
+## 6\. Position dans la chaîne centrale HH
+
+La chaîne RACC observationnelle et la chaîne HH centrale restent deux branches indépendantes\.
+
+&#91;
+\\boxed\{
+\\text\{RACC observationnel\}
+\\quad\\text\{et\}\\quad
+\\text\{chaîne HH centrale\}
+\\quad
+\\text\{sont architecturalement distincts\}\.
+\}
+&#93;
+
+### Branche RACC
+
+&#91;
+\\begin\{aligned\}
+\\texttt\{RACC\-C\.3\} &\\rightarrow \\text\{synthétique validé\}\\
+\\texttt\{RACC\-C\.4\} &\\rightarrow \\text\{synthétique multiprofil validé\}\\
+\\texttt\{RACC\-C\.4 REAL V2\} &\\rightarrow \\texttt\{REAL\-OBS\-READY\}\\
+\\texttt\{RACC\-C\.4\-real\.1\} &\\rightarrow \\texttt\{TIMING\-AMBIGUOUS\}
+\\end\{aligned\}
+&#93;
+
+### Branche HH centrale
+
+État conservé :
+
+&#91;
+\\boxed\{
+R\_\{HH\}=\\texttt\{BLOCKED\-PENDING\-\.1\.6\}
+\}
+&#93;
+
+et :
+
+&#91;
+\\boxed\{
+\\texttt\{DISPERSION\_READY\}=\\text\{inchangé\}\.
+\}
+&#93;
+
+Aucun notebook RACC ne ferme ni n’ouvre un gate Hamiltonien/Dirac/HH\.
+
+---
+
+## 7\. Conséquence méthodologique
+
+Tant que :
+
+&#91;
+\\boxed\{
+\\texttt\{TIMING\-VALIDATED=False\},
+\}
+&#93;
+
+on conserve :
+
+&#91;
+\\boxed\{
+D\_T^\{\\rm ref\}=\\texttt\{NOT\-AUTHORIZED\}\.
+\}
+&#93;
+
+La prochaine étape observationnelle correcte est donc :
+
+&#91;
+\\boxed\{
+\\texttt\{RACC\-C\.4\-real\.2\}
+\\rightarrow
+\\text\{résolution du timing chirp H1/L1\}
+\}
+&#93;
+
+et non la construction immédiate de \(D\_T^\{\\rm ref\}\)\.
+
+En parallèle, la chaîne centrale peut continuer indépendamment vers :
+
+&#91;
+\\boxed\{
+\.1\.6
+\\rightarrow
+\\text\{crochet HH strict\}
+\\rightarrow
+R\_\{HH\}\.
+\}
+&#93;
+
+---
+
+## 8\. État canonique pour archivage
+
+&#91;
+\\boxed\{
+\\begin\{aligned\}
+&\\textbf\{Chaîne RACC observationnelle\}\\
+&\\quad \\texttt\{RACC\-C\.3 = synthétique validé\}\\
+&\\quad \\texttt\{RACC\-C\.4 = synthétique multiprofil validé\}\\
+&\\quad \\texttt\{RACC\-C\.4 REAL V2 = REAL\-OBS\-READY\}\\
+&\\quad \\texttt\{RACC\-C\.4\-real\.1 = TIMING\-AMBIGUOUS\}\\
+&\\quad \\texttt\{TIMING\-VALIDATED = False\}\\
+&\\quad D\_T^\{\\rm ref\}=\\texttt\{NOT\-AUTHORIZED\}\\&#91;4pt&#93;
+%
+&\\textbf\{Chaîne HH centrale\}\\
+&\\quad R\_\{HH\}=\\texttt\{BLOCKED\-PENDING\-\.1\.6\}\\
+&\\quad \\texttt\{DISPERSION\_READY\}=\\text\{inchangé\}\\&#91;4pt&#93;
+%
+&\\textbf\{Branche GW170817 multimessager\}\\
+&\\quad \\tau\_\{\\rm GW\}\\rightarrow\\tau\_\{\\rm GRB\}
+\\rightarrow\\Delta t\_\{\\rm GW\-EM\}\\
+&\\quad \\rightarrow \\text\{test de vitesse de propagation\}\\
+&\\quad \\rightarrow \\text\{test différentiel d’équivalence / Shapiro\}\\&#91;4pt&#93;
+%
+&\\textbf\{Interdictions explicites\}\\
+&\\quad \\widehat\{\\Delta t\}\_\{H1L1\}=6\.1035\\ \\mathrm\{ms\}
+\\not\\Rightarrow \\text\{borne PPN\}\\
+&\\quad \\text\{404 sur URL reconstruite\}
+\\not\\Rightarrow \\text\{retrait GWOSC\}
+\\end\{aligned\}\}
+&#93;
+
+---
+
+## 9\. Sources canoniques à conserver avec cette note
+
+- GWOSC — catalogue officiel de GW170817, branche `GWTC-1-confident/GW170817/v3`\.
+- Abbott et al\. \(2017\), *Multi\-messenger Observations of a Binary Neutron Star Merger*, ApJL 848:L12, DOI `10.3847/2041-8213/aa91c9`\.
+- Abbott et al\. \(2017\), arXiv:1710\.05834 — contraintes sur \(c\_\{\\rm gw\}/c\) et \(\\gamma\_\{\\rm gw\}\-\\gamma\_\{\\rm em\}\)\.
+- `RACC-C.4 REAL V2` — interface observationnelle réelle GW150914 H1/L1\.
+- `RACC-C.4-real.1` — certification multi\-estimateurs du timing, verdict `TIMING-AMBIGUOUS`\.
+
+---
+
+## 10\. Verdict d’archivage
+
+&#91;
+\\boxed\{
+\\texttt\{ÉTAT SCIENTIFIQUE CORRIGÉ — ARCHIVABLE\}
+\}
+&#93;
+
+avec séparation stricte entre :
+
+&#91;
+\\boxed\{
+\\text\{interface observationnelle réelle\}
+\\neq
+\\text\{certification du timing\}
+\\neq
+\\text\{validation PPN\}
+\\neq
+\\text\{fermeture HH\}\.
+\}
+&#93;
