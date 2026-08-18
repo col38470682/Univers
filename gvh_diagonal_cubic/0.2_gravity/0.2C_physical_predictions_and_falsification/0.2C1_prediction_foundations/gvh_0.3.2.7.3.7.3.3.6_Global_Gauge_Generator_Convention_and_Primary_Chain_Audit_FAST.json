@@ -1,0 +1,96 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.6_Global_Gauge_Generator_Convention_and_Primary_Chain_Audit_FAST",
+  "execution_scope": "GAUGE_GENERATOR_CONVENTION_PRIMARY_CHAIN_AND_SCOPE_AUDIT",
+  "upstream": {
+    "source": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.5_Global_First_Class_Sector_and_Full_Hypersurface_Algebra_Audit_FAST(3)",
+    "executed_sha256": "f23aad7b7aabdd6b7f70c2f5ca40f1791a67052b9aab1fa17812686a0728d0c8",
+    "normalized_source_sha256": "de0794e9a8c182047572692bff0ba52bf39aa0a61ffb4d2a5012c0be42561ad1",
+    "executed_size_bytes": 33790,
+    "provenance": "INHERITED_FROM_EXECUTED_.3.3.5_FAST",
+    "full_hypersurface_algebra_classified": true,
+    "HH_status": "WEAK_ZERO_GENERIC_BRANCH",
+    "HD_status": "WEAK_ZERO_GENERIC_BRANCH",
+    "DD_status": "WEAK_ZERO_GENERIC_BRANCH",
+    "quartet": [
+      "p_lambda",
+      "chi",
+      "psi",
+      "rho_FF"
+    ],
+    "quartet_second_class": true,
+    "quartet_strongly_eliminated_by_Dirac_bracket": true,
+    "detQ_nonzero": true,
+    "Delta_FF_nonzero": true,
+    "generic_branch": true,
+    "boundary_domain": "compact_without_boundary OR sufficient_decay OR boundary_conditions_killing_flux",
+    "first_class_scientific_status": "STRUCTURAL-PASS/PENDING-EXPLICIT-GAUGE-GENERATOR-AUDIT",
+    "full_gauge_generator_classified": false,
+    "full_GVH_dof_count_ready": false,
+    "classical_predictions_authorized": false,
+    "quantization_ready": false
+  },
+  "canonical_sign_audit": {
+    "qp_sign": 1,
+    "right_action_plus_momentum_map_pass": true,
+    "left_action_plus_momentum_map_pass": false,
+    "left_action_minus_momentum_map_pass": true,
+    "right_momentum_map_anti_homomorphism_pass": true,
+    "left_negative_momentum_map_homomorphism_pass": true,
+    "inherited_left_plus_pair_consistent": false,
+    "reconciliation_required": true,
+    "left_branch": {
+      "action": "{D_L[xi],F}=+Lie_xi(F)",
+      "required_momentum_map_sign": -1,
+      "DD_representation": "homomorphism"
+    },
+    "right_branch": {
+      "action": "{F,D_R[xi]}=+Lie_xi(F)",
+      "required_momentum_map_sign": 1,
+      "DD_representation": "anti-homomorphism_with_standard_vector_bracket"
+    }
+  },
+  "primary_chain": {
+    "explicit_witness": {
+      "p_N": "-H",
+      "p_N1": "-D1",
+      "p_N2": "-D2",
+      "p_N3": "-D3"
+    },
+    "pass": true
+  },
+  "gauge_generator": {
+    "skeleton_materialized": true,
+    "right_primary_action_pass": true,
+    "left_primary_action_pass": true,
+    "convention_fully_reconciled": false,
+    "full_classified": false
+  },
+  "lambda": {
+    "p_lambda_in_second_class_quartet": true,
+    "p_lambda_first_class_gauge_primary": false,
+    "reduced_solution_explicit_here": false,
+    "induced_reduced_action_audited": false,
+    "reduced_audit_required": true
+  },
+  "scientific_status": {
+    "full_hypersurface_algebra_classified": true,
+    "first_class_sector": "STRUCTURAL-PASS/PENDING-EXPLICIT-GAUGE-GENERATOR-AUDIT",
+    "full_first_class_sector_classified_scientific": false
+  },
+  "locks": {
+    "full_GVH_dof_count_ready": false,
+    "classical_predictions_authorized": false,
+    "quantization_ready": false,
+    "Wheeler_DeWitt_GVH_ready": false,
+    "dispersion_ready": false
+  },
+  "verdict": {
+    "local_audit_pass": true,
+    "obstructions": [
+      "RECONCILE-SPATIAL-MOMENTUM-MAP-SIGN-WITH-HH-HD-DD-CONVENTION",
+      "AUDIT-INDUCED-REDUCED-GAUGE-ACTION-ON-LAMBDA",
+      "GLOBAL-GAUGE-GENERATOR-CONVENTION-NOT-YET-FROZEN"
+    ]
+  },
+  "next_authorized": "RECONCILE-D-SIGN-AND-HYPERSURFACE-CONVENTIONS-THEN-AUDIT-REDUCED-LAMBDA-ACTION-AND-COMPLETE-G"
+}

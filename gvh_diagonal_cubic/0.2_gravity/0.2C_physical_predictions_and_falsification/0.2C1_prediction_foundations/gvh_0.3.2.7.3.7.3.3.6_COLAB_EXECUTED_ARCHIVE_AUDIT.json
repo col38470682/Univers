@@ -1,0 +1,65 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.6_Global_Gauge_Generator_Convention_and_Primary_Chain_Audit_FAST(2).ipynb",
+  "archive_role": "USER_COLAB_EXECUTED_CANDIDATE_CANONICAL_ARCHIVE",
+  "machine_audit": {
+    "total_cells": 20,
+    "code_cells": 9,
+    "markdown_cells": 11,
+    "execution_counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "execution_counts_strict_1_to_9": true,
+    "errors": 0,
+    "outputs": 9,
+    "source_exact_to_generated_reference": true
+  },
+  "runtime": {
+    "python": "3.12.13",
+    "sympy": "1.14.0",
+    "environment": "Google Colab"
+  },
+  "hashes": {
+    "executed_sha256": "29fa9a3c484aacf7efb946cf3909a88c3adf95c4b6a38d335b555b0b72d065f8",
+    "normalized_source_sha256_reference_canonical_method": "723e1259edd366fa5133c535afa88239bcb30e87f468ebd3ca818a7f761b83fa",
+    "reference_generated_sha256": "454779f298b3cb958e173c980215762c47a033673188e55630bd66b077bf6673"
+  },
+  "sizes_bytes": {
+    "executed_colab": 37336,
+    "reference_generated": 37714
+  },
+  "upstream": {
+    "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.5_Global_First_Class_Sector_and_Full_Hypersurface_Algebra_Audit_FAST(3)",
+    "executed_sha256": "f23aad7b7aabdd6b7f70c2f5ca40f1791a67052b9aab1fa17812686a0728d0c8",
+    "gate": true
+  },
+  "scientific_verdict": {
+    "FULL_HYPERSURFACE_ALGEBRA_CLASSIFIED": true,
+    "CANONICAL_SIGN_AUDIT_PASS": true,
+    "PRIMARY_CHAIN_EXPLICIT_WITNESS_PASS": true,
+    "GAUGE_GENERATOR_SKELETON_MATERIALIZED": true,
+    "CANONICAL_D_SIGN_RECONCILIATION_REQUIRED": true,
+    "LAMBDA_ACTION_REQUIRES_REDUCED_AUDIT": true,
+    "FULL_GAUGE_GENERATOR_CLASSIFIED": false,
+    "FULL_FIRST_CLASS_SECTOR_CLASSIFIED_SCIENTIFIC": false,
+    "FULL_FIRST_CLASS_SECTOR_STATUS": "STRUCTURAL-PASS/PENDING-EXPLICIT-GAUGE-GENERATOR-AUDIT",
+    "GGA_LOCAL_AUDIT_PASS": true,
+    "FULL_GVH_DOF_COUNT_READY": false,
+    "CLASSICAL_PREDICTIONS_AUTHORIZED": false,
+    "QUANTIZATION_READY": false
+  },
+  "obstructions": [
+    "RECONCILE-SPATIAL-MOMENTUM-MAP-SIGN-WITH-HH-HD-DD-CONVENTION",
+    "AUDIT-INDUCED-REDUCED-GAUGE-ACTION-ON-LAMBDA",
+    "GLOBAL-GAUGE-GENERATOR-CONVENTION-NOT-YET-FROZEN"
+  ],
+  "next_authorized": "RECONCILE-D-SIGN-AND-HYPERSURFACE-CONVENTIONS-THEN-AUDIT-REDUCED-LAMBDA-ACTION-AND-COMPLETE-G",
+  "archive_verdict": "MACHINE_CLEAN_AND_SOURCE_EXACT; ACCEPT_AS_CANONICAL_EXECUTED_.3.3.6_WITH_SCIENTIFIC_LOCKS_PRESERVED"
+}

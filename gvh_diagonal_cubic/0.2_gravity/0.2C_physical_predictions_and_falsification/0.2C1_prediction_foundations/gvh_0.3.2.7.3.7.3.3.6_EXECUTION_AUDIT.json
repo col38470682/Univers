@@ -1,0 +1,46 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.6_Global_Gauge_Generator_Convention_and_Primary_Chain_Audit_FAST_EXECUTED.ipynb",
+  "generated_notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.6_Global_Gauge_Generator_Convention_and_Primary_Chain_Audit_FAST.ipynb",
+  "machine_audit": {
+    "total_cells": 20,
+    "code_cells": 9,
+    "execution_counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "errors": 0,
+    "outputs": 9,
+    "source_exact_generated_to_executed": true
+  },
+  "hashes": {
+    "generated_sha256": "454779f298b3cb958e173c980215762c47a033673188e55630bd66b077bf6673",
+    "executed_sha256": "cd68665b5c69d99bbd5a9cf1ac61b5929b1e5c83de5f1f1bdae2eb9b32073eb8",
+    "normalized_source_sha256_source_only_canonical_method": "723e1259edd366fa5133c535afa88239bcb30e87f468ebd3ca818a7f761b83fa"
+  },
+  "sizes_bytes": {
+    "generated": 37714,
+    "executed": 43425
+  },
+  "scientific_verdict": {
+    "FULL_HYPERSURFACE_ALGEBRA_CLASSIFIED": true,
+    "PRIMARY_CHAIN_EXPLICIT_WITNESS_PASS": true,
+    "GAUGE_GENERATOR_SKELETON_MATERIALIZED": true,
+    "CANONICAL_D_SIGN_RECONCILIATION_REQUIRED": true,
+    "LAMBDA_ACTION_REQUIRES_REDUCED_AUDIT": true,
+    "FULL_GAUGE_GENERATOR_CLASSIFIED": false,
+    "FULL_FIRST_CLASS_SECTOR_CLASSIFIED_SCIENTIFIC": false,
+    "FULL_FIRST_CLASS_SECTOR_STATUS": "STRUCTURAL-PASS/PENDING-EXPLICIT-GAUGE-GENERATOR-AUDIT",
+    "FULL_GVH_DOF_COUNT_READY": false,
+    "CLASSICAL_PREDICTIONS_AUTHORIZED": false,
+    "QUANTIZATION_READY": false
+  },
+  "next_authorized": "RECONCILE-D-SIGN-AND-HYPERSURFACE-CONVENTIONS-THEN-AUDIT-REDUCED-LAMBDA-ACTION-AND-COMPLETE-G",
+  "artifact_json": "/mnt/data/gvh_exports/gvh_0.3.2.7.3.7.3.3.6_Global_Gauge_Generator_Convention_and_Primary_Chain_Audit_FAST.json"
+}
