@@ -1,0 +1,43 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.7_Global_Gauge_Generator_Sign_Reconciliation_and_Reduced_Closure_Audit_FAST_EXECUTED_REFERENCE.ipynb",
+  "machine_audit": {
+    "total_cells": 19,
+    "code_cells": 9,
+    "markdown_cells": 10,
+    "execution_counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "errors": 0,
+    "outputs": 9,
+    "source_exact_generated_to_executed": true
+  },
+  "hashes": {
+    "source_sha256": "48d5c4498376bd9e8431065df821d52585f92c08357039c86210a0b0978644f3",
+    "executed_reference_sha256": "a68e9cbae70f26b14e4a7699fddbc9660bbb0206877c8c83c9806b29b24d4977"
+  },
+  "sizes_bytes": {
+    "source": 42141,
+    "executed_reference": 47669
+  },
+  "scientific_verdict": {
+    "FULL_HYPERSURFACE_ALGEBRA_CLASSIFIED": true,
+    "FULL_GAUGE_GENERATOR_CLASSIFIED": true,
+    "FULL_FIRST_CLASS_SECTOR_CLASSIFIED_SCIENTIFIC": true,
+    "FULL_GVH_DOF_COUNT_READY": true,
+    "FULL_GVH_DOF_COUNT_COMPUTED": false
+  },
+  "verdict": {
+    "GGA7_LOCAL_AUDIT_PASS": true,
+    "obstructions": []
+  },
+  "next_authorized": "AUDIT-GLOBAL-GVH-DOF-COUNT",
+  "note": "Reference execution in OpenAI runtime only; user Colab execution remains the canonical archive candidate after re-audit."
+}

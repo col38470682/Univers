@@ -1,0 +1,111 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.7_Global_Gauge_Generator_Sign_Reconciliation_and_Reduced_Closure_Audit_FAST",
+  "execution_scope": "GENERIC_BRANCH_BOR_GLOBAL_GAUGE_GENERATOR_SIGN_AND_REDUCED_CLOSURE",
+  "upstream": {
+    "p336": {
+      "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.6_Global_Gauge_Generator_Convention_and_Primary_Chain_Audit_FAST",
+      "canonical_user_colab_sha256": "29fa9a3c484aacf7efb946cf3909a88c3adf95c4b6a38d335b555b0b72d065f8",
+      "canonical_size_bytes": 37336,
+      "reference_executed_sha256": "cd68665b5c69d99bbd5a9cf1ac61b5929b1e5c83de5f1f1bdae2eb9b32073eb8",
+      "full_hypersurface_algebra_classified": true,
+      "canonical_sign_audit_pass": true,
+      "primary_chain_explicit_witness_pass": true,
+      "gauge_generator_skeleton_materialized": true,
+      "canonical_D_sign_reconciliation_required": true,
+      "lambda_action_requires_reduced_audit": true,
+      "full_gauge_generator_classified": false,
+      "full_first_class_sector_classified_scientific": false
+    },
+    "p335": {
+      "executed_sha256": "f23aad7b7aabdd6b7f70c2f5ca40f1791a67052b9aab1fa17812686a0728d0c8",
+      "executed_size_bytes": 33790,
+      "full_first_class_closure_matrix_classified": true,
+      "first_class_no_independent_residual": true,
+      "first_class_vs_second_class_dirac": "STRONG_ZERO",
+      "global_dirac_bergmann_termination_generic_branch": true,
+      "quartet_second_class": true,
+      "quartet_strongly_eliminated_by_Dirac_bracket": true
+    },
+    "p334": {
+      "executed_sha256": "a1b32df9a0e2cb46665a2740927755c342e7589a95efb2173a48346813b88cdb",
+      "D_positive_momentum_map": true,
+      "D_local_density_sign_frozen": true
+    },
+    "p333": {
+      "executed_sha256": "cea4bdd31b6ff36ed22dd5468989369c768fc062bdea7a30cc6aa47ffdd1209f",
+      "D_preserves_second_class_surface": true
+    },
+    "branch": {
+      "detQ_nonzero": true,
+      "Delta_FF_nonzero": true,
+      "BOR": "compact_without_boundary OR sufficient_decay OR boundary_conditions_killing_flux",
+      "HH_status": "WEAK_ZERO_GENERIC_BRANCH",
+      "HD_status": "WEAK_ZERO_GENERIC_BRANCH",
+      "DD_status": "WEAK_ZERO_GENERIC_BRANCH"
+    }
+  },
+  "chosen_convention": {
+    "name": "RIGHT_ACTION_POSITIVE_MOMENTUM_MAP",
+    "D_R": "+Integral[p Lie_xi(q)]",
+    "action": "{F,D_R[xi]} = Lie_xi(F)",
+    "hamiltonian_shift_term": "+D_R[N^i]",
+    "equivalent_left_definition": "D_L = -D_R",
+    "reconciled": true
+  },
+  "hypersurface_algebra_reexpressed": {
+    "RIGHT": {
+      "HH": "{H[a],H[b]}_D = +D_R[gamma(a,b)] + I_sc",
+      "HD": "{H[a],D_R[xi]}_D = -H[Lie_xi(a)] + I_sc",
+      "DD": "{D_R[xi],D_R[eta]}_D = -D_R[[xi,eta]] + I_sc"
+    },
+    "LEFT_EQUIVALENT": {
+      "HH": "{H[a],H[b]}_D = -D_L[gamma(a,b)] + I_sc",
+      "HD": "{H[a],D_L[xi]}_D = +H[Lie_xi(a)] + I_sc",
+      "DD": "{D_L[xi],D_L[eta]}_D = +D_L[[xi,eta]] + I_sc"
+    },
+    "status_preserved": {
+      "HH": "WEAK_ZERO_GENERIC_BRANCH",
+      "HD": "WEAK_ZERO_GENERIC_BRANCH",
+      "DD": "WEAK_ZERO_GENERIC_BRANCH"
+    },
+    "reexpression_consistent": true
+  },
+  "lambda_reduction": {
+    "p_lambda_second_class": true,
+    "p_lambda_first_class_gauge_primary": false,
+    "lambda_independent_reduced_gauge_coordinate": false,
+    "spatial_action_descends_weakly": true,
+    "normal_reduced_flow_well_defined": true,
+    "explicit_lambda_red_formula_materialized": false,
+    "reduced_action_scope_classified": true
+  },
+  "gauge_generator": {
+    "form": "G_R = p_N[delta N] + p_Ni[delta N^i] + H[eps_perp] + D_R[eps^i]",
+    "primary_transformation_pass": true,
+    "explicit_form_materialized": true,
+    "reduced_Castellani_closure_audit_pass": true,
+    "convention_fully_reconciled": true,
+    "full_classified": true,
+    "scope_note": "Reduced Dirac/Castellani canonical generator on generic branch BOR; not an independent off-shell covariant Noether proof."
+  },
+  "scientific_status": {
+    "FULL_HYPERSURFACE_ALGEBRA_CLASSIFIED": true,
+    "FULL_GAUGE_GENERATOR_CLASSIFIED": true,
+    "FULL_FIRST_CLASS_SECTOR_CLASSIFIED_SCIENTIFIC": true,
+    "FULL_GVH_DOF_COUNT_READY": true,
+    "FULL_GVH_DOF_COUNT_COMPUTED": false
+  },
+  "locks": {
+    "CLASSICAL_PREDICTIONS_AUTHORIZED": false,
+    "QUANTIZATION_READY": false,
+    "WHEELER_DEWITT_GVH_READY": false,
+    "DISPERSION_READY": false,
+    "ASYMPTOTIC_FLATNESS": "UNPROVEN",
+    "DEGENERATE_BRANCH_STATUS": "UNCLASSIFIED"
+  },
+  "verdict": {
+    "GGA7_LOCAL_AUDIT_PASS": true,
+    "obstructions": []
+  },
+  "next_authorized": "AUDIT-GLOBAL-GVH-DOF-COUNT"
+}
