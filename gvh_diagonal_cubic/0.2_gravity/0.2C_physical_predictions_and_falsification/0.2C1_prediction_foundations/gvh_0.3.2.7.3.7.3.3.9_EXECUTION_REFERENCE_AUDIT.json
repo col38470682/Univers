@@ -1,0 +1,85 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.9_Classical_Sector_Readiness_and_Benchmark_Authorization_Audit_FAST_EXECUTED_REFERENCE.ipynb",
+  "machine_audit": {
+    "total_cells": 19,
+    "code_cells": 9,
+    "markdown_cells": 10,
+    "execution_counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "errors": 0,
+    "outputs": 9
+  },
+  "hashes": {
+    "source_sha256": "82a8f68ad71207e6819eddc9f7d9984c96f59e16e36dfe6644fec735ba54245f",
+    "executed_reference_sha256": "ac0cdbd360b63cf69ac72caebc3ff04990780876de2d7adc4630d411f288f85d"
+  },
+  "sizes_bytes": {
+    "source": 27602,
+    "executed_reference": 33025
+  },
+  "verdict": {
+    "CSR9_LOCAL_AUDIT_PASS": true,
+    "obstructions": []
+  },
+  "readiness": {
+    "components": {
+      "hypersurface_algebra_closed": true,
+      "global_gauge_generator_closed": true,
+      "first_class_sector_closed": true,
+      "sign_convention_reconciled": true,
+      "castellani_closure_pass": true,
+      "dof_count_computed": true,
+      "dof_count_classified": true,
+      "dof_routes_consistent": true,
+      "generic_branch_explicit": true
+    },
+    "CLASSICAL_CORE_STRUCTURAL_READINESS": true,
+    "CLASSICAL_SECTOR_READINESS_AUDITED": true,
+    "CLASSICAL_BENCHMARK_PROGRAM_AUTHORIZED": true
+  },
+  "benchmark_program": {
+    "sequence": [
+      "MINKOWSKI",
+      "WEAK_FIELD",
+      "SCHWARZSCHILD",
+      "KERR"
+    ],
+    "MINKOWSKI_BENCHMARK_AUTHORIZED": true,
+    "WEAK_FIELD_BENCHMARK_AUTHORIZED": false,
+    "SCHWARZSCHILD_BENCHMARK_AUTHORIZED": false,
+    "KERR_BENCHMARK_AUTHORIZED": false,
+    "minkowski_contract": {
+      "metric_candidate": "h_ij = delta_ij",
+      "lapse_candidate": "N = 1",
+      "shift_candidate": "N^i = 0",
+      "extra_GVH_fields": "MUST_BE_SOLVED_FROM_GVH_CONSTRAINTS_AND_EVOLUTION",
+      "constraint_residuals_required": true,
+      "evolution_residuals_required": true,
+      "second_class_surface_required": true,
+      "gauge_compatibility_required": true,
+      "branch_membership_required": true,
+      "no_ad_hoc_tuning": true
+    }
+  },
+  "locks": {
+    "CLASSICAL_PREDICTIONS_AUTHORIZED": false,
+    "QUANTIZATION_READY": false,
+    "WHEELER_DEWITT_GVH_READY": false,
+    "DISPERSION_READY": false,
+    "ASYMPTOTIC_FLATNESS_PROVEN": false,
+    "DEGENERATE_BRANCH_STATUS_CLASSIFIED": false,
+    "GLOBAL_TOPOLOGICAL_MODES_CLASSIFIED": false,
+    "BOUNDARY_CHARGES_CLASSIFIED": false
+  },
+  "next_authorized": "AUDIT-MINKOWSKI-CLASSICAL-VACUUM-BENCHMARK",
+  "note": "Reference execution only; user Colab execution should be audited before canonical freeze."
+}

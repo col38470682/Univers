@@ -1,0 +1,119 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.8_Global_GVH_DOF_Count_Audit_FAST",
+  "execution_scope": "GENERIC_BRANCH_BOR_FULL_CANONICAL_DOF_COUNT",
+  "upstream": {
+    "p337": {
+      "canonical_executed_sha256": "549e736c9d92274fbce31ac053d9f8e8373abdd7d1c07dc40ead7240a8821755",
+      "canonical_size_bytes": 41150,
+      "D_SIGN_CONVENTION_RECONCILED": true,
+      "HH_HD_DD_REEXPRESSION_CONSISTENT": true,
+      "RIGHT_DD_ANTI_HOM_JACOBI_COMPATIBLE": true,
+      "LAMBDA_REDUCED_ACTION_SCOPE_CLASSIFIED": true,
+      "GLOBAL_G_EXPLICIT_FORM_MATERIALIZED": true,
+      "REDUCED_CASTELLANI_CLOSURE_AUDIT_PASS": true,
+      "FULL_GAUGE_GENERATOR_CLASSIFIED": true,
+      "FULL_FIRST_CLASS_SECTOR_CLASSIFIED_SCIENTIFIC": true,
+      "FULL_GVH_DOF_COUNT_READY": true,
+      "FULL_GVH_DOF_COUNT_COMPUTED": false,
+      "GGA7_OBSTRUCTIONS": []
+    },
+    "p336": {
+      "canonical_executed_sha256": "29fa9a3c484aacf7efb946cf3909a88c3adf95c4b6a38d335b555b0b72d065f8"
+    },
+    "p335": {
+      "executed_sha256": "f23aad7b7aabdd6b7f70c2f5ca40f1791a67052b9aab1fa17812686a0728d0c8",
+      "global_dirac_bergmann_termination_generic_branch": true,
+      "quartet_second_class": true,
+      "quartet_strongly_eliminated_by_Dirac_bracket": true
+    },
+    "branch": {
+      "detQ_nonzero": true,
+      "Delta_FF_nonzero": true,
+      "BOR": "compact_without_boundary OR sufficient_decay OR boundary_conditions_killing_flux",
+      "degenerate_branch": "UNCLASSIFIED"
+    }
+  },
+  "canonical_inventory": {
+    "configuration_components": {
+      "h_ij_symmetric_3D": 6,
+      "s": 1,
+      "v_i": 3,
+      "lambda": 1,
+      "N": 1,
+      "N_i_shift": 3
+    },
+    "N_config_extended": 15,
+    "phase_dim_extended": 30
+  },
+  "constraints": {
+    "first_class": {
+      "primary": {
+        "p_N": 1,
+        "p_Ni": 3
+      },
+      "secondary": {
+        "H": 1,
+        "D_i": 3
+      },
+      "N_primary": 4,
+      "N_secondary": 4,
+      "N_total": 8,
+      "gauge_descriptors": 4
+    },
+    "second_class": {
+      "quartet": [
+        "p_lambda",
+        "chi",
+        "psi",
+        "rho_FF"
+      ],
+      "N_total": 4,
+      "p_lambda_first_class": false
+    }
+  },
+  "dof_routes": {
+    "route_A_extended": {
+      "phase_dim": 30,
+      "N_FC": 8,
+      "N_SC": 4,
+      "physical_phase_dim": 10,
+      "physical_config_dof": 5
+    },
+    "route_B_without_lapse_shift": {
+      "phase_dim": 22,
+      "N_FC": 4,
+      "N_SC": 4,
+      "physical_phase_dim": 10,
+      "physical_config_dof": 5
+    },
+    "route_C_second_class_first": {
+      "phase_dim_after_SC": 26,
+      "N_FC": 8,
+      "physical_phase_dim": 10,
+      "physical_config_dof": 5
+    },
+    "three_route_consistency_pass": true
+  },
+  "scientific_status": {
+    "DOF_COUNT_FORMULA_PASS": true,
+    "N_PHYSICAL_PHASE_SPACE_DOF": 10,
+    "N_PHYSICAL_CONFIGURATION_DOF": 5,
+    "FULL_GVH_DOF_COUNT_READY": true,
+    "FULL_GVH_DOF_COUNT_COMPUTED": true,
+    "FULL_GVH_DOF_COUNT_CLASSIFIED": true
+  },
+  "locks": {
+    "CLASSICAL_PREDICTIONS_AUTHORIZED": false,
+    "QUANTIZATION_READY": false,
+    "WHEELER_DEWITT_GVH_READY": false,
+    "DISPERSION_READY": false,
+    "ASYMPTOTIC_FLATNESS_PROVEN": false,
+    "DEGENERATE_BRANCH_STATUS_CLASSIFIED": false
+  },
+  "scope_note": "Canonical local field DOF count per spatial point on generic BOR branch; not a global topology/boundary mode count.",
+  "verdict": {
+    "DOF8_LOCAL_AUDIT_PASS": true,
+    "obstructions": []
+  },
+  "next_authorized": "AUDIT-CLASSICAL-SECTOR-READINESS"
+}

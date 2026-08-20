@@ -1,0 +1,97 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.9_Classical_Sector_Readiness_and_Benchmark_Authorization_Audit_FAST",
+  "execution_scope": "GENERIC_BRANCH_BOR_CLASSICAL_READINESS_ONLY",
+  "upstream": {
+    "p338": {
+      "canonical_executed_sha256": "81754c257e13f516071cef4e1976584a217b5fcf6749caeeda89708a304bc8ae",
+      "canonical_size_bytes": 26050,
+      "FULL_GVH_DOF_COUNT_COMPUTED": true,
+      "FULL_GVH_DOF_COUNT_CLASSIFIED": true,
+      "N_PHYSICAL_PHASE_SPACE_DOF": 10,
+      "N_PHYSICAL_CONFIGURATION_DOF": 5,
+      "THREE_ROUTE_DOF_CONSISTENCY_PASS": true,
+      "DOF8_OBSTRUCTIONS": [],
+      "CLASSICAL_PREDICTIONS_AUTHORIZED": false,
+      "QUANTIZATION_READY": false
+    },
+    "p337": {
+      "canonical_executed_sha256": "549e736c9d92274fbce31ac053d9f8e8373abdd7d1c07dc40ead7240a8821755",
+      "FULL_HYPERSURFACE_ALGEBRA_CLASSIFIED": true,
+      "FULL_GAUGE_GENERATOR_CLASSIFIED": true,
+      "FULL_FIRST_CLASS_SECTOR_CLASSIFIED_SCIENTIFIC": true,
+      "D_SIGN_CONVENTION_RECONCILED": true,
+      "HH_HD_DD_REEXPRESSION_CONSISTENT": true,
+      "REDUCED_CASTELLANI_CLOSURE_AUDIT_PASS": true,
+      "GGA7_OBSTRUCTIONS": []
+    },
+    "branch": {
+      "detQ_nonzero": true,
+      "Delta_FF_nonzero": true,
+      "BOR": "compact_without_boundary OR sufficient_decay OR boundary_conditions_killing_flux",
+      "degenerate_branch_status": "UNCLASSIFIED",
+      "asymptotic_flatness_proven": false
+    }
+  },
+  "readiness": {
+    "components": {
+      "hypersurface_algebra_closed": true,
+      "global_gauge_generator_closed": true,
+      "first_class_sector_closed": true,
+      "sign_convention_reconciled": true,
+      "castellani_closure_pass": true,
+      "dof_count_computed": true,
+      "dof_count_classified": true,
+      "dof_routes_consistent": true,
+      "generic_branch_explicit": true
+    },
+    "CLASSICAL_CORE_STRUCTURAL_READINESS": true,
+    "CLASSICAL_SECTOR_READINESS_AUDITED": true,
+    "CLASSICAL_BENCHMARK_PROGRAM_AUTHORIZED": true
+  },
+  "dof_discipline": {
+    "generic_local_configuration_dof": 5,
+    "graviton_plus_extra_decomposition_proven": false,
+    "mode_spectrum_classified": false,
+    "polarization_content_classified": false
+  },
+  "benchmark_program": {
+    "sequence": [
+      "MINKOWSKI",
+      "WEAK_FIELD",
+      "SCHWARZSCHILD",
+      "KERR"
+    ],
+    "MINKOWSKI_BENCHMARK_AUTHORIZED": true,
+    "WEAK_FIELD_BENCHMARK_AUTHORIZED": false,
+    "SCHWARZSCHILD_BENCHMARK_AUTHORIZED": false,
+    "KERR_BENCHMARK_AUTHORIZED": false,
+    "minkowski_contract": {
+      "metric_candidate": "h_ij = delta_ij",
+      "lapse_candidate": "N = 1",
+      "shift_candidate": "N^i = 0",
+      "extra_GVH_fields": "MUST_BE_SOLVED_FROM_GVH_CONSTRAINTS_AND_EVOLUTION",
+      "constraint_residuals_required": true,
+      "evolution_residuals_required": true,
+      "second_class_surface_required": true,
+      "gauge_compatibility_required": true,
+      "branch_membership_required": true,
+      "no_ad_hoc_tuning": true
+    }
+  },
+  "locks": {
+    "CLASSICAL_PREDICTIONS_AUTHORIZED": false,
+    "QUANTIZATION_READY": false,
+    "WHEELER_DEWITT_GVH_READY": false,
+    "DISPERSION_READY": false,
+    "ASYMPTOTIC_FLATNESS_PROVEN": false,
+    "DEGENERATE_BRANCH_STATUS_CLASSIFIED": false,
+    "GLOBAL_TOPOLOGICAL_MODES_CLASSIFIED": false,
+    "BOUNDARY_CHARGES_CLASSIFIED": false
+  },
+  "verdict": {
+    "CSR9_LOCAL_AUDIT_PASS": true,
+    "obstructions": []
+  },
+  "next_authorized": "AUDIT-MINKOWSKI-CLASSICAL-VACUUM-BENCHMARK",
+  "scope_note": "Readiness audit only. Does not establish any classical solution or physical prediction."
+}

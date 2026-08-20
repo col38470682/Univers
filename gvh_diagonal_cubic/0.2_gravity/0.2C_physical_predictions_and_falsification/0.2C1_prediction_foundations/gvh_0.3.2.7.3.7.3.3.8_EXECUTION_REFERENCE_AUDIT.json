@@ -1,0 +1,43 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.8_Global_GVH_DOF_Count_Audit_FAST_EXECUTED_REFERENCE.ipynb",
+  "machine_audit": {
+    "total_cells": 19,
+    "code_cells": 9,
+    "markdown_cells": 10,
+    "execution_counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "errors": 0,
+    "outputs": 9
+  },
+  "hashes": {
+    "source_sha256": "35abc8281e6cab1bfb2dfcb71c2574dd6a0da20fa011434c5f6f74055ebc0a3f",
+    "executed_reference_sha256": "0d0d6143e2d8d82e428b442c337cdd3a0f035e79c51597efc498b60e0e0167ca"
+  },
+  "sizes_bytes": {
+    "source": 24876,
+    "executed_reference": 29999
+  },
+  "scientific_status": {
+    "DOF_COUNT_FORMULA_PASS": true,
+    "N_PHYSICAL_PHASE_SPACE_DOF": 10,
+    "N_PHYSICAL_CONFIGURATION_DOF": 5,
+    "FULL_GVH_DOF_COUNT_READY": true,
+    "FULL_GVH_DOF_COUNT_COMPUTED": true,
+    "FULL_GVH_DOF_COUNT_CLASSIFIED": true
+  },
+  "verdict": {
+    "DOF8_LOCAL_AUDIT_PASS": true,
+    "obstructions": []
+  },
+  "next_authorized": "AUDIT-CLASSICAL-SECTOR-READINESS",
+  "note": "Reference execution only; user Colab execution should be audited before canonical freeze."
+}
