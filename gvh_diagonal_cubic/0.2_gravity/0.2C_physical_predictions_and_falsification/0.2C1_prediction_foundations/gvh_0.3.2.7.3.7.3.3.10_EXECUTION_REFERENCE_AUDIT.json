@@ -1,0 +1,27 @@
+{
+  "source_file": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.10_Minkowski_Classical_Vacuum_Benchmark_Audit_FAST.ipynb",
+  "executed_file": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.10_Minkowski_Classical_Vacuum_Benchmark_Audit_FAST_EXECUTED_REFERENCE.ipynb",
+  "source_size_bytes": 31673,
+  "executed_size_bytes": 37982,
+  "source_sha256": "5d2296e1dfeee6ccced47eac32c79384eb7cd6cd1771fc46d28d544abe5e7a60",
+  "executed_sha256": "0443132048bc04c01cc27879a767def9d3e4b4738f6104bf412b03e02989f939",
+  "cells_total": 19,
+  "code_cells": 9,
+  "execution_counts": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "error_count": 0,
+  "errors": [],
+  "output_count": 9,
+  "source_exact_after_execution": true,
+  "execution_exception": null,
+  "artifact_exists": true
+}

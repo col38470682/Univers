@@ -1,0 +1,101 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.10_Minkowski_Classical_Vacuum_Benchmark_Audit_FAST",
+  "execution_scope": "MINKOWSKI_VACUUM_GENERIC_COUPLING_SUBBRANCH_BOR",
+  "upstream": {
+    "p339": {
+      "canonical_executed_sha256": "5d4d6d3e24fd9fe56784c2afe8e5c0d5153dce10feeab90cb63ece00483a503a",
+      "canonical_size_bytes": 28979,
+      "CLASSICAL_CORE_STRUCTURAL_READINESS": true,
+      "CLASSICAL_SECTOR_READINESS_AUDITED": true,
+      "CLASSICAL_BENCHMARK_PROGRAM_AUTHORIZED": true,
+      "MINKOWSKI_BENCHMARK_AUTHORIZED": true,
+      "CLASSICAL_PREDICTIONS_AUTHORIZED": false,
+      "QUANTIZATION_READY": false,
+      "CSR9_OBSTRUCTIONS": []
+    },
+    "p338": {
+      "canonical_executed_sha256": "81754c257e13f516071cef4e1976584a217b5fcf6749caeeda89708a304bc8ae",
+      "FULL_GVH_DOF_COUNT_COMPUTED": true,
+      "N_PHYSICAL_CONFIGURATION_DOF": 5
+    },
+    "p337": {
+      "canonical_executed_sha256": "549e736c9d92274fbce31ac053d9f8e8373abdd7d1c07dc40ead7240a8821755",
+      "FULL_GAUGE_GENERATOR_CLASSIFIED": true,
+      "FULL_FIRST_CLASS_SECTOR_CLASSIFIED_SCIENTIFIC": true
+    }
+  },
+  "candidate": {
+    "h_ij": "delta_ij",
+    "N": 1,
+    "N_i": [
+      0,
+      0,
+      0
+    ],
+    "K_ij": "0",
+    "R3": 0,
+    "s": 1,
+    "v_i": [
+      0,
+      0,
+      0
+    ],
+    "canonical_momenta": "all zero",
+    "lambda_mult": 0
+  },
+  "branch": {
+    "detQ_M": "-8192*(c1 + c4)**3*(c1 + c3 - 1)**5*(c1**2 + 4*c1*c2 + 2*c1*c3 + c1*c4 + 2*c1 + 4*c2*c3 + 3*c2*c4 + 2*c2 + c3**2 + c3*c4 + 2*c3 + 2*c4)",
+    "Delta_FF_M": "-2*(c1 + 3*c2 + c3 + 2)/(c1**2 + 4*c1*c2 + 2*c1*c3 + c1*c4 + 2*c1 + 4*c2*c3 + 3*c2*c4 + 2*c2 + c3**2 + c3*c4 + 2*c3 + 2*c4)",
+    "F_M": "c1**2 + 4*c1*c2 + 2*c1*c3 + c1*c4 + 2*c1 + 4*c2*c3 + 3*c2*c4 + 2*c2 + c3**2 + c3*c4 + 2*c3 + 2*c4",
+    "conditions": {
+      "c1_plus_c4": "c1 + c4 != 0",
+      "c1_plus_c3_minus_1": "c1 + c3 - 1 != 0",
+      "F_M": "c1**2 + 4*c1*c2 + 2*c1*c3 + c1*c4 + 2*c1 + 4*c2*c3 + 3*c2*c4 + 2*c2 + c3**2 + c3*c4 + 2*c3 + 2*c4 != 0",
+      "Delta_numerator": "c1 + 3*c2 + c3 + 2 != 0"
+    },
+    "nonempty_witness": {
+      "c1": "1/10",
+      "c2": "1/5",
+      "c3": "3/10",
+      "c4": "2/5"
+    },
+    "nonempty": true,
+    "membership_classified": true
+  },
+  "constraints": {
+    "unit_norm_pass": true,
+    "psi_pass": true,
+    "rho_FF_pass_generic_subbranch": true,
+    "hamiltonian_pass": true,
+    "momentum_pass": true,
+    "primary_pass": true,
+    "all_pass_generic_subbranch": true
+  },
+  "dynamics": {
+    "projected_blocks_zero": true,
+    "vector_invariants_zero": true,
+    "vector_first_variation_zero": true,
+    "EH_flat_bulk_EOM_zero": true,
+    "evolution_EOM_pass_generic_subbranch": true
+  },
+  "scientific_status": {
+    "MINKOWSKI_GVH_VACUUM_BENCHMARK_PASS_GENERIC_SUBBRANCH": true,
+    "MINKOWSKI_GVH_VACUUM_BENCHMARK_PASS_ALL_COUPLINGS": false,
+    "MINKOWSKI_BENCHMARK_STATUS": "PASS_ON_EXPLICIT_GENERIC_COUPLING_SUBBRANCH",
+    "WEAK_FIELD_BENCHMARK_AUTHORIZED": true,
+    "SCHWARZSCHILD_BENCHMARK_AUTHORIZED": false,
+    "KERR_BENCHMARK_AUTHORIZED": false
+  },
+  "locks": {
+    "CLASSICAL_PREDICTIONS_AUTHORIZED": false,
+    "QUANTIZATION_READY": false,
+    "ASYMPTOTIC_FLATNESS_PROVEN": false,
+    "DEGENERATE_BRANCH_STATUS_CLASSIFIED": false
+  },
+  "verdict": {
+    "MINK10_LOCAL_AUDIT_PASS": true,
+    "obstructions": []
+  },
+  "next_authorized": "AUDIT-WEAK-FIELD-LINEARIZED-CLASSICAL-BENCHMARK",
+  "scope_note": "Minkowski vacuum verified on an explicit open generic coupling subbranch; not all couplings and not a weak-field/stability proof."
+}

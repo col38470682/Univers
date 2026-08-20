@@ -1,0 +1,27 @@
+{
+  "source_file": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.11_Weak_Field_Linearized_Classical_Benchmark_Audit_FAST.ipynb",
+  "executed_file": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.11_Weak_Field_Linearized_Classical_Benchmark_Audit_FAST_EXECUTED_REFERENCE.ipynb",
+  "source_size_bytes": 31047,
+  "executed_size_bytes": 37243,
+  "source_sha256": "0c65729f4c8f758796e0d060c891f14c984e1a436a34dedcbbc4fd82776be5ff",
+  "executed_sha256": "5eca50f346396ffab8670057c6dab7dab15d9df69cc89f146efa5a60b8136b65",
+  "cells_total": 21,
+  "code_cells": 10,
+  "execution_counts": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "error_count": 0,
+  "output_count": 10,
+  "source_exact_after_execution": true,
+  "execution_exception": null,
+  "artifact_exists": true
+}

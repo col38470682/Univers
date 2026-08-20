@@ -1,0 +1,101 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.11_Weak_Field_Linearized_Classical_Benchmark_Audit_FAST",
+  "execution_scope": "LINEARIZED_AROUND_MINKOWSKI_GENERIC_COUPLING_SUBBRANCH_BOR",
+  "upstream": {
+    "p3310": {
+      "canonical_user_executed_sha256": "7fb04c381ce4671a884be97453ca45926c5a7f8fc67496c7f9b8ca3babf10c66",
+      "canonical_user_executed_size_bytes": 33347,
+      "MINKOWSKI_GVH_VACUUM_BENCHMARK_PASS_GENERIC_SUBBRANCH": true,
+      "MINKOWSKI_GVH_VACUUM_BENCHMARK_PASS_ALL_COUPLINGS": false,
+      "MINKOWSKI_BENCHMARK_STATUS": "PASS_ON_EXPLICIT_GENERIC_COUPLING_SUBBRANCH",
+      "WEAK_FIELD_BENCHMARK_AUTHORIZED": true,
+      "CLASSICAL_PREDICTIONS_AUTHORIZED": false,
+      "QUANTIZATION_READY": false
+    },
+    "p338": {
+      "N_PHYSICAL_CONFIGURATION_DOF": 5,
+      "FULL_GVH_DOF_COUNT_COMPUTED": true
+    }
+  },
+  "linearized_constraint": {
+    "chi_1": "-2*sigma",
+    "sigma_linear": 0,
+    "pass": true
+  },
+  "linearized_blocks": {
+    "A1": "-sdot",
+    "B1": [
+      "dn1 + wd1",
+      "dn2 + wd2",
+      "dn3 + wd3"
+    ],
+    "C1": [
+      "-gs1",
+      "-gs2",
+      "-gs3"
+    ],
+    "D1": [
+      [
+        "gw0 + k11",
+        "gw1 + k12",
+        "gw2 + k13"
+      ],
+      [
+        "gw3 + k12",
+        "gw4 + k22",
+        "gw5 + k23"
+      ],
+      [
+        "gw6 + k13",
+        "gw7 + k23",
+        "gw8 + k33"
+      ]
+    ],
+    "materialized": true
+  },
+  "quadratic_vector_sector": {
+    "formula": "(c1+c4) B_i B_i - c1 D_ij D_ij - c2 (tr D)^2 - c3 D_ij D_ji",
+    "derived": true,
+    "crosscheck_pass": true
+  },
+  "tensor_sector": {
+    "kinetic_coefficient": "-c1 - c3 + 1",
+    "no_ghost_condition": "-c1 - c3 + 1 > 0",
+    "kinetic_classified": true,
+    "spatial_gradient_derived": false,
+    "dispersion_fully_classified": false,
+    "causality_classified": false
+  },
+  "pending": {
+    "SVT_DECOMPOSITION_MATERIALIZED": false,
+    "LINEARIZED_LAPSE_SHIFT_CONSTRAINTS_SOLVED": false,
+    "LINEARIZED_SECOND_CLASS_REDUCTION_MATERIALIZED": false,
+    "VECTOR_MODE_KINETICS_CLASSIFIED": false,
+    "SCALAR_MODE_KINETICS_CLASSIFIED": false,
+    "LINEARIZED_DOF_MATCH_PASS": false,
+    "STATIC_WEAK_FIELD_LIMIT_CLASSIFIED": false,
+    "POISSON_EQUATION_DERIVED": false,
+    "G_EFFECTIVE_DERIVED": false
+  },
+  "scientific_status": {
+    "WEAK_FIELD_CORE_LINEARIZATION_PASS": true,
+    "WEAK_FIELD_BENCHMARK_PASS": false,
+    "WEAK_FIELD_BENCHMARK_STATUS": "PARTIAL_PASS_LINEARIZATION_AND_TENSOR_KINETIC_ONLY",
+    "SCHWARZSCHILD_BENCHMARK_AUTHORIZED": false,
+    "CLASSICAL_PREDICTIONS_AUTHORIZED": false,
+    "QUANTIZATION_READY": false
+  },
+  "verdict": {
+    "WF11_LOCAL_AUDIT_PASS": true,
+    "obstructions": [
+      "DERIVE-NORMALIZED-TENSOR-GRADIENT-AND-DISPERSION",
+      "MATERIALIZE-SVT-DECOMPOSITION",
+      "SOLVE-LINEARIZED-LAPSE-SHIFT-CONSTRAINTS",
+      "MATERIALIZE-LINEARIZED-SECOND-CLASS-REDUCTION",
+      "MATCH-LINEARIZED-MODES-TO-5-CANONICAL-DOF",
+      "DERIVE-STATIC-POISSON-LIMIT-AND-G_EFFECTIVE"
+    ]
+  },
+  "next_authorized": "AUDIT-LINEARIZED-SVT-CONSTRAINT-REDUCTION-AND-TENSOR-DISPERSION",
+  "scope_note": "Partial weak-field audit: linearized norm constraint, projected blocks, quadratic vector sector and TT kinetic coefficient derived; full SVT reduction, dispersion and Poisson limit remain open."
+}
