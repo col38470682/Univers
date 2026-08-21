@@ -1,0 +1,26 @@
+{
+  "source_file": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.13_Linearized_Vector_Reduction_and_Static_Scalar_Poisson_Gate_Audit_FAST.ipynb",
+  "executed_file": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.13_Linearized_Vector_Reduction_and_Static_Scalar_Poisson_Gate_Audit_FAST_EXECUTED_REFERENCE.ipynb",
+  "source_size_bytes": 22826,
+  "executed_size_bytes": 29025,
+  "source_sha256": "adacda69627851063b3fda946bcb1a35b0388d4ea24ccf15181ef2e9cf2a95c1",
+  "executed_sha256": "839ebfb2bd6c231eeee1e5236d26fd87aa2c70f1ff6b973ca615dee4d9246f81",
+  "cells_total": 19,
+  "code_cells": 9,
+  "execution_counts": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "error_count": 0,
+  "output_count": 9,
+  "source_exact_after_execution": true,
+  "execution_exception": null,
+  "artifact_exists": true
+}

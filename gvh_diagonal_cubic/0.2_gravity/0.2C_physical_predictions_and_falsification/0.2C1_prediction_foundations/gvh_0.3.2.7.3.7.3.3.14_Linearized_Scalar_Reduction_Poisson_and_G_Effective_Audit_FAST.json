@@ -1,0 +1,64 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.14_Linearized_Scalar_Reduction_Poisson_and_G_Effective_Audit_FAST",
+  "execution_scope": "LINEARIZED_SCALAR_REDUCTION_POISSON_AND_G_EFFECTIVE_AROUND_MINKOWSKI",
+  "upstream": {
+    "p3313": {
+      "canonical_user_executed_sha256": "d023a17d2d3d7c19f43248f5bed24c0152632b19873dcb8614b4597a0ff23f75",
+      "canonical_user_executed_size_bytes": 25263,
+      "VECTOR_LINEARIZED_BENCHMARK_PASS": true,
+      "VECTOR_DISPERSION_CLASSIFIED": true,
+      "TENSOR_DOF": 2,
+      "VECTOR_DOF": 2,
+      "REMAINING_DOF": 1,
+      "WEAK_FIELD_BENCHMARK_PASS": false,
+      "WEAK_FIELD_BENCHMARK_STATUS": "PARTIAL_PASS_TENSOR_AND_VECTOR_CLASSIFIED_SCALAR_POISSON_PENDING",
+      "SCHWARZSCHILD_BENCHMARK_AUTHORIZED": false
+    }
+  },
+  "scalar_sector": {
+    "quadratic_action_fully_derived": true,
+    "lapse_shift_constraints_solved": true,
+    "reduced_action_crosscheck_pass": true,
+    "kinetic_coefficient": "-2*(c1 + c3 - 1)*(c1 + 3*c2 + c3 + 2)/(c1 + c2 + c3)",
+    "gradient_coefficient": "-2*(c1 + c4 - 2)/(c1 + c4)",
+    "speed_squared": "(c1 + c2 + c3)*(c1 + c4 - 2)/((c1 + c4)*(c1 + c3 - 1)*(c1 + 3*c2 + c3 + 2))",
+    "propagating_dof": 1,
+    "second_class_reduction_materialized": true
+  },
+  "dof": {
+    "tensor": 2,
+    "vector": 2,
+    "scalar": 1,
+    "total": 5,
+    "full_match_pass": true
+  },
+  "static_poisson": {
+    "bare_gravity_normalization": "S_grav=(16*pi*G0)^(-1) int N sqrt(h) [R3+KijKij-K^2+L_u]",
+    "physical_potential": "Phi=n",
+    "matter_linear_coupling": "-rho*n",
+    "poisson_equation_derived": true,
+    "G_effective": "-2*G0/(c1 + c4 - 2)",
+    "G_effective_derived": true,
+    "static_weak_field_limit_classified": true
+  },
+  "scientific_status": {
+    "SCALAR_LINEARIZED_BENCHMARK_PASS": true,
+    "WEAK_FIELD_BENCHMARK_PASS_GENERIC_STABLE_SUBBRANCH": true,
+    "WEAK_FIELD_BENCHMARK_PASS_ALL_COUPLINGS": false,
+    "WEAK_FIELD_BENCHMARK_STATUS": "PASS_ON_EXPLICIT_OPEN_STABLE_GENERIC_COUPLING_SUBBRANCH",
+    "SCHWARZSCHILD_BENCHMARK_AUTHORIZED": true,
+    "CLASSICAL_PREDICTIONS_AUTHORIZED": false,
+    "PPN_BENCHMARK_COMPLETED": false,
+    "OBSERVATIONAL_MODE_SPEED_VIABILITY_CLASSIFIED": false,
+    "QUANTIZATION_READY": false
+  },
+  "verdict": {
+    "SC14_LOCAL_AUDIT_PASS": true,
+    "obstructions_beyond_current_scope": [
+      "PPN-NOT-YET-AUDITED",
+      "OBSERVATIONAL-MODE-SPEED-VIABILITY-NOT-YET-AUDITED"
+    ]
+  },
+  "next_authorized": "AUDIT-SCHWARZSCHILD-CLASSICAL-VACUUM-BENCHMARK",
+  "scope_note": "Weak-field benchmark passes on an explicit open stable generic coupling subbranch; PPN/observational viability and Schwarzschild remain separate downstream audits."
+}

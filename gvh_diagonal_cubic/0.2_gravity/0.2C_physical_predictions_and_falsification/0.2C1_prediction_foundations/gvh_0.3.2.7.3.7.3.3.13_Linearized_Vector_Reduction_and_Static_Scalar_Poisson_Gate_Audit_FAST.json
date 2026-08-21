@@ -1,0 +1,67 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.13_Linearized_Vector_Reduction_and_Static_Scalar_Poisson_Gate_Audit_FAST",
+  "execution_scope": "LINEARIZED_VECTOR_REDUCTION_AND_STATIC_SCALAR_POISSON_GATE_AROUND_MINKOWSKI",
+  "upstream": {
+    "p3312": {
+      "canonical_user_executed_sha256": "5103796a063c7be1f7becc2ce9c9dfc455fb43e7a86af7e16b2821b97a5c17ce",
+      "canonical_user_executed_size_bytes": 23578,
+      "SVT_DECOMPOSITION_MATERIALIZED": true,
+      "TENSOR_DISPERSION_FULLY_CLASSIFIED": true,
+      "TENSOR_LINEARIZED_BENCHMARK_PASS": true,
+      "TENSOR_PROPAGATING_DOF": 2,
+      "NON_TENSOR_DOF_REMAINDER": 3,
+      "WEAK_FIELD_BENCHMARK_PASS": false,
+      "SCHWARZSCHILD_BENCHMARK_AUTHORIZED": false
+    }
+  },
+  "vector_sector": {
+    "quadratic_form_materialized": true,
+    "shift_constraint_solved": true,
+    "reduced_action_derived": true,
+    "reduced_action_crosscheck_pass": true,
+    "kinetic_coefficient": "c1 + c4",
+    "gradient_coefficient": "(c1**2 - 2*c1 - c3**2)/(2*(c1 + c3 - 1))",
+    "speed_squared": "(c1**2 - 2*c1 - c3**2)/(2*(c1 + c4)*(c1 + c3 - 1))",
+    "no_ghost_condition": "c1 + c4 > 0",
+    "no_gradient_instability_condition": "(c1**2 - 2*c1 - c3**2)/(2*(c1 + c3 - 1)) > 0",
+    "dispersion_classified": true,
+    "propagating_dof": 2
+  },
+  "dof": {
+    "total": 5,
+    "tensor": 2,
+    "vector": 2,
+    "remaining": 1,
+    "full_linearized_match_pass": false
+  },
+  "scalar_static": {
+    "quadratic_action_fully_derived": false,
+    "lapse_shift_constraints_solved": false,
+    "second_class_reduction_materialized": false,
+    "scalar_dof_classified": false,
+    "poisson_equation_derived": false,
+    "G_effective_derived": false,
+    "static_weak_field_limit_classified": false
+  },
+  "scientific_status": {
+    "VECTOR_LINEARIZED_BENCHMARK_PASS": true,
+    "WEAK_FIELD_BENCHMARK_PASS": false,
+    "WEAK_FIELD_BENCHMARK_STATUS": "PARTIAL_PASS_TENSOR_AND_VECTOR_CLASSIFIED_SCALAR_POISSON_PENDING",
+    "SCHWARZSCHILD_BENCHMARK_AUTHORIZED": false,
+    "CLASSICAL_PREDICTIONS_AUTHORIZED": false,
+    "QUANTIZATION_READY": false
+  },
+  "verdict": {
+    "VS13_LOCAL_AUDIT_PASS": true,
+    "obstructions": [
+      "DERIVE-FULL-LINEARIZED-SCALAR-QUADRATIC-ACTION",
+      "SOLVE-SCALAR-LAPSE-SHIFT-CONSTRAINTS",
+      "MATERIALIZE-SCALAR-SECOND-CLASS-REDUCTION",
+      "CLASSIFY-REMAINING-SCALAR-DOF",
+      "DERIVE-POISSON-EQUATION",
+      "DERIVE-G_EFFECTIVE"
+    ]
+  },
+  "next_authorized": "AUDIT-LINEARIZED-SCALAR-REDUCTION-POISSON-AND-G_EFFECTIVE",
+  "scope_note": "Tensor and transverse-vector sectors classified around Minkowski; scalar reduction and Poisson/G_eff remain open."
+}

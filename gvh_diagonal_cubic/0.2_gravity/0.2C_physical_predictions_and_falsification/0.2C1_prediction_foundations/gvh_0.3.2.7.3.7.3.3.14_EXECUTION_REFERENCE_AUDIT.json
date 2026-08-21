@@ -1,0 +1,30 @@
+{
+  "source_file": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.14_Linearized_Scalar_Reduction_Poisson_and_G_Effective_Audit_FAST.ipynb",
+  "executed_file": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.14_Linearized_Scalar_Reduction_Poisson_and_G_Effective_Audit_FAST_EXECUTED_REFERENCE.ipynb",
+  "source_size_bytes": 36766,
+  "executed_size_bytes": 45379,
+  "source_sha256": "2aa3d934f88f1a1189556f18a59be029bb3a6c27bfaa8dbb3963ac3d73f1b16e",
+  "executed_sha256": "f4a0b60261f98b547a001f29ae49290a0307709400cc1b7ae062966274bcb9a2",
+  "cells_total": 27,
+  "code_cells": 13,
+  "execution_counts": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "error_count": 0,
+  "output_count": 13,
+  "source_exact_after_execution": true,
+  "execution_exception": null,
+  "artifact_exists": true
+}
