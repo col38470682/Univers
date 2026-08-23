@@ -1,0 +1,51 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.15_Schwarzschild_Classical_Vacuum_Benchmark_Audit_FAST",
+  "execution_scope": "SCHWARZSCHILD_STATIC_ALIGNED_GVH_VECTOR_CANDIDATE",
+  "upstream": {
+    "p3314": {
+      "canonical_user_executed_sha256": "ad810c82515ea7cae7462894a07351936644e760ebc2ea97f965182302d8e886",
+      "canonical_user_executed_size_bytes": 39056,
+      "WEAK_FIELD_BENCHMARK_PASS_GENERIC_STABLE_SUBBRANCH": true,
+      "WEAK_FIELD_BENCHMARK_PASS_ALL_COUPLINGS": false,
+      "SCHWARZSCHILD_BENCHMARK_AUTHORIZED": true,
+      "CLASSICAL_PREDICTIONS_AUTHORIZED": false
+    }
+  },
+  "gr_geometry": {
+    "ricci4_zero": true,
+    "R3_zero": true,
+    "Kij_zero": true
+  },
+  "aligned_vector": {
+    "a_r": "M/(r*(-2*M + r))",
+    "a_squared": "M**2/(r**3*(-2*M + r))",
+    "L_u": "M**2*(c1 + c4)/(r**3*(-2*M + r))",
+    "lagrangian_crosscheck_pass": true
+  },
+  "lapse_obstruction": {
+    "EL_residual": "M**2*(c1 + c4)/(sqrt(r)*(-2*M + r)**(3/2))",
+    "EL_over_c1_plus_c4": "M**2/(sqrt(r)*(-2*M + r)**(3/2))",
+    "requires_c1_plus_c4_zero": true
+  },
+  "branch_compatibility": {
+    "weak_field_requires": "c1+c4>0",
+    "static_aligned_requires": "c1+c4=0",
+    "compatible": false
+  },
+  "scientific_status": {
+    "SCHWARZSCHILD_GR_GEOMETRY_VERIFIED": true,
+    "SCHWARZSCHILD_STATIC_ALIGNED_VECTOR_CANDIDATE_CLASSIFIED": true,
+    "SCHWARZSCHILD_BENCHMARK_PASS": false,
+    "SCHWARZSCHILD_BENCHMARK_STATUS": "STATIC_ALIGNED_VECTOR_CANDIDATE_REFUTED_ON_STABLE_WEAK_FIELD_BRANCH_GENERAL_RADIAL_VECTOR_PENDING",
+    "KERR_BENCHMARK_AUTHORIZED": false
+  },
+  "verdict": {
+    "SCH15_LOCAL_AUDIT_PASS": true,
+    "obstructions": [
+      "GENERAL-SPHERICALLY-SYMMETRIC-RADIAL-GVH-VECTOR-NOT-YET-CLASSIFIED",
+      "FULL-SCHWARZSCHILD-GVH-FIELD-EQUATIONS-NOT-YET-CLOSED"
+    ]
+  },
+  "next_authorized": "AUDIT-GENERAL-SPHERICALLY-SYMMETRIC-SCHWARZSCHILD-RADIAL-VECTOR-ANSATZ",
+  "scope_note": "Static aligned Schwarzschild GVH-vector candidate refuted on stable weak-field branch; general radial vector remains open."
+}

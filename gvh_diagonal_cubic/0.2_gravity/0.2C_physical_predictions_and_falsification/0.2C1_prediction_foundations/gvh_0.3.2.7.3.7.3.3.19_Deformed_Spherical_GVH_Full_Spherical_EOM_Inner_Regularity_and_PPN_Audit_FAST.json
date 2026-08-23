@@ -1,0 +1,84 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.19_Deformed_Spherical_GVH_Full_Spherical_EOM_Inner_Regularity_and_PPN_Audit_FAST",
+  "execution_scope": "DEFORMED_SPHERICAL_FULL_SPHERICAL_EOM_INNER_REGULARITY_PPN",
+  "upstream": {
+    "p3318": {
+      "canonical_user_executed_sha256": "972013adffb4b231fa628cddb5ecb109a95c07ab316b2770c9e93425152e973f",
+      "canonical_user_executed_size_bytes": 42036,
+      "CLASSICAL_CORE_REPAIR_CANDIDATE_FOUND": true,
+      "EXACT_SCHWARZSCHILD_BENCHMARK_PASS": false,
+      "DEFORMED_SPHERICAL_GVH_BENCHMARK_AUTHORIZED": true,
+      "KERR_BENCHMARK_AUTHORIZED": false,
+      "REAL_DATA_PARAMETER_INFERENCE_AUTHORIZED": false,
+      "NEXT_AUTHORIZED": "AUDIT-DEFORMED-SPHERICAL-GVH-VACUUM-FULL-EQUATIONS-INNER-REGULARITY-AND-PPN"
+    }
+  },
+  "spherical_eom": {
+    "varied_before_areal_gauge": [
+      "N(r)",
+      "A(r)",
+      "R(r)"
+    ],
+    "aligned_vector_first_variation_zero": true,
+    "metric_eom_crosscheck_pass": true,
+    "full_spherically_symmetric_variational_eom_crosscheck_pass": true,
+    "route_D_equations": {
+      "A_squared": "P(y)=1+2y+(c/2)y^2",
+      "y_ode": "r y'=-y P(y)"
+    }
+  },
+  "inner_geometry": {
+    "Ricci_scalar": "-2*c*y**2/(r**2*(c*y**2 + 4*y + 2))",
+    "Ricci_squared": "4*c**2*y**4/(r**4*(c*y**2 + 4*y + 2)**2)",
+    "Kretschmann": "4*y**2*(3*c**2*y**2 + 16*c*y + 48)/(r**4*(c*y**2 + 4*y + 2)**2)",
+    "inner_limits": {
+      "R": "-2/r_min**2",
+      "Ricci_squared": "4/r_min**4",
+      "Kretschmann": "12/r_min**4"
+    },
+    "inner_curvature_regularity_pass": true,
+    "local_throat_extension_pass": true,
+    "global_two_sided_extension_classified": false
+  },
+  "ppn": {
+    "isotropic_x_of_s": "c*s**4/6 - c*s**3/8 - s**4/2 + 3*s**3/4 - s**2 + s",
+    "g00": "-c*s**3/12 + 3*s**3/2 - 2*s**2 + 2*s - 1",
+    "B_squared": "c*s**2/4 + 3*s**2/2 + 2*s + 1",
+    "gamma": "1",
+    "beta": "1",
+    "standard_ppn_gamma_beta_classified": true,
+    "preferred_frame_alpha1_classified": false,
+    "preferred_frame_alpha2_classified": false
+  },
+  "coupling_ledger": {
+    "route_D_strong_field": "c14=c1+c4",
+    "tensor_speed": "c13=c1+c3",
+    "tensor_speed_squared_inherited": "1/(1-c13)",
+    "direct_c13_to_c14_identification_authorized": false
+  },
+  "scientific_status": {
+    "DEFORMED_SPHERICAL_ROUTE_D_EXTERIOR_EOM_PASS": true,
+    "DEFORMED_SPHERICAL_ROUTE_D_LOCAL_INNER_REGULARITY_PASS": true,
+    "DEFORMED_SPHERICAL_ROUTE_D_STANDARD_PPN_PASS": true,
+    "FULL_ARBITRARY_4D_COVARIANT_TENSOR_EOM_INDEPENDENTLY_CROSSCHECKED": false,
+    "GLOBAL_TWO_SIDED_EXTENSION_PASS": false,
+    "PREFERRED_FRAME_PPN_CLASSIFIED": false,
+    "EXACT_SCHWARZSCHILD_BENCHMARK_PASS": false,
+    "DEFORMED_SPHERICAL_GVH_BENCHMARK_AUTHORIZED": true,
+    "DEFORMED_SPHERICAL_GVH_BENCHMARK_PASS": false,
+    "KERR_BENCHMARK_AUTHORIZED": false,
+    "REAL_DATA_PARAMETER_INFERENCE_AUTHORIZED": false,
+    "QUANTIZATION_READY": false
+  },
+  "verdict": {
+    "PPN19_LOCAL_AUDIT_PASS": true,
+    "obstructions": [
+      "GLOBAL-TWO-SIDED-INNER-EXTENSION-NOT-YET-CLASSIFIED",
+      "FULL-ARBITRARY-4D-COVARIANT-TENSOR-EOM-NOT-INDEPENDENTLY-CROSSCHECKED",
+      "PREFERRED-FRAME-PPN-ALPHA1-ALPHA2-NOT-YET-DERIVED",
+      "REAL-DATA-BOUND-ON-c14-NOT-AUTHORIZED"
+    ]
+  },
+  "next_authorized": "AUDIT-DEFORMED-SPHERICAL-GVH-GLOBAL-INNER-EXTENSION-FULL-4D-COVARIANT-CROSSCHECK-AND-2PN-OBSERVABLES",
+  "scope_note": "PASS is local/spherical: independent spherical metric equations and aligned vector first variation close; inner curvature is finite and a local throat extension exists; gamma=beta=1 at standard PPN. Full arbitrary 4D tensor crosscheck, global second-side extension, preferred-frame PPN and real-data inference remain locked."
+}

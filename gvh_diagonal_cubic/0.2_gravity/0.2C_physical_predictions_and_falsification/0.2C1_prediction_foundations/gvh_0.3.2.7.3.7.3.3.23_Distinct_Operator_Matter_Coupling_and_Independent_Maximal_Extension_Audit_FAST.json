@@ -1,0 +1,105 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.23_Distinct_Operator_Matter_Coupling_and_Independent_Maximal_Extension_Audit_FAST",
+  "execution_scope": "DISTINCT_OPERATOR_MATTER_COUPLING_AND_INDEPENDENT_MAXIMAL_EXTENSION",
+  "upstream": {
+    "p3322": {
+      "canonical_user_executed_sha256": "b6b3719e759d4ae0203b400e32c28bceb56c84e8c3e9030e4e750ae8faf55a27",
+      "canonical_user_executed_size_bytes": 37007,
+      "GVH_DISTINCT_PHYSICS_BEYOND_EA_MATERIALIZED": false,
+      "GVH_MATTER_SECTOR_DISTINCTNESS_FOUND": false,
+      "EXACT_STRONG_FIELD_OBSERVABLES_MATERIALIZED": true,
+      "EXACT_STRONG_FIELD_OBSERVABLES_GVH_DISTINCT": false,
+      "STATIC_CHART_CONTINUATION_FAIL": true,
+      "P3320_P3321_MAXIMAL_GLOBAL_LORENTZIAN_NO_GO_CLAIM_RETRACTED": true,
+      "INTERNAL_MAXIMAL_ANALYTIC_EXTENSION_INDEPENDENTLY_VERIFIED": false,
+      "REAL_DATA_EA_REPRODUCTION_STUDY_AUTHORIZED": true,
+      "REAL_DATA_GVH_NOVELTY_INFERENCE_AUTHORIZED": false,
+      "KERR_GVH_NOVELTY_BENCHMARK_AUTHORIZED": false,
+      "NEXT_AUTHORIZED": "AUDIT-GVH-DISTINCT-OPERATOR-OR-MATTER-COUPLING-AND-INDEPENDENT-MAXIMAL-EXTENSION"
+    }
+  },
+  "distinctness": {
+    "criteria": {
+      "D1_covariant_action_term_explicit": false,
+      "D2_GVH_principle_fixes_structure": false,
+      "D3_nonredundancy_vs_EA_EFT_proven": false,
+      "D4_constraints_and_DOF_reaudited": false,
+      "D5_EA_GR_limit_controlled": false,
+      "D6_distinct_falsifiable_observable": false
+    },
+    "GVH_distinct_operator_qualified": false,
+    "GVH_distinct_matter_coupling_qualified": false,
+    "D_munu_exploratory_track_exists": true,
+    "D_munu_candidate_authorized_for_isolated_draft": true,
+    "D_munu_integration_into_validated_core_authorized": false,
+    "generic_higher_derivative_operator_by_itself_is_GVH_unique": false,
+    "direct_u_matter_coupling_by_itself_is_GVH_unique": false
+  },
+  "coordinate_equivalence": {
+    "y_of_rho": "-(rho**mu - 1)*(rho**mu + 1)/(mu*rho**(2*mu) + mu + rho**(2*mu) - 1)",
+    "z_of_rho": "-(mu*rho**(2*mu) + mu + rho**(2*mu) - 1)/((rho**mu - 1)*(rho**mu + 1))",
+    "boundary_zplus_map_pass": true,
+    "throat_map_z_zero_pass": true,
+    "routeD_ZhuLi_metric_identity_pass": true
+  },
+  "maximal_extension": {
+    "curvature_threshold_c14": "3/2",
+    "0<c14<3/2": "extremal Killing horizon plus curvature singularity; regular extension not validated",
+    "c14=3/2": "finite-curvature extremal horizon; alpha=1 gamma=2 analytic extension witness passes",
+    "3/2<c14<2": "finite/vanishing-curvature extremal horizon; discrete analytic branch family materialized; generic smooth gluing only literature-recorded",
+    "discrete_analytic_family": "mu=(2n-1)/(2m), m>n>=1; c14=2-(2n-1)^2/(2m^2)",
+    "discrete_examples": [
+      [
+        "1",
+        "2",
+        "1/4",
+        "15/8",
+        "3",
+        "4/3"
+      ],
+      [
+        "2",
+        "3",
+        "1/2",
+        "3/2",
+        "1",
+        "2"
+      ],
+      [
+        "2",
+        "4",
+        "3/8",
+        "55/32",
+        "5/3",
+        "8/5"
+      ]
+    ],
+    "generic_all_couplings_analytic_pass": false,
+    "full_maximal_extension_field_equations_independently_rederived": false
+  },
+  "locks": {
+    "real_data_EA_reproduction_study_authorized": true,
+    "real_data_GVH_novelty_inference_authorized": false,
+    "Kerr_GVH_novelty_benchmark_authorized": false,
+    "quantization_as_distinct_GVH_theory_ready": false
+  },
+  "verdict": {
+    "G23_AUDIT_PASS": true,
+    "GVH_DISTINCTNESS_GATE_PASS": false,
+    "obstructions": [
+      "NO-QUALIFIED-GVH-DISTINCT-OPERATOR-YET",
+      "NO-QUALIFIED-GVH-DISTINCT-MATTER-COUPLING-YET",
+      "D-MUNU-REMAINS-EXPLORATORY-NOT-IN-VALIDATED-ACTION",
+      "0<C14<3/2-HAS-CURVATURE-SINGULAR-EXTREMAL-HORIZON",
+      "GENERIC-ALL-COUPLING-ANALYTIC-BRANCH-NOT-PROVEN",
+      "FULL-MAXIMAL-EXTENSION-FIELD-EQUATIONS-NOT-INDEPENDENTLY-REDERIVED"
+    ]
+  },
+  "external_references": [
+    "J. Zhu & H. Li, arXiv:2606.27995 (2026)",
+    "B. Withers, arXiv:0905.2446 (2009)",
+    "A. Balakin & J. P. S. Lemos, arXiv:1407.6014 (2014)"
+  ],
+  "next_authorized": "FORMALIZE-GVH-DIRECTIONAL-D-MUNU-COVARIANT-ACTION-CANDIDATE-AND-NONREDUNDANCY-AUDIT",
+  "scope_note": "No GVH-distinct operator or matter coupling is qualified in the validated core. The exploratory D_munu track is authorized only for isolated formalization. The route-D/Zhu-Li coordinate map is independently reproduced, including throat/internal-infinity mapping and the c14=3/2 curvature threshold. A clean analytic extension witness is verified at c14=3/2 and a discrete analytic family is materialized, but a generic analytic PASS for all 0<c14<2 is not granted."
+}

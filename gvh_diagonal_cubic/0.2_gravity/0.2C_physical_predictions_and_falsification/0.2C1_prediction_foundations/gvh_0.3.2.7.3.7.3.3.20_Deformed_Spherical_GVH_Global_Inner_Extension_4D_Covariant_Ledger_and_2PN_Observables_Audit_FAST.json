@@ -1,0 +1,78 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.20_Deformed_Spherical_GVH_Global_Inner_Extension_4D_Covariant_Ledger_and_2PN_Observables_Audit_FAST",
+  "execution_scope": "DEFORMED_SPHERICAL_GLOBAL_INNER_EXTENSION_4D_LEDGER_2PN_OBSERVABLES",
+  "upstream": {
+    "p3319": {
+      "canonical_user_executed_sha256": "daff136b151f86d1d51a025ef94365a758690c4a7d6e6f0661f3b4ab92928602",
+      "canonical_user_executed_size_bytes": 37280,
+      "FULL_SPHERICALLY_SYMMETRIC_VARIATIONAL_EOM_CROSSCHECK_PASS": true,
+      "INNER_CURVATURE_REGULARITY_PASS": true,
+      "LOCAL_INNER_THROAT_EXTENSION_PASS": true,
+      "GLOBAL_TWO_SIDED_EXTENSION_CLASSIFIED": false,
+      "STANDARD_PPN_GAMMA_BETA_CLASSIFIED": true,
+      "PPN_GAMMA": 1,
+      "PPN_BETA": 1,
+      "DEFORMED_SPHERICAL_GVH_BENCHMARK_PASS": false,
+      "KERR_BENCHMARK_AUTHORIZED": false,
+      "REAL_DATA_PARAMETER_INFERENCE_AUTHORIZED": false,
+      "NEXT_AUTHORIZED": "AUDIT-DEFORMED-SPHERICAL-GVH-GLOBAL-INNER-EXTENSION-FULL-4D-COVARIANT-CROSSCHECK-AND-2PN-OBSERVABLES"
+    }
+  },
+  "global_extension": {
+    "Q_z": "(c + 2*z**2 + 4*z)/2",
+    "z_plus": "sqrt(4 - 2*c)/2 - 1",
+    "z_minus": "-sqrt(4 - 2*c)/2 - 1",
+    "second_end": {
+      "r": "infinity",
+      "N": "0",
+      "A_squared": "0",
+      "metric_curvature": "tends to zero",
+      "null_affine_distance": "finite"
+    },
+    "a_squared_exponent": "-2 + sqrt(2)/sqrt(2 - c)",
+    "classification_by_c": {
+      "0<c<3/2": "a^2 diverges; second end at finite proper distance",
+      "c=3/2": "a^2 finite; proper distance logarithmically infinite",
+      "3/2<c<2": "a^2 -> 0; proper distance infinite"
+    },
+    "global_two_sided_extension_classified": true,
+    "global_two_sided_lorentzian_extension_pass": false,
+    "route_D_global_vacuum_completion_pass": false,
+    "one_sided_asymptotic_exterior_remains_valid": true
+  },
+  "four_d_ledger": {
+    "spherical_covariant_component_completeness": true,
+    "spherical_vector_radial_component_completeness": true,
+    "full_arbitrary_4D_covariant_tensor_EOM_independently_crosschecked": false
+  },
+  "two_pn": {
+    "optical_index": "c*s**2/8 + 7*s**2/4 + 2*s + 1",
+    "light_deflection": "4 M/b + (15*pi/4 + pi*c14/8)(M/b)^2 + O((M/b)^3)",
+    "light_deflection_pass": true,
+    "circular_orbit_frequency": "Omega^2=(M/r^3)[1+(c14/4)(M/r)^2+O((M/r)^3)]",
+    "circular_orbit_frequency_pass": true,
+    "observables_materialized": true
+  },
+  "scientific_status": {
+    "DEFORMED_SPHERICAL_GVH_EXTERIOR_SPHERICAL_BENCHMARK_PASS": true,
+    "DEFORMED_SPHERICAL_GVH_GLOBAL_VACUUM_BENCHMARK_PASS": false,
+    "DEFORMED_SPHERICAL_GVH_BENCHMARK_PASS": false,
+    "INTERIOR_MATTER_MATCHING_CLASSIFIED": false,
+    "PREFERRED_FRAME_PPN_CLASSIFIED": false,
+    "REAL_DATA_PARAMETER_INFERENCE_AUTHORIZED": false,
+    "KERR_BENCHMARK_AUTHORIZED": false,
+    "QUANTIZATION_READY": false
+  },
+  "verdict": {
+    "G20_LOCAL_AUDIT_PASS": true,
+    "obstructions": [
+      "GLOBAL-TWO-SIDED-VACUUM-LORENTZIAN-COMPLETION-FAILS",
+      "FULL-ARBITRARY-4D-COVARIANT-TENSOR-EOM-NOT-INDEPENDENTLY-CROSSCHECKED",
+      "INTERIOR-MATTER-MATCHING-NOT-YET-CLASSIFIED",
+      "PREFERRED-FRAME-PPN-ALPHA1-ALPHA2-NOT-YET-DERIVED",
+      "REAL-DATA-INFERENCE-NOT-YET-AUTHORIZED"
+    ]
+  },
+  "next_authorized": "AUDIT-DEFORMED-SPHERICAL-GVH-INTERIOR-MATCHING-FULL-4D-COVARIANT-CROSSCHECK-AND-PREFERRED-FRAME-PPN",
+  "scope_note": "Route D passes as a one-sided asymptotically-flat spherical exterior in the tested variational/PPN/2PN scope, but fails as a globally complete two-sided Lorentzian vacuum. Full arbitrary-4D tensor EOM crosscheck, interior matter matching and preferred-frame PPN remain open; real-data inference stays locked."
+}

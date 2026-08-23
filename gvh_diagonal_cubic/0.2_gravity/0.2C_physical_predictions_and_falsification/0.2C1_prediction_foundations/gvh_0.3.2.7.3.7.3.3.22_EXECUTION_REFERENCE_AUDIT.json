@@ -1,0 +1,28 @@
+{
+  "source_file": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.22_GVH_Distinctness_Beyond_Einstein_Aether_Matter_Sector_and_Exact_Strong_Field_Observables_Audit_FAST.ipynb",
+  "executed_file": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.22_GVH_Distinctness_Beyond_Einstein_Aether_Matter_Sector_and_Exact_Strong_Field_Observables_Audit_FAST_EXECUTED_REFERENCE.ipynb",
+  "source_size_bytes": 35474,
+  "executed_size_bytes": 42587,
+  "source_sha256": "bf2148685ccd2c86b5d2f0e6d802211eb33d32030d93256f87cef08a566c6608",
+  "executed_sha256": "268e3954195db531df974e7b40b034d0e61065f1f96b10adca584010d154a545",
+  "cells_total": 21,
+  "code_cells": 10,
+  "markdown_cells": 11,
+  "execution_counts": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "error_count": 0,
+  "output_count": 10,
+  "source_exact_after_execution": true,
+  "execution_exception": null,
+  "artifact_exists": true
+}

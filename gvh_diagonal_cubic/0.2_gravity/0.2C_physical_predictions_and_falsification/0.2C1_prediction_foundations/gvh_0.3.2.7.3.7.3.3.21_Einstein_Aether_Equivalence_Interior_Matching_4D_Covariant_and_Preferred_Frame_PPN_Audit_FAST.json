@@ -1,0 +1,100 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.21_Einstein_Aether_Equivalence_Interior_Matching_4D_Covariant_and_Preferred_Frame_PPN_Audit_FAST",
+  "execution_scope": "EA_EQUIVALENCE_INTERIOR_MATCHING_4D_COVARIANT_PREFERRED_FRAME_PPN",
+  "upstream": {
+    "p3320": {
+      "canonical_user_executed_sha256": "b1b092d7e0b2ac7d2e60dec84ba71e3984df01a38ac2a922bdb9d1107e39b368",
+      "canonical_user_executed_size_bytes": 36150,
+      "DEFORMED_SPHERICAL_GVH_EXTERIOR_SPHERICAL_BENCHMARK_PASS": true,
+      "DEFORMED_SPHERICAL_GVH_GLOBAL_VACUUM_BENCHMARK_PASS": false,
+      "GLOBAL_TWO_SIDED_EXTENSION_CLASSIFIED": true,
+      "GLOBAL_TWO_SIDED_LORENTZIAN_EXTENSION_PASS": false,
+      "TWO_PN_OBSERVABLES_MATERIALIZED": true,
+      "FULL_ARBITRARY_4D_COVARIANT_TENSOR_EOM_INDEPENDENTLY_CROSSCHECKED": false,
+      "REAL_DATA_PARAMETER_INFERENCE_AUTHORIZED": false,
+      "KERR_BENCHMARK_AUTHORIZED": false,
+      "NEXT_AUTHORIZED": "AUDIT-DEFORMED-SPHERICAL-GVH-INTERIOR-MATCHING-FULL-4D-COVARIANT-CROSSCHECK-AND-PREFERRED-FRAME-PPN"
+    }
+  },
+  "external_references": [
+    {
+      "authors": "B. Z. Foster, T. Jacobson",
+      "title": "Post-Newtonian parameters and constraints on Einstein-aether theory",
+      "journal": "Phys. Rev. D 73, 064015 (2006)",
+      "arxiv": "gr-qc/0509083"
+    },
+    {
+      "authors": "C. Eling, T. Jacobson",
+      "title": "Spherical Solutions in Einstein-Aether Theory: Static Aether and Stars",
+      "arxiv": "gr-qc/0603058"
+    },
+    {
+      "authors": "J. Oost, S. Mukohyama, A. Wang",
+      "title": "Spherically symmetric exact vacuum solutions in Einstein-aether theory",
+      "arxiv": "2106.09044"
+    }
+  ],
+  "p3320_correction": {
+    "second_end_curvature_zero_global_claim_retracted": true,
+    "global_two_sided_lorentzian_fail_unchanged": true,
+    "classification": {
+      "0<c14<3/2": "R, Ricci^2 and Kretschmann diverge at second end",
+      "c14=3/2": "curvature invariants approach finite nonzero limits",
+      "3/2<c14<2": "curvature invariants tend to zero"
+    }
+  },
+  "equivalence": {
+    "action_coefficient_equivalence_pass": true,
+    "convention_crosscheck_pass": true,
+    "full_4D_covariant_action_equivalence_to_Einstein_aether": true,
+    "full_4D_covariant_crosscheck_by_action_equivalence": true,
+    "full_arbitrary_4D_tensor_EOM_independently_rederived": false,
+    "route_D_matches_known_static_aether_family": true
+  },
+  "ppn": {
+    "gamma": "1",
+    "beta": "1",
+    "xi": "0",
+    "alpha3": "0",
+    "zeta1": "0",
+    "zeta2": "0",
+    "zeta3": "0",
+    "zeta4": "0",
+    "alpha1": "8*(c1*c4 + c3**2)/(c1**2 - 2*c1 - c3**2)",
+    "alpha2": "(2*c1**4 + 3*c1**3*c2 + 5*c1**3*c3 + 3*c1**3*c4 - 4*c1**3 + 6*c1**2*c2*c3 + c1**2*c2*c4 - 6*c1**2*c2 + 4*c1**2*c3**2 + 5*c1**2*c3*c4 - 10*c1**2*c3 + 3*c1**2*c4**2 - 6*c1**2*c4 + c1*c2*c3**2 - 12*c1*c2*c3 + 4*c1*c2*c4**2 - 2*c1*c2*c4 - c1*c3**3 + 5*c1*c3**2*c4 - 12*c1*c3**2 + 4*c1*c3*c4**2 - 10*c1*c3*c4 + 2*c1*c4**2 - 6*c2*c3**3 + 7*c2*c3**2*c4 - 8*c2*c3**2 - 2*c3**4 + 3*c3**3*c4 - 8*c3**3 + c3**2*c4**2)/((c1 + c2 + c3)*(c1 + c4 - 2)*(c1**2 - 2*c1 - c3**2))",
+    "alpha1_zero_surface": "c4=-c3^2/c1",
+    "alpha2_zero_nondegenerate_surface": "c2=(-2*c1^2-c1*c3+c3^2)/(3*c1)",
+    "c14_on_alpha1_zero_surface": "(c1 - c3)*(c1 + c3)/c1",
+    "preferred_frame_ppn_classified": true
+  },
+  "interior_matching": {
+    "metric_boundary_data_materialized": true,
+    "A_star_squared": "(c1*y_star**2 + c4*y_star**2 + 4*y_star + 2)/2",
+    "Nprime_over_N_star": "y_star/R_star",
+    "EA_regular_star_interior_existence_literature_supported": true,
+    "GVH_internal_matter_matching_existence_pass": false
+  },
+  "novelty": {
+    "GVH_covariant_vector_tensor_sector_distinct_from_EA": false,
+    "route_D_novel_as_distinct_metric_family": false,
+    "GVH_distinctness_requires_additional_structure_beyond_EA": true
+  },
+  "locks": {
+    "real_data_parameter_inference_authorized": false,
+    "Kerr_benchmark_authorized": false,
+    "quantization_ready": false
+  },
+  "verdict": {
+    "G21_AUDIT_PASS": true,
+    "obstructions": [
+      "P3320-SECOND-END-CURVATURE-ZERO-GLOBAL-CLAIM-RETRACTED",
+      "ROUTE-D-IS-KNOWN-EINSTEIN-AETHER-STATIC-AETHER-FAMILY-NOT-A-NEW-METRIC-FAMILY",
+      "GVH-DISTINCT-PHYSICS-BEYOND-EINSTEIN-AETHER-NOT-YET-MATERIALIZED",
+      "GVH-INTERNAL-MATTER-SECTOR-NOT-YET-SPECIFIED-FOR-INTERIOR-MATCHING",
+      "FULL-ARBITRARY-4D-TENSOR-EOM-NOT-INDEPENDENTLY-REDERIVED",
+      "REAL-DATA-INFERENCE-NOT-AUTHORIZED"
+    ]
+  },
+  "next_authorized": "AUDIT-GVH-DISTINCTNESS-BEYOND-EINSTEIN-AETHER-MATTER-SECTOR-AND-EXACT-STRONG-FIELD-OBSERVABLES",
+  "scope_note": "PASS is an equivalence/classification audit. The tested GVH four-coupling unit-timelike-vector covariant sector and route-D static spherical exterior reproduce Einstein-aether structures. This validates the mathematics but removes novelty claims for that sector unless additional GVH structure is materialized. Matter-sector matching remains an internal GVH open item."
+}

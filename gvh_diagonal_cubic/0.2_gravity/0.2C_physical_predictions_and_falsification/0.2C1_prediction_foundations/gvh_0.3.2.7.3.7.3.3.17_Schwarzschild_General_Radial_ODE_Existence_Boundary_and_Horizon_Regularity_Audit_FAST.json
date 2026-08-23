@@ -1,0 +1,64 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.17_Schwarzschild_General_Radial_ODE_Existence_Boundary_and_Horizon_Regularity_Audit_FAST",
+  "execution_scope": "SCHWARZSCHILD_GENERAL_RADIAL_ODE_ASYMPTOTIC_EXISTENCE_BOUNDARY_HORIZON",
+  "upstream": {
+    "p3316": {
+      "canonical_user_executed_sha256": "add080df359fb3eb6950f987dc557a153ebe224a322667eee6e35bb0f466c529",
+      "canonical_user_executed_size_bytes": 30062,
+      "GENERAL_RADIAL_ANSATZ_MATERIALIZED": true,
+      "TWO_NATURAL_RADIAL_SUBBRANCHES_REFUTED": true,
+      "GENERAL_RADIAL_ODE_EXISTENCE_CLASSIFIED": false,
+      "SCHWARZSCHILD_BENCHMARK_PASS": false,
+      "SCHWARZSCHILD_BENCHMARK_AUTHORIZED": false,
+      "KERR_BENCHMARK_AUTHORIZED": false,
+      "NEXT_AUTHORIZED": "AUDIT-SCHWARZSCHILD-GENERAL-RADIAL-ODE-EXISTENCE-BOUNDARY-AND-HORIZON-REGULARITY"
+    }
+  },
+  "asymptotic_analysis": {
+    "linear_vector_eom": "2(c1+c2+c3)(r^2 eta'' + 2r eta' - 2eta)=0",
+    "indicial_polynomial": "(m - 1)*(m + 2)",
+    "indicial_roots": [
+      "-2",
+      "1"
+    ],
+    "decaying_mode": "eta ~ Q/r^2",
+    "F_leading": "(c1+c4) M^2/r^4",
+    "generic_scalar_requirement": "c1+c2+c3 != 0",
+    "stable_vector_requirement": "c1+c4 > 0",
+    "no_go": true
+  },
+  "horizon": {
+    "regular_variable": "Y=exp(eta)/sqrt(f)=u^v",
+    "u_r_contravariant": "(fY - 1/Y)/2",
+    "future_ingoing_regularity": "0 < Y_H < infinity",
+    "freefall_Y": "sqrt(rr)/(sqrt(2)*sqrt(M) + sqrt(rr))",
+    "freefall_Y_horizon": "1/2",
+    "regularity_materialized": true
+  },
+  "escape_routes": {
+    "c1_plus_c4_zero": "outside inherited stable vector branch",
+    "c1_plus_c2_plus_c3_zero": "outside inherited generic scalar reduction",
+    "nonaligned_infinity": "outside current boundary class",
+    "deformed_spherical_metric": "not exact Schwarzschild benchmark"
+  },
+  "scientific_status": {
+    "GENERAL_RADIAL_ODE_EXISTENCE_CLASSIFIED_IN_PHYSICAL_ASYMPTOTIC_CLASS": true,
+    "GENERAL_RADIAL_SOLUTION_EXISTS_IN_PHYSICAL_ASYMPTOTIC_CLASS": false,
+    "SCHWARZSCHILD_BENCHMARK_PASS": false,
+    "SCHWARZSCHILD_BENCHMARK_AUTHORIZED": false,
+    "SCHWARZSCHILD_BENCHMARK_STATUS": "FAIL_ASYMPTOTIC_NO_GO_FOR_GENERAL_RADIAL_ASYMPTOTICALLY_ALIGNED_ANSATZ_ON_GENERIC_STABLE_WEAK_FIELD_BRANCH",
+    "KERR_BENCHMARK_AUTHORIZED": false,
+    "CLASSICAL_PREDICTIONS_AUTHORIZED": false,
+    "REAL_DATA_PARAMETER_INFERENCE_AUTHORIZED": false,
+    "QUANTIZATION_READY": false
+  },
+  "verdict": {
+    "ODE17_LOCAL_AUDIT_PASS": true,
+    "obstructions": [
+      "EXACT-SCHWARZSCHILD-INCOMPATIBLE-WITH-INHERITED-GENERIC-STABLE-WEAK-FIELD-BRANCH-IN-PHYSICAL-RADIAL-ASYMPTOTIC-CLASS",
+      "CORE-OR-BRANCH-REPAIR-REQUIRED-BEFORE-KERR"
+    ]
+  },
+  "next_authorized": "AUDIT-CLASSICAL-CORE-REPAIR-AND-SCHWARZSCHILD-ESCAPE-ROUTES",
+  "scope_note": "No-go is restricted to exact Schwarzschild plus a unit radial GVH vector asymptotically aligned at infinity on the inherited generic stable weak-field branch. It is sufficient to block this classical chain, but it is not a theorem against deformed spherical GVH metrics or degenerate coupling branches."
+}

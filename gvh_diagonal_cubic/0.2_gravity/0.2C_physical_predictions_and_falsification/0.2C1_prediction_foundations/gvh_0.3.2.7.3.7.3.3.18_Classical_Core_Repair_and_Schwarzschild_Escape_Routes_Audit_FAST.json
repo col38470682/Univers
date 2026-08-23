@@ -1,0 +1,86 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.18_Classical_Core_Repair_and_Schwarzschild_Escape_Routes_Audit_FAST",
+  "execution_scope": "CLASSICAL_CORE_REPAIR_AND_SCHWARZSCHILD_ESCAPE_ROUTES",
+  "upstream": {
+    "p3317": {
+      "canonical_user_executed_sha256": "3a6151dd8195b8cbc197c54d37978fdcd6999b6ca181bbf21ba5f27f06a04363",
+      "canonical_user_executed_size_bytes": 31249,
+      "SCHWARZSCHILD_GENERAL_RADIAL_ASYMPTOTIC_NO_GO_GENERIC_STABLE_BRANCH": true,
+      "GENERAL_RADIAL_ODE_EXISTENCE_CLASSIFIED_IN_PHYSICAL_ASYMPTOTIC_CLASS": true,
+      "GENERAL_RADIAL_SOLUTION_EXISTS_IN_PHYSICAL_ASYMPTOTIC_CLASS": false,
+      "SCHWARZSCHILD_BENCHMARK_PASS": false,
+      "SCHWARZSCHILD_BENCHMARK_AUTHORIZED": false,
+      "KERR_BENCHMARK_AUTHORIZED": false,
+      "REAL_DATA_PARAMETER_INFERENCE_AUTHORIZED": false,
+      "NEXT_AUTHORIZED": "AUDIT-CLASSICAL-CORE-REPAIR-AND-SCHWARZSCHILD-ESCAPE-ROUTES"
+    }
+  },
+  "route_A": {
+    "condition": "c1+c4=0",
+    "vector_hessian_zero": true,
+    "generic_vector_pass_transferable": false,
+    "requires_fresh_constraint_dof_audit": true
+  },
+  "route_B": {
+    "condition": "c1+c2+c3=0",
+    "non_divided_scalar_constraint": "4*psid*(c1 + c3 - 1)",
+    "under_tensor_stability": "dot(psi)=0",
+    "generic_scalar_pass_transferable": false,
+    "requires_fresh_constraint_dof_audit": true
+  },
+  "route_C": {
+    "boundary": "eta -> eta_inf != 0 finite",
+    "radial_action_density_asymptotic": "-2*(c1 + 2*c2 + c3)*sinh(eta_inf)**2",
+    "generic_finite_action_compatible": false,
+    "special_surface": "c1+2*c2+c3=0"
+  },
+  "route_D": {
+    "candidate": "aligned unit GVH vector on deformed static spherical metric",
+    "c": "c1+c4",
+    "P_y": "(c*y**2 + 4*y + 2)/2",
+    "equations": {
+      "A_squared": "P(y)=1+2y+(c/2)y^2",
+      "y_ode": "r y'=-y P(y)",
+      "dlogN_dy": "-1/P(y)"
+    },
+    "asymptotic": {
+      "N_squared": "1-2x-(c/6)x^3+O(x^4), x=M/r",
+      "A_squared": "1+2x+(4+c/2)x^2+(8+5c/2)x^3+O(x^4)",
+      "newtonian_leading_term_preserved": true
+    },
+    "GR_limit": {
+      "c_zero_recovers_exact_Schwarzschild": true
+    },
+    "inner_limit": {
+      "domain": "0<c<2",
+      "I_inf": "log((sqrt(4 - 2*c) + 2)/(2 - sqrt(4 - 2*c)))/sqrt(4 - 2*c)",
+      "N_min": "exp(-log((sqrt(4 - 2*c) + 2)/(2 - sqrt(4 - 2*c)))/sqrt(4 - 2*c))",
+      "r_min_over_M": "sqrt(2)*sqrt(c)*exp(log((sqrt(4 - 2*c) + 2)/(2 - sqrt(4 - 2*c)))/sqrt(4 - 2*c))/2",
+      "r_min_over_M_c_to_0": "2",
+      "full_regularity_verified": false
+    },
+    "full_covariant_EOM_verified": false,
+    "PPN_observational_viability_verified": false
+  },
+  "scientific_status": {
+    "CLASSICAL_CORE_REPAIR_CANDIDATE_FOUND": true,
+    "EXACT_SCHWARZSCHILD_BENCHMARK_PASS": false,
+    "SCHWARZSCHILD_BENCHMARK_PASS": false,
+    "SCHWARZSCHILD_BENCHMARK_AUTHORIZED": false,
+    "DEFORMED_SPHERICAL_GVH_BENCHMARK_AUTHORIZED": true,
+    "KERR_BENCHMARK_AUTHORIZED": false,
+    "REAL_DATA_PARAMETER_INFERENCE_AUTHORIZED": false,
+    "QUANTIZATION_READY": false
+  },
+  "verdict": {
+    "REP18_LOCAL_AUDIT_PASS": true,
+    "obstructions": [
+      "DEFORMED-SPHERICAL-CANDIDATE-FULL-COVARIANT-EOM-NOT-YET-CROSSCHECKED",
+      "DEFORMED-SPHERICAL-INNER-REGULARITY-NOT-YET-CLASSIFIED",
+      "PPN-AND-OBSERVATIONAL-VIABILITY-NOT-YET-CLASSIFIED",
+      "DEGENERATE-ROUTES-A-B-REQUIRE-INDEPENDENT-CONSTRAINT-AUDITS"
+    ]
+  },
+  "next_authorized": "AUDIT-DEFORMED-SPHERICAL-GVH-VACUUM-FULL-EQUATIONS-INNER-REGULARITY-AND-PPN",
+  "scope_note": "Routes A/B are degenerate branches requiring fresh constraint analyses; C is not a generic finite-action asymptotic repair; D supplies a deformed spherical candidate preserving the possibility of the inherited generic stable weak-field branch. Exact Schwarzschild remains failed."
+}

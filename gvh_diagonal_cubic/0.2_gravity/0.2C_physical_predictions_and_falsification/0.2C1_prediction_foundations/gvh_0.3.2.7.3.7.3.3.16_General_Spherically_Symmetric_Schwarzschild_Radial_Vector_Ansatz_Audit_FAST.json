@@ -1,0 +1,65 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.16_General_Spherically_Symmetric_Schwarzschild_Radial_Vector_Ansatz_Audit_FAST",
+  "execution_scope": "GENERAL_SPHERICALLY_SYMMETRIC_SCHWARZSCHILD_RADIAL_VECTOR_ANSATZ",
+  "upstream": {
+    "p3315": {
+      "canonical_user_executed_sha256": "6cb4e13d85dadf4e767570536591deb452743717946037353ff662522344a24e",
+      "canonical_user_executed_size_bytes": 19956,
+      "SCHWARZSCHILD_GR_GEOMETRY_VERIFIED": true,
+      "SCHWARZSCHILD_BENCHMARK_PASS": false,
+      "SCHWARZSCHILD_BENCHMARK_AUTHORIZED": false,
+      "STATIC_ALIGNED_SCHWARZSCHILD_CANDIDATE_REFUTED_ON_STABLE_BRANCH": true,
+      "KERR_BENCHMARK_AUTHORIZED": false,
+      "NEXT_AUTHORIZED": "AUDIT-GENERAL-SPHERICALLY-SYMMETRIC-SCHWARZSCHILD-RADIAL-VECTOR-ANSATZ"
+    }
+  },
+  "general_radial_ansatz": {
+    "parameterization": "u^t=cosh(eta)/N, u^r=sinh(eta)/A",
+    "unit_norm_identity_pass": true,
+    "invariants_materialized": true,
+    "reduced_system_materialized": true,
+    "A_equation_necessary_condition": "F=0"
+  },
+  "aligned_subbranch": {
+    "reproduces_p3315": true,
+    "necessary_condition": "c1+c4=0",
+    "refuted_on_stable_branch": true
+  },
+  "freefall_subbranch": {
+    "u_t": "-1",
+    "u_t_contravariant": "u^t=1/f",
+    "u_r_contravariant": "u^r=-sqrt(2M/r)",
+    "I1": "9*M/(2*r**3)",
+    "theta_squared": "9*M/(2*r**3)",
+    "I3": "9*M/(2*r**3)",
+    "a_squared": "0",
+    "L_u": "-9*M*(c1 + c2 + c3)/(2*r**3)",
+    "F": "-9*M*(c1 + c2 + c3)/(2*r**2*(-2*M + r))",
+    "E_N": "-9*M*(c1 + c2 + c3)/(2*sqrt(r)*sqrt(-2*M + r))",
+    "E_eta": "9*sqrt(2)*sqrt(M)*(c1 + c2 + c3)/(2*sqrt(r))",
+    "necessary_condition": "c1+c2+c3=0",
+    "refuted_on_generic_stable_branch": true
+  },
+  "scientific_status": {
+    "GENERAL_RADIAL_ANSATZ_MATERIALIZED": true,
+    "TWO_NATURAL_RADIAL_SUBBRANCHES_REFUTED": true,
+    "GENERAL_RADIAL_ODE_EXISTENCE_CLASSIFIED": false,
+    "FULL_SCHWARZSCHILD_GVH_FIELD_EQUATIONS_CLOSED": false,
+    "SCHWARZSCHILD_BENCHMARK_PASS": false,
+    "SCHWARZSCHILD_BENCHMARK_AUTHORIZED": false,
+    "KERR_BENCHMARK_AUTHORIZED": false,
+    "CLASSICAL_PREDICTIONS_AUTHORIZED": false,
+    "QUANTIZATION_READY": false
+  },
+  "verdict": {
+    "RAD16_LOCAL_AUDIT_PASS": true,
+    "obstructions": [
+      "GENERAL-RADIAL-ODE-EXISTENCE-NOT-YET-CLASSIFIED",
+      "ASYMPTOTIC-BOUNDARY-CONDITIONS-NOT-YET-SOLVED",
+      "HORIZON-REGULARITY-NOT-YET-CLASSIFIED",
+      "FULL-SCHWARZSCHILD-GVH-FIELD-EQUATIONS-NOT-YET-CLOSED"
+    ]
+  },
+  "next_authorized": "AUDIT-SCHWARZSCHILD-GENERAL-RADIAL-ODE-EXISTENCE-BOUNDARY-AND-HORIZON-REGULARITY",
+  "scope_note": "General radial system materialized. Static-aligned and asymptotically aligned geodesic free-fall subbranches are refuted on the inherited weak-field branch. No general radial no-go theorem yet."
+}

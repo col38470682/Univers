@@ -1,0 +1,28 @@
+{
+  "source_file": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.24_Directional_Dmunu_Covariant_Action_Candidate_and_Cubic_Nonredundancy_Audit_FAST.ipynb",
+  "executed_file": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.24_Directional_Dmunu_Covariant_Action_Candidate_and_Cubic_Nonredundancy_Audit_FAST_EXECUTED_REFERENCE.ipynb",
+  "source_size_bytes": 23907,
+  "executed_size_bytes": 29859,
+  "source_sha256": "b11315639b9111e52d17a03c7b28338de293536f716c7dbeaac5755103e103e9",
+  "executed_sha256": "88d367602127e632635dc4b0d6c11e97f9992c8fe895388b8f72181a0a73a614",
+  "cells_total": 24,
+  "code_cells": 10,
+  "markdown_cells": 14,
+  "execution_counts": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "error_count": 0,
+  "output_count": 10,
+  "source_exact_after_execution": true,
+  "execution_exception": null,
+  "artifact_exists": true
+}

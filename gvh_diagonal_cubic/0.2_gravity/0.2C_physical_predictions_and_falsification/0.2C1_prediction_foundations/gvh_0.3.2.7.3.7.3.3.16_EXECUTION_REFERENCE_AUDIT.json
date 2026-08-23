@@ -1,0 +1,27 @@
+{
+  "source_file": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.16_General_Spherically_Symmetric_Schwarzschild_Radial_Vector_Ansatz_Audit_FAST.ipynb",
+  "executed_file": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.16_General_Spherically_Symmetric_Schwarzschild_Radial_Vector_Ansatz_Audit_FAST_EXECUTED_REFERENCE.ipynb",
+  "source_size_bytes": 29102,
+  "executed_size_bytes": 34960,
+  "source_sha256": "6dfca21967e169eadcb64663e580d2408be604a11ed24e6d7bdc28044f8ffbe7",
+  "executed_sha256": "b37ab578bc4daba2094cb371f65e6e965a133fddaf848d5792e9ec9d5ef194fc",
+  "cells_total": 21,
+  "code_cells": 10,
+  "execution_counts": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "error_count": 0,
+  "output_count": 10,
+  "source_exact_after_execution": true,
+  "execution_exception": null,
+  "artifact_exists": true
+}

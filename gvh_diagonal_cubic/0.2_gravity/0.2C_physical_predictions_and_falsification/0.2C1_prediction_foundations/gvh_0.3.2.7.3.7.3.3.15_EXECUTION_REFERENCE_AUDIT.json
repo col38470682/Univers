@@ -1,0 +1,25 @@
+{
+  "source_file": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.15_Schwarzschild_Classical_Vacuum_Benchmark_Audit_FAST.ipynb",
+  "executed_file": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.15_Schwarzschild_Classical_Vacuum_Benchmark_Audit_FAST_EXECUTED_REFERENCE.ipynb",
+  "source_size_bytes": 18281,
+  "executed_size_bytes": 22953,
+  "source_sha256": "65947fd1169983e16cfe923dd837453eeb3430c295fe39015e6678eb719780c4",
+  "executed_sha256": "52623187dae03c5a5bbb6da8927873d86cd78115b9dad4ba35c5cb7f6f3b0ac7",
+  "cells_total": 15,
+  "code_cells": 8,
+  "execution_counts": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "error_count": 0,
+  "output_count": 8,
+  "source_exact_after_execution": true,
+  "execution_exception": null,
+  "artifact_exists": true
+}

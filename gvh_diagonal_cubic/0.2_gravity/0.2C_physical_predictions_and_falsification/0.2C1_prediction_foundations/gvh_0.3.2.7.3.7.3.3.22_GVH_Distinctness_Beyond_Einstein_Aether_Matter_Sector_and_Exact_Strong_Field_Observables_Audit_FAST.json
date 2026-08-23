@@ -1,0 +1,146 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.22_GVH_Distinctness_Beyond_Einstein_Aether_Matter_Sector_and_Exact_Strong_Field_Observables_Audit_FAST",
+  "execution_scope": "DISTINCTNESS_BEYOND_EA_MATTER_AND_EXACT_STRONG_FIELD_OBSERVABLES",
+  "upstream": {
+    "p3321": {
+      "canonical_user_executed_sha256": "3cf6c50e518d70c1215c94f13f93d3359001b5d0cf0bb9372425c3336b276d5e",
+      "canonical_user_executed_size_bytes": 44425,
+      "ACTION_COEFFICIENT_EQUIVALENCE_PASS": true,
+      "CONVENTION_CROSSCHECK_PASS": true,
+      "ROUTE_D_MATCHES_KNOWN_STATIC_AETHER_FAMILY": true,
+      "GVH_COVARIANT_VECTOR_TENSOR_SECTOR_DISTINCT_FROM_EA": false,
+      "ROUTE_D_NOVEL_AS_DISTINCT_METRIC_FAMILY": false,
+      "FULL_4D_COVARIANT_CROSSCHECK_BY_ACTION_EQUIVALENCE": true,
+      "FULL_ARBITRARY_4D_TENSOR_EOM_INDEPENDENTLY_REDERIVED": false,
+      "PREFERRED_FRAME_PPN_ALPHA1_ALPHA2_CLASSIFIED": true,
+      "GVH_INTERIOR_MATTER_MATCHING_INTERNAL_EXISTENCE_PASS": false,
+      "REAL_DATA_PARAMETER_INFERENCE_AUTHORIZED": false,
+      "KERR_BENCHMARK_AUTHORIZED": false,
+      "NEXT_AUTHORIZED": "AUDIT-GVH-DISTINCTNESS-BEYOND-EINSTEIN-AETHER-MATTER-SECTOR-AND-EXACT-STRONG-FIELD-OBSERVABLES"
+    }
+  },
+  "distinctness": {
+    "covariant_dynamics_distinct_from_EA": false,
+    "canonical_hamiltonian_derivation_independent": true,
+    "canonical_formalism_distinctness_implies_new_physics": false,
+    "GVH_specific_matter_action_materialized": false,
+    "GVH_specific_new_covariant_operator_materialized": false,
+    "GVH_distinct_physics_beyond_EA_materialized": false
+  },
+  "matter_sector": {
+    "M0_minimal": "EA-equivalent if adopted",
+    "M1_direct_aether": "not materialized",
+    "M2_new_GVH_operator": "not materialized",
+    "distinctness_found": false
+  },
+  "exact_strong_field": {
+    "parametric_solution": {
+      "P": "1+2y+(c14/2)y^2",
+      "N": "exp[-I(y)]",
+      "r_over_M": "sqrt(P)/y * exp[I(y)]"
+    },
+    "photon_sphere": {
+      "y_ph": "1",
+      "r_ph_over_M": "sqrt(3+c14/2)*exp[I(1)]",
+      "bcrit_over_M": "sqrt(3+c14/2)*exp[2 I(1)]"
+    },
+    "ISCO": {
+      "y_ISCO": "2/(4+sqrt(16+2c14))",
+      "E_squared": "N^2/(1-y)",
+      "L_squared": "r^2*y/(1-y)",
+      "Omega_squared": "N^2*y/r^2"
+    },
+    "numeric_sweep": [
+      [
+        "0",
+        "3.0",
+        "5.1961524227066",
+        "0.25",
+        "6.0",
+        "0.068041381743977",
+        "0.94280904158206",
+        "3.4641016151378"
+      ],
+      [
+        "0.1",
+        "3.0161206532772",
+        "5.208917768369",
+        "0.24922359499621",
+        "6.0178533816775",
+        "0.06777858883694",
+        "0.94294039070058",
+        "3.4672157988254"
+      ],
+      [
+        "0.5",
+        "3.0791240615241",
+        "5.2591153262889",
+        "0.24621125123532",
+        "6.0881711362034",
+        "0.066759361144591",
+        "0.94345295880608",
+        "3.4794930551568"
+      ],
+      [
+        "1.0",
+        "3.1548215760238",
+        "5.3200483891051",
+        "0.24264068711929",
+        "6.173745905568",
+        "0.065552108736676",
+        "0.94406657058718",
+        "3.4944560257214"
+      ],
+      [
+        "1.5",
+        "3.2274861218395",
+        "5.3791435363992",
+        "0.23926596236045",
+        "6.256939837198",
+        "0.06441203250132",
+        "0.94465254262019",
+        "3.5090213882264"
+      ],
+      [
+        "1.9",
+        "3.2836542034143",
+        "5.4252066338048",
+        "0.23669425908284",
+        "6.3219074840097",
+        "0.063543938321959",
+        "0.94510299057193",
+        "3.5204058485795"
+      ]
+    ],
+    "GR_limit_numeric_pass": true,
+    "observables_materialized": true,
+    "observables_GVH_distinct": false,
+    "observables_EA_equivalent": true
+  },
+  "global_extension_reassessment": {
+    "static_chart_continuation_fail": true,
+    "external_2026_maximal_extension_claim_exists": true,
+    "internal_maximal_analytic_extension_independently_verified": false,
+    "previous_maximal_global_no_go_claim_retracted": true,
+    "status": "OPEN_REQUIRES_INDEPENDENT_AUDIT",
+    "reference": "J. Zhu & H. Li, arXiv:2606.27995 (2026)"
+  },
+  "authorization": {
+    "real_data_EA_reproduction_study_authorized": true,
+    "real_data_GVH_novelty_inference_authorized": false,
+    "Kerr_GVH_novelty_benchmark_authorized": false,
+    "quantization_as_distinct_GVH_theory_ready": false
+  },
+  "verdict": {
+    "DISTINCTNESS_GATE_PASS": true,
+    "obstructions": [
+      "NO-GVH-DISTINCT-COVARIANT-DYNAMICS-BEYOND-EINSTEIN-AETHER-MATERIALIZED",
+      "NO-GVH-SPECIFIC-MATTER-ACTION-MATERIALIZED",
+      "ROUTE-D-AND-EXACT-STRONG-FIELD-OBSERVABLES-ARE-EINSTEIN-AETHER-EQUIVALENT",
+      "MAXIMAL-ANALYTIC-EXTENSION-REQUIRES-INDEPENDENT-REAUDIT-AFTER-2026-LITERATURE-RESULT",
+      "FULL-ARBITRARY-4D-TENSOR-EOM-NOT-INDEPENDENTLY-REDERIVED"
+    ]
+  },
+  "next_authorized": "AUDIT-GVH-DISTINCT-OPERATOR-OR-MATTER-COUPLING-AND-INDEPENDENT-MAXIMAL-EXTENSION",
+  "scope_note": "The validated four-coupling GVH vector-tensor core remains Einstein-aether-equivalent. Exact strong-field observables are derived without 2PN truncation but are therefore EA-equivalent, not GVH-novel. The previous maximal global-extension no-go is retracted as overstrong: only failure of the static chart is internally established; a 2026 preprint reports a further analytic extension that still requires independent internal verification. No GVH-specific matter action or new covariant operator is yet materialized."
+}

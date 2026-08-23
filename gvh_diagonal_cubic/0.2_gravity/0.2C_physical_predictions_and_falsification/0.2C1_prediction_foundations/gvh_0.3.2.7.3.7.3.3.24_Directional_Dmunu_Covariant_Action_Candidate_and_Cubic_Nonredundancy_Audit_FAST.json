@@ -1,0 +1,60 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.24_Directional_Dmunu_Covariant_Action_Candidate_and_Cubic_Nonredundancy_Audit_FAST",
+  "upstream": {
+    "canonical_sha256": "9c4c9db1ae04eec809e6c8b0d993b3408120cc250330f81a521a3dafb525788f",
+    "canonical_size_bytes": 39252,
+    "GVH_DISTINCT_OPERATOR_QUALIFIED": false,
+    "D_MUNU_CANDIDATE_AUTHORIZED_FOR_ISOLATED_DRAFT": true,
+    "D_MUNU_INTEGRATION_INTO_VALIDATED_CORE_AUTHORIZED": false,
+    "GVH_DISTINCTNESS_GATE_PASS": false,
+    "REAL_DATA_GVH_NOVELTY_INFERENCE_AUTHORIZED": false,
+    "NEXT_AUTHORIZED": "FORMALIZE-GVH-DIRECTIONAL-D-MUNU-COVARIANT-ACTION-CANDIDATE-AND-NONREDUNDANCY-AUDIT"
+  },
+  "D_munu": {
+    "candidate_materialized": true,
+    "J3_equals_3det_pass": true,
+    "D_equals_shear_quadratic_novelty": false,
+    "auxiliary_quadratic_elimination_pass": true,
+    "auxiliary_cubic_first_order_pass": true,
+    "alone_encodes_physical_cubic_axes": false
+  },
+  "cubic_structure": {
+    "candidate": "C_munurhosigma=sum_A e_A_mu e_A_nu e_A_rho e_A_sigma",
+    "tensor_candidate_materialized": true,
+    "not_reducible_to_minimal_EA_isotropic_field_content": true,
+    "orientation_sensitive_operator_pass": true,
+    "physical_distinctness_candidate_found": true,
+    "triad_dynamics_materialized": false,
+    "constraint_algebra_audited": false,
+    "DOF_classified": false,
+    "nonredundancy_vs_general_LV_EFT_proven": false
+  },
+  "separate_tracks": {
+    "emergent_3D_to_4D_tested_here": false,
+    "GVH_specific_matter_coupling_tested_here": false
+  },
+  "locks": {
+    "GVH_distinct_physics_validated": false,
+    "real_data_GVH_novelty_inference_authorized": false,
+    "Kerr_GVH_novelty_benchmark_authorized": false,
+    "quantization_as_distinct_GVH_theory_ready": false
+  },
+  "verdict": {
+    "G24_AUDIT_PASS": true,
+    "obstructions": [
+      "D_MUNU_ALONE_DOES_NOT_ENCODE_PHYSICAL_CUBIC_AXES",
+      "D_EQUALS_SHEAR_QUADRATIC_TERM_IS_EA_REDUNDANT",
+      "SIGMA_CUBIC_IS_NOT_AUTOMATICALLY_GVH_UNIQUE_IN_EFT",
+      "PHYSICAL_CUBIC_TRIAD_REQUIRES_NEW_FIELD_STRUCTURE",
+      "CUBIC_TRIAD_CONSTRAINT_ALGEBRA_NOT_AUDITED",
+      "CUBIC_TRIAD_DOF_NOT_CLASSIFIED",
+      "NONREDUNDANCY_VS_GENERAL_LORENTZ_VIOLATING_EFT_NOT_PROVEN",
+      "OBSERVATIONAL_VIABILITY_NOT_TESTED"
+    ],
+    "next_authorized": "AUDIT-CUBIC-TRIAD-CONSTRAINTS-DOF-AND-ISOTROPIC-LIMIT"
+  },
+  "references": [
+    "B. Withers, arXiv:0905.2446",
+    "A. Balakin & J. P. S. Lemos, arXiv:1407.6014"
+  ]
+}

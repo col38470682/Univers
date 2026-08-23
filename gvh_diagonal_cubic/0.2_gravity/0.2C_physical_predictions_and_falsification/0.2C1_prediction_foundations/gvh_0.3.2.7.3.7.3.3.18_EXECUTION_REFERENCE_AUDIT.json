@@ -1,0 +1,29 @@
+{
+  "source_file": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.18_Classical_Core_Repair_and_Schwarzschild_Escape_Routes_Audit_FAST.ipynb",
+  "executed_file": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.18_Classical_Core_Repair_and_Schwarzschild_Escape_Routes_Audit_FAST_EXECUTED_REFERENCE.ipynb",
+  "source_size_bytes": 41234,
+  "executed_size_bytes": 49173,
+  "source_sha256": "47213fa6e95e883dbaf8f602bbd28fd8a40ed8b8353f77769ddc2c06fc5947d8",
+  "executed_sha256": "7572db4d2edf6df5ccc99d8690e1483b2f56480c6f1f035ad3f9a5a22c573534",
+  "cells_total": 25,
+  "code_cells": 12,
+  "execution_counts": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "error_count": 0,
+  "output_count": 12,
+  "source_exact_after_execution": true,
+  "execution_exception": null,
+  "artifact_exists": true
+}

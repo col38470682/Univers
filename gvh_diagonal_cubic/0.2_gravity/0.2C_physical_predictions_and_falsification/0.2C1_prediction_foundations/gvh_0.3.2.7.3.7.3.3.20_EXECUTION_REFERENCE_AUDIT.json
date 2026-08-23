@@ -1,0 +1,28 @@
+{
+  "source_file": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.20_Deformed_Spherical_GVH_Global_Inner_Extension_4D_Covariant_Ledger_and_2PN_Observables_Audit_FAST.ipynb",
+  "executed_file": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.20_Deformed_Spherical_GVH_Global_Inner_Extension_4D_Covariant_Ledger_and_2PN_Observables_Audit_FAST_EXECUTED_REFERENCE.ipynb",
+  "source_size_bytes": 35317,
+  "executed_size_bytes": 41951,
+  "source_sha256": "03c268c9c2a5701b00d67e5894af35a28bfe3b35b4ddf71b32b0a41dc4a7fd63",
+  "executed_sha256": "7bc501d1929547fc35ff6199e04f1aa0e52a7fa65075f70af2e1e56d403ff4f2",
+  "cells_total": 22,
+  "code_cells": 10,
+  "markdown_cells": 12,
+  "execution_counts": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "error_count": 0,
+  "output_count": 10,
+  "source_exact_after_execution": true,
+  "execution_exception": null,
+  "artifact_exists": true
+}

@@ -1,0 +1,29 @@
+{
+  "source_file": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.19_Deformed_Spherical_GVH_Full_Spherical_EOM_Inner_Regularity_and_PPN_Audit_FAST.ipynb",
+  "executed_file": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.19_Deformed_Spherical_GVH_Full_Spherical_EOM_Inner_Regularity_and_PPN_Audit_FAST_EXECUTED_REFERENCE.ipynb",
+  "source_size_bytes": 35804,
+  "executed_size_bytes": 43079,
+  "source_sha256": "d590206abb66f9d4c32b4b9446302773e2a83c1b07d77b049909f7a920014036",
+  "executed_sha256": "f5b650534039be52ba8ed29334e6399612fc903fd4a9625d137763298d315e12",
+  "cells_total": 23,
+  "code_cells": 11,
+  "markdown_cells": 12,
+  "execution_counts": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "error_count": 0,
+  "output_count": 11,
+  "source_exact_after_execution": true,
+  "execution_exception": null,
+  "artifact_exists": true
+}

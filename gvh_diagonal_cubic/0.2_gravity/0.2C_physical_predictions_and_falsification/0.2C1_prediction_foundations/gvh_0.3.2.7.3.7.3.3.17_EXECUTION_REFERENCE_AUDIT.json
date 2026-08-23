@@ -1,0 +1,27 @@
+{
+  "source_file": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.17_Schwarzschild_General_Radial_ODE_Existence_Boundary_and_Horizon_Regularity_Audit_FAST.ipynb",
+  "executed_file": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.17_Schwarzschild_General_Radial_ODE_Existence_Boundary_and_Horizon_Regularity_Audit_FAST_EXECUTED_REFERENCE.ipynb",
+  "source_size_bytes": 30484,
+  "executed_size_bytes": 36246,
+  "source_sha256": "459df470d2ed3320217513e9d4a4eedded2283e5bd619a40d2c3c311f9d3ccce",
+  "executed_sha256": "096a48005b46cb28b32d85afe5753507838d2cdb2d609e88afb1740b86dcdf20",
+  "cells_total": 21,
+  "code_cells": 10,
+  "execution_counts": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "error_count": 0,
+  "output_count": 10,
+  "source_exact_after_execution": true,
+  "execution_exception": null,
+  "artifact_exists": true
+}

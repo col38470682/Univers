@@ -1,0 +1,29 @@
+{
+  "source_file": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.21_Einstein_Aether_Equivalence_Interior_Matching_4D_Covariant_and_Preferred_Frame_PPN_Audit_FAST.ipynb",
+  "executed_file": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.21_Einstein_Aether_Equivalence_Interior_Matching_4D_Covariant_and_Preferred_Frame_PPN_Audit_FAST_EXECUTED_REFERENCE.ipynb",
+  "source_size_bytes": 43133,
+  "executed_size_bytes": 51294,
+  "source_sha256": "391c49cecb93b18a87ac20d11be5cc354809eb4f88b58f06086c0245f051d7c1",
+  "executed_sha256": "a6793af4f7b8ac99583c858e28694cfc73bf5f533b90f1f421fd494fc08803d1",
+  "cells_total": 25,
+  "code_cells": 11,
+  "markdown_cells": 14,
+  "execution_counts": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "error_count": 0,
+  "output_count": 11,
+  "source_exact_after_execution": true,
+  "execution_exception": null,
+  "artifact_exists": true
+}
