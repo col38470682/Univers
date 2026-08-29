@@ -1,0 +1,70 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.25_Cubic_Triad_Constraints_DOF_Auxiliary_Elimination_and_Isotropic_Limit_Audit_FAST",
+  "upstream": {
+    "sha256": "7286f9ba6558a11b6160b4e6059352150572f636aac239578e51f5efd543f448",
+    "size_bytes": 26259,
+    "candidate_found": true,
+    "distinct_physics_validated": false,
+    "triad_dynamics_materialized": false,
+    "triad_constraint_algebra_audited": false,
+    "triad_dof_classified": false,
+    "real_data_novelty_authorized": false,
+    "next_authorized": "AUDIT-CUBIC-TRIAD-CONSTRAINTS-DOF-AND-ISOTROPIC-LIMIT"
+  },
+  "geometric_constraints": {
+    "raw_components": 12,
+    "constraint_jacobian_rank": 9,
+    "orientation_components": 3,
+    "pass": true
+  },
+  "kinetic": {
+    "has_own_kinetic_term": false,
+    "velocity_hessian_rank": 0,
+    "primary_momenta_constraints": 3
+  },
+  "dof": {
+    "generic_auxiliary_config_dof": "0",
+    "isotropic_decoupled_config_dof": "0",
+    "no_new_propagating_dof_pass": true
+  },
+  "onshell": {
+    "aligned_branch_reduces_to_c13_shift": true,
+    "c13_eff": "c13 - zeta/2",
+    "zero_diagonal_stationary_witness": true,
+    "multiple_stationary_branches": true
+  },
+  "isotropic_limit": {
+    "action_limit_pass": true,
+    "physical_dof_count_continuous": true,
+    "constraint_class_continuous": false,
+    "constraint_rank_continuous": false
+  },
+  "distinctness": {
+    "offshell_structural_distinctness_retained": true,
+    "onshell_physical_distinctness_established": false,
+    "GVH_distinct_physics_validated": false,
+    "dynamic_cubic_triad_action_materialized": false,
+    "emergent_3D_to_4D_tested_here": false
+  },
+  "locks": {
+    "real_data_GVH_novelty_inference_authorized": false,
+    "Kerr_GVH_novelty_benchmark_authorized": false,
+    "quantization_as_distinct_GVH_theory_ready": false
+  },
+  "verdict": {
+    "G25_AUDIT_PASS": true,
+    "obstructions": [
+      "CURRENT_CUBIC_TRIAD_HAS_NO_KINETIC_TERM",
+      "CURRENT_CUBIC_TRIAD_HAS_ZERO_NEW_PROPAGATING_DOF",
+      "GENERIC_ALIGNED_BRANCH_REDUCES_TO_C13_SHIFT",
+      "MULTIPLE_AUXILIARY_STATIONARY_BRANCHES_EXIST",
+      "NO_NONARBITRARY_BRANCH_SELECTION_PRINCIPLE",
+      "ISOTROPIC_LIMIT_CHANGES_DIRAC_CONSTRAINT_CLASS",
+      "DYNAMIC_CUBIC_TRIAD_ACTION_NOT_MATERIALIZED",
+      "NONREDUNDANCY_VS_GENERAL_LORENTZ_VIOLATING_EFT_NOT_PROVEN",
+      "EMERGENT_3D_TO_4D_TRACK_NOT_TESTED_HERE",
+      "OBSERVATIONAL_VIABILITY_NOT_AUTHORIZED"
+    ],
+    "next_authorized": "FORMALIZE-DYNAMIC-CUBIC-TRIAD-OR-FUNDAMENTAL-3D-ORIGIN-AND-RERUN-CONSTRAINTS-DOF"
+  }
+}

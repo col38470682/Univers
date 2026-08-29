@@ -1,0 +1,29 @@
+{
+  "source_file": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.25_Cubic_Triad_Constraints_DOF_Auxiliary_Elimination_and_Isotropic_Limit_Audit_FAST.ipynb",
+  "executed_file": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.25_Cubic_Triad_Constraints_DOF_Auxiliary_Elimination_and_Isotropic_Limit_Audit_FAST_EXECUTED_REFERENCE.ipynb",
+  "source_size_bytes": 23269,
+  "executed_size_bytes": 30538,
+  "source_sha256": "f56f412c8bf6afad5d1dfa9fa3d719b1a60f24c1d7e6fc085e509d49f2b99835",
+  "executed_sha256": "247f51cbb391eb48cab38f820c64e889d935a011eabd260866539e3d5a2894e0",
+  "cells_total": 22,
+  "code_cells": 11,
+  "markdown_cells": 11,
+  "execution_counts": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "error_count": 0,
+  "output_count": 11,
+  "source_exact_after_execution": true,
+  "execution_exception": null,
+  "artifact_exists": true
+}
