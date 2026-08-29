@@ -1,0 +1,135 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.28.20.7.1_Pure_GVH_P_Cosmological_Fold_Crossing_Determinism_and_Admissible_Evolution_Closure_Audit_FAST",
+  "branch": "PURE_GVH_P_COSMOLOGICAL_FOLD_DETERMINISM",
+  "upstream": {
+    "version": "0.3.2.7.3.7.3.3.28.20.7",
+    "executed_sha256": "2c798633f2a9ca740fd961013ad4ef7d9af446cbe43c5c5456874cc5018cff2d",
+    "executed_size_bytes": 34817,
+    "local_audit_pass": true,
+    "compact_branch_architecture_classified": true,
+    "global_fold_crossing_closed": false,
+    "real_data_ready": false
+  },
+  "levels": {
+    "LEVEL1": "THE_FIXED_H_COSMOLOGICAL_FOLD_IS_CONFIRMED_BUT_THE_FULL_COUPLED_CONSTRAINT_RADIAL_JACOBIAN_REMAINS_NONZERO_AT_THE_SAME_POINT",
+    "LEVEL2": "MATTER_DENSITY_PROVIDES_A_REGULAR_LOCAL_PARAMETER_WITH_DQ_DRHO_FINITE_AND_DH2_DRHO_ZERO_SO_THE_APPARENT_DQ_DH2_DIVERGENCE_IS_A_PROJECTION_SINGULARITY",
+    "LEVEL3": "SMOOTH_TIME_EVOLUTION_TOUCHES_HC_AS_A_LOCAL_MAXIMUM_OF_H_SQUARED_AND_CONTINUES_FROM_THE_STABLE_GAPPED_ROOT_TO_THE_UNSTABLE_ROOT_WHILE_A_SAME_STATE_FORCED_JUMP_TO_GR_VIOLATES_THE_CONSTRAINT",
+    "LEVEL4": "HOMOGENEOUS_FOLD_DETERMINISM_AND_THE_STAGE_I_STRUCTURAL_BRANCH_SCOPE_ARE_CLOSED_WITH_BRANCH_LABELS_FIXED_BY_INITIAL_OR_BOUNDARY_DATA_RATHER_THAN_AN_EXTERNAL_SUPERSELECTION_POSTULATE"
+  },
+  "fold": {
+    "q_c": "q_plus/sqrt(3)",
+    "X_c": "(a/alpha)(2-sqrt(3))/3",
+    "projected_fold": true,
+    "full_coupled_rank_loss": false,
+    "detJ_c": "18 alpha^2 q_c^2 X_c > 0"
+  },
+  "continuation": {
+    "dq_drho_c": "1/(6 alpha q_c X_c)",
+    "dX_drho_c": "0",
+    "Xddot_c": "-2 b qdot_c^2/(alpha q_c)",
+    "generic_continuation": "stable_gapped -> fold -> unstable_branch"
+  },
+  "GR_jump": {
+    "forced": false,
+    "same_state_constraint_residual": "a^3(7sqrt(3)-12)/(72b^2)>0"
+  },
+  "accessibility": {
+    "chi": "alpha q_plus^2/(2M^2)",
+    "chi_c": "9+6sqrt(3)",
+    "rho_c_sign": "sign(chi_c-chi)"
+  },
+  "branch_principle": {
+    "external_postulate_required": false,
+    "interpretation": "initial/boundary data plus coupled evolution"
+  },
+  "matching": [
+    {
+      "benchmark": "projected fold",
+      "GVH_quantity": "E_q",
+      "reference_quantity": "saddle-node projection",
+      "matching_equation": "E=0, E_q=0 at (q_c,X_c)",
+      "dimensions": "algebraic",
+      "status": "PROJECTED_FOLD_CONFIRMED",
+      "rank_increment": 1,
+      "SI_identifiability": "N/A",
+      "degeneracies": "H treated as external parameter"
+    },
+    {
+      "benchmark": "coupled algebraic Jacobian",
+      "GVH_quantity": "det d(C,E)/d(q,X)",
+      "reference_quantity": "implicit-function regularity",
+      "matching_equation": "detJ_c=18 alpha^2 q_c^2 X_c>0",
+      "dimensions": "constraint Jacobian",
+      "status": "COUPLED_REGULAR",
+      "rank_increment": 1,
+      "SI_identifiability": "N/A",
+      "degeneracies": "homogeneous minisuperspace scope"
+    },
+    {
+      "benchmark": "matter continuation",
+      "GVH_quantity": "dq/drho,dX/drho",
+      "reference_quantity": "DAE continuation",
+      "matching_equation": "dq/drho=1/(6alpha q_c X_c), dX/drho=0",
+      "dimensions": "field/energy-density",
+      "status": "REGULAR_CONTINUATION",
+      "rank_increment": 1,
+      "SI_identifiability": "coefficients open",
+      "degeneracies": "matter must be smooth"
+    },
+    {
+      "benchmark": "time fold crossing",
+      "GVH_quantity": "Xddot_c",
+      "reference_quantity": "turning point",
+      "matching_equation": "Xddot_c=-2b qdot_c^2/(alpha q_c)<0",
+      "dimensions": "T^-4",
+      "status": "LOCAL_MAXIMUM",
+      "rank_increment": 1,
+      "SI_identifiability": "NO numerical value",
+      "degeneracies": "qdot=0 critical case"
+    },
+    {
+      "benchmark": "GR jump test",
+      "GVH_quantity": "Hamiltonian constraint residual",
+      "reference_quantity": "same-state branch switch",
+      "matching_equation": "Delta_GR=a^3(7sqrt3-12)/(72b^2)>0",
+      "dimensions": "energy density",
+      "status": "SMOOTH_JUMP_FAIL",
+      "rank_increment": 1,
+      "SI_identifiability": "a,b open",
+      "degeneracies": "impulsive sources outside scope"
+    },
+    {
+      "benchmark": "fold accessibility",
+      "GVH_quantity": "rho_c(chi)",
+      "reference_quantity": "nonnegative matter density",
+      "matching_equation": "rho_c proportional to (chi_c-chi)/chi",
+      "dimensions": "energy density",
+      "status": "CLASSIFIED",
+      "rank_increment": 1,
+      "SI_identifiability": "NO",
+      "degeneracies": "chi_c=9+6sqrt3"
+    },
+    {
+      "benchmark": "branch principle",
+      "GVH_quantity": "B",
+      "reference_quantity": "initial/boundary-value solution label",
+      "matching_equation": "B fixed by data and propagated by coupled equations",
+      "dimensions": "dimensionless",
+      "status": "NO_EXTERNAL_POSTULATE_REQUIRED",
+      "rank_increment": 1,
+      "SI_identifiability": "N/A",
+      "degeneracies": "physical post-fold stability belongs to Phase II"
+    }
+  ],
+  "locks": {
+    "stage_I_structural_scope_closed": true,
+    "full_global_ghost_freedom": false,
+    "full_coupled_characteristics": false,
+    "postfold_perturbative_stability": false,
+    "real_data_ready": false
+  },
+  "verdict": {
+    "local_audit_pass": true,
+    "next_authorized": "0.3.2.7.3.7.3.3.28.21_Pure_GVH_P_Global_Ghost_and_Full_Coupled_Principal_Symbol_Audit"
+  }
+}

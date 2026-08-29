@@ -1,0 +1,155 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.28.5_GVH_Action_to_Inhomogeneous_Diagonal_Field_and_Weak_Field_Central_Solution_Gate_Audit_FAST",
+  "upstream": {
+    "version": "0.3.2.7.3.7.3.3.28.4",
+    "sha256": "8b804a36dc4914f9da419492568439eca0ecbc27276da2b5b26545bb6824f44d",
+    "size_bytes": 42416,
+    "cells": 18,
+    "code_cells": 9,
+    "markdown_cells": 9,
+    "local_audit_pass": true,
+    "inhomogeneous_diagonal_Jacobi_field_materialized": true,
+    "Nbody_spatial_matching_materialized": true,
+    "identification_with_G283_metric_Dphys_proven": false,
+    "GVH_action_derived_inhomogeneous_D_field": false,
+    "Mercury_GVH_precession_prediction_authorized": false,
+    "new_GVH_physics_validated": false
+  },
+  "open_refs": [
+    "O-14",
+    "O-26",
+    "O-27",
+    "O-29",
+    "O-31",
+    "O-32",
+    "O-34"
+  ],
+  "levels": {
+    "LEVEL1": "STATIC_WEAK_ACTION_POISSON_GN_AND_LINEAR_METRIC_POTENTIALS_CLOSED",
+    "LEVEL2": "ACTION_DERIVED_CENTRAL_FIELD_TO_TIDAL_JACOBI_AND_WEAK_NBODY_MATCHING_CLOSED",
+    "LEVEL3": "PARAMETER_DIMENSION_RANK_AND_SI_IDENTIFIABILITY_LEDGER_CLOSED",
+    "LEVEL4": "BLOCKED_SECOND_ORDER_PPN_UNIQUE_CUBIC_CENTRAL_DEVIATION_AND_MERCURY_PREDICTION"
+  },
+  "weak_action": {
+    "G_N_relation": "G_N = G0/(1-c14/2)",
+    "Psi_equals_Phi": true,
+    "gamma_weak": 1,
+    "central_solution": "Phi=Psi=-mu/r",
+    "cubic_static_linear_activation": false
+  },
+  "action_to_deformation": {
+    "metric_diagonal_inhomogeneous": true,
+    "action_to_tidal_exact": true,
+    "action_to_Jacobi_chain_closed": true,
+    "D_J_equals_D_metric": false
+  },
+  "SI": {
+    "bridge_rank": 1,
+    "formal_source_matched_rank": 2,
+    "universal_theory_selected_rank": 0,
+    "absolute_universal_SI_scale_derived": false,
+    "matching_table": [
+      {
+        "benchmark": "c=1 geometric bridge",
+        "GVH_quantity": "L_*/T_*",
+        "reference_quantity": "c",
+        "matching_equation": "L_*/T_* = c",
+        "dimension": "L T^-1",
+        "status": "MATCHED_CONVENTION",
+        "scale_rank_increment": 1,
+        "SI_identifiability": "ratio only"
+      },
+      {
+        "benchmark": "Newton / weak central field",
+        "GVH_quantity": "G0, c14",
+        "reference_quantity": "G_N",
+        "matching_equation": "G_N = G0/(1-c14/2)",
+        "dimension": "G0,G_N: L^3 M^-1 T^-2; c14: 1",
+        "status": "DERIVED_AND_MATCHED",
+        "scale_rank_increment": 0,
+        "SI_identifiability": "parameter dimensions identified"
+      },
+      {
+        "benchmark": "central 1/r solution",
+        "GVH_quantity": "mu_hat",
+        "reference_quantity": "G_N M/c^2",
+        "matching_equation": "mu_hat = G_N M/(c^2 L_*)",
+        "dimension": "mu_hat: 1; G_N M/c^2: L",
+        "status": "SOURCE_MATCHED",
+        "scale_rank_increment": 1,
+        "SI_identifiability": "L_* conditional on source + mu_hat"
+      },
+      {
+        "benchmark": "weak Schwarzschild coefficient",
+        "GVH_quantity": "2 mu/r; Psi/Phi",
+        "reference_quantity": "2 G_N M/(c^2 r); gamma=1",
+        "matching_equation": "mu=G_N M/c^2; Psi=Phi",
+        "dimension": "dimensionless metric coefficients",
+        "status": "LINEAR_WEAK_FIELD_MATCH",
+        "scale_rank_increment": 0,
+        "SI_identifiability": "no new independent scale"
+      },
+      {
+        "benchmark": "tidal field",
+        "GVH_quantity": "T_geom",
+        "reference_quantity": "T_SI",
+        "matching_equation": "T_SI = c^2 T_geom",
+        "dimension": "T_geom:L^-2; T_SI:T^-2",
+        "status": "DERIVED_UNIT_RESTORATION",
+        "scale_rank_increment": 0,
+        "SI_identifiability": "observable units fixed after central match"
+      },
+      {
+        "benchmark": "Jacobi deformation",
+        "GVH_quantity": "sqrt(kappa_geom)",
+        "reference_quantity": "sqrt(kappa_SI)",
+        "matching_equation": "sqrt(kappa_SI)=c sqrt(kappa_geom)",
+        "dimension": "L^-1 -> T^-1",
+        "status": "DERIVED_UNIT_RESTORATION",
+        "scale_rank_increment": 0,
+        "SI_identifiability": "time rate fixed once geometry is matched"
+      },
+      {
+        "benchmark": "N-body far-field monopole",
+        "GVH_quantity": "sum_a mu_a",
+        "reference_quantity": "G_N sum_a M_a/c^2",
+        "matching_equation": "mu_tot = G_N M_tot/c^2",
+        "dimension": "L",
+        "status": "DERIVED_LINEAR_MATCHING",
+        "scale_rank_increment": 0,
+        "SI_identifiability": "inherits central-source matching"
+      },
+      {
+        "benchmark": "Kasner shape branch (.28.3/.28.3.1)",
+        "GVH_quantity": "P_i, 3c13+3c2-zeta_C",
+        "reference_quantity": "Kasner exponents",
+        "matching_equation": "sum P_i=1; GR surface gives sum P_i^2=1",
+        "dimension": "dimensionless",
+        "status": "DERIVED_DIMENSIONLESS_MATCH",
+        "scale_rank_increment": 0,
+        "SI_identifiability": "no SI scale information"
+      }
+    ]
+  },
+  "locks": {
+    "exact_Schwarzschild_proven": false,
+    "second_order_PPN_beta_derived": false,
+    "unique_GVH_central_deviation_derived": false,
+    "Mercury_GVH_precession_prediction_authorized": false,
+    "new_GVH_physics_validated": false,
+    "real_data_ready": false
+  },
+  "verdict": {
+    "G285_LOCAL_AUDIT_PASS": true,
+    "obstructions": [
+      "STATIC_ALIGNED_BRANCH_HAS_ZERO_SHEAR_AND_ZERO_CUBIC_ACTIVATION",
+      "D_JACOBI_IS_AN_OBSERVABLE_DEFORMATION_MAP_NOT_THE_METRIC_DIAGONAL_FIELD_ITSELF",
+      "FULL_SECOND_ORDER_PPN_COEFFICIENTS_NOT_DERIVED",
+      "EXACT_SCHWARZSCHILD_BRANCH_NOT_PROVEN",
+      "UNIVERSAL_SOURCE_INDEPENDENT_SI_SCALES_NOT_THEORY_SELECTED",
+      "NO_UNIQUE_GVH_DCC_CENTRAL_DEVIATION_IN_THIS_LINEAR_BRANCH",
+      "MERCURY_GVH_PRECESSION_NOT_AUTHORIZED"
+    ],
+    "next_authorized": "0.3.2.7.3.7.3.3.28.6_SECOND_ORDER_PPN_CENTRAL_FIELD_AND_TWO_BODY_PERICENTER_READINESS_AUDIT"
+  }
+}

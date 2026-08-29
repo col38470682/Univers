@@ -1,0 +1,209 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.28.19R_Pure_GVH_R_Hamiltonian_Secondary_Constraints_Poisson_Classification_and_DOF_Audit_FAST",
+  "branch": "PURE_GVH_R_GAPPED",
+  "common_upstream": {
+    "version": "0.3.2.7.3.7.3.3.28.18.2",
+    "executed_sha256": "531b52b8052049b153c4894dbf2fab439f7f1a11bbfcf4a218164106e104e38f",
+    "executed_size_bytes": 46598,
+    "local_audit_pass": true,
+    "canonical_gap_fork_PR": true,
+    "R_full_hessian_rank": 15,
+    "R_primary_count": 5,
+    "R_D_rank": 9,
+    "R_Dirac_gapped_commutator_family_authorized": true
+  },
+  "P_comparison": {
+    "version": "0.3.2.7.3.7.3.3.28.19P",
+    "executed_sha256": "5eb5d4899ebfcd7c132c0a437ce213526917cb162d557754a61f54541966ff36",
+    "executed_size_bytes": 41614,
+    "local_audit_pass": true,
+    "primary_count": 6,
+    "secondary_count": 5,
+    "first_class_count": 9,
+    "second_class_count": 2,
+    "DOF": 10,
+    "GR_branch_closed": false
+  },
+  "levels": {
+    "LEVEL1": "PURE_GVH_R_TOTAL_HAMILTONIAN_MATERIALIZED_WITH_PROPAGATING_GAP_CANONICAL_PAIR_ON_Q_POSITIVE_BRANCH",
+    "LEVEL2": "NO_GAP_PRIMARY_OR_SECOND_CLASS_PAIR_EXISTS_IN_R_AND_ALL_NINE_CONSTRAINTS_ARE_FIRST_CLASS_IN_THE_STRUCTURAL_COVARIANT_CLASSIFICATION",
+    "LEVEL3": "DIRAC_COUNT_CLOSES_AT_ELEVEN_PHYSICAL_DOF_ON_GENERIC_GAPPED_R_ONE_MORE_THAN_P_DUE_TO_THE_RADIAL_GAP_MODE",
+    "LEVEL4": "Q_EQUALS_R_SQUARED_CHART_IS_SINGULAR_AT_THE_EXACT_GR_BRANCH_SO_GAPPED_R_COUNT_CANNOT_BE_TRANSFERRED_TO_Q_ZERO"
+  },
+  "constraints": {
+    "primaries": [
+      "pi_N",
+      "pi_N1",
+      "pi_N2",
+      "pi_N3",
+      "C_tau"
+    ],
+    "primary_count": 5,
+    "secondaries": [
+      "H_perp",
+      "H_1",
+      "H_2",
+      "H_3"
+    ],
+    "secondary_count": 4,
+    "first_class_count": 9,
+    "second_class_count": 0,
+    "onshell_Poisson_rank": 0
+  },
+  "gap": {
+    "status": "propagating canonical pair",
+    "primary_present": false,
+    "secondary_constraint_present": false,
+    "bare_metric_cone": true,
+    "q_chart_singular_at_GR": true
+  },
+  "DOF": {
+    "configuration_variables": 20,
+    "F": 9,
+    "S": 0,
+    "N_DOF": 11,
+    "bookkeeping": {
+      "metric_gravitational": 2,
+      "D": 9
+    },
+    "excess_over_P": 1,
+    "domain": "generic gapped R branch q>0"
+  },
+  "P_vs_R": [
+    {
+      "branch": "GVH-P",
+      "full_Hessian_rank": 14,
+      "primaries": 6,
+      "secondaries": 5,
+      "first_class_F": 9,
+      "second_class_S": 2,
+      "Poisson_rank_on_shell": 2,
+      "physical_DOF": 10,
+      "gap_status": "auxiliary",
+      "gap_constraint_chain": "Pi_q -> chi_q -> multiplier fixed",
+      "generic_domain": "q>0, alpha>0, M_q!=0"
+    },
+    {
+      "branch": "GVH-R",
+      "full_Hessian_rank": 15,
+      "primaries": 5,
+      "secondaries": 4,
+      "first_class_F": 9,
+      "second_class_S": 0,
+      "Poisson_rank_on_shell": 0,
+      "physical_DOF": 11,
+      "gap_status": "propagating",
+      "gap_constraint_chain": "none; (q,P_q) physical canonical pair",
+      "generic_domain": "q>0, alpha>0, eta_Q>0"
+    }
+  ],
+  "matching": [
+    {
+      "benchmark": "R primary inventory",
+      "GVH_quantity": "primary constraints",
+      "reference_quantity": "adapted ADM Hessian nullity",
+      "matching_equation": "rank H=15 => 5 primaries",
+      "dimensions": "canonical",
+      "status": "DERIVED_GAPPED_CORE",
+      "rank_increment": 0,
+      "SI_identifiability": "N/A",
+      "degeneracies": "q=0, alpha=0, anisotropic rank surfaces"
+    },
+    {
+      "benchmark": "R radial momentum",
+      "GVH_quantity": "P_q",
+      "reference_quantity": "Route R kinetic term",
+      "matching_equation": "P_q=sqrt(gamma) eta_Q L_n q",
+      "dimensions": "canonical density",
+      "status": "DERIVED",
+      "rank_increment": 1,
+      "SI_identifiability": "eta_Q not calibrated",
+      "degeneracies": "q chart singular at A=0"
+    },
+    {
+      "benchmark": "R gap constraint",
+      "GVH_quantity": "Pi_q",
+      "reference_quantity": "velocity Hessian",
+      "matching_equation": "Pi_q is not a constraint for eta_Q>0",
+      "dimensions": "canonical",
+      "status": "ABSENT_AS_DERIVED",
+      "rank_increment": 0,
+      "SI_identifiability": "N/A",
+      "degeneracies": "eta_Q=0 would change branch"
+    },
+    {
+      "benchmark": "trace gauge",
+      "GVH_quantity": "C_tau",
+      "reference_quantity": "D->D+phi g",
+      "matching_equation": "q=Tr(A^2) invariant; {C_tau,H}=0",
+      "dimensions": "canonical",
+      "status": "FIRST_CLASS_DERIVED",
+      "rank_increment": 0,
+      "SI_identifiability": "N/A",
+      "degeneracies": "trace-invariant action family required"
+    },
+    {
+      "benchmark": "diffeomorphism sector",
+      "GVH_quantity": "pi_N,pi_i,H_perp,H_i",
+      "reference_quantity": "hypersurface deformation algebra",
+      "matching_equation": "covariant scalar q kinetic preserves HDA",
+      "dimensions": "canonical",
+      "status": "SYMMETRY_DERIVED_FIRST_CLASS",
+      "rank_increment": 0,
+      "SI_identifiability": "N/A",
+      "degeneracies": "full historical DCC componentwise audit open"
+    },
+    {
+      "benchmark": "R total DOF",
+      "GVH_quantity": "N_DOF",
+      "reference_quantity": "Dirac count",
+      "matching_equation": "20-9=11",
+      "dimensions": "N/A",
+      "status": "DERIVED_GENERIC_GAPPED_R",
+      "rank_increment": 1,
+      "SI_identifiability": "N/A",
+      "degeneracies": "exact GR branch excluded"
+    },
+    {
+      "benchmark": "P vs R",
+      "GVH_quantity": "delta N_DOF",
+      "reference_quantity": "gap treatment",
+      "matching_equation": "11-10=1",
+      "dimensions": "N/A",
+      "status": "CANONICAL_DISCRIMINANT_DERIVED",
+      "rank_increment": 0,
+      "SI_identifiability": "N/A",
+      "degeneracies": "does not select preferred branch"
+    },
+    {
+      "benchmark": "bare radial characteristic",
+      "GVH_quantity": "principal q symbol",
+      "reference_quantity": "metric null cone",
+      "matching_equation": "eta_Q g^{mu nu}k_mu k_nu=0",
+      "dimensions": "principal symbol",
+      "status": "BARE_BLOCK_MATCH_ONLY",
+      "rank_increment": 0,
+      "SI_identifiability": "eta_Q amplitude not identified",
+      "degeneracies": "full coupled characteristic matrix open"
+    }
+  ],
+  "locks": {
+    "full_componentwise_Poisson_algebra_derived": false,
+    "full_historical_DCC_Dirac_closed": false,
+    "GR_branch_Dirac_closed": false,
+    "eta_Q_theory_selected": false,
+    "full_pure_GVH_classical_action_closed": false,
+    "real_data_ready": false
+  },
+  "verdict": {
+    "local_audit_pass": true,
+    "obstructions": [
+      "ETA_Q_IS_NOT_SELECTED_BY_A_FUNDAMENTAL_GVH_PRINCIPLE",
+      "DIFFEOMORPHISM_FIRST_CLASS_CLOSURE_IS_SYMMETRY_DERIVED_NOT_COMPONENTWISE_RECONSTRUCTED_FOR_FULL_HISTORICAL_DCC",
+      "FULL_HISTORICAL_DCC_GLOBAL_OPERATOR_EQUIVALENCE_REMAINS_OPEN",
+      "EXACT_GR_BRANCH_Q_ZERO_IS_A_SINGULAR_CHART_LIMIT_AND_REQUIRES_SEPARATE_DIRAC_ANALYSIS_IN_FUNDAMENTAL_A_VARIABLES",
+      "GLOBAL_GHOST_FREEDOM_AND_FULL_COUPLED_CHARACTERISTICS_REMAIN_OPEN"
+    ],
+    "next_authorized": "0.3.2.7.3.7.3.3.28.20_Pure_GVH_PR_Ghost_Characteristics_GR_Branch_and_Strong_Coupling_Audit"
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.28.15_Full_D_Tensor_Covariant_Completion_Timelike_Origin_Constraint_DOF_and_Directional_Mode_Bridge_Audit_FAST",
+  "branch": "PURE_GVH_NO_EINSTEIN_AETHER",
+  "upstream": {
+    "version": "0.3.2.7.3.7.3.3.28.14",
+    "colab_executed_sha256": "97b94b5dfeefe7540518fc52fff00b9a19de47ccede90d6b10bd8c9e824bd7fe",
+    "colab_executed_size_bytes": 27338,
+    "source_exact": true,
+    "local_audit_pass": true,
+    "C2_spatial_STF_D_survives": true,
+    "fundamental_GVH_kinetic_derived": false,
+    "D_to_u_or_W_bridge_derived": false
+  },
+  "levels": {
+    "LEVEL1": "TIMELIKE_EIGENDIRECTION_DERIVED_NONCIRCULARLY_FROM_FULL_D_ON_SPECTRAL_GAP_BRANCH",
+    "LEVEL2": "LINEAR_D_TO_U_TO_W_DIRECTIONAL_MODE_BRIDGE_EXACTLY_MATERIALIZED",
+    "LEVEL3": "D_NATIVE_COMMUTATOR_ORIENTATION_KINETIC_ADDS_THREE_HEALTHY_LINEAR_TILT_DIRECTIONS_AND_COMBINED_D_KINETIC_RANK_IS_EIGHT",
+    "LEVEL4": "STRUCTURAL_YES_TO_NONCIRCULAR_U_PLUS_HEALTHY_D_NATIVE_KINETIC_BUT_FULL_METRIC_HAMILTONIAN_CAUSAL_AND_GAP_CLOSURE_AUDITS_REMAIN_OPEN"
+  },
+  "timelike_origin": {
+    "noncircular_conditional": true,
+    "unique_if_simple_timelike_eigenvalue_and_gap": true,
+    "global_gap_closure_proven": false
+  },
+  "directional_bridge": {
+    "linear_D_to_u": true,
+    "linear_D_to_W": true
+  },
+  "kinetic": {
+    "STF_only_rank": 5,
+    "tilt_rank": 3,
+    "combined_rank": 8,
+    "remaining_zero_kinetic_scalars": 2,
+    "D_native_orientation_candidate": "Tr([M,nabla M][M,nabla M])"
+  },
+  "EA_distinctness": {
+    "independent_EA_sector_reintroduced": false,
+    "EA_ci_reintroduced": false,
+    "linear_effective_vector_kinetic_EA_like": true,
+    "global_equivalence_to_EA_proven": false
+  },
+  "matching": [
+    {
+      "benchmark": "timelike origin",
+      "GVH_quantity": "u[D,g]",
+      "reference_quantity": "unique normalized timelike eigendirection",
+      "matching_equation": "M u=lambda_t u; u^2=-1",
+      "dimension": "1",
+      "status": "DERIVED_CONDITIONALLY_ON_SIMPLE_TIMELIKE_EIGENVALUE",
+      "rank_increment": 0,
+      "SI_identifiability": "N/A"
+    },
+    {
+      "benchmark": "linear directional bridge",
+      "GVH_quantity": "V,W",
+      "reference_quantity": "mixed D perturbation",
+      "matching_equation": "V=delta M^y_0/Delta; W=B+delta M^y_0/Delta",
+      "dimension": "depends on D normalization",
+      "status": "KINEMATIC_BRIDGE_DERIVED",
+      "rank_increment": 0,
+      "SI_identifiability": "not calibrated"
+    },
+    {
+      "benchmark": "STF kinetic",
+      "GVH_quantity": "K_D",
+      "reference_quantity": "5-mode kinetic Hessian",
+      "matching_equation": "K_STF=K_D I_5",
+      "dimension": "depends on D normalization",
+      "status": "REDUCED_HEALTHY_IF_KD_POSITIVE",
+      "rank_increment": 0,
+      "SI_identifiability": "not identified"
+    },
+    {
+      "benchmark": "orientation kinetic",
+      "GVH_quantity": "kappa_D Delta^4",
+      "reference_quantity": "3-mode tilt Hessian",
+      "matching_equation": "K_tilt=kappa_D Delta^4 I_3",
+      "dimension": "depends on D normalization",
+      "status": "D_NATIVE_STRUCTURAL_CANDIDATE",
+      "rank_increment": 0,
+      "SI_identifiability": "not identified"
+    },
+    {
+      "benchmark": "combined D kinetic rank",
+      "GVH_quantity": "D-sector Hessian",
+      "reference_quantity": "10-component symmetric D decomposition",
+      "matching_equation": "rank=8; 2 scalar zero-kinetic directions",
+      "dimension": "N/A",
+      "status": "REDUCED_STRUCTURAL_PASS",
+      "rank_increment": 0,
+      "SI_identifiability": "N/A"
+    },
+    {
+      "benchmark": "Einstein-aether distinctness",
+      "GVH_quantity": "D-native commutator action",
+      "reference_quantity": "independent unit-vector EA sector",
+      "matching_equation": "no independent u, no c1..c4",
+      "dimension": "N/A",
+      "status": "EA_NOT_REINTRODUCED_FUNDAMENTALLY",
+      "rank_increment": 0,
+      "SI_identifiability": "N/A"
+    },
+    {
+      "benchmark": "GR isotropic limit",
+      "GVH_quantity": "M -> d I",
+      "reference_quantity": "directional sector silent",
+      "matching_equation": "[M,nabla M]->0",
+      "dimension": "field-dependent",
+      "status": "STRUCTURAL_ROUTE_OPEN_REGULARITY_UNPROVEN",
+      "rank_increment": 0,
+      "SI_identifiability": "no new scale established"
+    }
+  ],
+  "verdict": {
+    "central_question_structural_yes": true,
+    "fundamental_GVH_action_derived": false,
+    "local_audit_pass": true,
+    "obstructions": [
+      "SPECTRAL_TIMELIKE_DIRECTION_REQUIRES_SIMPLE_TIMELIKE_EIGENVALUE_AND_NONZERO_GAP",
+      "FULL_METRIC_EOM_WITH_D_NATIVE_COMMUTATOR_OPERATOR_NOT_YET_DERIVED",
+      "FULL_HAMILTONIAN_CONSTRAINT_ALGEBRA_NOT_CLASSIFIED",
+      "TWO_SPECTRAL_SCALAR_DIRECTIONS_HAVE_ZERO_KINETIC_IN_MINIMAL_COMPLETION",
+      "FULL_METRIC_COUPLED_GHOST_FREEDOM_NOT_PROVEN",
+      "CHARACTERISTIC_CAUSALITY_NOT_PROVEN",
+      "REGULARITY_THROUGH_SPECTRAL_GAP_CLOSURE_NOT_PROVEN",
+      "KD_GD_MD2_KAPPA_D_NOT_THEORY_SELECTED",
+      "LINEAR_EFFECTIVE_VECTOR_KINETIC_IS_EA_LIKE_BUT_NO_FUNDAMENTAL_EA_SECTOR_IS_PRESENT"
+    ],
+    "next_authorized": "0.3.2.7.3.7.3.3.28.16_D_Native_Eigenprojector_Commutator_Kinetic_Full_Metric_Coupling_Hamiltonian_DOF_and_GR_Gap_Closure_Audit"
+  }
+}

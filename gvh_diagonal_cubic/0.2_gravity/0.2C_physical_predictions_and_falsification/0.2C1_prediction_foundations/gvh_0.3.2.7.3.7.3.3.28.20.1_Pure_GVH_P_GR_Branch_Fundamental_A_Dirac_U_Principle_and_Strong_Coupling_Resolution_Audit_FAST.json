@@ -1,0 +1,181 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.28.20.1_Pure_GVH_P_GR_Branch_Fundamental_A_Dirac_U_Principle_and_Strong_Coupling_Resolution_Audit_FAST",
+  "branch": "PURE_GVH_P_EXACT_GR_AND_PHASE_SEPARATION",
+  "upstream": {
+    "version": "0.3.2.7.3.7.3.3.28.20",
+    "executed_sha256": "93f3d09b5710ec124b5937274da74bdd2cd0c3e0d45c0c489c9bcdaaadc3a502",
+    "executed_size_bytes": 51846,
+    "local_audit_pass": true,
+    "P_conditional_GR_regularity_advantage": true,
+    "R_GR_strong_coupling_gate_fail": true,
+    "full_nonlinear_GR_branch_Dirac_closed": false,
+    "P_fundamentally_selected": false,
+    "real_data_ready": false
+  },
+  "levels": {
+    "LEVEL1": "FUNDAMENTAL_TRACELESS_A_QUADRATIC_FORM_I2_IS_NONDEGENERATE_RANK9_AND_IS_THE_UNIQUE_SPECTRAL_QUADRATIC_INVARIANT",
+    "LEVEL2": "ON_EXACT_A_ZERO_BRANCH_WITH_F0_ZERO_AND_MU2_NONZERO_THE_NINE_A_PRIMARY_CONSTRAINTS_GENERATE_NINE_ALGEBRAIC_SECONDARIES_FORMING_EIGHTEEN_SECOND_CLASS_CONSTRAINTS_AND_THE_BRANCH_HAS_TWO_GRAVITATIONAL_DOF",
+    "LEVEL3": "NO_ANALYTIC_U_REGULAR_AT_Q_ZERO_CAN_REMOVE_THE_GAPPED_TO_GR_STRONG_COUPLING_WITH_THE_CURRENT_Q_AND_Q_SQUARED_KINETIC_SCALING",
+    "LEVEL4": "A_MINIMAL_CUBIC_Q_POTENTIAL_PROVIDES_A_CONCRETE_TWO_PHASE_SEPARATION_CANDIDATE_SO_P_IS_SELECTED_WITHIN_THE_CURRENT_PR_FORK_BY_EXACT_GR_BRANCH_REGULARITY_BUT_NOT_YET_AS_THE_FINAL_UNIQUE_GVH_THEORY"
+  },
+  "fundamental_A": {
+    "independent_traceless_components": 9,
+    "I2_Hessian_rank": 9,
+    "I2_inertia": {
+      "positive": 6,
+      "negative": 3,
+      "zero": 0
+    },
+    "I2_unique_quadratic_spectral_invariant": true
+  },
+  "GR_Dirac": {
+    "primary_count": 14,
+    "secondary_count": 13,
+    "first_class_count": 9,
+    "second_class_count": 18,
+    "A_Poisson_rank": 18,
+    "branch_restricted_DOF": 2,
+    "branch_restricted_closed": true,
+    "global_constant_rank_across_q0": false
+  },
+  "potential": {
+    "global_general_form": "F(I2,I3,I4)",
+    "GR_conditions": [
+      "F(0)=0",
+      "mu2=dF/dI2|0 != 0"
+    ],
+    "full_potential_selected": false,
+    "minimal_two_phase_form": "mu*q-a*q^2+b*q^3",
+    "two_phase_conditions": [
+      "mu>0",
+      "a>0",
+      "b>0",
+      "a^2>3*b*mu"
+    ],
+    "degenerate_phase_relation": "mu=a^2/(4*b)",
+    "barrier": "a^3/(54*b^2)"
+  },
+  "strong_coupling": {
+    "analytic_U_smooth_cure": false,
+    "required_Upp_scaling": "q^-2",
+    "required_singular_U": "-log(q)",
+    "exact_GR_branch_resolved_in_scope": true,
+    "phase_separation_candidate": true,
+    "domain_wall_transition_health": false
+  },
+  "selection": {
+    "P_selected_within_current_PR_fork": true,
+    "P_final_unique_GVH": false,
+    "R_current_fork_disfavored": true
+  },
+  "matching": [
+    {
+      "benchmark": "exact GR Hessian",
+      "GVH_quantity": "full kinetic rank",
+      "reference_quantity": "previous GR rank",
+      "matching_equation": "rank=6, nullity=14",
+      "dimensions": "canonical",
+      "status": "MATCHED_TO_28.18.1",
+      "rank_increment": 0,
+      "SI_identifiability": "N/A",
+      "degeneracies": "branch q=0"
+    },
+    {
+      "benchmark": "A quadratic invariant",
+      "GVH_quantity": "I2=Tr(A^2)",
+      "reference_quantity": "9D traceless tensor space",
+      "matching_equation": "rank Hess(I2)=9",
+      "dimensions": "[A]^2",
+      "status": "DERIVED_NONDEGENERATE",
+      "rank_increment": 1,
+      "SI_identifiability": "no coefficient value",
+      "degeneracies": "none on traceless linear space"
+    },
+    {
+      "benchmark": "GR algebraic Dirac pair",
+      "GVH_quantity": "mu2 I2",
+      "reference_quantity": "P_A,Phi_A",
+      "matching_equation": "mu2!=0 => Poisson rank 18",
+      "dimensions": "potential",
+      "status": "DERIVED_BRANCH_RESTRICTED",
+      "rank_increment": 1,
+      "SI_identifiability": "mu2 not calibrated",
+      "degeneracies": "mu2=0"
+    },
+    {
+      "benchmark": "GR physical DOF",
+      "GVH_quantity": "N_DOF",
+      "reference_quantity": "Dirac count",
+      "matching_equation": "20-9-18/2=2",
+      "dimensions": "N/A",
+      "status": "DERIVED_BRANCH_RESTRICTED",
+      "rank_increment": 0,
+      "SI_identifiability": "N/A",
+      "degeneracies": "variable-rank crossing to q>0"
+    },
+    {
+      "benchmark": "potential basis",
+      "GVH_quantity": "F(I2,I3,I4)",
+      "reference_quantity": "trace-shift invariant spectral algebra",
+      "matching_equation": "I2 unique quadratic; I3,I4 higher order",
+      "dimensions": "mixed by coefficients",
+      "status": "STRUCTURAL_CLASSIFICATION",
+      "rank_increment": 0,
+      "SI_identifiability": "coefficients open",
+      "degeneracies": "1+3 branch reduces invariant independence"
+    },
+    {
+      "benchmark": "minimal two-phase potential",
+      "GVH_quantity": "mu q-a q^2+b q^3",
+      "reference_quantity": "stable q=0 and q+>0",
+      "matching_equation": "mu,a,b>0; a^2>3b mu",
+      "dimensions": "potential",
+      "status": "MINIMALITY_SELECTED_FORM_CLASS",
+      "rank_increment": 0,
+      "SI_identifiability": "mu,a,b not calibrated",
+      "degeneracies": "branch restricted q>=0"
+    },
+    {
+      "benchmark": "degenerate phase relation",
+      "GVH_quantity": "mu,a,b",
+      "reference_quantity": "U(0)=U(q+)=0",
+      "matching_equation": "mu=a^2/(4b)",
+      "dimensions": "consistent coefficient relation",
+      "status": "PHASE_MATCHED_RELATION",
+      "rank_increment": 1,
+      "SI_identifiability": "relative only",
+      "degeneracies": "does not fix absolute scale"
+    },
+    {
+      "benchmark": "smooth strong-coupling cure",
+      "GVH_quantity": "U''(q)",
+      "reference_quantity": "finite canonical interaction",
+      "matching_equation": "requires U''~q^-2 => U~-log q",
+      "dimensions": "potential curvature",
+      "status": "ANALYTIC_NOGO",
+      "rank_increment": 0,
+      "SI_identifiability": "N/A",
+      "degeneracies": "nonanalytic completions outside current scope"
+    }
+  ],
+  "locks": {
+    "global_ghost_freedom": false,
+    "full_coupled_characteristics": false,
+    "full_historical_DCC_gD_equivalence": false,
+    "full_pure_GVH_classical_action_globally_closed": false,
+    "real_data_ready": false
+  },
+  "verdict": {
+    "local_audit_pass": true,
+    "obstructions": [
+      "FULL_TRACE_SHIFT_INVARIANT_POTENTIAL_F_I2_I3_I4_IS_NOT_UNIQUELY_SELECTED",
+      "COEFFICIENTS_MU2_MU_A_B_AND_HIGHER_INVARIANT_COUPLINGS_ARE_NOT_NUMERICALLY_DERIVED",
+      "DIRAC_CLOSURE_AT_A_ZERO_IS_BRANCH_RESTRICTED_BECAUSE_THE_KINETIC_HESSIAN_HAS_VARIABLE_RANK_ACROSS_Q_ZERO",
+      "NO_ANALYTIC_POTENTIAL_CAN_PROVIDE_A_SMOOTH_PERTURBATIVE_GAPPED_TO_GR_LIMIT_WITH_CURRENT_KINETIC_SCALING",
+      "TWO_PHASE_BARRIER_QUARANTINES_BUT_DOES_NOT_YET_PROVE_HEALTHY_DOMAIN_WALL_OR_QUANTUM_TRANSITIONS",
+      "GLOBAL_GHOST_FREEDOM_AND_FULL_COUPLED_CHARACTERISTICS_REMAIN_OPEN",
+      "FULL_HISTORICAL_DCC_GLOBAL_GD_EQUIVALENCE_REMAINS_OPEN"
+    ],
+    "next_authorized": "0.3.2.7.3.7.3.3.28.20.2_Pure_GVH_P_Phase_Separated_GR_Gapped_Domain_Wall_Transition_and_Global_Consistency_Audit"
+  }
+}

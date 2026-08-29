@@ -1,0 +1,157 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.28.6_Second_Order_PPN_Central_Field_and_Two_Body_Pericenter_Readiness_Audit_FAST",
+  "upstream": {
+    "version": "0.3.2.7.3.7.3.3.28.5",
+    "source_sha256": "81f9eb03f34b51903b7701cc432047a618f0042a1b630b7dc842019b00e4c80b",
+    "source_size_bytes": 50553,
+    "cells": 22,
+    "code_cells": 11,
+    "markdown_cells": 11,
+    "local_execution_clean": true,
+    "user_colab_canonical_confirmed_here": false,
+    "weak_action_central_gate_closed": true,
+    "action_to_deformation_gate_closed": true,
+    "SI_matching_gate_closed": true,
+    "cubic_static_linear_activation": false,
+    "Mercury_GVH_precession_prediction_authorized": false,
+    "new_GVH_physics_validated": false
+  },
+  "provenance": {
+    "upstream_source_provenance_pass": true,
+    "upstream_285_user_colab_canonical_confirmed": false,
+    "canonical_freeze_pending": true
+  },
+  "levels": {
+    "LEVEL1": "STATIC_SPHERICAL_SECOND_ORDER_ACTION_EOM_AND_PPN_BETA_GAMMA_CLOSED",
+    "LEVEL2": "STATIC_1PN_PERICENTER_FACTOR_EQUALS_GR_AND_MERCURY_BENCHMARK_UNLOCKED",
+    "LEVEL3": "UPDATED_PARAMETER_DIMENSION_RANK_AND_SYSTEM_SPECIFIC_SI_IDENTIFIABILITY_LEDGER_CLOSED",
+    "LEVEL4": "BLOCKED_UNIQUE_GVH_DCC_PERICENTER_DEVIATION_PREFERRED_FRAME_AND_FULL_REAL_DATA_PREDICTION"
+  },
+  "PPN": {
+    "n2": "1/2",
+    "a2": "c14/8 + 1/4",
+    "beta": "1",
+    "gamma": "1",
+    "spatial_U2_coefficient": "c14/4 + 3/2",
+    "pericenter_factor": "1"
+  },
+  "Mercury_readiness": {
+    "static_1PN_benchmark_authorized": true,
+    "full_real_data_prediction_authorized": false,
+    "preferred_frame_sector_closed": false,
+    "full_relativistic_Nbody_model_closed": false
+  },
+  "SI": {
+    "formal_source_matched_scale_rank": 2,
+    "universal_theory_selected_scale_rank": 0,
+    "system_specific_1PN_angle_SI_identifiable": true,
+    "absolute_universal_SI_scale_derived": false,
+    "matching_table": [
+      {
+        "benchmark": "c=1 geometric bridge",
+        "GVH_quantity": "L_*/T_*",
+        "reference_quantity": "c",
+        "matching_equation": "L_*/T_* = c",
+        "dimension": "L T^-1",
+        "status": "MATCHED_CONVENTION",
+        "scale_rank_increment": 1,
+        "SI_identifiability": "ratio only"
+      },
+      {
+        "benchmark": "Newton / weak central field",
+        "GVH_quantity": "G0,c14",
+        "reference_quantity": "G_N",
+        "matching_equation": "G_N = G0/(1-c14/2)",
+        "dimension": "G:L^3 M^-1 T^-2; c14:1",
+        "status": "DERIVED_AND_MATCHED",
+        "scale_rank_increment": 0,
+        "SI_identifiability": "parameter dimensions identified"
+      },
+      {
+        "benchmark": "central source coefficient",
+        "GVH_quantity": "mu_hat",
+        "reference_quantity": "G_N M/c^2",
+        "matching_equation": "mu_hat = G_N M/(c^2 L_*)",
+        "dimension": "mu_hat:1; G_N M/c^2:L",
+        "status": "SOURCE_MATCHED",
+        "scale_rank_increment": 1,
+        "SI_identifiability": "L_* conditional on source + mu_hat"
+      },
+      {
+        "benchmark": "PPN gamma",
+        "GVH_quantity": "gamma",
+        "reference_quantity": "gamma_GR",
+        "matching_equation": "gamma = 1",
+        "dimension": "1",
+        "status": "ACTION_DERIVED_1PN_MATCH",
+        "scale_rank_increment": 0,
+        "SI_identifiability": "no scale information"
+      },
+      {
+        "benchmark": "PPN beta",
+        "GVH_quantity": "beta",
+        "reference_quantity": "beta_GR",
+        "matching_equation": "beta = 1",
+        "dimension": "1",
+        "status": "ACTION_DERIVED_1PN_MATCH",
+        "scale_rank_increment": 0,
+        "SI_identifiability": "no scale information"
+      },
+      {
+        "benchmark": "spatial metric O(U^2)",
+        "GVH_quantity": "3/2 + c14/4",
+        "reference_quantity": "3/2 in GR isotropic Schwarzschild",
+        "matching_equation": "Delta coefficient = c14/4",
+        "dimension": "1",
+        "status": "ACTION_DERIVED_EA_SECTOR_SHIFT",
+        "scale_rank_increment": 0,
+        "SI_identifiability": "dimensionless higher-order coefficient"
+      },
+      {
+        "benchmark": "1PN pericenter",
+        "GVH_quantity": "(2+2 gamma-beta)/3",
+        "reference_quantity": "GR factor 1",
+        "matching_equation": "P_peri = 1",
+        "dimension": "1",
+        "status": "DERIVED_STATIC_1PN_MATCH",
+        "scale_rank_increment": 0,
+        "SI_identifiability": "angle identifiable for specified M,a,e"
+      },
+      {
+        "benchmark": "tidal field",
+        "GVH_quantity": "T_geom",
+        "reference_quantity": "T_SI",
+        "matching_equation": "T_SI = c^2 T_geom",
+        "dimension": "L^-2 -> T^-2",
+        "status": "DERIVED_UNIT_RESTORATION",
+        "scale_rank_increment": 0,
+        "SI_identifiability": "system-specific after source match"
+      },
+      {
+        "benchmark": "Kasner shape",
+        "GVH_quantity": "P_i; 3c13+3c2-zeta_C",
+        "reference_quantity": "Kasner exponents",
+        "matching_equation": "GR surface gives sum P_i^2 = 1",
+        "dimension": "1",
+        "status": "DERIVED_DIMENSIONLESS_MATCH",
+        "scale_rank_increment": 0,
+        "SI_identifiability": "no SI scale information"
+      }
+    ]
+  },
+  "verdict": {
+    "G286_LOCAL_AUDIT_PASS": true,
+    "G286_CANONICAL_FREEZE_AUTHORIZED": false,
+    "obstructions": [
+      "UPSTREAM_285_USER_COLAB_CANONICAL_PROVENANCE_NOT_YET_CONFIRMED_IN_THIS_BRANCH",
+      "STATIC_SPHERICAL_BRANCH_HAS_ZERO_SHEAR_AND_ZERO_CUBIC_ACTIVATION",
+      "NO_UNIQUE_GVH_DCC_1PN_PERICENTER_DEVIATION",
+      "PREFERRED_FRAME_PARAMETERS_NOT_CLOSED_FOR_MERCURY",
+      "FULL_RELATIVISTIC_NBODY_MERCURY_MODEL_NOT_CLOSED",
+      "FULL_2PN_PERICENTER_NOT_CLOSED",
+      "UNIVERSAL_SOURCE_INDEPENDENT_SI_SCALES_NOT_THEORY_SELECTED",
+      "FULL_REAL_DATA_MERCURY_PREDICTION_NOT_AUTHORIZED"
+    ],
+    "next_authorized": "0.3.2.7.3.7.3.3.28.7_MERCURY_1PN_PERICENTER_GR_RECOVERY_AND_PREFERRED_FRAME_LOCK_AUDIT"
+  }
+}

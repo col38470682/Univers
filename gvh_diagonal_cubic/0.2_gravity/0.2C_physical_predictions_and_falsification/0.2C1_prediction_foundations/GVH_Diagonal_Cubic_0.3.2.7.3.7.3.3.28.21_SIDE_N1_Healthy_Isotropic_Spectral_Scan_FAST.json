@@ -1,0 +1,28 @@
+{
+  "upstream_sha256": "d8a256ab92abecab6a0871efdffc9f06c50726900bcb60a2abfce6a5d6a6b1f4",
+  "type": "SIDE_DIAGNOSTIC",
+  "canonical_advancement": false,
+  "normalization": {
+    "q": 1.0,
+    "KS": 1.0
+  },
+  "prescribed_scan_ratio_r": 2.0,
+  "isotropic_threshold_r_exact": 1.5,
+  "isotropic_point_Kmin": 0.33333333333333326,
+  "2d_window_healthy_fraction": 0.03309171674041425,
+  "directional_scan": {
+    "n_directions": 128,
+    "finite_boundary_count": 128,
+    "min_epsilon_boundary": 0.17157967482704817,
+    "median_epsilon_boundary": 0.19063091209685815,
+    "max_epsilon_boundary": 0.282578298727567
+  },
+  "verdict": {
+    "isotropic_health_numeric_pass": true,
+    "finite_local_health_margin_witness": true,
+    "global_health_claim": false,
+    "dynamical_invariance_tested": false,
+    "real_data_used": false,
+    "SI_calibration_used": false
+  }
+}

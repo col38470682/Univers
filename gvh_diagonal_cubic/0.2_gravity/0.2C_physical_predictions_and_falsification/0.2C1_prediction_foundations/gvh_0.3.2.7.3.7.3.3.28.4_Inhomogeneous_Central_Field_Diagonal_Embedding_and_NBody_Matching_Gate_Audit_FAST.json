@@ -1,0 +1,92 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.28.4_Inhomogeneous_Central_Field_Diagonal_Embedding_and_NBody_Matching_Gate_Audit_FAST",
+  "upstream": {
+    "version": "0.3.2.7.3.7.3.3.28.3.1",
+    "sha256": "693b2da489868f2b7675dd4488e0b3ab470a2dbb551225ed7ecd4af24299719e",
+    "size_bytes": 46664,
+    "cells": 20,
+    "code_cells": 10,
+    "markdown_cells": 10,
+    "local_audit_pass": true,
+    "parameterized_shape_deviation_materialized": true,
+    "deviation_uniquely_cubic_attributable": false,
+    "inhomogeneous_field_derived": false,
+    "Mercury_GVH_precession_prediction_authorized": false,
+    "new_GVH_physics_validated": false
+  },
+  "open_refs": [
+    "O-14",
+    "O-26",
+    "O-27",
+    "O-29",
+    "O-31",
+    "O-32",
+    "O-34"
+  ],
+  "levels": {
+    "LEVEL1": "CENTRAL_TIDAL_DIAGONAL_FIELD_AND_INHOMOGENEOUS_JACOBI_MAP_EXACTLY_MATERIALIZED",
+    "LEVEL2": "REFERENCE_NBODY_TIDAL_SUPERPOSITION_AND_HIERARCHICAL_MATCHING_BENCHMARK_PASS",
+    "LEVEL3": "NUMERIC_POSITION_DEPENDENT_SHAPE_SHEAR_AND_FAR_FIELD_MATCHING_WITNESSES_PASS",
+    "LEVEL4": "BLOCKED_GVH_ACTION_DERIVED_INHOMOGENEOUS_D_FIELD_AND_MERCURY_PREDICTION"
+  },
+  "central_field": {
+    "central_tidal_exact": true,
+    "tracefree": true,
+    "radial_tangential_spectrum": [
+      "2 mu/r^3",
+      "-mu/r^3",
+      "-mu/r^3"
+    ],
+    "inhomogeneous_Jacobi_field_materialized": true,
+    "weak_field_Jacobi_shear_map_pass": true
+  },
+  "nbody": {
+    "tidal_superposition_fd_error": 3.690062144734441e-12,
+    "vacuum_trace_witness": 1.3877787807814457e-17,
+    "hierarchical_matching_rows": [
+      {
+        "Rscale": 5.0,
+        "relative_tidal_error": 0.01585364083171483
+      },
+      {
+        "Rscale": 10.0,
+        "relative_tidal_error": 0.003951331266769571
+      },
+      {
+        "Rscale": 20.0,
+        "relative_tidal_error": 0.0009862783080303757
+      },
+      {
+        "Rscale": 40.0,
+        "relative_tidal_error": 0.00024637323090859897
+      },
+      {
+        "Rscale": 80.0,
+        "relative_tidal_error": 6.156862637390543e-05
+      }
+    ],
+    "spatial_matching_materialized": true
+  },
+  "locks": {
+    "full_GVH_sigma_identification_proven": false,
+    "identification_with_G283_metric_Dphys_proven": false,
+    "GVH_action_derived_inhomogeneous_D_field": false,
+    "full_covariant_Nbody_matching_proven": false,
+    "Mercury_GVH_precession_prediction_authorized": false,
+    "new_GVH_physics_validated": false,
+    "real_data_ready": false
+  },
+  "verdict": {
+    "G284_LOCAL_AUDIT_PASS": true,
+    "obstructions": [
+      "D_JACOBI_t_x_IS_NOT_YET_IDENTIFIED_WITH_THE_G283_METRIC_DIAGONAL_FIELD",
+      "FULL_GVH_ACTION_DERIVED_INHOMOGENEOUS_D_FIELD_NOT_CLOSED",
+      "WEAK_FIELD_JACOBI_SHEAR_NOT_YET_FULL_GVH_SIGMA_EMBEDDING",
+      "FULL_COVARIANT_NBODY_MATCHING_WITH_MOVING_SOURCES_NOT_PROVEN",
+      "ALIGNED_CUBIC_BRANCH_DISTINCTNESS_REMAINS_UNESTABLISHED",
+      "FULL_ARBITRARY_4D_CUBIC_METRIC_STRESS_NOT_COMPONENT_EXPANDED",
+      "MERCURY_GVH_PRECESSION_NOT_AUTHORIZED"
+    ],
+    "next_authorized": "0.3.2.7.3.7.3.3.28.5_GVH_ACTION_TO_INHOMOGENEOUS_DIAGONAL_FIELD_AND_WEAK_FIELD_CENTRAL_SOLUTION_GATE_AUDIT"
+  }
+}

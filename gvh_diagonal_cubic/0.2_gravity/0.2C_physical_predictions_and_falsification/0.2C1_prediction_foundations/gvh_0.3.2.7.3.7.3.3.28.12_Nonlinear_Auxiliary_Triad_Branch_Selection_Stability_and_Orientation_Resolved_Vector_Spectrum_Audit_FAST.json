@@ -1,0 +1,140 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.28.12_Nonlinear_Auxiliary_Triad_Branch_Selection_Stability_and_Orientation_Resolved_Vector_Spectrum_Audit_FAST",
+  "upstream": {
+    "version": "0.3.2.7.3.7.3.3.28.11",
+    "source_sha256": "4248e02afb16f9ca657f894455b0839c577dac57dbc187cf2172680f1b971dab",
+    "normalized_source_sha256": "978b2de8204fc3042077e2c680fa73669508c58fc1009f3b4c1ffd386e7a4bcd",
+    "source_size_bytes": 62162,
+    "local_executed_reference_sha256": "5b0c0fbdbe13764e268464b523bd7af5f066352bbfdc25258944128e718705d0",
+    "local_executed_reference_size_bytes": 77729,
+    "user_colab_canonical_confirmed": false,
+    "local_audit_pass": true,
+    "metric_aether_coupled_vector_mode_derived": true,
+    "EA_spin1_reference_recovered": true,
+    "linear_triad_branch_selection_closed": false,
+    "two_orientation_structural_rank5": true,
+    "full_DCC_identifiability_closed": false
+  },
+  "levels": {
+    "LEVEL1": "NONLINEAR_AUXILIARY_TRIAD_STATIONARY_BRANCHES_EXACTLY_CLASSIFIED",
+    "LEVEL2": "REDUCED_VECTOR_ENERGETIC_STABILITY_SELECTS_CHI_BY_SIGN_OF_ZETA_BUT_VACUUM_REMAINS_DEGENERATE",
+    "LEVEL3": "STATIONARY_BRANCH_ORIENTATION_RESPONSE_FIRST_APPEARS_AT_QUARTIC_ORDER",
+    "LEVEL4": "TWO_SPEED_PHYSICAL_RANK5_ROUTE_BLOCKED_BUT_SPEED_PLUS_STIFFNESS_STRUCTURAL_RANK5_ROUTE_MATERIALIZED"
+  },
+  "branch_selection": {
+    "dG_dchi": "-2*zeta_C/(2*c1 + 2*c3 - chi*zeta_C - 2)**2",
+    "stationary_branches": "phi=n*pi/4",
+    "kappa_chi0": "-2*zeta_C/(c1 + c3 - 1)**2",
+    "kappa_chi1": "8*zeta_C/(2*c1 + 2*c3 - zeta_C - 2)**2",
+    "energy_gap_G1_minus_G0": "-zeta_C/((c1 + c3 - 1)*(2*c1 + 2*c3 - zeta_C - 2))",
+    "stable_branch_selected_by_zeta_sign": true,
+    "vacuum_unique_orientation_selected": false,
+    "configuration_induced_selection": true
+  },
+  "perturbative_order": {
+    "stationary_orientation_response_first_nonzero_at_eps4": true,
+    "triad_orientation_propagating_dof_created": false
+  },
+  "identifiability": {
+    "two_orientation_algebraic_rank5_retained": true,
+    "two_stable_speeds_physical_rank5_authorized": false,
+    "speed_plus_stiffness_structural_rank5": true,
+    "stiffness_physical_observable_established": false,
+    "cminus_physically_derived": false,
+    "zeta_C_physically_derived": false,
+    "full_DCC_identifiability_closed": false
+  },
+  "SI": {
+    "unconditional_full_DCC_rank": 3,
+    "conditional_single_speed_rank": 4,
+    "structural_speed_plus_stiffness_rank": 5,
+    "full_DCC_parameter_count": 5,
+    "formal_source_matched_scale_rank": 2,
+    "universal_theory_selected_scale_rank": 0,
+    "matching_ledger": [
+      {
+        "benchmark": "nonlinear triad stationary branches",
+        "GVH_quantity": "phi_n",
+        "reference_quantity": "auxiliary orientation EOM",
+        "matching_equation": "sin(4phi)=0",
+        "dimension": "1",
+        "status": "DERIVED",
+        "rank_increment": 0,
+        "SI_identifiability": "dimensionless"
+      },
+      {
+        "benchmark": "stable branch sign selection",
+        "GVH_quantity": "chi_stable",
+        "reference_quantity": "sign(zeta_C)",
+        "matching_equation": "zeta>0=>chi=1; zeta<0=>chi=0",
+        "dimension": "1",
+        "status": "REDUCED_SECTOR_ENERGETIC_SELECTION_DERIVED",
+        "rank_increment": 0,
+        "SI_identifiability": "dimensionless"
+      },
+      {
+        "benchmark": "orientation stiffness",
+        "GVH_quantity": "kappa_stable",
+        "reference_quantity": "energy Hessian / W_x^2",
+        "matching_equation": "kappa0 or kappa1",
+        "dimension": "1",
+        "status": "STRUCTURAL_RESPONSE_COEFFICIENT_NOT_OBSERVABLE_YET",
+        "rank_increment": 0,
+        "SI_identifiability": "dimensionless"
+      },
+      {
+        "benchmark": "two stable speeds",
+        "GVH_quantity": "(s0^2,s1^2)",
+        "reference_quantity": "two stable branches",
+        "matching_equation": "not simultaneously stable for zeta!=0",
+        "dimension": "1",
+        "status": "PHYSICAL_ROUTE_BLOCKED_IN_REDUCED_SECTOR",
+        "rank_increment": 0,
+        "SI_identifiability": "not authorized"
+      },
+      {
+        "benchmark": "stable speed + stiffness",
+        "GVH_quantity": "(s_stable^2,kappa_stable)",
+        "reference_quantity": "full 5-parameter map",
+        "matching_equation": "Jacobian rank 5 generically",
+        "dimension": "1",
+        "status": "STRUCTURAL_CONDITIONAL_RANK5",
+        "rank_increment": 2,
+        "SI_identifiability": "no new universal scale"
+      },
+      {
+        "benchmark": "Mercury preferred-frame",
+        "GVH_quantity": "alpha1,alpha2 corrections",
+        "reference_quantity": "solar-system PPN",
+        "matching_equation": "still blocked by physical parameter closure",
+        "dimension": "1",
+        "status": "LOCKED",
+        "rank_increment": 0,
+        "SI_identifiability": "real-data prediction not authorized"
+      }
+    ]
+  },
+  "locks": {
+    "global_full_theory_triad_branch_selection_closed": false,
+    "preferred_frame_alpha1_alpha2_identifiability_closed": false,
+    "Mercury_full_real_data_prediction_authorized": false,
+    "new_GVH_physics_validated": false,
+    "canonical_freeze_authorized": false
+  },
+  "verdict": {
+    "G2812_LOCAL_AUDIT_PASS": true,
+    "obstructions": [
+      "UPSTREAM_2811_USER_COLAB_CANONICAL_PROVENANCE_NOT_YET_CONFIRMED",
+      "MINKOWSKI_VACUUM_DOES_NOT_SELECT_A_UNIQUE_TRIAD_ORIENTATION",
+      "BRANCH_SELECTION_IS_CONFIGURATION_INDUCED_AND_ZETA_SIGN_DEPENDENT",
+      "TWO_STABLE_ORIENTATION_SPEEDS_DO_NOT_COEXIST_FOR_NONZERO_ZETA",
+      "ORIENTATION_STIFFNESS_IS_NOT_YET_A_PHYSICAL_OBSERVABLE",
+      "CMINUS_NOT_YET_PHYSICALLY_DERIVED",
+      "ZETA_C_NOT_YET_PHYSICALLY_DERIVED",
+      "FULL_DCC_COUPLING_IDENTIFIABILITY_NOT_CLOSED",
+      "PREFERRED_FRAME_ALPHA1_ALPHA2_NOT_CLOSED",
+      "FULL_REAL_DATA_MERCURY_PREDICTION_NOT_AUTHORIZED"
+    ],
+    "next_authorized": "0.3.2.7.3.7.3.3.28.13_AUXILIARY_TRIAD_ORIENTATION_RESPONSE_PHYSICAL_OBSERVABLE_AND_FULL_DCC_IDENTIFIABILITY_GATE_AUDIT"
+  }
+}

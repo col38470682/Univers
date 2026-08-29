@@ -1,0 +1,147 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.28.18_Gap_Principle_Selection_Full_ADM_Expansion_Primary_Constraint_and_DCC_gD_Reintegration_Audit_FAST",
+  "branch": "PURE_GVH_NO_EINSTEIN_AETHER",
+  "upstream": {
+    "version": "0.3.2.7.3.7.3.3.28.17",
+    "colab_executed_sha256": "eaf45175cbfff2cb0173c339324667449cdd3461c1054967c5d694723d85e510",
+    "colab_executed_size_bytes": 60875,
+    "source_exact": true,
+    "local_audit_pass": true,
+    "projector_free_pass": true,
+    "spectral_principle_closed": false,
+    "full_ADM_Dirac_closed": false,
+    "full_pure_GVH_action_closed": false
+  },
+  "levels": {
+    "LEVEL1": "GAP_SELECTION_GATE_CLOSED_AS_EXPLICIT_NON_SELECTION_BOTH_P_AND_R_REMAIN_STRUCTURALLY_ADMISSIBLE",
+    "LEVEL2": "PURE_SPECTRAL_ALGEBRAIC_DCC_REWRITE_EXCLUDED_WHILE_GD_DERIVATIVE_NONCOMMUTATIVE_CANDIDATE_BASIS_IS_MATERIALIZED",
+    "LEVEL3": "EXACT_ADM_PRINCIPAL_SPATIAL_EIGENPAIR_METRIC_D_BLOCK_DERIVED_BUT_FULL_TEN_COMPONENT_ADM_EXPANSION_REMAINS_OPEN",
+    "LEVEL4": "PRIMARY_SCALAR_CONSTRAINT_SETS_ARE_BRANCH_RESOLVED_BUT_NO_UNIQUE_FULL_PRIMARY_SET_EXISTS_BEFORE_GAP_SELECTION_AND_FULL_ADM_COMPLETION"
+  },
+  "G18A_gap": {
+    "route_P_admissible": true,
+    "route_R_admissible": true,
+    "selected": false,
+    "not_selected": true,
+    "gate_closed": true
+  },
+  "G18B_DCC": {
+    "pure_spectral_algebraic_no_go": true,
+    "derivative_basis_materialized": true,
+    "full_reintegration_derived": false
+  },
+  "G18C_ADM": {
+    "principal_pair_derived": true,
+    "full_ADM_expansion_closed": false,
+    "Cij": "(2*K_S*Q - a_i**2*kappa_D + 2*a_i*a_j*kappa_D - a_j**2*kappa_D)/2",
+    "pair_hessian": "Matrix([[2*K_S*Q - a_i**2*kappa_D + 2*a_i*a_j*kappa_D - a_j**2*kappa_D, 0], [0, 2*A_EH - 2*K_S*Q*a_i**2 + 4*K_S*Q*a_i*a_j - 2*K_S*Q*a_j**2 + a_i**4*kappa_D - 4*a_i**3*a_j*kappa_D + 6*a_i**2*a_j**2*kappa_D - 4*a_i*a_j**3*kappa_D + a_j**4*kappa_D]])"
+  },
+  "G18D_primaries": {
+    "route_P_reduced_scalar_primaries": [
+      "pi_T",
+      "pi_Q"
+    ],
+    "route_R_reduced_scalar_primaries": [
+      "pi_T"
+    ],
+    "branch_resolved_set_derived": true,
+    "unique_full_set_derived": false
+  },
+  "matching": [
+    {
+      "benchmark": "Gap Route P vs R",
+      "GVH_quantity": "Q_D sector",
+      "reference_quantity": "internal symmetry/regularity criteria",
+      "matching_equation": "both P and R satisfy current covariance/trace-gauge/projector-free gates",
+      "dimensions": "route dependent",
+      "status": "NO_SELECTION_DERIVED",
+      "rank_increment": 0,
+      "SI_identifiability": "none",
+      "degeneracy": "8 vs 9 reduced D DOF"
+    },
+    {
+      "benchmark": "DCC algebraic gD rewrite",
+      "GVH_quantity": "Tr(A^n)",
+      "reference_quantity": "historical orientation dependence chi(phi)",
+      "matching_equation": "Tr[(RAR^-1)^n]=Tr(A^n), while chi varies",
+      "dimensions": "N/A",
+      "status": "ALGEBRAIC_SPECTRAL_NO_GO",
+      "rank_increment": 0,
+      "SI_identifiability": "N/A",
+      "degeneracy": "derivative/noncommutative basis still possible"
+    },
+    {
+      "benchmark": "DCC derivative basis",
+      "GVH_quantity": "J1,J2,J3",
+      "reference_quantity": "g,D-only orientation-sensitive candidates",
+      "matching_equation": "candidate operators only; no historical equality derived",
+      "dimensions": "operator dependent",
+      "status": "BASIS_MATERIALIZED_NOT_REINTEGRATED",
+      "rank_increment": 0,
+      "SI_identifiability": "not identified",
+      "degeneracy": "operator basis nonunique"
+    },
+    {
+      "benchmark": "ADM spatial eigenpair",
+      "GVH_quantity": "C_ij",
+      "reference_quantity": "qdot_ij and K_ij principal block",
+      "matching_equation": "L=Cij qdot^2+[A_EH-Cij(ai-aj)^2]Kij^2",
+      "dimensions": "kinetic",
+      "status": "EXACT_PRINCIPAL_PAIR_DERIVED",
+      "rank_increment": 0,
+      "SI_identifiability": "not calibrated",
+      "degeneracy": "full ten-component ADM open"
+    },
+    {
+      "benchmark": "Route P primaries",
+      "GVH_quantity": "scalar primary set",
+      "reference_quantity": "reduced Hessian",
+      "matching_equation": "{pi_T,pi_Q}",
+      "dimensions": "canonical",
+      "status": "BRANCH_RESOLVED_REDUCED",
+      "rank_increment": 0,
+      "SI_identifiability": "N/A",
+      "degeneracy": "gap route not selected"
+    },
+    {
+      "benchmark": "Route R primaries",
+      "GVH_quantity": "scalar primary set",
+      "reference_quantity": "reduced Hessian",
+      "matching_equation": "{pi_T}",
+      "dimensions": "canonical",
+      "status": "BRANCH_RESOLVED_REDUCED",
+      "rank_increment": 0,
+      "SI_identifiability": "N/A",
+      "degeneracy": "Q becomes dynamical"
+    },
+    {
+      "benchmark": "GR polynomial limit",
+      "GVH_quantity": "C_ij,O_shape,O_angle",
+      "reference_quantity": "A->0",
+      "matching_equation": "all vanish polynomially",
+      "dimensions": "operator dependent",
+      "status": "ACTION_REGULAR",
+      "rank_increment": 0,
+      "SI_identifiability": "no new scale",
+      "degeneracy": "canonical rank bifurcation remains"
+    }
+  ],
+  "verdict": {
+    "local_audit_pass": true,
+    "full_pure_GVH_classical_action_closed": false,
+    "real_data_ready": false,
+    "obstructions": [
+      "CURRENT_DERIVED_SYMMETRIES_DO_NOT_SELECT_ROUTE_P_VS_ROUTE_R",
+      "ROUTE_P_AND_ROUTE_R_HAVE_DIFFERENT_REDUCED_PRIMARY_CONSTRAINT_SETS",
+      "HISTORICAL_DCC_ORIENTATION_CANNOT_BE_REPRODUCED_BY_SPECTRAL_TRACE_INVARIANTS_ALONE",
+      "DERIVATIVE_NONCOMMUTATIVE_GD_DCC_BASIS_IS_NOT_YET_PROVEN_EQUIVALENT_TO_HISTORICAL_DCC",
+      "FULL_ADM_EXPANSION_OF_ALL_D_COMPONENTS_NOT_COMPLETED",
+      "LAPSE_SHIFT_PRIMARY_CONSTRAINTS_NOT_REDERIVED_FROM_FULL_NEW_ADM_ACTION",
+      "UNIQUE_FULL_PRIMARY_CONSTRAINT_SET_NOT_AVAILABLE",
+      "FULL_POISSON_DIRAC_ALGEBRA_NOT_AUTHORIZED_UNIQUELY",
+      "GLOBAL_GHOST_FREEDOM_AND_CAUSALITY_REMAIN_OPEN",
+      "GR_BRANCH_CONSTRAINT_COUNT_REMAINS_BIFURCATED"
+    ],
+    "next_authorized": "0.3.2.7.3.7.3.3.28.18.1_Gap_Discriminant_DCC_Derivative_Equivalence_and_Full_ADM_Primary_Completion_Audit"
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.28.8_Preferred_Frame_Coupling_Identifiability_and_Solar_System_Frame_Bridge_Audit_FAST",
+  "upstream": {
+    "version": "0.3.2.7.3.7.3.3.28.7",
+    "executed_sha256": "14530d7df600fcfa6011bd43664a4d23af7f6ba9c7902dc8cac267d740d374a7",
+    "source_sha256": "ee5b7071a68026deddf4184d5118a890170a9ff0354326d9832c32a813a24d15",
+    "normalized_source_sha256": "c1c516691f5617d9f7538e179c72633ede855e473cc68daaf32fd1390c23d9d0",
+    "cells": 18,
+    "code_cells": 9,
+    "markdown_cells": 9,
+    "execution_counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "errors": 0,
+    "local_audit_pass": true,
+    "Mercury_static_1PN_GR_recovery_gate_closed": true,
+    "preferred_frame_lock_confirmed": true,
+    "preferred_frame_sector_closed_for_Mercury": false,
+    "unique_GVH_DCC_Mercury_deviation_derived": false
+  },
+  "levels": {
+    "LEVEL1": "EA_COUPLING_IDENTIFIABILITY_RANK_3_OF_4_WITH_ONE_EXPLICIT_NULL_DIRECTION",
+    "LEVEL2": "PREFERRED_FRAME_ALPHA1_ALPHA2_REMAIN_NONIDENTIFIABLE_AND_ZERO_PF_SURFACE_REWRITTEN_IN_GVH_COMBINATIONS",
+    "LEVEL3": "COVARIANT_SOLAR_SYSTEM_AETHER_KINEMATIC_FRAME_BRIDGE_MATERIALIZED_WITHOUT_PHYSICAL_IDENTIFICATION",
+    "LEVEL4": "BLOCKED_NUMERIC_PREFERRED_FRAME_MERCURY_CORRECTION_FULL_REAL_DATA_AND_UNIQUE_GVH_DCC_DEVIATION"
+  },
+  "identifiability": {
+    "coupling_map_rank": 3,
+    "coupling_map_nullity": 1,
+    "full_identifiability": false,
+    "alpha1_varies_along_null_direction": true,
+    "alpha2_varies_along_null_direction": true,
+    "preferred_frame_identifiability_closed": false
+  },
+  "zero_preferred_frame_surface": {
+    "c1": "c13**2/(2*c13 - c14)",
+    "c2": "-(c13 + c14)/3",
+    "c3": "c13*(c13 - c14)/(2*c13 - c14)",
+    "c4": "-(c13 - c14)**2/(2*c13 - c14)",
+    "GVH_derives_surface": false,
+    "homogeneous_degeneracy_intersection_zetaC": "2*c13 - c14",
+    "intersection_is_universal_GVH_constraint": false
+  },
+  "frame_bridge": {
+    "kinematic_formula_materialized": true,
+    "kinematic_bridge": true,
+    "physical_bridge_closed": false,
+    "relative_speed_numeric": false,
+    "CMB_identification_assumed": false,
+    "galactic_identification_assumed": false
+  },
+  "SI": {
+    "formal_source_matched_scale_rank": 2,
+    "universal_theory_selected_scale_rank": 0,
+    "absolute_universal_SI_scale_derived": false,
+    "matching_table": [
+      {
+        "benchmark": "EA coupling map",
+        "GVH_quantity": "(c13,c2,c14)",
+        "reference_quantity": "(c1,c2,c3,c4)",
+        "matching_equation": "c13=c1+c3; c14=c1+c4",
+        "dimension": "1",
+        "status": "DERIVED_MAP_RANK_3_OF_4",
+        "rank_increment": 0,
+        "SI_identifiability": "one coupling direction unresolved"
+      },
+      {
+        "benchmark": "preferred-frame alpha1",
+        "GVH_quantity": "alpha1",
+        "reference_quantity": "EA PPN alpha1",
+        "matching_equation": "alpha1(c1,c13,c14)",
+        "dimension": "1",
+        "status": "FORMULA_DERIVED_NOT_IDENTIFIED",
+        "rank_increment": 0,
+        "SI_identifiability": "dimensionless; c1 unresolved"
+      },
+      {
+        "benchmark": "preferred-frame alpha2",
+        "GVH_quantity": "alpha2",
+        "reference_quantity": "EA PPN alpha2",
+        "matching_equation": "alpha2(c1,c2,c13,c14)",
+        "dimension": "1",
+        "status": "FORMULA_DERIVED_NOT_IDENTIFIED",
+        "rank_increment": 0,
+        "SI_identifiability": "dimensionless; c1 unresolved"
+      },
+      {
+        "benchmark": "zero preferred-frame surface",
+        "GVH_quantity": "c2,c13,c14",
+        "reference_quantity": "alpha1=alpha2=0 surface",
+        "matching_equation": "c2=-(c13+c14)/3",
+        "dimension": "1",
+        "status": "REFERENCE_SURFACE_NOT_GVH_SELECTED",
+        "rank_increment": 0,
+        "SI_identifiability": "dimensionless"
+      },
+      {
+        "benchmark": "solar-system frame bridge",
+        "GVH_quantity": "u_infinity . U_SSB",
+        "reference_quantity": "relative Lorentz factor",
+        "matching_equation": "Gamma_rel=-u_infinity.U_SSB",
+        "dimension": "1",
+        "status": "KINEMATIC_IDENTITY_ONLY",
+        "rank_increment": 0,
+        "SI_identifiability": "no numeric speed without physical bridge"
+      },
+      {
+        "benchmark": "relative preferred-frame speed",
+        "GVH_quantity": "w/c",
+        "reference_quantity": "Gamma_rel",
+        "matching_equation": "w^2/c^2=1-Gamma_rel^-2",
+        "dimension": "1",
+        "status": "KINEMATIC_DERIVED_NOT_NUMERICALLY_IDENTIFIED",
+        "rank_increment": 0,
+        "SI_identifiability": "dimensionless ratio only"
+      },
+      {
+        "benchmark": "Mercury static 1PN",
+        "GVH_quantity": "Delta_varpi",
+        "reference_quantity": "GR 1PN",
+        "matching_equation": "branch=GR at beta=gamma=1",
+        "dimension": "1",
+        "status": "SYSTEM_SPECIFIC_SI_RECOVERY_CLOSED",
+        "rank_increment": 0,
+        "SI_identifiability": "arcsec/century for specified system"
+      }
+    ]
+  },
+  "verdict": {
+    "G288_LOCAL_AUDIT_PASS": true,
+    "Mercury_static_1PN_GR_recovery_retained": true,
+    "preferred_frame_numeric_Mercury_correction_authorized": false,
+    "full_real_data_prediction_authorized": false,
+    "unique_GVH_DCC_Mercury_deviation_derived": false,
+    "new_GVH_physics_validated": false,
+    "obstructions": [
+      "ONE_EINSTEIN_AETHER_COUPLING_DIRECTION_REMAINS_UNIDENTIFIED",
+      "NO_FOURTH_INDEPENDENT_GVH_COUPLING_RELATION_DERIVED_YET",
+      "ZERO_PREFERRED_FRAME_SURFACE_NOT_SELECTED_BY_GVH_DYNAMICS",
+      "ASYMPTOTIC_AETHER_VECTOR_NOT_DERIVED_FOR_SOLAR_SYSTEM",
+      "SOLAR_SYSTEM_AETHER_RELATIVE_SPEED_NOT_NUMERICALLY_IDENTIFIED",
+      "STATIC_ALIGNED_CENTRAL_BRANCH_REMAINS_CUBIC_SILENT",
+      "NO_UNIQUE_GVH_DCC_MERCURY_DEVIATION",
+      "FULL_RELATIVISTIC_NBODY_MERCURY_MODEL_NOT_CLOSED",
+      "FULL_2PN_PERICENTER_NOT_CLOSED",
+      "FULL_REAL_DATA_MERCURY_PREDICTION_NOT_AUTHORIZED"
+    ],
+    "next_authorized": "0.3.2.7.3.7.3.3.28.9_FOURTH_COUPLING_RELATION_FROM_GVH_EOM_AND_CONSTRAINTS_AUDIT"
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.28.10_Vorticity_Twist_Sector_Activation_and_Cminus_Derivability_Audit_FAST",
+  "upstream": {
+    "version": "0.3.2.7.3.7.3.3.28.9",
+    "executed_sha256": "d41ae1c77182a0dd7fbb28b8da194310a70542c2c095084b1f19f2db26d64e74",
+    "executed_size_bytes": 54842,
+    "cells": 22,
+    "code_cells": 11,
+    "markdown_cells": 11,
+    "execution_counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "errors": 0,
+    "local_audit_pass": true,
+    "fourth_universal_relation_derived": false,
+    "missing_combination_identified": true,
+    "missing_combination": "c_minus=c1-c3",
+    "current_coupling_rank": 3,
+    "potential_rank_with_independent_cminus": 4
+  },
+  "levels": {
+    "LEVEL1": "NONZERO_VORTICITY_SECTOR_EXPLICITLY_ACTIVATED_BUT_RIGID_ROTATION_BULK_IS_CMINUS_NONIDENTIFYING",
+    "LEVEL2": "TRANSVERSE_FIXED_BACKGROUND_PROXY_IS_CMINUS_SENSITIVE_WITH_CONDITIONAL_EA_RANK4_ROUTE",
+    "LEVEL3": "ALIGNED_CUBIC_BRANCH_HAS_CMINUS_ZETA_DEGENERACY_AND_TRIAD_BRANCH_SELECTION_IS_OPEN",
+    "LEVEL4": "BLOCKED_FULL_COUPLED_VECTOR_MODE_PHYSICAL_CMINUS_DERIVATION_PREFERRED_FRAME_AND_REAL_DATA"
+  },
+  "rigid_rotation": {
+    "theta_zero": true,
+    "shear_zero": true,
+    "vorticity_nonzero": true,
+    "cubic_silent": true,
+    "bulk_twist_divergence_zero": true,
+    "derives_cminus": false
+  },
+  "transverse_proxy": {
+    "EA_reduction_pass": true,
+    "cminus_sensitive": true,
+    "zero_branch": {
+      "nu2": "c1/(c1 + c4)",
+      "conditional_EA_rank4": true,
+      "cminus_inversion": "-c13 + 2*c14*nu2"
+    },
+    "aligned_branch": {
+      "nu2": "(4*c1 - zeta_C)/(4*(c1 + c4))",
+      "fixed_zeta_EA_rank4": true,
+      "full_DCC_rank": 4,
+      "full_DCC_nullity": 1,
+      "cminus_zeta_degeneracy": true,
+      "cminus_inversion": "-(2*c13 - 4*c14*nu2 - zeta)/2"
+    }
+  },
+  "locks": {
+    "full_coupled_metric_aether_vector_mode_derived": false,
+    "cubic_triad_physical_branch_selected": false,
+    "zeta_C_independently_identified": false,
+    "cminus_physically_derived": false,
+    "full_DCC_coupling_identifiability_closed": false,
+    "preferred_frame_alpha1_alpha2_identifiability_closed": false,
+    "Mercury_full_real_data_prediction_authorized": false,
+    "new_GVH_physics_validated": false
+  },
+  "SI": {
+    "current_unconditional_EA_coupling_rank": 3,
+    "conditional_zero_branch_EA_coupling_rank": 4,
+    "aligned_full_DCC_rank": 4,
+    "aligned_full_DCC_parameter_count": 5,
+    "formal_source_matched_scale_rank": 2,
+    "universal_theory_selected_scale_rank": 0,
+    "matching_ledger": [
+      {
+        "benchmark": "twist activation",
+        "GVH_quantity": "c_minus=c1-c3",
+        "reference_quantity": "coefficient of omega^2",
+        "matching_equation": "L_omega=-c_minus omega^2",
+        "dimension": "1",
+        "status": "ACTION_DERIVED_COMBINATION",
+        "rank_increment": 0,
+        "SI_identifiability": "dimensionless"
+      },
+      {
+        "benchmark": "rigid rotation",
+        "GVH_quantity": "omega_xy=q",
+        "reference_quantity": "pure rotational congruence",
+        "matching_equation": "theta=sigma=0; omega^2=2q^2",
+        "dimension": "omega: L^-1 in geometric units",
+        "status": "TWIST_ACTIVATED_BULK_CMINUS_NOT_DERIVED",
+        "rank_increment": 0,
+        "SI_identifiability": "requires boundary/source for response"
+      },
+      {
+        "benchmark": "transverse zero-diagonal branch",
+        "GVH_quantity": "nu_Z^2",
+        "reference_quantity": "c1/c14",
+        "matching_equation": "nu_Z^2=c1/c14",
+        "dimension": "1",
+        "status": "CONDITIONAL_FIXED_BACKGROUND_RANK4_ROUTE",
+        "rank_increment": 1,
+        "SI_identifiability": "v_T/c dimensionless; no new scale"
+      },
+      {
+        "benchmark": "transverse aligned cubic branch",
+        "GVH_quantity": "nu_A^2",
+        "reference_quantity": "(c1-zeta_C/4)/c14",
+        "matching_equation": "nu_A^2=(c1-zeta_C/4)/c14",
+        "dimension": "1",
+        "status": "CMINUS_ZETA_DEGENERATE_IN_FULL_DCC",
+        "rank_increment": 0,
+        "SI_identifiability": "dimensionless"
+      },
+      {
+        "benchmark": "full coupled vector mode",
+        "GVH_quantity": "physical vector dispersion",
+        "reference_quantity": "metric+aether+triad eigenmode",
+        "matching_equation": "not yet derived",
+        "dimension": "1 for normalized speed",
+        "status": "OPEN",
+        "rank_increment": 0,
+        "SI_identifiability": "not authorized"
+      },
+      {
+        "benchmark": "Mercury preferred-frame",
+        "GVH_quantity": "alpha1,alpha2 corrections",
+        "reference_quantity": "solar-system observables",
+        "matching_equation": "blocked by full vector/twist sector",
+        "dimension": "1",
+        "status": "LOCKED",
+        "rank_increment": 0,
+        "SI_identifiability": "no real-data prediction authorized"
+      }
+    ]
+  },
+  "verdict": {
+    "G2810_LOCAL_AUDIT_PASS": true,
+    "obstructions": [
+      "RIGID_ROTATION_HAS_ZERO_BULK_TWIST_DIVERGENCE_AND_DOES_NOT_DERIVE_CMINUS",
+      "TRANSVERSE_RESULT_IS_FIXED_BACKGROUND_PROXY_NOT_FULL_GRAVITATIONAL_VECTOR_MODE",
+      "CUBIC_TRIAD_HAS_MULTIPLE_STATIONARY_BRANCHES_WITH_NO_PHYSICAL_SELECTION_RULE",
+      "ALIGNED_BRANCH_MIXES_CMINUS_WITH_ZETA_C",
+      "ZETA_C_NOT_INDEPENDENTLY_IDENTIFIED",
+      "CMINUS_NOT_YET_PHYSICALLY_DERIVED",
+      "PREFERRED_FRAME_ALPHA1_ALPHA2_NOT_CLOSED",
+      "SOLAR_SYSTEM_AETHER_PHYSICAL_FRAME_BRIDGE_REMAINS_OPEN",
+      "FULL_REAL_DATA_MERCURY_PREDICTION_NOT_AUTHORIZED",
+      "NO_UNIQUE_GVH_DCC_MERCURY_DEVIATION"
+    ],
+    "next_authorized": "0.3.2.7.3.7.3.3.28.11_FULL_COUPLED_VECTOR_TWIST_METRIC_AETHER_TRIAD_LINEAR_PERTURBATION_AND_BRANCH_SELECTION_AUDIT"
+  }
+}

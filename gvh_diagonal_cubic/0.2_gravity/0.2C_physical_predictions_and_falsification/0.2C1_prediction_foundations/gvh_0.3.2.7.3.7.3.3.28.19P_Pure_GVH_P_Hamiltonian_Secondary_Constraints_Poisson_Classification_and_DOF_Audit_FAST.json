@@ -1,0 +1,163 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.28.19P_Pure_GVH_P_Hamiltonian_Secondary_Constraints_Poisson_Classification_and_DOF_Audit_FAST",
+  "branch": "PURE_GVH_P_GAPPED",
+  "upstream": {
+    "version": "0.3.2.7.3.7.3.3.28.18.2",
+    "executed_sha256": "531b52b8052049b153c4894dbf2fab439f7f1a11bbfcf4a218164106e104e38f",
+    "executed_size_bytes": 46598,
+    "source_exact": true,
+    "local_audit_pass": true,
+    "gap_fork_PR_accepted": true,
+    "P_primary_count": 6,
+    "P_full_hessian_rank": 14,
+    "P_D_rank": 8,
+    "P_Dirac_gapped_commutator_family_authorized": true,
+    "full_historical_DCC_global_equivalence": false,
+    "GR_branch_Dirac_classified": false
+  },
+  "levels": {
+    "LEVEL1": "PURE_GVH_P_TOTAL_HAMILTONIAN_AND_SECONDARY_CONSTRAINT_CHAIN_MATERIALIZED_ON_GENERIC_GAPPED_BRANCH",
+    "LEVEL2": "GAP_PRIMARY_SECONDARY_PAIR_IS_SECOND_CLASS_WHEN_MQ_IS_INVERTIBLE_AND_NO_GAP_TERTIARY_IS_GENERATED",
+    "LEVEL3": "TRACE_SHIFT_IS_FIRST_CLASS_AND_DIFF_SECTOR_IS_FIRST_CLASS_BY_COVARIANT_HYPERSURFACE_DEFORMATION_STRUCTURE",
+    "LEVEL4": "DIRAC_COUNT_CLOSES_AT_TEN_PHYSICAL_DOF_EQUAL_TWO_GR_PLUS_EIGHT_D_ON_GENERIC_GAPPED_NONDEGENERATE_P_BRANCH"
+  },
+  "constraints": {
+    "primaries": [
+      "pi_N",
+      "pi_N1",
+      "pi_N2",
+      "pi_N3",
+      "C_tau",
+      "C_q"
+    ],
+    "primary_count": 6,
+    "secondaries": [
+      "H_perp",
+      "H_1",
+      "H_2",
+      "H_3",
+      "chi_q"
+    ],
+    "secondary_count": 5,
+    "first_class_count": 9,
+    "second_class_count": 2,
+    "onshell_Poisson_rank": 2
+  },
+  "gap": {
+    "secondary_local_principal": "(-2*K_S*P_U2 + 2*K_S*Uprime*alpha*q**3 + 2*K_S*V_q*alpha*q**3 - P_S2*alpha*q)/(2*K_S*alpha*q**3)",
+    "Mq_local_principal": "(3*K_S*P_U2 + K_S*Usecond*alpha*q**4 + K_S*V_qq*alpha*q**4 + P_S2*alpha*q)/(K_S*alpha*q**4)",
+    "second_class_if_Mq_nonzero": true,
+    "tertiary_generated_generic": false
+  },
+  "DOF": {
+    "configuration_variables": 20,
+    "F": 9,
+    "S": 2,
+    "N_DOF": 10,
+    "split": {
+      "GR": 2,
+      "D": 8
+    },
+    "domain": "generic gapped nondegenerate P branch"
+  },
+  "matching": [
+    {
+      "benchmark": "P primary inventory",
+      "GVH_quantity": "primary constraints",
+      "reference_quantity": "adapted ADM Hessian nullity",
+      "matching_equation": "rank H=14 => 6 primaries",
+      "dimensions": "canonical",
+      "status": "DERIVED_GAPPED_CORE",
+      "rank_increment": 0,
+      "SI_identifiability": "N/A",
+      "degeneracies": "q=0, alpha=0, anisotropic zero eigenvalues"
+    },
+    {
+      "benchmark": "gap secondary",
+      "GVH_quantity": "chi_q",
+      "reference_quantity": "preservation of Pi_q",
+      "matching_equation": "chi_q=delta H_C/delta q",
+      "dimensions": "Hamiltonian derivative",
+      "status": "DERIVED",
+      "rank_increment": 0,
+      "SI_identifiability": "not calibrated",
+      "degeneracies": "M_q=0"
+    },
+    {
+      "benchmark": "gap Poisson rank",
+      "GVH_quantity": "{Pi_q,chi_q}",
+      "reference_quantity": "second-class test",
+      "matching_equation": "det block=M_q^2",
+      "dimensions": "canonical",
+      "status": "SECOND_CLASS_IF_MQ_NONZERO",
+      "rank_increment": 0,
+      "SI_identifiability": "N/A",
+      "degeneracies": "M_q=0"
+    },
+    {
+      "benchmark": "trace gauge",
+      "GVH_quantity": "C_tau",
+      "reference_quantity": "D->D+phi g",
+      "matching_equation": "{C_tau,H_C}=0",
+      "dimensions": "canonical",
+      "status": "FIRST_CLASS_DERIVED_FROM_LOCAL_SHIFT_SYMMETRY",
+      "rank_increment": 0,
+      "SI_identifiability": "N/A",
+      "degeneracies": "requires trace-free action family"
+    },
+    {
+      "benchmark": "diffeomorphism sector",
+      "GVH_quantity": "pi_N,pi_i,H_perp,H_i",
+      "reference_quantity": "hypersurface deformation algebra",
+      "matching_equation": "standard HDA structure from covariant g,D action",
+      "dimensions": "canonical",
+      "status": "SYMMETRY_DERIVED_FIRST_CLASS",
+      "rank_increment": 0,
+      "SI_identifiability": "N/A",
+      "degeneracies": "full componentwise historical-DCC Poisson reconstruction not done"
+    },
+    {
+      "benchmark": "P total DOF",
+      "GVH_quantity": "N_DOF",
+      "reference_quantity": "Dirac count",
+      "matching_equation": "20-9-2/2=10",
+      "dimensions": "N/A",
+      "status": "DERIVED_GENERIC_GAPPED_NONDEGENERATE_P_BRANCH",
+      "rank_increment": 0,
+      "SI_identifiability": "N/A",
+      "degeneracies": "GR and M_q=0 branches excluded"
+    },
+    {
+      "benchmark": "universal SI scales",
+      "GVH_quantity": "K_S,kappa_eff,U",
+      "reference_quantity": "physical calibration",
+      "matching_equation": "no new independent SI matching",
+      "dimensions": "model dependent",
+      "status": "NOT_IDENTIFIED",
+      "rank_increment": 0,
+      "SI_identifiability": "universal rank 0",
+      "degeneracies": "free theory parameters"
+    }
+  ],
+  "locks": {
+    "full_componentwise_Poisson_algebra_derived": false,
+    "full_historical_DCC_Dirac_closed": false,
+    "GR_branch_Dirac_closed": false,
+    "potential_U_theory_selected": false,
+    "full_pure_GVH_classical_action_closed": false,
+    "real_data_ready": false
+  },
+  "verdict": {
+    "local_audit_pass": true,
+    "obstructions": [
+      "GAP_SECOND_CLASS_CLASSIFICATION_REQUIRES_INVERTIBLE_MQ",
+      "POTENTIAL_U_OF_Q_IS_NOT_YET_SELECTED_BY_A_FUNDAMENTAL_GVH_PRINCIPLE",
+      "DIFFEOMORPHISM_FIRST_CLASS_CLOSURE_IS_SYMMETRY_DERIVED_NOT_RECONSTRUCTED_COMPONENT_BY_COMPONENT_FOR_FULL_HISTORICAL_DCC",
+      "FULL_HISTORICAL_DCC_GLOBAL_OPERATOR_EQUIVALENCE_REMAINS_OPEN",
+      "EXACT_GR_BRANCH_Q_ZERO_REQUIRES_SEPARATE_DIRAC_ANALYSIS",
+      "GLOBAL_GHOST_FREEDOM_AND_CAUSALITY_REMAIN_OPEN"
+    ],
+    "next_authorized": "0.3.2.7.3.7.3.3.28.19R_Pure_GVH_R_Hamiltonian_Secondary_Constraints_Poisson_Classification_and_DOF_Audit",
+    "after_parallel_Dirac": "0.3.2.7.3.7.3.3.28.20_Pure_GVH_PR_Ghost_Characteristics_GR_Branch_and_Strong_Coupling_Audit"
+  }
+}

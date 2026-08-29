@@ -1,0 +1,145 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.28.16_D_Native_Eigenprojector_Commutator_Kinetic_Full_Metric_Coupling_Hamiltonian_DOF_and_GR_Gap_Closure_Audit_FAST",
+  "branch": "PURE_GVH_NO_EINSTEIN_AETHER",
+  "upstream": {
+    "version": "0.3.2.7.3.7.3.3.28.15",
+    "colab_executed_sha256": "d7a7dddf59f0aa08f874eb992c95d437c6bab72bef13f20fbd2a758721446478",
+    "colab_executed_size_bytes": 44764,
+    "source_exact": true,
+    "local_audit_pass": true,
+    "central_question_structural_yes": true,
+    "combined_D_kinetic_rank": 8,
+    "fundamental_GVH_action_derived": false
+  },
+  "levels": {
+    "LEVEL1": "SPECTRAL_SCALARS_ARE_NOT_AUTOMATICALLY_HEALTHY_BUT_A_NONDEGENERATE_COVARIANT_SPECTRAL_POTENTIAL_GIVES_TWO_REDUCED_SECOND_CLASS_PAIRS",
+    "LEVEL2": "TIMELIKE_SPATIAL_PRINCIPAL_MIXING_IS_SEMIPOSITIVE_BUT_SPATIAL_ANISOTROPY_INTRODUCES_A_CONDITIONAL_GHOST_BOUND",
+    "LEVEL3": "D_NATIVE_COMMUTATOR_IS_POLYNOMIALLY_REGULAR_AT_GAP_ZERO_BUT_SPECTRAL_PROJECTOR_STF_KINETIC_AND_DOF_CHART_ARE_NOT_YET_GLOBALLY_REGULAR",
+    "LEVEL4": "FULL_PURE_GVH_CLASSICAL_CLOSURE_REMAINS_OPEN_WITH_PRECISE_TARGETS_PROJECTOR_FREE_STF_SPECTRAL_PRINCIPLE_AND_FULL_ADM_DIRAC"
+  },
+  "scalar_constraints": {
+    "healthy_without_spectral_potential": false,
+    "healthy_conditionally": true,
+    "spectral_potential_theory_selected": false,
+    "reduced_D_DOF_with_candidate_potential": 8
+  },
+  "ghosts": {
+    "timelike_spatial_principal_rank": 1,
+    "spatial_anisotropy_effective_kinetic": "(2*K_D - kappa_D*lambda_i**2 + 2*kappa_D*lambda_i*lambda_j - kappa_D*lambda_j**2)/2",
+    "full_metric_ghost_freedom_proven": false
+  },
+  "gap_closure": {
+    "commutator_polynomial_regular": true,
+    "spectral_u_chart_regular": false,
+    "projector_free_STF_rewrite_derived": false,
+    "constraint_bifurcation": true,
+    "full_gap_closure_proven": false
+  },
+  "matching": [
+    {
+      "benchmark": "spectral gap invariant",
+      "GVH_quantity": "Q_D",
+      "reference_quantity": "Delta^2",
+      "matching_equation": "Q_D=3 Delta^2/4",
+      "dimensions": "depends on D normalization",
+      "status": "DERIVED",
+      "rank_increment": 0,
+      "SI_identifiability": "none",
+      "degeneracy": "Q_D=0 at spectral isotropy"
+    },
+    {
+      "benchmark": "scalar constraint closure without potential",
+      "GVH_quantity": "chi_Delta",
+      "reference_quantity": "generic homogeneous tilt",
+      "matching_equation": "chi_Delta -> Pi_u^2=0",
+      "dimensions": "Hamiltonian constraint",
+      "status": "FAIL_GENERIC_TILT",
+      "rank_increment": 0,
+      "SI_identifiability": "none",
+      "degeneracy": "homogeneous sector"
+    },
+    {
+      "benchmark": "candidate spectral potential",
+      "GVH_quantity": "V_spec(T,Q)",
+      "reference_quantity": "two auxiliary scalar pairs",
+      "matching_equation": "rank Hessian=2",
+      "dimensions": "candidate mass scales",
+      "status": "CONDITIONAL_SECOND_CLASS_CLOSURE",
+      "rank_increment": 0,
+      "SI_identifiability": "not theory selected",
+      "degeneracy": "new candidate parameters"
+    },
+    {
+      "benchmark": "reduced D DOF",
+      "GVH_quantity": "N_DOF",
+      "reference_quantity": "Dirac count",
+      "matching_equation": "N=10,F=0,S=4 => 8",
+      "dimensions": "N/A",
+      "status": "REDUCED_ONLY",
+      "rank_increment": 0,
+      "SI_identifiability": "N/A",
+      "degeneracy": "metric fixed"
+    },
+    {
+      "benchmark": "timelike-spatial metric mixing",
+      "GVH_quantity": "kinetic Hessian",
+      "reference_quantity": "positive semidefinite principal block",
+      "matching_equation": "rank=1, eigenvalues >=0",
+      "dimensions": "kinetic",
+      "status": "PRINCIPAL_BLOCK_PASS",
+      "rank_increment": 0,
+      "SI_identifiability": "N/A",
+      "degeneracy": "one null combination"
+    },
+    {
+      "benchmark": "spatial anisotropy ghost bound",
+      "GVH_quantity": "K_eff^ij",
+      "reference_quantity": "positive STF kinetic",
+      "matching_equation": "K_D > kappa_D (lambda_i-lambda_j)^2/2",
+      "dimensions": "kinetic",
+      "status": "CONDITIONAL",
+      "rank_increment": 0,
+      "SI_identifiability": "not identified",
+      "degeneracy": "large anisotropy can violate"
+    },
+    {
+      "benchmark": "GR gap closure commutator",
+      "GVH_quantity": "O_angle",
+      "reference_quantity": "silent directional sector",
+      "matching_equation": "O_angle~Delta^4 -> 0",
+      "dimensions": "operator dependent",
+      "status": "POLYNOMIAL_REGULAR",
+      "rank_increment": 0,
+      "SI_identifiability": "no new scale",
+      "degeneracy": "u chart invalid at Delta=0"
+    },
+    {
+      "benchmark": "full kinetic GR closure",
+      "GVH_quantity": "STF + angle",
+      "reference_quantity": "regular metric+D action",
+      "matching_equation": "projector-free STF rewrite missing",
+      "dimensions": "N/A",
+      "status": "OPEN",
+      "rank_increment": 0,
+      "SI_identifiability": "not authorized",
+      "degeneracy": "constraint bifurcation"
+    }
+  ],
+  "verdict": {
+    "local_audit_pass": true,
+    "full_pure_GVH_classical_dynamics_closed": false,
+    "obstructions": [
+      "SPECTRAL_POTENTIAL_OR_EQUIVALENT_CONSTRAINT_NOT_THEORY_DERIVED",
+      "WITHOUT_SPECTRAL_CLOSURE_HOMOGENEOUS_TILT_CAN_BE_FORCED_TRIVIAL",
+      "SPATIAL_ANISOTROPY_CAN_DRIVE_K_EFF_NEGATIVE",
+      "EXACT_ADM_METRIC_MIXING_COEFFICIENTS_NOT_YET_DERIVED",
+      "FULL_FIRST_SECOND_CLASS_CONSTRAINT_ALGEBRA_NOT_CLASSIFIED",
+      "STF_KINETIC_STILL_USES_SPECTRAL_PROJECTOR",
+      "PROJECTOR_FREE_POLYNOMIAL_STF_KINETIC_NOT_DERIVED",
+      "CONSTRAINT_BIFURCATION_OCCURS_AT_DELTA_ZERO",
+      "GAPPED_BRANCH_DOF_COUNT_CANNOT_BE_NAIVELY_TRANSFERRED_TO_GR_BRANCH",
+      "K_D_G_D_M_D2_KAPPA_D_AND_SPECTRAL_POTENTIAL_PARAMETERS_NOT_THEORY_SELECTED"
+    ],
+    "next_authorized": "0.3.2.7.3.7.3.3.28.17_Projector_Free_Polynomial_D_Kinetic_Spectral_Principle_and_Full_ADM_Dirac_Closure_Audit"
+  }
+}

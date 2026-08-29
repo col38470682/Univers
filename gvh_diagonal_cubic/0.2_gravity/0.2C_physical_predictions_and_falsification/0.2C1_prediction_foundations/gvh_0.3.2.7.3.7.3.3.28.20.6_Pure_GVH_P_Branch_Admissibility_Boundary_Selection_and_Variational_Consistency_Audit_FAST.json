@@ -1,0 +1,128 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.28.20.6_Pure_GVH_P_Branch_Admissibility_Boundary_Selection_and_Variational_Consistency_Audit_FAST",
+  "branch": "PURE_GVH_P_BRANCH_ADMISSIBILITY_BOUNDARY_VARIATIONAL",
+  "upstream": {
+    "version": "0.3.2.7.3.7.3.3.28.20.5",
+    "executed_sha256": "0d10a849eafc29e0bdefae0b0b7965256c8fa5a8ec16a95520f5dc292ff1f493",
+    "executed_size_bytes": 33140,
+    "local_audit_pass": true,
+    "distinct_regular_strata": true,
+    "fundamental_superselection_proven": false,
+    "branch_principle_required": true,
+    "branch_principle_selected": false
+  },
+  "levels": {
+    "LEVEL1": "FINITE_ENERGY_NONCOMPACT_ASYMPTOTICS_FORCE_Q_INFINITY_TO_ZERO_OR_Q_PLUS",
+    "LEVEL2": "THE_DIMENSIONLESS_BOUNDARY_LABEL_B_INFINITY_EQUALS_Q_INFINITY_OVER_Q_PLUS_IS_DERIVED_AND_FIXED_BOUNDARY_VARIATIONS_DECOMPOSE_THE_FUNCTIONAL_DOMAIN",
+    "LEVEL3": "BOUNDARY_PRESERVING_EVOLUTION_IMPLIES_B_INFINITY_DOT_EQUALS_ZERO_BUT_NO_LOCAL_NOETHER_BRANCH_CURRENT_OR_INTRINSIC_BULK_SELECTOR_IS_DERIVED",
+    "LEVEL4": "CONDITIONAL_ASYMPTOTIC_BRANCH_SELECTION_IS_CLOSED_WHILE_COMPACT_NO_BOUNDARY_UNIVERSAL_BRANCH_SELECTION_REMAINS_OPEN"
+  },
+  "asymptotic_selection": {
+    "zero_energy_vacua": [
+      "0",
+      "q_plus"
+    ],
+    "B_infinity": "q_infinity/q_plus",
+    "B_values": [
+      0,
+      1
+    ],
+    "conditional_selection_derived": true
+  },
+  "variational": {
+    "fixed_boundary_decomposition_pass": true,
+    "branch_lock": true,
+    "bulk_action_uniquely_selects_one_branch": false
+  },
+  "invariant": {
+    "local_branch_Noether_charge_derived": false
+  },
+  "universality": {
+    "compact_no_boundary_rule_closed": false,
+    "universal_fundamental_branch_principle": false
+  },
+  "matching": [
+    {
+      "benchmark": "zero-energy vacuum set",
+      "GVH_quantity": "U(q)",
+      "reference_quantity": "vacuum set",
+      "matching_equation": "U=0 => q in {0,q_plus}",
+      "dimensions": "potential density",
+      "status": "DERIVED",
+      "rank_increment": 1,
+      "SI_identifiability": "a,b open",
+      "degeneracies": "two degenerate vacua"
+    },
+    {
+      "benchmark": "noncompact finite-energy asymptotics",
+      "GVH_quantity": "q_infinity",
+      "reference_quantity": "finite total energy",
+      "matching_equation": "U(q_inf)>0 => E~V U -> infinity",
+      "dimensions": "energy",
+      "status": "BOUNDARY_ADMISSIBILITY_DERIVED",
+      "rank_increment": 1,
+      "SI_identifiability": "N/A",
+      "degeneracies": "requires infinite volume"
+    },
+    {
+      "benchmark": "branch label",
+      "GVH_quantity": "B_infinity",
+      "reference_quantity": "asymptotic sector",
+      "matching_equation": "B_inf=q_inf/q_plus in {0,1}",
+      "dimensions": "dimensionless",
+      "status": "DERIVED_CONDITIONALLY",
+      "rank_increment": 1,
+      "SI_identifiability": "dimensionless",
+      "degeneracies": "not universal on compact spaces"
+    },
+    {
+      "benchmark": "variational sector",
+      "GVH_quantity": "delta q_infinity",
+      "reference_quantity": "fixed-boundary variation",
+      "matching_equation": "delta q_inf=0",
+      "dimensions": "field variation",
+      "status": "VARIATIONAL_PASS",
+      "rank_increment": 1,
+      "SI_identifiability": "N/A",
+      "degeneracies": "sector choice encoded in boundary data"
+    },
+    {
+      "benchmark": "branch conservation",
+      "GVH_quantity": "dB_infinity/dt",
+      "reference_quantity": "boundary-preserving evolution",
+      "matching_equation": "dq_inf/dt=0 => dB_inf/dt=0",
+      "dimensions": "1/time",
+      "status": "CONDITIONAL_CONSERVATION",
+      "rank_increment": 0,
+      "SI_identifiability": "no time scale selected",
+      "degeneracies": "not a Noether charge"
+    },
+    {
+      "benchmark": "local current",
+      "GVH_quantity": "J_f^mu=f(q)nabla^mu q",
+      "reference_quantity": "Noether-like current",
+      "matching_equation": "divJ=f'(q)(nabla q)^2+f(q)box q",
+      "dimensions": "current",
+      "status": "NOT_IDENTICALLY_CONSERVED",
+      "rank_increment": 0,
+      "SI_identifiability": "N/A",
+      "degeneracies": "other current structures not excluded"
+    },
+    {
+      "benchmark": "compact-space limit",
+      "GVH_quantity": "E=V_Sigma U",
+      "reference_quantity": "finite spatial volume",
+      "matching_equation": "finite V_Sigma => finite E for finite U",
+      "dimensions": "energy",
+      "status": "ASYMPTOTIC_RULE_NOT_UNIVERSAL",
+      "rank_increment": 0,
+      "SI_identifiability": "N/A",
+      "degeneracies": "cosmological/no-boundary selection open"
+    }
+  ],
+  "verdict": {
+    "local_audit_pass": true,
+    "stage_I_global_unique_closure": false,
+    "next_authorized": "0.3.2.7.3.7.3.3.28.20.7_Pure_GVH_P_Compact_NoBoundary_Cosmological_Branch_Selection_and_Global_Admissibility_Audit"
+  }
+}

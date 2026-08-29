@@ -1,0 +1,83 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.28.14_Pure_GVH_Kinetic_Principle_Candidates_Nondegeneracy_DOF_and_GR_Limit_Audit_FAST",
+  "branch": "PURE_GVH_NO_EINSTEIN_AETHER",
+  "upstream_sha": "f50d8092de22a29b7e1d44e2f00f28c2e8ca48353c82e5cd1d7d92a9f5310cf6",
+  "legacy": {
+    "0.2.12": "90f29fe0e853154ed0e019b93d6449a4d40fb45b2410f5369acfa716d8723a1f",
+    "0.2.23": "3b2a45006314d0178840c160ee9acd8a9a605e83a956dc09606addc9e29a6109"
+  },
+  "results": {
+    "raw_D_negative_kinetic_directions": 3,
+    "STF_reduced_DOF": 5,
+    "STF_kinetic_rank": 5,
+    "cD2": "G_D/K_D",
+    "muD2": "m_D2/K_D",
+    "dispersion": "(G_D*k2 + m_D2)/K_D",
+    "C2_survives": true,
+    "fundamental_GVH_kinetic_derived": false,
+    "D_to_u_or_W_bridge_derived": false,
+    "full_pure_GVH_kinetic_closure": false
+  },
+  "matching": [
+    {
+      "benchmark": "DCC-only",
+      "quantity": "coeff(W_t^2)",
+      "matching": "0",
+      "status": "FAIL_COMPLETE_KINETIC",
+      "rank_increment": 0,
+      "SI": "none"
+    },
+    {
+      "benchmark": "raw D",
+      "quantity": "kinetic Hessian",
+      "matching": "3 negative D0i directions",
+      "status": "REJECT",
+      "rank_increment": 0,
+      "SI": "none"
+    },
+    {
+      "benchmark": "STF D",
+      "quantity": "K_D I5",
+      "matching": "rank 5 for K_D>0",
+      "status": "REDUCED_PASS",
+      "rank_increment": 0,
+      "SI": "not observable yet"
+    },
+    {
+      "benchmark": "STF dispersion",
+      "quantity": "Omega^2",
+      "matching": "(G_D/K_D)k^2+m_D^2/K_D",
+      "status": "DERIVED_REDUCED",
+      "rank_increment": 0,
+      "SI": "bridge required"
+    },
+    {
+      "benchmark": "GR limit",
+      "quantity": "Dbar",
+      "matching": "Dbar->0",
+      "status": "STRUCTURAL_PASS",
+      "rank_increment": 0,
+      "SI": "no new scale required"
+    },
+    {
+      "benchmark": "EA distinctness",
+      "quantity": "field representation",
+      "matching": "5 STF vs 3 unit-vector",
+      "status": "NOT_TRIVIAL_LINEAR_EA_REDEFINITION",
+      "rank_increment": 0,
+      "SI": "N/A"
+    },
+    {
+      "benchmark": "D-to-u/W bridge",
+      "quantity": "map",
+      "matching": "not derived",
+      "status": "BLOCKED",
+      "rank_increment": 0,
+      "SI": "not authorized"
+    }
+  ],
+  "verdict": {
+    "local_audit_pass": true,
+    "next_authorized": "0.3.2.7.3.7.3.3.28.15_Full_D_Tensor_Covariant_Completion_Timelike_Origin_Constraint_DOF_and_Directional_Mode_Bridge_Audit"
+  }
+}

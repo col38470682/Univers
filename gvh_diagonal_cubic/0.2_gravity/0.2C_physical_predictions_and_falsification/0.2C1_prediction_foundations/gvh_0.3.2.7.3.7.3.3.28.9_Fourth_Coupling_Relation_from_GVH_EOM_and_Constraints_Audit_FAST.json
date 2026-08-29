@@ -1,0 +1,242 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.28.9_Fourth_Coupling_Relation_from_GVH_EOM_and_Constraints_Audit_FAST",
+  "upstream": {
+    "p3324": {
+      "version": "0.3.2.7.3.7.3.3.24",
+      "executed_sha256": "7286f9ba6558a11b6160b4e6059352150572f636aac239578e51f5efd543f448",
+      "executed_size_bytes": 26259,
+      "fact": "EA kinematic decomposition materialized"
+    },
+    "p3325": {
+      "version": "0.3.2.7.3.7.3.3.25",
+      "executed_sha256": "cbf6e3009a1e8757b3b04f9a2b6d7415acb5e91bdb824db62137022dca460e00",
+      "executed_size_bytes": 26989,
+      "fact": "triad constraints and auxiliary elimination audited"
+    },
+    "p3328": {
+      "version": "0.3.2.7.3.7.3.3.28",
+      "executed_sha256": "eff81fd5eea581ea77727f7abf399e19b26db6507f3b3192a559817e69f4c251",
+      "executed_size_bytes": 43667,
+      "fact": "full variational system materialized; theory couplings not varied"
+    },
+    "p33281": {
+      "version": "0.3.2.7.3.7.3.3.28.1",
+      "executed_sha256": "b9110b719d0c19328f2fd417e06a98d2a23b72f810de3256bc4a21ffbfa0085e",
+      "executed_size_bytes": 41570,
+      "fact": "rigid flat helix vector residual proportional to c14"
+    },
+    "p332831": {
+      "version": "0.3.2.7.3.7.3.3.28.3.1",
+      "executed_sha256": "693b2da489868f2b7675dd4488e0b3ab470a2dbb551225ed7ecd4af24299719e",
+      "executed_size_bytes": 46664,
+      "fact": "homogeneous GR-shape degeneracy surface materialized"
+    },
+    "p33285": {
+      "version": "0.3.2.7.3.7.3.3.28.5",
+      "executed_sha256": "ff53233b42e28ae347c1143b64ae7483056830cc907060e7c43caacd01a1f8ab",
+      "executed_size_bytes": 53705,
+      "fact": "weak central action depends on c14 through G_N matching"
+    },
+    "p33286": {
+      "version": "0.3.2.7.3.7.3.3.28.6",
+      "executed_sha256": "add061b27faf46b1dc1cb37900ea642644a4e55d009f1991dc4e5df0e75de8cb",
+      "executed_size_bytes": 52100,
+      "fact": "static spherical beta=gamma=1; spatial U2 shift c14/4"
+    },
+    "p33288": {
+      "version": "0.3.2.7.3.7.3.3.28.8",
+      "executed_sha256": "3092736721bf63abc5c59d1755cd66d4f84457c3035aa308440c6fc2d0be6f19",
+      "executed_size_bytes": 41806,
+      "cells": 18,
+      "code_cells": 9,
+      "markdown_cells": 9,
+      "execution_counts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "errors": 0,
+      "local_audit_pass": true,
+      "coupling_map_rank": 3,
+      "coupling_map_nullity": 1,
+      "preferred_frame_identifiability_closed": false
+    }
+  },
+  "levels": {
+    "LEVEL1": "CURRENT_GVH_ACTION_HAS_NO_VARIATIONAL_COUPLING_EOM_AND_EXISTING_CONSTRAINTS_AUDITED",
+    "LEVEL2": "EXISTING_INTERNAL_COUPLING_RELATIONS_REMAIN_RANK_3_AND_NULL_DIRECTION_SURVIVES",
+    "LEVEL3": "MISSING_INDEPENDENT_COMBINATION_IDENTIFIED_AS_CMINUS_EQUALS_C1_MINUS_C3_VORTICITY_COEFFICIENT",
+    "LEVEL4": "NO_FOURTH_UNIVERSAL_RELATION_DERIVED_NEXT_GATE_IS_NONZERO_VORTICITY_SECTOR_CMINUS_DERIVABILITY"
+  },
+  "coupling_variation": {
+    "theory_couplings_variational_EOM_expected": false,
+    "no_deltaS_delta_ci_in_current_action": true
+  },
+  "existing_relations": {
+    "jacobian_rank": 3,
+    "nullity": 1,
+    "provide_fourth_direction": false,
+    "all_internal_candidates_null_blind": true,
+    "candidate_ledger": [
+      {
+        "candidate": "delta S / delta c_i = 0",
+        "origin": "current action",
+        "null_sensitive": "would be",
+        "status": "NOT_PRESENT_COUPLINGS_ARE_PRESCRIBED",
+        "universal_GVH_relation": false
+      },
+      {
+        "candidate": "c14=0 from rigid helix",
+        "origin": ".28.1 special proxy",
+        "null_sensitive": false,
+        "status": "BRANCH_SOLUTION_CONDITION_ALREADY_IN_CURRENT_SPAN",
+        "universal_GVH_relation": false
+      },
+      {
+        "candidate": "3c13+3c2-zeta_C=0",
+        "origin": ".28.3.1 homogeneous GR matching",
+        "null_sensitive": false,
+        "status": "BENCHMARK_DEGENERACY_SURFACE",
+        "universal_GVH_relation": false
+      },
+      {
+        "candidate": "zero preferred-frame surface",
+        "origin": "Einstein-aether reference",
+        "null_sensitive": true,
+        "status": "EXTERNAL_REFERENCE_SURFACE_NOT_GVH_DERIVED",
+        "universal_GVH_relation": false
+      },
+      {
+        "candidate": "G_N=G0/(1-c14/2)",
+        "origin": ".28.5 weak central field",
+        "null_sensitive": false,
+        "status": "ACTION_DERIVED_MATCH_BUT_C14_ONLY",
+        "universal_GVH_relation": false
+      },
+      {
+        "candidate": "beta=gamma=1",
+        "origin": ".28.6 static spherical branch",
+        "null_sensitive": false,
+        "status": "ACTION_DERIVED_BUT_NO_CMINUS_INFORMATION",
+        "universal_GVH_relation": false
+      },
+      {
+        "candidate": "c_minus=c1-c3",
+        "origin": ".24 vorticity coefficient",
+        "null_sensitive": true,
+        "status": "MISSING_INDEPENDENT_COMBINATION_IDENTIFIED_NOT_YET_PHYSICALLY_DERIVED",
+        "universal_GVH_relation": false
+      }
+    ]
+  },
+  "missing_combination": {
+    "name": "c_minus",
+    "definition": "c1-c3",
+    "action_sector": "vorticity/twist",
+    "L_term": "-c_minus * omega^2",
+    "extended_map_rank": 4,
+    "extended_map_det": "2",
+    "rank4_pass": true,
+    "alpha1_sensitive_to_cminus": true,
+    "numeric_null_witness_pass": true
+  },
+  "SI": {
+    "current_coupling_identifiability_rank": 3,
+    "potential_coupling_rank_with_independent_cminus": 4,
+    "formal_source_matched_scale_rank": 2,
+    "universal_theory_selected_scale_rank": 0,
+    "absolute_universal_SI_scale_derived": false,
+    "matching_table": [
+      {
+        "benchmark": "shear sector",
+        "GVH_quantity": "c13=c1+c3",
+        "reference_quantity": "EA shear coefficient",
+        "matching_equation": "L_sigma=-c13 sigma^2",
+        "dimension": "1",
+        "status": "ACTION_DECOMPOSITION_DERIVED",
+        "coupling_rank_increment": 1,
+        "SI_identifiability": "dimensionless"
+      },
+      {
+        "benchmark": "expansion sector",
+        "GVH_quantity": "c2 with c13",
+        "reference_quantity": "EA expansion coefficient",
+        "matching_equation": "L_theta=-(c2+c13/3) theta^2",
+        "dimension": "1",
+        "status": "ACTION_DECOMPOSITION_DERIVED",
+        "coupling_rank_increment": 1,
+        "SI_identifiability": "dimensionless"
+      },
+      {
+        "benchmark": "acceleration sector",
+        "GVH_quantity": "c14=c1+c4",
+        "reference_quantity": "EA acceleration coefficient",
+        "matching_equation": "L_a=c14 a^2",
+        "dimension": "1",
+        "status": "ACTION_DECOMPOSITION_DERIVED",
+        "coupling_rank_increment": 1,
+        "SI_identifiability": "dimensionless"
+      },
+      {
+        "benchmark": "vorticity/twist sector",
+        "GVH_quantity": "c_minus=c1-c3",
+        "reference_quantity": "EA vorticity coefficient",
+        "matching_equation": "L_omega=-c_minus omega^2",
+        "dimension": "1",
+        "status": "ACTION_COMBINATION_IDENTIFIED_PHYSICAL_DERIVATION_OPEN",
+        "coupling_rank_increment": 0,
+        "SI_identifiability": "dimensionless; would close 4/4 if independently derived"
+      },
+      {
+        "benchmark": "preferred-frame alpha1",
+        "GVH_quantity": "alpha1(c13,c14,c_minus)",
+        "reference_quantity": "EA PPN alpha1",
+        "matching_equation": "sensitive to c_minus",
+        "dimension": "1",
+        "status": "NOT_IDENTIFIED_UNTIL_CMINUS_CLOSED",
+        "coupling_rank_increment": 0,
+        "SI_identifiability": "dimensionless"
+      },
+      {
+        "benchmark": "Mercury static 1PN",
+        "GVH_quantity": "Delta_varpi",
+        "reference_quantity": "GR 1PN",
+        "matching_equation": "beta=gamma=1",
+        "dimension": "1",
+        "status": "SYSTEM_SPECIFIC_SI_RECOVERY_RETAINED",
+        "coupling_rank_increment": 0,
+        "SI_identifiability": "arcsec/century for specified system"
+      }
+    ]
+  },
+  "locks": {
+    "fourth_universal_GVH_coupling_relation_derived": false,
+    "nonzero_vorticity_physical_sector_closed": false,
+    "cminus_derived": false,
+    "preferred_frame_alpha1_alpha2_identifiability_closed": false,
+    "preferred_frame_numeric_Mercury_correction_authorized": false,
+    "Mercury_full_real_data_prediction_authorized": false,
+    "unique_GVH_DCC_Mercury_deviation_derived": false,
+    "new_GVH_physics_validated": false
+  },
+  "verdict": {
+    "G289_LOCAL_AUDIT_PASS": true,
+    "obstructions": [
+      "NO_VARIATIONAL_EOM_FOR_THEORY_COUPLINGS_IN_CURRENT_ACTION",
+      "EXISTING_GVH_RELATIONS_REMAIN_BLIND_TO_C1_MINUS_C3_NULL_DIRECTION",
+      "NONZERO_VORTICITY_PHYSICAL_BRANCH_NOT_YET_DERIVED",
+      "CMINUS_NOT_YET_DERIVED_FROM_A_GVH_SOLUTION_OR_INDEPENDENT_OBSERVABLE",
+      "PREFERRED_FRAME_ALPHA1_ALPHA2_REMAIN_NONIDENTIFIABLE",
+      "SOLAR_SYSTEM_AETHER_PHYSICAL_FRAME_BRIDGE_REMAINS_OPEN",
+      "FULL_REAL_DATA_MERCURY_PREDICTION_NOT_AUTHORIZED",
+      "NO_UNIQUE_GVH_DCC_MERCURY_DEVIATION"
+    ],
+    "next_authorized": "0.3.2.7.3.7.3.3.28.10_VORTICITY_TWIST_SECTOR_ACTIVATION_AND_CMINUS_DERIVABILITY_AUDIT"
+  }
+}

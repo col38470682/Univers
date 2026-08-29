@@ -1,0 +1,166 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.28.20_Pure_GVH_PR_Ghost_Characteristics_GR_Branch_and_Strong_Coupling_Audit_FAST",
+  "branch": "PURE_GVH_PR_COMPARATIVE",
+  "upstream": {
+    "P": {
+      "version": "0.3.2.7.3.7.3.3.28.19P",
+      "sha256": "5eb5d4899ebfcd7c132c0a437ce213526917cb162d557754a61f54541966ff36",
+      "size_bytes": 41614,
+      "DOF": 10,
+      "F": 9,
+      "S": 2,
+      "local_audit_pass": true,
+      "GR_branch_Dirac_closed": false
+    },
+    "R": {
+      "version": "0.3.2.7.3.7.3.3.28.19R",
+      "sha256": "d503dd6d32c1266561056fdb925a168e18acddf7c365b183e290fc6c4f3d97f9",
+      "size_bytes": 47731,
+      "DOF": 11,
+      "F": 9,
+      "S": 0,
+      "local_audit_pass": true,
+      "GR_branch_Dirac_closed": false
+    }
+  },
+  "levels": {
+    "LEVEL1": "GENERIC_GAPPED_P_AND_R_HAVE_NONEMPTY_LOCAL_GHOST_FREE_DOMAINS_AND_ISOLATED_CONSTANT_BACKGROUND_METRIC_CONES",
+    "LEVEL2": "ALL_CURRENT_POLYNOMIAL_D_DERIVATIVE_OPERATORS_BEGIN_AT_QUARTIC_ORDER_AROUND_A_ZERO_SO_THE_GR_BRANCH_HAS_NO_D_QUADRATIC_DERIVATIVE_PROPAGATOR",
+    "LEVEL3": "CURRENT_R_HAS_A_GR_STRONG_COUPLING_OBSTRUCTION_WHILE_P_HAS_A_CONDITIONAL_ALGEBRAIC_GR_ESCAPE_IF_UPRIME_AT_ZERO_IS_NONZERO",
+    "LEVEL4": "BOTH_GAPPED_BRANCHES_DEVELOP_DIVERGENT_CANONICALLY_NORMALIZED_INTERACTIONS_AS_Q0_APPROACHES_ZERO_SO_NO_SMOOTH_GAPPED_TO_GR_PERTURBATIVE_LIMIT_IS_ESTABLISHED"
+  },
+  "ghosts": {
+    "P_gapped_local_pass": true,
+    "R_gapped_local_pass": true,
+    "global_proof": false
+  },
+  "characteristics": {
+    "isolated_constant_background_metric_cone": true,
+    "full_coupled_closed": false
+  },
+  "GR": {
+    "D_derivative_quadratic_action_zero": true,
+    "P_conditional_algebraic_DOF": 2,
+    "P_requires_Uprime0_nonzero": true,
+    "R_strong_coupling_obstruction": true,
+    "full_nonlinear_Dirac_closed": false
+  },
+  "strong_coupling": {
+    "R_gapped_to_GR_diverges": true,
+    "P_gapped_to_GR_diverges_if_Upp_finite": true,
+    "tilt_gap_coupling_diverges": true
+  },
+  "selection": {
+    "P_conditional_advantage": true,
+    "P_fundamentally_selected": false,
+    "R_fundamentally_excluded": false
+  },
+  "matching": [
+    {
+      "benchmark": "gapped P ghost domain",
+      "GVH_quantity": "physical kinetic eigenvalues",
+      "reference_quantity": "positive reduced Hessian",
+      "matching_equation": "KS q>0; (16/9) beta q^2>0",
+      "dimensions": "kinetic",
+      "status": "LOCAL_PASS",
+      "rank_increment": 0,
+      "SI_identifiability": "none",
+      "degeneracies": "q=0,beta=0,anisotropic rank surfaces"
+    },
+    {
+      "benchmark": "gapped R ghost domain",
+      "GVH_quantity": "physical kinetic eigenvalues",
+      "reference_quantity": "positive reduced Hessian",
+      "matching_equation": "P conditions + eta_Q>0",
+      "dimensions": "kinetic",
+      "status": "LOCAL_PASS",
+      "rank_increment": 0,
+      "SI_identifiability": "eta_Q not calibrated",
+      "degeneracies": "q=0,eta_Q=0,anisotropic rank surfaces"
+    },
+    {
+      "benchmark": "isolated characteristics",
+      "GVH_quantity": "principal symbol",
+      "reference_quantity": "metric cone",
+      "matching_equation": "K(-omega^2+k^2)=0",
+      "dimensions": "principal",
+      "status": "LOCAL_CONSTANT_BACKGROUND_PASS",
+      "rank_increment": 0,
+      "SI_identifiability": "none",
+      "degeneracies": "full coupled anisotropic matrix open"
+    },
+    {
+      "benchmark": "GR derivative quadratic action",
+      "GVH_quantity": "S_D^(2)",
+      "reference_quantity": "A=epsilon B",
+      "matching_equation": "O_shape,O_angle,(dQ)^2 = O(epsilon^4)",
+      "dimensions": "action",
+      "status": "ZERO_QUADRATIC_DERIVATIVE_ACTION",
+      "rank_increment": 0,
+      "SI_identifiability": "N/A",
+      "degeneracies": "rank bifurcation"
+    },
+    {
+      "benchmark": "P exact-GR algebraic escape",
+      "GVH_quantity": "U'(0) Q_D",
+      "reference_quantity": "9 traceless algebraic pairs",
+      "matching_equation": "U'(0)!=0 => conditional S=18, N_DOF=2",
+      "dimensions": "potential",
+      "status": "CONDITIONAL_QUADRATIC_DIRAC_MODEL",
+      "rank_increment": 0,
+      "SI_identifiability": "U'(0) not selected",
+      "degeneracies": "U'(0)=0; nonlinear closure open"
+    },
+    {
+      "benchmark": "R exact-GR perturbation",
+      "GVH_quantity": "D quadratic action",
+      "reference_quantity": "current Route R",
+      "matching_equation": "kinetic=0 and algebraic quadratic=0",
+      "dimensions": "action",
+      "status": "STRONG_COUPLING_OBSTRUCTION",
+      "rank_increment": 0,
+      "SI_identifiability": "N/A",
+      "degeneracies": "could require new completion beyond current R"
+    },
+    {
+      "benchmark": "P gapped-to-GR coupling",
+      "GVH_quantity": "induced canonical quartic",
+      "reference_quantity": "q0->0",
+      "matching_equation": "~1/[8 U'' q0^2]",
+      "dimensions": "interaction",
+      "status": "DIVERGES_IF_U''_FINITE",
+      "rank_increment": 0,
+      "SI_identifiability": "no strong-coupling scale calibrated",
+      "degeneracies": "non-derived coefficient scaling could modify"
+    },
+    {
+      "benchmark": "R gapped-to-GR coupling",
+      "GVH_quantity": "canonical cubic",
+      "reference_quantity": "q0->0",
+      "matching_equation": "~1/[2 q0 sqrt(eta_Q)]",
+      "dimensions": "interaction",
+      "status": "DIVERGES",
+      "rank_increment": 0,
+      "SI_identifiability": "no strong-coupling scale calibrated",
+      "degeneracies": "fundamental-variable chart singular"
+    }
+  ],
+  "locks": {
+    "full_pure_GVH_classical_action_closed": false,
+    "real_data_ready": false
+  },
+  "verdict": {
+    "local_audit_pass": true,
+    "obstructions": [
+      "FULL_COUPLED_ANISOTROPIC_CHARACTERISTIC_MATRIX_NOT_DERIVED",
+      "GLOBAL_GHOST_FREEDOM_NOT_PROVEN_OUTSIDE_OPEN_GAPPED_HEALTHY_DOMAIN",
+      "P_GR_TWO_DOF_RESULT_IS_CONDITIONAL_ON_U_PRIME_AT_ZERO_NONZERO_AND_QUADRATIC_ALGEBRAIC_NONDEGENERACY",
+      "P_POTENTIAL_U_IS_NOT_SELECTED_BY_A_FUNDAMENTAL_GVH_PRINCIPLE",
+      "R_CURRENT_COMPLETION_HAS_NO_QUADRATIC_D_ACTION_AT_EXACT_GR_AND_IS_PERTURBATIVELY_STRONG_COUPLED",
+      "P_AND_R_GAPPED_BRANCHES_BOTH_HAVE_CANONICAL_INTERACTION_COUPLINGS_DIVERGING_AS_Q0_TO_ZERO",
+      "FULL_NONLINEAR_FUNDAMENTAL_A_DIRAC_ANALYSIS_AT_EXACT_GR_REMAINS_OPEN",
+      "FULL_HISTORICAL_DCC_GLOBAL_OPERATOR_EQUIVALENCE_REMAINS_OPEN"
+    ],
+    "next_authorized": "0.3.2.7.3.7.3.3.28.20.1_Pure_GVH_P_GR_Branch_Fundamental_A_Dirac_U_Principle_and_Strong_Coupling_Resolution_Audit"
+  }
+}

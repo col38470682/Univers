@@ -1,0 +1,85 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.28.20.4_Pure_GVH_PW_Surface_Resolution_or_NoGo_Global_Interface_Closure_Audit_FAST",
+  "branch": "PURE_GVH_PW_SURFACE_RESOLUTION_NOGO",
+  "upstream": {
+    "version": "0.3.2.7.3.7.3.3.28.20.3.1",
+    "executed_sha256": "7c8f5a2030fec71d98c3df5e59b14b70d4676835a8ecba5857711c65d929ef96",
+    "executed_size_bytes": 13868,
+    "local_audit_pass": true,
+    "target_28203_status": "SCIENTIFIC_LOCAL_PASS__PROVENANCE_RECONCILED"
+  },
+  "levels": {
+    "LEVEL1": "REGULAR_FIELD_REDEFINITIONS_CANNOT_REMOVE_ENDPOINT_LEGENDRE_RANK_ZEROS_AND_CANONICALIZATION_IS_SINGULAR",
+    "LEVEL2": "ENDPOINT_NULL_DIRECTIONS_ARE_SECOND_CLASS_NOT_GAUGE_AND_CURRENT_SHAPE_ANGLE_OPERATORS_DO_NOT_CANCEL_THE_RADIAL_CHANNEL",
+    "LEVEL3": "ANY_NONNEGATIVE_ANALYTIC_LOCAL_TWO_DERIVATIVE_RADIAL_KINETIC_PRESERVING_P_VACUUM_DOF_AND_ACTIVE_NEXT_TO_THE_VACUUM_HAS_DIVERGENT_NORMALIZED_ENDPOINT_INTERACTIONS",
+    "LEVEL4": "ANALYTIC_PW_TRANSPARENT_INTERFACE_IS_A_FUNDAMENTAL_NOGO_IN_THE_TESTED_CLASS_WHILE_P_GR_AND_P_GAPPED_SURVIVE_AND_SUPERSELECTION_REMAINS_OPEN"
+  },
+  "gates": {
+    "regular_variable_escape": false,
+    "endpoint_gauge_escape": false,
+    "current_correlated_operator_escape": false,
+    "analytic_local_two_derivative_escape": false,
+    "controlled_nonanalytic_escape": false
+  },
+  "verdict": {
+    "analytic_PW_transparent_interface_nogo": true,
+    "P_GR_retained": true,
+    "P_gapped_retained": true,
+    "PW_static_effective_wall_retained": true,
+    "PW_fundamental_dynamic_bridge_authorized": false,
+    "stage_I_global_unique_closure": false,
+    "local_audit_pass": true,
+    "next_authorized": "0.3.2.7.3.7.3.3.28.20.5_Pure_GVH_P_Disconnected_Strata_Superselection_and_Branch_Principle_Audit"
+  },
+  "matching": [
+    {
+      "benchmark": "regular field redefinition",
+      "GVH_quantity": "kinetic rank",
+      "matching_equation": "K_y=K_r(dr/dy)^2",
+      "status": "RANK_ZERO_INVARIANT",
+      "SI_identifiability": "N/A"
+    },
+    {
+      "benchmark": "GR endpoint gauge test",
+      "GVH_quantity": "reduced Poisson block",
+      "matching_equation": "V''(0)=a^2/(2b)!=0",
+      "status": "SECOND_CLASS",
+      "SI_identifiability": "a,b open"
+    },
+    {
+      "benchmark": "gapped endpoint gauge test",
+      "GVH_quantity": "gap Poisson block",
+      "matching_equation": "U''(q+)=a!=0",
+      "status": "SECOND_CLASS",
+      "SI_identifiability": "a open"
+    },
+    {
+      "benchmark": "analytic kinetic zero",
+      "GVH_quantity": "K~c rho^(2m)",
+      "matching_equation": "g3~m/[sqrt(c)rho^(m+1)]",
+      "status": "NOGO_IN_CLASS",
+      "SI_identifiability": "none"
+    },
+    {
+      "benchmark": "canonical gapped endpoint",
+      "GVH_quantity": "U(phi)",
+      "matching_equation": "U=A x-B x^(3/2)",
+      "status": "NONANALYTIC_ENDPOINT",
+      "SI_identifiability": "none"
+    },
+    {
+      "benchmark": "smooth-flat witness",
+      "GVH_quantity": "K=c exp(-1/rho^2)",
+      "matching_equation": "g3 diverges super-exponentially",
+      "status": "FAIL_WITNESS",
+      "SI_identifiability": "none"
+    },
+    {
+      "benchmark": "PW transparent bridge",
+      "GVH_quantity": "global radial interface",
+      "matching_equation": "P-count + propagation + weak endpoint incompatible",
+      "status": "FUNDAMENTAL_NOGO_IN_TESTED_CLASS",
+      "SI_identifiability": "N/A"
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.28.13_Pure_GVH_Classical_Core_No_Einstein_Aether_Decoupling_and_Dynamical_Sufficiency_Audit_FAST",
+  "branch": "PURE_GVH_NO_EINSTEIN_AETHER",
+  "upstream": {
+    "p2811": {
+      "version": "0.3.2.7.3.7.3.3.28.11",
+      "colab_executed_sha256": "b2f727789bcf214c62a56d1035aa443f1a2dd33afdeebb03d9adff9ddc7ab41a",
+      "colab_executed_size_bytes": 66497,
+      "source_exact": true,
+      "local_audit_pass": true
+    },
+    "p2812": {
+      "version": "0.3.2.7.3.7.3.3.28.12",
+      "colab_executed_sha256": "d170620afc99ceb0d7230020fd7d983d31f4855e7b0211a661f6e7e1bd25266f",
+      "colab_executed_size_bytes": 59098,
+      "source_exact": true,
+      "local_audit_pass": true
+    }
+  },
+  "levels": {
+    "LEVEL1": "EINSTEIN_AETHER_COUPLINGS_REMOVED_AND_PURE_GVH_BRANCH_MATERIALIZED",
+    "LEVEL2": "STATIC_DCC_SILENT_BRANCHES_RETAIN_EINSTEIN_HILBERT_GR_RECOVERY",
+    "LEVEL3": "PURE_TRANSVERSE_VECTOR_SECTOR_HAS_ZERO_TIME_KINETIC_RANK_AND_NO_FINITE_WAVE_SPEED",
+    "LEVEL4": "PURE_GVH_CLASSICAL_CORE_REQUIRES_OWN_NONDEGENERATE_KINETIC_COMPLETION_BEFORE_STRONG_FIELD_OR_PREFERRED_FRAME"
+  },
+  "pure_action": {
+    "EA_couplings_removed": true,
+    "static_aligned_DCC_silent": true,
+    "static_metric_sector_reduces_to_EH": true
+  },
+  "vector_sector": {
+    "L_pure_vector": "(B_x**2*chi*zeta_C + 2*B_x**2 - 2*B_x*W_x*chi*zeta_C + W_x**2*chi*zeta_C)/4",
+    "B_x_solution": "W_x*chi*zeta_C/(chi*zeta_C + 2)",
+    "L_pure_vector_reduced": "W_x**2*chi*zeta_C/(2*(chi*zeta_C + 2))",
+    "time_kinetic_coefficient": "0",
+    "hyperbolic_kinetic_nondegenerate": false,
+    "finite_wave_speed_derived": false,
+    "chi0_quadratic_blind": true
+  },
+  "decision": {
+    "Einstein_aether_fundamentally_required": false,
+    "current_pure_GVH_action_dynamically_complete": false,
+    "pure_GVH_own_kinetic_completion_required": true
+  },
+  "SI": {
+    "formal_source_matched_scale_rank": 2,
+    "universal_theory_selected_scale_rank": 0,
+    "matching_ledger": [
+      {
+        "benchmark": "static aligned GR sector",
+        "GVH_quantity": "O_C",
+        "reference_quantity": "GR vacuum/matter metric sector",
+        "matching_equation": "sigma=0 => O_C=0",
+        "dimension": "action density sector",
+        "status": "GR_RECOVERY_RETAINED_IN_TESTED_SILENT_BRANCH",
+        "rank_increment": 0,
+        "SI_identifiability": "system-specific via G0 matching"
+      },
+      {
+        "benchmark": "pure vector transverse kinetic",
+        "GVH_quantity": "coefficient of W_t^2",
+        "reference_quantity": "nondegenerate wave kinetic term",
+        "matching_equation": "A_time=0",
+        "dimension": "dimensionless coefficient",
+        "status": "FAIL_DYNAMIC_SUFFICIENCY",
+        "rank_increment": 0,
+        "SI_identifiability": "no vector speed"
+      },
+      {
+        "benchmark": "pure vector spatial response",
+        "GVH_quantity": "zeta_C*chi/[2(2+zeta_C*chi)]",
+        "reference_quantity": "spatial stiffness",
+        "matching_equation": "L_red=coef*W_x^2",
+        "dimension": "dimensionless",
+        "status": "DERIVED_CONSTRAINT_RESPONSE",
+        "rank_increment": 0,
+        "SI_identifiability": "not a propagation observable"
+      },
+      {
+        "benchmark": "EA coupling ledger",
+        "GVH_quantity": "c1,c2,c3,c4",
+        "reference_quantity": "Einstein-aether",
+        "matching_equation": "removed",
+        "dimension": "1",
+        "status": "NOT_PART_OF_PURE_GVH_BRANCH",
+        "rank_increment": 0,
+        "SI_identifiability": "not applicable"
+      },
+      {
+        "benchmark": "future pure-GVH kinetic completion",
+        "GVH_quantity": "TBD invariant",
+        "reference_quantity": "nondegenerate classical directional dynamics",
+        "matching_equation": "not yet selected",
+        "dimension": "must be audited",
+        "status": "NEXT_GATE",
+        "rank_increment": 0,
+        "SI_identifiability": "open"
+      }
+    ]
+  },
+  "locks": {
+    "full_classical_pure_GVH_dynamics_closed": false,
+    "preferred_frame_pure_GVH_authorized": false,
+    "Kerr_pure_GVH_authorized": false,
+    "quantization_pure_GVH_authorized": false,
+    "new_GVH_physics_validated": false
+  },
+  "verdict": {
+    "G2813_LOCAL_AUDIT_PASS": true,
+    "obstructions": [
+      "NO_TIME_KINETIC_TERM_FOR_TRANSVERSE_DIRECTIONAL_MODE_IN_CURRENT_PURE_ACTION",
+      "CHI_ZERO_BRANCH_IS_QUADRATICALLY_BLIND",
+      "CHI_NONZERO_BRANCH_HAS_SPATIAL_STIFFNESS_BUT_NO_HYPERBOLIC_PROPAGATION",
+      "CURRENT_DCC_OPERATOR_ALONE_IS_NOT_A_COMPLETE_CLASSICAL_DIRECTIONAL_KINETIC_SECTOR",
+      "PURE_GVH_KINETIC_OPERATOR_NOT_YET_SELECTED",
+      "PURE_GVH_DOF_AND_GHOST_ANALYSIS_PENDING",
+      "PREFERRED_FRAME_REQUIRES_NEW_PURE_GVH_DYNAMICS",
+      "KERR_REQUIRES_NEW_PURE_GVH_DYNAMICS"
+    ],
+    "next_authorized": "0.3.2.7.3.7.3.3.28.14_PURE_GVH_KINETIC_PRINCIPLE_CANDIDATES_NONDEGENERACY_DOF_AND_GR_LIMIT_AUDIT"
+  }
+}

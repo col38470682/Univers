@@ -1,0 +1,126 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.28.20.7_Pure_GVH_P_Compact_NoBoundary_Cosmological_Branch_Selection_and_Global_Admissibility_Audit_FAST",
+  "branch": "PURE_GVH_P_COMPACT_COSMOLOGICAL_BRANCH_SELECTION",
+  "upstream": {
+    "version": "0.3.2.7.3.7.3.3.28.20.6",
+    "executed_sha256": "7a56b848f7fb7bf50f56946226f05a401a05979e74cea703ab88c447f5a3426c",
+    "executed_size_bytes": 35549,
+    "local_audit_pass": true,
+    "conditional_asymptotic_branch_selection_derived": true,
+    "universal_fundamental_branch_principle_derived": false,
+    "compact_branch_selection_closed": false
+  },
+  "levels": {
+    "LEVEL1": "COMPACT_FLRW_COVARIANCE_GENERATES_THE_INTERNAL_BACKGROUND_TERM_LD_EQUALS_MINUS_THREE_HALVES_ALPHA_Q_SQUARED_H_SQUARED",
+    "LEVEL2": "THE_NONZERO_ALGEBRAIC_BRANCHES_FORM_A_STABLE_GAPPED_ROOT_AND_AN_UNSTABLE_SEPARATOR_BELOW_A_DERIVED_SADDLE_NODE_THRESHOLD_HC",
+    "LEVEL3": "INITIAL_ROOT_PLUS_REGULAR_CONTINUITY_LOCALLY_SELECTS_THE_BRANCH_BUT_CONTINUATION_BREAKS_AT_THE_FOLD_AND_COMPACT_MINISUPERSPACE_ADMITS_A_NONZERO_SELF_SUPPORTED_COSMOLOGICAL_CANDIDATE",
+    "LEVEL4": "THE_COMPACT_BRANCH_ARCHITECTURE_IS_CLASSIFIED_AS_MULTI_BRANCH_AND_NO_UNIVERSAL_UNIQUE_SELECTOR_IS_DERIVED_SO_GLOBAL_FOLD_DETERMINISM_IS_THE_REMAINING_STAGE_I_LOCK"
+  },
+  "flrw": {
+    "O_shape": "-8 q^2 H^2",
+    "O_angle": "(32/3) q^2 H^2",
+    "L_D": "-(3/2) alpha q^2 H^2"
+  },
+  "fold": {
+    "xi": "alpha H^2/a",
+    "xi_c": "(2-sqrt(3))/3",
+    "H_c_squared": "(a/alpha)(2-sqrt(3))/3",
+    "gapped_branch_stable_below_fold": true,
+    "regular_continuation_at_fold": false
+  },
+  "compact_branching": {
+    "low_curvature_bistability": true,
+    "high_curvature_nonzero_branch_absent": true,
+    "unique_selector_derived": false,
+    "local_initial_root_plus_continuity_selection": true
+  },
+  "minisuperspace": {
+    "M_eff_squared": "M^2+alpha q^2/2",
+    "self_supported_nonzero_cosmological_candidate_exists": true,
+    "full_stability_proven": false
+  },
+  "matching": [
+    {
+      "benchmark": "compact FLRW D-kernel",
+      "GVH_quantity": "O_shape,O_angle",
+      "reference_quantity": "homogeneous isotropic covariant derivative",
+      "matching_equation": "O_shape=-8q^2H^2; O_angle=(32/3)q^2H^2",
+      "dimensions": "derivative density",
+      "status": "DERIVED",
+      "rank_increment": 1,
+      "SI_identifiability": "N/A",
+      "degeneracies": "restricted isotropic 1+3 background"
+    },
+    {
+      "benchmark": "cosmological D Lagrangian",
+      "GVH_quantity": "L_D,FLRW",
+      "reference_quantity": "background extrinsic curvature",
+      "matching_equation": "L_D=-(3/2)alpha q^2H^2",
+      "dimensions": "Lagrangian density",
+      "status": "DERIVED",
+      "rank_increment": 1,
+      "SI_identifiability": "alpha open",
+      "degeneracies": "full perturbations open"
+    },
+    {
+      "benchmark": "branch fold",
+      "GVH_quantity": "Delta_H",
+      "reference_quantity": "saddle-node discriminant",
+      "matching_equation": "Delta_H=a^2(1-12xi+9xi^2)",
+      "dimensions": "coefficient^2",
+      "status": "DERIVED",
+      "rank_increment": 1,
+      "SI_identifiability": "a,alpha open",
+      "degeneracies": "radial FLRW audit"
+    },
+    {
+      "benchmark": "critical expansion rate",
+      "GVH_quantity": "H_c^2",
+      "reference_quantity": "branch threshold",
+      "matching_equation": "H_c^2=(a/alpha)(2-sqrt(3))/3",
+      "dimensions": "T^-2",
+      "status": "DERIVED_PARAMETER_COMBINATION",
+      "rank_increment": 1,
+      "SI_identifiability": "NO numerical SI value",
+      "degeneracies": "a/alpha uncalibrated"
+    },
+    {
+      "benchmark": "local branch continuation",
+      "GVH_quantity": "dq/d(H^2)",
+      "reference_quantity": "implicit-function theorem",
+      "matching_equation": "-3alpha q/(U''+3alpha H^2)",
+      "dimensions": "field*time^2",
+      "status": "LOCAL_BRANCH_LOCK",
+      "rank_increment": 1,
+      "SI_identifiability": "N/A",
+      "degeneracies": "fails at fold"
+    },
+    {
+      "benchmark": "compact minisuperspace",
+      "GVH_quantity": "M_eff^2",
+      "reference_quantity": "FLRW gravitational kinetic coefficient",
+      "matching_equation": "M_eff^2=M^2+alpha q^2/2",
+      "dimensions": "mass^2 type",
+      "status": "RESTRICTED_BACKREACTION_DERIVED",
+      "rank_increment": 1,
+      "SI_identifiability": "open",
+      "degeneracies": "homogeneous background only"
+    },
+    {
+      "benchmark": "self-supported nonzero cosmology",
+      "GVH_quantity": "q_star,H_star",
+      "reference_quantity": "constant-H minisuperspace solution",
+      "matching_equation": "q_star in (q_plus/3,q_plus), H_star^2>0",
+      "dimensions": "field,T^-2",
+      "status": "EXISTENCE_CANDIDATE",
+      "rank_increment": 0,
+      "SI_identifiability": "NO",
+      "degeneracies": "full stability/ghosts/characteristics open"
+    }
+  ],
+  "verdict": {
+    "local_audit_pass": true,
+    "stage_I_global_unique_closure": false,
+    "next_authorized": "0.3.2.7.3.7.3.3.28.20.7.1_Pure_GVH_P_Cosmological_Fold_Crossing_Determinism_and_Admissible_Evolution_Closure_Audit"
+  }
+}

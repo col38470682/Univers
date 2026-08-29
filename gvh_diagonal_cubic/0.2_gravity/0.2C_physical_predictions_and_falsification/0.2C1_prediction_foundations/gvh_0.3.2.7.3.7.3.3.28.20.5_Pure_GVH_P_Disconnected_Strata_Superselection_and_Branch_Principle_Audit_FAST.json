@@ -1,0 +1,150 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.28.20.5_Pure_GVH_P_Disconnected_Strata_Superselection_and_Branch_Principle_Audit_FAST",
+  "branch": "PURE_GVH_P_STRATA_SUPERSELECTION_BRANCH_PRINCIPLE",
+  "upstream": {
+    "version": "0.3.2.7.3.7.3.3.28.20.4",
+    "executed_sha256": "c2592a60ff5abdbfa834c5197b036ccec8e00f50932383d67770c7c739b9318c",
+    "executed_size_bytes": 31140,
+    "local_audit_pass": true,
+    "PW_transparent_interface_nogo": true,
+    "P_GR_retained": true,
+    "P_gapped_retained": true,
+    "stage_I_global_unique_closure": false
+  },
+  "levels": {
+    "LEVEL1": "P_GR_AND_P_GAPPED_ARE_INDIVIDUALLY_ADMISSIBLE_GAUGE_INEQUIVALENT_AND_CONTINUOUSLY_CONNECTED_IN_CONFIGURATION_SPACE_WITH_A_FINITE_BARRIER",
+    "LEVEL2": "BARE_P_HAS_NO_REGULAR_RADIAL_TRANSITION_AND_NO_INFINITE_INTERFACE_COST_WHILE_THE_TWO_VACUA_HAVE_DIFFERENT_HAMILTONIAN_RANK_AND_DOF",
+    "LEVEL3": "THE_BRANCHES_ARE_DISTINCT_REGULAR_HAMILTONIAN_STRATA_AND_DYNAMICAL_DISCONNECTED_IN_THE_CURRENT_REGULAR_COMPLETION_BUT_FUNDAMENTAL_OR_QUANTUM_SUPERSELECTION_IS_NOT_DERIVED",
+    "LEVEL4": "IF_BOTH_P_STRATA_ARE_RETAINED_GVH_REQUIRES_A_BRANCH_PRINCIPLE_DERIVED_FROM_BOUNDARY_VARIATIONAL_OR_CONSERVED_INVARIANT_STRUCTURE"
+  },
+  "vacua": {
+    "P_GR_retained": true,
+    "P_gapped_retained": true,
+    "configuration_continuous_path_exists": true,
+    "finite_barrier": "a**3/(54*b**2)",
+    "trace_gauge_equivalent": false
+  },
+  "stratification": {
+    "GR_total_DOF": 2,
+    "gapped_total_DOF": 10,
+    "GR_D_kinetic_rank": 0,
+    "gapped_D_kinetic_rank": 8,
+    "distinct_regular_Hamiltonian_strata": true,
+    "regular_dynamic_bridge_available": false
+  },
+  "superselection": {
+    "fundamental_classical_proven": false,
+    "quantum_proven": false,
+    "ledger": [
+      {
+        "criterion": "conserved branch charge",
+        "status": "NOT DERIVED",
+        "evidence": "no branch-discriminating Noether charge materialized"
+      },
+      {
+        "criterion": "topological separation",
+        "status": "FAIL",
+        "evidence": "A(lambda)=lambda A_plus is continuous"
+      },
+      {
+        "criterion": "infinite interface/action barrier",
+        "status": "FAIL",
+        "evidence": "finite barrier; bare-P thin-wall tension -> 0"
+      },
+      {
+        "criterion": "global gauge/constraint selection",
+        "status": "NOT DERIVED",
+        "evidence": "vacua gauge-inequivalent but no transition-forbidding identity"
+      },
+      {
+        "criterion": "regular Hamiltonian crossing",
+        "status": "ABSENT IN CURRENT COMPLETION",
+        "evidence": "rank/DOF bifurcation plus PW bridge no-go"
+      },
+      {
+        "criterion": "quantum observable algebra",
+        "status": "NOT TESTED",
+        "evidence": "no quantum branch algebra yet"
+      }
+    ]
+  },
+  "branch_principle": {
+    "required_if_both_strata_retained": true,
+    "fundamentally_selected": false,
+    "candidate_label": "B in {GR,GAPPED}",
+    "candidate_regular_flow_rule": "Bdot=0",
+    "origins": [
+      {
+        "route": "asymptotic/boundary selection",
+        "status": "OPEN",
+        "required": "prove preservation and full-action compatibility"
+      },
+      {
+        "route": "variational-domain decomposition",
+        "status": "OPEN",
+        "required": "derive disconnected admissible functional sectors"
+      },
+      {
+        "route": "conserved dynamical invariant",
+        "status": "OPEN",
+        "required": "derive a branch-discriminating charge/invariant"
+      }
+    ]
+  },
+  "matching": [
+    {
+      "benchmark": "configuration connectivity",
+      "GVH_quantity": "A(lambda)=lambda A_plus",
+      "matching_equation": "q(lambda)=lambda^2 q_plus",
+      "status": "CONNECTED",
+      "SI_identifiability": "N/A"
+    },
+    {
+      "benchmark": "phase barrier",
+      "GVH_quantity": "Delta U",
+      "matching_equation": "Delta U=a^3/(54 b^2)",
+      "status": "FINITE",
+      "SI_identifiability": "a,b open"
+    },
+    {
+      "benchmark": "bare-P interface",
+      "GVH_quantity": "sigma_trial",
+      "matching_equation": "a^3 ell/(32b^2)->0",
+      "status": "ULTRALOCAL_PATCHING",
+      "SI_identifiability": "open"
+    },
+    {
+      "benchmark": "Hamiltonian strata",
+      "GVH_quantity": "DOF/rank",
+      "matching_equation": "GR 2/rankD0 ; gapped 10/rankD8",
+      "status": "DISTINCT_REGULAR_STRATA",
+      "SI_identifiability": "N/A"
+    },
+    {
+      "benchmark": "trace-shift gauge",
+      "GVH_quantity": "q=Tr(A^2)",
+      "matching_equation": "delta_phi q=0",
+      "status": "GAUGE_INEQUIVALENT_VACUA",
+      "SI_identifiability": "N/A"
+    },
+    {
+      "benchmark": "superselection criterion",
+      "GVH_quantity": "branch label",
+      "matching_equation": "no charge/topology/infinite barrier/quantum algebra derived",
+      "status": "NOT_DERIVED",
+      "SI_identifiability": "N/A"
+    },
+    {
+      "benchmark": "branch principle",
+      "GVH_quantity": "B in {GR,GAPPED}",
+      "matching_equation": "Bdot=0 only as regular-stratum candidate",
+      "status": "REQUIRED_NOT_SELECTED",
+      "SI_identifiability": "N/A"
+    }
+  ],
+  "verdict": {
+    "local_audit_pass": true,
+    "stage_I_global_unique_closure": false,
+    "next_authorized": "0.3.2.7.3.7.3.3.28.20.6_Pure_GVH_P_Branch_Admissibility_Boundary_Selection_and_Variational_Consistency_Audit"
+  }
+}

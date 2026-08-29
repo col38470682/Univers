@@ -1,0 +1,71 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.28.2_Nested_Diagonal_Dynamic_NBody_Nonrigid_Shear_Activation_Audit_FAST",
+  "upstream": {
+    "version": "0.3.2.7.3.7.3.3.28.1",
+    "sha256": "b9110b719d0c19328f2fd417e06a98d2a23b72f810de3256bc4a21ffbfa0085e",
+    "size_bytes": 41570,
+    "cells": 18,
+    "local_audit_pass": true,
+    "rigid_helix_shear_free": true,
+    "rigid_helix_cubic_activated": false,
+    "critical_273_kinematic_inputs_derived": false,
+    "new_GVH_physics_validated": false
+  },
+  "open_refs": [
+    "O-14",
+    "O-26",
+    "O-27",
+    "O-29",
+    "O-31",
+    "O-32",
+    "O-34"
+  ],
+  "levels": {
+    "LEVEL1": "NESTED_DIAGONAL_NBODY_KINEMATICS_AND_REVERSE_DYNAMICS_MATERIALIZED",
+    "LEVEL2": "NEWTONIAN_NBODY_COVARIANCE_KEPLER_AND_LAGRANGE_BENCHMARKS_PASS",
+    "LEVEL3": "NUMERIC_NESTED_RECONSTRUCTION_CONSERVATION_AND_SHEAR_WITNESSES",
+    "LEVEL4": "BLOCKED_PHYSICAL_DIAGONAL_FIELD_EOM_AND_COVARIANT_SHEAR_IDENTIFICATION"
+  },
+  "nested": {
+    "forward_reverse_pass": true,
+    "hierarchical_position_reconstruction_pass": true,
+    "local_global_acceleration_equivalence_pass": true
+  },
+  "nbody": {
+    "generic_force_law_materialized": true,
+    "internal_force_balance_pass": true,
+    "translation_covariance_pass": true,
+    "rotation_covariance_pass": true,
+    "two_body_energy_drift": 2.4356405781134065e-11,
+    "two_body_L_drift": 4.867286621919703e-15,
+    "three_body_energy_drift": 2.4355480595280216e-11,
+    "three_body_L_drift": 4.23051791004384e-15,
+    "three_body_shape_error": 5.251596669531011e-06
+  },
+  "shear": {
+    "exact_3D_identity_pass": true,
+    "isotropic_zero_pass": true,
+    "nonrigid_3D_shear_activated": true,
+    "shear_norm2_numeric": 0.0014000000000000002,
+    "covariant_sigma_identification_proven": false
+  },
+  "locks": {
+    "physical_diagonal_field_EOM_derived": false,
+    "new_GVH_Nbody_force_law_derived": false,
+    "Mercury_GVH_precession_prediction_authorized": false,
+    "new_GVH_physics_validated": false,
+    "real_data_ready": false
+  },
+  "verdict": {
+    "G282_LOCAL_AUDIT_PASS": true,
+    "obstructions": [
+      "S_ij_IS_ONLY_A_3D_KINEMATIC_SHEAR_WITNESS_NOT_YET_COVARIANT_SIGMA_mn",
+      "D_k_OF_t_REMAINS_PRESCRIBED_FRAME_DATA_NOT_ACTION_DERIVED",
+      "NO_NEW_GVH_NBODY_FORCE_LAW_DERIVED",
+      "CUBIC_METRIC_STRESS_STILL_NOT_FULLY_COMPONENT_EXPANDED_IN_ARBITRARY_4D",
+      "TRIAD_OWN_KINETIC_TERM_STILL_ABSENT",
+      "MERCURY_GVH_PRECESSION_NOT_YET_AUTHORIZED"
+    ],
+    "next_authorized": "0.3.2.7.3.7.3.3.28.3_COVARIANT_NESTED_SHEAR_EMBEDDING_AND_PHYSICAL_DIAGONAL_FIELD_EOM_GATE_AUDIT"
+  }
+}

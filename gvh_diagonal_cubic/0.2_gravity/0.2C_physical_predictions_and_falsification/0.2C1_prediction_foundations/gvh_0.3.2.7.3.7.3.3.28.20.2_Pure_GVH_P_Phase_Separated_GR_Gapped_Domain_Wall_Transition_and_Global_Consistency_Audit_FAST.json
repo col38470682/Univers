@@ -1,0 +1,156 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.28.20.2_Pure_GVH_P_Phase_Separated_GR_Gapped_Domain_Wall_Transition_and_Global_Consistency_Audit_FAST",
+  "branch": "PURE_GVH_P_PHASE_INTERFACE",
+  "upstream": {
+    "version": "0.3.2.7.3.7.3.3.28.20.1",
+    "executed_sha256": "5d05ecfa8bbb3e17f7779fa1180233dc054355df289616c78b1759dba6bd01cf",
+    "executed_size_bytes": 57256,
+    "local_audit_pass": true,
+    "GR_branch_restricted_DOF": 2,
+    "P_selected_within_current_PR_fork": true,
+    "P_final_unique_GVH": false,
+    "phase_separation_candidate": true,
+    "smooth_gapped_to_GR_strong_coupling_resolved": false,
+    "real_data_ready": false
+  },
+  "levels": {
+    "LEVEL1": "CURRENT_P_SHAPE_AND_COMMUTATOR_DERIVATIVE_OPERATORS_ARE_EXACTLY_RADIAL_BLIND_ON_A_EQUALS_R_N_WITH_FIXED_ORIENTATION_SO_THE_TWO_PHASE_POTENTIAL_ALONE_CANNOT_SUPPORT_A_REGULAR_FINITE_WIDTH_WALL",
+    "LEVEL2": "ANY_REGULAR_COVARIANT_RADIAL_GRADIENT_WITH_Z_AT_QPLUS_POSITIVE_REINTRODUCES_A_PROPAGATING_GAP_AND_IS_R_LIKE_ON_THE_GAPPED_VACUUM",
+    "LEVEL3": "THE_MINIMAL_GLOBALLY_NONNEGATIVE_POLYNOMIAL_P_COMPATIBLE_COEFFICIENT_ZW_EQUALS_ZW0_TIMES_Q_MINUS_QPLUS_SQUARED_SUPPORTS_A_RESTRICTED_COMPACT_FINITE_TENSION_WALL_WHILE_LEAVING_BOTH_VACUUM_QUADRATIC_DOF_COUNTS_UNCHANGED",
+    "LEVEL4": "THE_WALL_CANDIDATE_HAS_A_LOCALIZED_VARIABLE_RANK_RADIAL_CHANNEL_SO_STATIC_INTERFACE_EXISTENCE_IS_ESTABLISHED_BUT_FULL_DIRAC_CHARACTERISTIC_AND_GLOBAL_GHOST_CLOSURE_REMAIN_OPEN"
+  },
+  "current_P": {
+    "radial_gradient_blind": true,
+    "smooth_radial_wall_exists": false,
+    "trial_wall_tension_collapses": true
+  },
+  "standard_radial_completion": {
+    "R_like_if_Z_qplus_positive": true
+  },
+  "PW_candidate": {
+    "Z_W": "z_W*(q-q_plus)^2",
+    "wall_profile": "q=b*(x-x0)^2/(2*z_W) on compact interior",
+    "wall_width": "sqrt(a*z_W)/b",
+    "wall_tension": "2*a^(7/2)*sqrt(z_W)/(105*b^3)",
+    "restricted_EL_pass": true,
+    "positive_finite_tension": true,
+    "changes_GR_quadratic_DOF": false,
+    "changes_gapped_P_quadratic_DOF": false,
+    "interface_variable_rank": true
+  },
+  "global_consistency": {
+    "full_interface_Dirac_closed": false,
+    "full_interface_characteristics_closed": false,
+    "global_ghost_freedom": false,
+    "metric_backreaction_wall_solution": false,
+    "strong_coupling_fully_resolved": false
+  },
+  "matching": [
+    {
+      "benchmark": "current P radial wall",
+      "GVH_quantity": "O_shape,O_angle on A=rN,N'=0",
+      "reference_quantity": "radial gradient energy",
+      "matching_equation": "O_shape=O_angle=0",
+      "dimensions": "derivative sector",
+      "status": "NO-GO",
+      "rank_increment": 0,
+      "SI_identifiability": "N/A",
+      "degeneracies": "exact radial blindness"
+    },
+    {
+      "benchmark": "thin wall collapse",
+      "GVH_quantity": "sigma_trial",
+      "reference_quantity": "profile width ell",
+      "matching_equation": "sigma=a^3 ell/(32 b^2)",
+      "dimensions": "surface energy",
+      "status": "COLLAPSES_AS_ELL_TO_ZERO",
+      "rank_increment": 0,
+      "SI_identifiability": "none",
+      "degeneracies": "no radial gradient term"
+    },
+    {
+      "benchmark": "ordinary Z completion",
+      "GVH_quantity": "Z(q+)",
+      "reference_quantity": "radial gap kinetic",
+      "matching_equation": "Z(q+)>0 => propagating delta q",
+      "dimensions": "kinetic coefficient",
+      "status": "R_LIKE_NOGO_FOR_P",
+      "rank_increment": 0,
+      "SI_identifiability": "none",
+      "degeneracies": "changes gapped branch DOF"
+    },
+    {
+      "benchmark": "minimal P-compatible wall coefficient",
+      "GVH_quantity": "Z_W",
+      "reference_quantity": "nonnegative polynomial with root q+",
+      "matching_equation": "Z_W=z_W(q-q+)^2",
+      "dimensions": "E L^2/Q^2",
+      "status": "MINIMAL_FORM_CLASS",
+      "rank_increment": 1,
+      "SI_identifiability": "z_W not calibrated",
+      "degeneracies": "localized rank change"
+    },
+    {
+      "benchmark": "restricted wall width",
+      "GVH_quantity": "L_W",
+      "reference_quantity": "compact wall solution",
+      "matching_equation": "L_W=sqrt(a z_W)/b",
+      "dimensions": "L",
+      "status": "DERIVED",
+      "rank_increment": 1,
+      "SI_identifiability": "not absolute",
+      "degeneracies": "a,b,z_W free"
+    },
+    {
+      "benchmark": "restricted wall tension",
+      "GVH_quantity": "sigma_W",
+      "reference_quantity": "integrated static energy",
+      "matching_equation": "2 a^(7/2) sqrt(z_W)/(105 b^3)",
+      "dimensions": "surface energy",
+      "status": "DERIVED",
+      "rank_increment": 1,
+      "SI_identifiability": "not absolute",
+      "degeneracies": "a,b,z_W free"
+    },
+    {
+      "benchmark": "vacuum quadratic spectra",
+      "GVH_quantity": "wall operator perturbative order",
+      "reference_quantity": "GR and q+ vacua",
+      "matching_equation": "O(A^4) at GR; O(delta q^4) at q+",
+      "dimensions": "action",
+      "status": "PRESERVES_BRANCH_QUADRATIC_COUNTS",
+      "rank_increment": 0,
+      "SI_identifiability": "N/A",
+      "degeneracies": "nonlinear rank changes inside wall"
+    },
+    {
+      "benchmark": "wall radial characteristic",
+      "GVH_quantity": "principal symbol",
+      "reference_quantity": "metric cone",
+      "matching_equation": "Z_W(-omega^2+k^2)=0 inside wall",
+      "dimensions": "principal",
+      "status": "RESTRICTED_LOCAL_PASS",
+      "rank_increment": 0,
+      "SI_identifiability": "none",
+      "degeneracies": "Z_W->0 at gapped endpoint; fundamental rank->0 at GR"
+    }
+  ],
+  "locks": {
+    "PW_operator_fundamentally_selected": false,
+    "full_pure_GVH_classical_action_globally_closed": false,
+    "real_data_ready": false
+  },
+  "verdict": {
+    "local_audit_pass": true,
+    "obstructions": [
+      "CURRENT_P_ACTION_HAS_NO_RADIAL_GRADIENT_ENERGY_ON_THE_FIXED_ORIENTATION_INTERPOLATION_AND_THEREFORE_NO_REGULAR_DOMAIN_WALL",
+      "A_STANDARD_NONDEGENERATE_RADIAL_GRADIENT_TERM_REINTRODUCES_THE_R_LIKE_PROPAGATING_GAP_ON_THE_GAPPED_VACUUM",
+      "THE_MINIMAL_PW_WALL_OPERATOR_IS_A_NEW_ACTION_TERM_NOT_YET_SELECTED_BY_A_FUNDAMENTAL_GVH_PRINCIPLE",
+      "THE_PW_RADIAL_KINETIC_RANK_IS_ZERO_IN_BOTH_ASYMPTOTIC_VACUA_AND_NONZERO_INSIDE_THE_WALL_SO_THE_GLOBAL_DIRAC_STRUCTURE_IS_VARIABLE_RANK",
+      "FULL_INHOMOGENEOUS_WALL_FLUCTUATION_CHARACTERISTICS_AND_GHOST_INERTIA_ARE_NOT_DERIVED",
+      "METRIC_BACKREACTION_AND_FULL_TENSOR_ORIENTATION_DEFORMATIONS_OF_THE_WALL_ARE_NOT_INCLUDED",
+      "STATIC_WALL_EXISTENCE_QUARANTINES_BUT_DOES_NOT_YET_REMOVE_STRONG_COUPLING_AT_THE_RANK_CHANGE_SURFACES"
+    ],
+    "next_authorized": "0.3.2.7.3.7.3.3.28.20.3_Pure_GVH_PW_Compact_Interface_Fluctuation_Dirac_Characteristics_and_Global_Ghost_Audit"
+  }
+}

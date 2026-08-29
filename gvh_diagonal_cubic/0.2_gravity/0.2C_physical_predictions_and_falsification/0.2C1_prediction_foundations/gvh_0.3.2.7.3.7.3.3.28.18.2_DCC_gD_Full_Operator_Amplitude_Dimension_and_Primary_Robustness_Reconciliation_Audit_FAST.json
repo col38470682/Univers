@@ -1,0 +1,142 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.28.18.2_DCC_gD_Full_Operator_Amplitude_Dimension_and_Primary_Robustness_Reconciliation_Audit_FAST",
+  "branch": "PURE_GVH_NO_EINSTEIN_AETHER",
+  "upstream": {
+    "version": "0.3.2.7.3.7.3.3.28.18.1",
+    "executed_sha256": "d81ba7fcfb7cec628629ddbb17863b8658c83897f69920745bcf9a9c8e032864",
+    "executed_size_bytes": 47828,
+    "source_exact": true,
+    "local_audit_pass": true,
+    "canonical_gap_fork_PR_accepted": true,
+    "DCC_orientation_functional_equivalence_pass": true,
+    "DCC_full_covariant_operator_equivalence_derived": false,
+    "route_P_full_adapted_hessian_rank": 14,
+    "route_R_full_adapted_hessian_rank": 15,
+    "Dirac_P_core_authorized": true,
+    "Dirac_R_core_authorized": true
+  },
+  "levels": {
+    "LEVEL1": "DCC_ORIENTATION_AMPLITUDE_AND_DIMENSIONS_MATCH_EXACTLY_ON_RESTRICTED_GAPPED_BENCHMARKS_USING_NORMALIZED_COMMUTATOR",
+    "LEVEL2": "MINIMAL_RECONCILIATION_TRIANGLE_SHOWS_EXACT_HISTORICAL_AMPLITUDE_GLOBAL_POLYNOMIALITY_AND_EXPLICIT_GR_GAP_REGULARITY_ARE_NOT_SIMULTANEOUSLY_OBTAINED",
+    "LEVEL3": "ROUTE_P_ALLOWS_ON_SHELL_FIXED_GAP_POLYNOMIALIZATION_BUT_NOT_OFF_SHELL_ACTION_EQUIVALENCE",
+    "LEVEL4": "GENERIC_GAPPED_PRIMARY_RANKS_REMAIN_14_FOR_P_AND_15_FOR_R_UNDER_COMMUTATOR_DCC_DEFORMATION_SO_BRANCHWISE_DIRAC_IS_AUTHORIZED"
+  },
+  "DCC_reconciliation": {
+    "restricted_orientation_amplitude_dimension_match": true,
+    "normalized_candidate": "-Tr([A,nabla A]^2)/Q_D^2",
+    "normalized_local_scale_invariant": true,
+    "normalized_defined_at_Q_zero": false,
+    "polynomial_numerator_GR_regular": true,
+    "full_historical_global_operator_equivalence": false,
+    "tradeoff_gate_closed": true
+  },
+  "primary_robustness": {
+    "P_D_rank": 8,
+    "P_full_rank": 14,
+    "P_primary_count": 6,
+    "R_D_rank": 9,
+    "R_full_rank": 15,
+    "R_primary_count": 5,
+    "P_pass": true,
+    "R_pass": true,
+    "global_all_backgrounds": false
+  },
+  "matching": [
+    {
+      "benchmark": "2x2 DCC orientation+amplitude",
+      "GVH_quantity": "X_D/Q_D^2",
+      "reference_quantity": "s^2 sin^2(2phi)",
+      "matching_equation": "X_D/Q_D^2 = 2 s^2 sin^2(2phi)",
+      "dimensions": "L^-2",
+      "status": "EXACT_RESTRICTED_FUNCTIONAL_MATCH",
+      "rank_increment": 0,
+      "SI_identifiability": "dimensionless normalization only",
+      "degeneracies": "Q_D=0 undefined"
+    },
+    {
+      "benchmark": "4D tilt/shear",
+      "GVH_quantity": "Tr([A,Bx]^2)/Q_D^2",
+      "reference_quantity": "sigma^2=Vx^2/2",
+      "matching_equation": "sigma^2=(9/64) Tr([A,Bx]^2)/Q_D^2",
+      "dimensions": "L^-2",
+      "status": "EXACT_LINEAR_GAPPED_MATCH",
+      "rank_increment": 0,
+      "SI_identifiability": "none",
+      "degeneracies": "constant-gap linear benchmark"
+    },
+    {
+      "benchmark": "local D-amplitude rescaling",
+      "GVH_quantity": "X_D/Q_D^2",
+      "reference_quantity": "shape/orientation independence",
+      "matching_equation": "A->lambda(x)A leaves X_D/Q_D^2 invariant",
+      "dimensions": "L^-2",
+      "status": "DERIVED_ON_Q_NONZERO_DOMAIN",
+      "rank_increment": 0,
+      "SI_identifiability": "N/A",
+      "degeneracies": "undefined at Q=0"
+    },
+    {
+      "benchmark": "polynomial DCC numerator",
+      "GVH_quantity": "X_D",
+      "reference_quantity": "historical gap-independent amplitude",
+      "matching_equation": "X_D carries Q_D^2 amplitude",
+      "dimensions": "D^4 L^-2",
+      "status": "GR_REGULAR_BUT_AMPLITUDE_MISMATCH_GLOBAL",
+      "rank_increment": 0,
+      "SI_identifiability": "coupling scale required",
+      "degeneracies": "background amplitude dependence"
+    },
+    {
+      "benchmark": "Route P on-shell normalization",
+      "GVH_quantity": "X_D/Q_*^2",
+      "reference_quantity": "X_D/Q_D^2 on Q_D=Q_*",
+      "matching_equation": "equal only on constraint surface",
+      "dimensions": "L^-2",
+      "status": "ON_SHELL_BRANCH_MATCH_NOT_ACTION_EQUIVALENCE",
+      "rank_increment": 0,
+      "SI_identifiability": "Q_* not theory-SI-identified",
+      "degeneracies": "off-shell mismatch"
+    },
+    {
+      "benchmark": "P primary robustness",
+      "GVH_quantity": "rank K_D",
+      "reference_quantity": "DCC commutator deformation",
+      "matching_equation": "rank remains 8 away from degeneracy surfaces",
+      "dimensions": "canonical",
+      "status": "GENERIC_GAPPED_PASS",
+      "rank_increment": 0,
+      "SI_identifiability": "N/A",
+      "degeneracies": "Delta=0 or kinetic coefficient zero"
+    },
+    {
+      "benchmark": "R primary robustness",
+      "GVH_quantity": "rank K_D",
+      "reference_quantity": "DCC commutator deformation",
+      "matching_equation": "rank remains 9 away from degeneracy surfaces",
+      "dimensions": "canonical",
+      "status": "GENERIC_GAPPED_PASS",
+      "rank_increment": 0,
+      "SI_identifiability": "N/A",
+      "degeneracies": "Delta=0 or kinetic coefficient zero"
+    }
+  ],
+  "locks": {
+    "full_pure_GVH_classical_action_closed": false,
+    "GR_branch_Dirac_classified": false,
+    "real_data_ready": false
+  },
+  "verdict": {
+    "local_audit_pass": true,
+    "obstructions": [
+      "NORMALIZED_DCC_REQUIRES_Q_D_INVERSE_SQUARED_AND_IS_UNDEFINED_AT_Q_D_ZERO",
+      "POLYNOMIAL_COMMUTATOR_NUMERATOR_IS_GR_REGULAR_BUT_CARRIES_GAP_AMPLITUDE_Q_D_SQUARED",
+      "ROUTE_P_FIXED_GAP_POLYNOMIALIZATION_IS_ON_SHELL_NOT_FULL_OFF_SHELL_ACTION_EQUIVALENCE",
+      "FULL_HISTORICAL_DCC_COVARIANT_CONTRACTION_AND_AMPLITUDE_LEDGER_NOT_GLOBALLY_IDENTICAL_TO_A_SINGLE_POLYNOMIAL_GD_OPERATOR",
+      "GR_BRANCH_DIRAC_REMAINS_SEPARATE",
+      "GLOBAL_GHOST_FREEDOM_AND_CAUSALITY_REMAIN_OPEN"
+    ],
+    "next_authorized_P": "0.3.2.7.3.7.3.3.28.19P_Pure_GVH_P_Hamiltonian_Secondary_Constraints_Poisson_Classification_and_DOF_Audit",
+    "next_authorized_R": "0.3.2.7.3.7.3.3.28.19R_Pure_GVH_R_Hamiltonian_Secondary_Constraints_Poisson_Classification_and_DOF_Audit",
+    "optional_DCC_global_reconciliation": "0.3.2.7.3.7.3.3.28.18.3_DCC_Global_GR_Regular_Normalization_or_No_Go_Audit"
+  }
+}

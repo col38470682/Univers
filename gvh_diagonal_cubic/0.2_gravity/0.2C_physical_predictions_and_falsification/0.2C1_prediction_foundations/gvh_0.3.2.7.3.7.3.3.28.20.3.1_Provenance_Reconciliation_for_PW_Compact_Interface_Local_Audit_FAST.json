@@ -1,0 +1,56 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.28.20.3.1_Provenance_Reconciliation_for_PW_Compact_Interface_Local_Audit_FAST",
+  "classification": "DOCUMENTARY_ONLY",
+  "physics_recomputed": false,
+  "upstream_28_20_2": {
+    "version": "0.3.2.7.3.7.3.3.28.20.2",
+    "executed_sha256": "4cb38fe57810ac082aeb45051bf5287bbba3ae9c0012406f02a1d4cc0b8bd4af",
+    "executed_size_bytes": 50750
+  },
+  "target_28_20_3": {
+    "version": "0.3.2.7.3.7.3.3.28.20.3",
+    "executed_sha256": "3af6a89fef6e21650d49c45f7738a9cccfd3da8a94fd3a618038a075afbce0e5",
+    "executed_size_bytes": 58635,
+    "normalized_source_sha256": "fcffe6899f0850b2e94d9e31dff616c130e924c97eb966a01b56e8c024591102",
+    "cells_total": 25,
+    "code_cells": 13,
+    "markdown_cells": 12,
+    "execution_counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "execution_status_ok": 13,
+    "errors": 0,
+    "colab_elapsed_seconds": 4.402
+  },
+  "reconciliation": {
+    "sha_chain_reconciled": true,
+    "normalized_source_frozen": true,
+    "execution_ledger_clean": true,
+    "provenance_before": "PARTIAL",
+    "provenance_after": "RECONCILED",
+    "canonical_requalification": "SCIENTIFIC_LOCAL_PASS__PROVENANCE_RECONCILED"
+  },
+  "scientific_scope": {
+    "local_radial_scientific_pass_retained": true,
+    "full_componentwise_Dirac_closed": false,
+    "global_ghost_freedom": false,
+    "global_uniform_hyperbolicity": false,
+    "strong_coupling_resolved": false
+  },
+  "verdict": {
+    "local_audit_pass": true,
+    "next_authorized": "0.3.2.7.3.7.3.3.28.20.4_Pure_GVH_PW_Surface_Resolution_or_NoGo_Global_Interface_Closure_Audit"
+  }
+}

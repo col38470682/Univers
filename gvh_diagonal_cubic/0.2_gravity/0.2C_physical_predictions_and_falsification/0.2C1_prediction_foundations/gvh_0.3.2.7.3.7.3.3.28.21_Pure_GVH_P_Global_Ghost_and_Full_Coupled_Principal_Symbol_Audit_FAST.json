@@ -1,0 +1,96 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.28.21_Pure_GVH_P_Global_Ghost_and_Full_Coupled_Principal_Symbol_Audit_FAST",
+  "branch": "PURE_GVH_P_GLOBAL_GHOST_PRINCIPAL_SYMBOL",
+  "upstream": {
+    "version": "0.3.2.7.3.7.3.3.28.20.7.1",
+    "executed_sha256": "13c71688d7754d084b69e6d6a2207b605203b05c9f38dd27171a7ad3e63ed6ea",
+    "executed_size_bytes": 46283,
+    "local_audit_pass": true,
+    "stage_I_structural_scope_closed": true,
+    "full_global_ghost_freedom_proven": false,
+    "full_coupled_characteristics_closed": false,
+    "real_data_ready": false
+  },
+  "levels": {
+    "LEVEL1": "THE_ISOTROPIC_GAPPED_P_BRANCH_HAS_POSITIVE_STF_AND_TILT_KINETIC_COEFFICIENTS_FOR_KS_POSITIVE_ALPHA_POSITIVE",
+    "LEVEL2": "EXPLICIT_ANISOTROPIC_SHAPE_AND_NEAR_DEGENERATE_TILT_SPECTRA_PROVE_THAT_THE_CURRENT_POLYNOMIAL_P_KINETIC_IS_NOT_GHOST_FREE_OVER_THE_ENTIRE_GAPPED_SPECTRAL_CONFIGURATION_SPACE",
+    "LEVEL3": "THE_RAW_PRINCIPAL_SYMBOL_IS_IDENTICALLY_SINGULAR_BECAUSE_P_CONTAINS_AN_AUXILIARY_RADIAL_SECOND_CLASS_DIRECTION_AND_GR_CONTAINS_GAUGE_CONSTRAINT_DIRECTIONS_WHILE_THE_REDUCED_ISOTROPIC_TEN_MODE_WITNESS_FACTORS_ON_THE_METRIC_CONE",
+    "LEVEL4": "THE_NEXT_REQUIRED_OBJECT_IS_THE_DIRAC_REDUCED_GAUGE_FIXED_METRIC_D_PRINCIPAL_SYMBOL_ON_THE_HEALTHY_DOMAIN_TO_TEST_DOMAIN_INVARIANCE_CHARACTERISTIC_ROOTS_AND_STRONG_HYPERBOLICITY"
+  },
+  "ghost": {
+    "global_all_spectra_ghost_freedom": false,
+    "local_healthy_domain_exists": true,
+    "healthy_domain_dynamical_invariance_proven": false,
+    "shape_counterexample": true,
+    "tilt_counterexample": true
+  },
+  "principal_symbol": {
+    "raw_D_rank_off_cone": 8,
+    "raw_D_determinant_identically_zero": true,
+    "radial_null_is_auxiliary": true,
+    "raw_full_metric_D_symbol_singular_by_constraints": true,
+    "isotropic_reduced_metric_cone": true,
+    "isotropic_reduced_ten_mode_factor": "(omega^2-k^2)^10",
+    "full_Dirac_reduced_coupled_symbol_materialized": false,
+    "full_strong_hyperbolicity_proven": false
+  },
+  "matching": [
+    {
+      "benchmark": "isotropic gapped Hessian",
+      "GVH_quantity": "K_STF,K_tilt",
+      "matching_equation": "K_STF=K_S q ; K_tilt=alpha q^2",
+      "status": "LOCAL_HEALTH_PASS",
+      "SI_identifiability": "coefficients open"
+    },
+    {
+      "benchmark": "shape global counterexample",
+      "GVH_quantity": "K_12^shape",
+      "matching_equation": "explicit anisotropic witness <0",
+      "status": "GLOBAL_COUNTEREXAMPLE",
+      "SI_identifiability": "N/A"
+    },
+    {
+      "benchmark": "tilt near-degeneracy",
+      "GVH_quantity": "K_01^tilt",
+      "matching_equation": "eps->0 => -4 K_S x^2",
+      "status": "GLOBAL_COUNTEREXAMPLE",
+      "SI_identifiability": "N/A"
+    },
+    {
+      "benchmark": "raw P principal rank",
+      "GVH_quantity": "P_D^raw",
+      "matching_equation": "rank 8 + one auxiliary radial null",
+      "status": "CONSTRAINT_NULL_CLASSIFIED",
+      "SI_identifiability": "N/A"
+    },
+    {
+      "benchmark": "isotropic D characteristics",
+      "GVH_quantity": "omega^2-k^2",
+      "matching_equation": "8 D modes on metric cone",
+      "status": "LOCAL_CONE_PASS",
+      "SI_identifiability": "no absolute scale"
+    },
+    {
+      "benchmark": "isotropic physical factorization",
+      "GVH_quantity": "det P_phys^iso",
+      "matching_equation": "proportional to (omega^2-k^2)^10",
+      "status": "RESTRICTED_FACTOR_WITNESS",
+      "SI_identifiability": "N/A"
+    },
+    {
+      "benchmark": "full coupled symbol",
+      "GVH_quantity": "B_alpha_mu_nu",
+      "matching_equation": "contains dh*dA and dh^2 mixing",
+      "status": "NEXT_GATE_REQUIRED",
+      "SI_identifiability": "N/A"
+    }
+  ],
+  "locks": {
+    "real_data_ready": false,
+    "universal_theory_selected_SI_scale_rank": 0
+  },
+  "verdict": {
+    "local_audit_pass": true,
+    "next_authorized": "0.3.2.7.3.7.3.3.28.21.1_Pure_GVH_P_Dirac_Reduced_Gauge_Fixed_Coupled_Principal_Symbol_and_Hyperbolicity_Audit"
+  }
+}

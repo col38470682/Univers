@@ -1,0 +1,157 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.28.18.1_Gap_Discriminant_DCC_Derivative_Equivalence_and_Full_ADM_Primary_Completion_Audit_FAST",
+  "branch": "PURE_GVH_NO_EINSTEIN_AETHER",
+  "upstream": {
+    "version": "0.3.2.7.3.7.3.3.28.18",
+    "colab_executed_sha256": "98a2ea41bd0775015d8139c591fd708c9bd8ab1ecb5356373f1ec0cc95fe174a",
+    "colab_executed_size_bytes": 45637,
+    "source_exact": true,
+    "local_audit_pass": true,
+    "gap_principle_selected": false,
+    "gap_principle_not_selected": true,
+    "DCC_pure_spectral_algebraic_rewrite_no_go": true,
+    "ADM_principal_pair_derived": true,
+    "unique_primary_constraint_set_derived": false,
+    "full_Dirac_authorized_uniquely": false
+  },
+  "levels": {
+    "LEVEL1": "NO_NEW_P_VS_R_SELECTION_DERIVED_CANONICAL_GAP_FORK_P_AND_R_ACCEPTED",
+    "LEVEL2": "DCC_ORIENTATION_FUNCTION_SIN2_2PHI_REPRODUCED_EXACTLY_BY_A_DERIVATIVE_NONCOMMUTATIVE_GD_INVARIANT_BUT_FULL_OPERATOR_EQUIVALENCE_REMAINS_OPEN",
+    "LEVEL3": "ADM_ADAPTED_MIXED_KINETIC_RANK_THEOREM_GIVES_FULL_GENERIC_GAPPED_HESSIAN_RANK_14_FOR_P_AND_15_FOR_R",
+    "LEVEL4": "COMPLETE_GENERIC_GAPPED_PRIMARY_SETS_DERIVED_FOR_PROJECTOR_FREE_CORE_P_AND_R_WHILE_FULL_HISTORICAL_DCC_PRIMARY_ROBUSTNESS_REMAINS_UNPROVEN"
+  },
+  "gap": {
+    "new_internal_discriminant_derived": false,
+    "canonical_fork_PR_accepted": true,
+    "route_R_radial_hessian": "4 eta_Q r^2",
+    "route_R_quadratic_GR_mode_created": false
+  },
+  "DCC": {
+    "orientation_functional_match_exact": true,
+    "commutator_orientation_bridge_derived": true,
+    "full_covariant_operator_equivalence_derived": false
+  },
+  "ADM_primary": {
+    "route_P_full_adapted_hessian_rank": 14,
+    "route_P_primary_count": 6,
+    "route_P_primary_set": [
+      "pi_N",
+      "pi_N1",
+      "pi_N2",
+      "pi_N3",
+      "C_trace",
+      "C_gap_P"
+    ],
+    "route_R_full_adapted_hessian_rank": 15,
+    "route_R_primary_count": 5,
+    "route_R_primary_set": [
+      "pi_N",
+      "pi_N1",
+      "pi_N2",
+      "pi_N3",
+      "C_trace"
+    ],
+    "GR_branch_full_principal_hessian_rank": 6,
+    "GR_branch_primary_nullity": 14
+  },
+  "matching": [
+    {
+      "benchmark": "P/R gap discriminant",
+      "GVH_quantity": "radial gap sector",
+      "reference_quantity": "auxiliary vs propagating radial mode",
+      "matching_equation": "P: no qdot; R: K_r=4 eta_Q r^2",
+      "dimensions": "branch dependent",
+      "status": "PHYSICAL_DIFFERENCE_DERIVED_NO_INTERNAL_SELECTION",
+      "rank_increment": 0,
+      "SI_identifiability": "none",
+      "degeneracies": "R kinetic vanishes at GR branch"
+    },
+    {
+      "benchmark": "canonical P/R fork",
+      "GVH_quantity": "branch label",
+      "reference_quantity": "Hamiltonian architecture",
+      "matching_equation": "P and R treated as separate candidate theories",
+      "dimensions": "N/A",
+      "status": "CANONICAL_FORK_ACCEPTED",
+      "rank_increment": 0,
+      "SI_identifiability": "N/A",
+      "degeneracies": "no theory selection yet"
+    },
+    {
+      "benchmark": "DCC orientation law",
+      "GVH_quantity": "chi_D",
+      "reference_quantity": "sin^2(2phi)",
+      "matching_equation": "-Tr([A,B]^2)/(2 TrA2 TrB2)=sin^2(2phi)",
+      "dimensions": "dimensionless ratio",
+      "status": "FUNCTIONAL_MATCH_EXACT_RESTRICTED_BENCHMARK",
+      "rank_increment": 0,
+      "SI_identifiability": "dimensionless",
+      "degeneracies": "full amplitude/operator matching open"
+    },
+    {
+      "benchmark": "ADM mixed kinetic rank",
+      "GVH_quantity": "rank H",
+      "reference_quantity": "connection-mixed metric+D velocities",
+      "matching_equation": "rank H=rank G+rank K_D by invertible velocity congruence",
+      "dimensions": "canonical",
+      "status": "DERIVED_GENERIC_GAPPED",
+      "rank_increment": 0,
+      "SI_identifiability": "N/A",
+      "degeneracies": "fails on rank-changing surfaces"
+    },
+    {
+      "benchmark": "Route P primaries",
+      "GVH_quantity": "primary nullity",
+      "reference_quantity": "20 configuration variables",
+      "matching_equation": "rank=14 => nullity=6",
+      "dimensions": "canonical",
+      "status": "COMPLETE_FOR_PROJECTOR_FREE_CORE_GENERIC_GAPPED",
+      "rank_increment": 0,
+      "SI_identifiability": "N/A",
+      "degeneracies": "full historical DCC may alter kinetic matrix"
+    },
+    {
+      "benchmark": "Route R primaries",
+      "GVH_quantity": "primary nullity",
+      "reference_quantity": "20 configuration variables",
+      "matching_equation": "rank=15 => nullity=5",
+      "dimensions": "canonical",
+      "status": "COMPLETE_FOR_PROJECTOR_FREE_CORE_GENERIC_GAPPED",
+      "rank_increment": 0,
+      "SI_identifiability": "N/A",
+      "degeneracies": "full historical DCC may alter kinetic matrix"
+    },
+    {
+      "benchmark": "GR branch rank",
+      "GVH_quantity": "rank H_GR",
+      "reference_quantity": "A=0",
+      "matching_equation": "rank=6, principal nullity=14",
+      "dimensions": "canonical",
+      "status": "RANK_DERIVED_CLASSIFICATION_OPEN",
+      "rank_increment": 0,
+      "SI_identifiability": "N/A",
+      "degeneracies": "separate Dirac required"
+    }
+  ],
+  "locks": {
+    "Dirac_P_core_authorized": true,
+    "Dirac_R_core_authorized": true,
+    "Dirac_full_historical_DCC_authorized": false,
+    "full_pure_GVH_classical_action_closed": false,
+    "real_data_ready": false
+  },
+  "verdict": {
+    "local_audit_pass": true,
+    "obstructions": [
+      "NO_INTERNAL_PRINCIPLE_SELECTS_GVH_P_VS_GVH_R",
+      "DCC_ORIENTATION_FUNCTIONAL_MATCH_DOES_NOT_YET_FIX_FULL_COVARIANT_OPERATOR_AMPLITUDE_AND_DIMENSIONS",
+      "PRIMARY_SETS_ARE_COMPLETE_FOR_PROJECTOR_FREE_CORE_NOT_YET_FOR_FULL_HISTORICAL_DCC_OPERATOR",
+      "SECONDARY_CONSTRAINTS_AND_POISSON_DIRAC_ALGEBRA_NOT_YET_COMPUTED",
+      "GR_BRANCH_HAS_RANK_BIFURCATION_AND_REQUIRES_SEPARATE_DIRAC_ANALYSIS",
+      "GLOBAL_GHOST_FREEDOM_AND_CAUSALITY_REMAIN_OPEN"
+    ],
+    "next_authorized_P": "0.3.2.7.3.7.3.3.28.19P_Pure_GVH_P_Hamiltonian_Secondary_Constraints_Poisson_Classification_and_DOF_Audit",
+    "next_authorized_R": "0.3.2.7.3.7.3.3.28.19R_Pure_GVH_R_Hamiltonian_Secondary_Constraints_Poisson_Classification_and_DOF_Audit",
+    "DCC_reconciliation_next": "0.3.2.7.3.7.3.3.28.18.2_DCC_gD_Full_Operator_Amplitude_Dimension_and_Primary_Robustness_Reconciliation_Audit"
+  }
+}

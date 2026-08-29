@@ -1,0 +1,171 @@
+{
+  "notebook": "GVH_Diagonal_Cubic_0.3.2.7.3.7.3.3.28.11_Full_Coupled_Vector_Twist_Metric_Aether_Triad_Linear_Perturbation_and_Branch_Selection_Audit_FAST",
+  "upstream": {
+    "version": "0.3.2.7.3.7.3.3.28.10",
+    "executed_sha256": "c96296fb20482dd844bd5b160c6c416bb115224dd6453a7c9a42b2512a6c5eee",
+    "executed_size_bytes": 53594,
+    "cells": 26,
+    "code_cells": 13,
+    "markdown_cells": 13,
+    "execution_counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "outputs": 13,
+    "errors": 0,
+    "colab_status_ok": 13,
+    "local_audit_pass": true,
+    "nonzero_vorticity_sector_activated": true,
+    "cminus_conditional_EA_route_materialized": true,
+    "cminus_physically_derived": false,
+    "full_coupled_metric_aether_vector_mode_derived": false,
+    "cubic_triad_physical_branch_selected": false,
+    "full_DCC_coupling_identifiability_closed": false
+  },
+  "levels": {
+    "LEVEL1": "FULL_REDUCED_METRIC_AETHER_VECTOR_MODE_DERIVED_AND_EA_SPIN1_REFERENCE_RECOVERED",
+    "LEVEL2": "CUBIC_BACKGROUND_TRIAD_ORIENTATION_ENTERS_VECTOR_SPEED_THROUGH_CHI",
+    "LEVEL3": "DELTA_TRIAD_DECOUPLES_AT_QUADRATIC_ORDER_SO_LINEAR_BRANCH_SELECTION_IS_NOT_AVAILABLE",
+    "LEVEL4": "CONDITIONAL_RANK5_ROUTE_MATERIALIZED_BUT_PHYSICAL_BRANCH_SELECTION_AND_FULL_IDENTIFIABILITY_REMAIN_OPEN"
+  },
+  "coupled_vector": {
+    "metric_aether_mode_derived": true,
+    "EA_spin1_reference_recovered": true,
+    "EA_spin1_speed_squared": "(c1**2 - 2*c1 - c3**2)/(2*(c1 + c4)*(c1 + c3 - 1))",
+    "DCC_speed_squared_chi": "(2*c1**2 - c1*chi*zeta_C - 4*c1 - 2*c3**2 + c3*chi*zeta_C + chi*zeta_C)/(2*(c1 + c4)*(2*c1 + 2*c3 - chi*zeta_C - 2))"
+  },
+  "triad": {
+    "chi_phi": "sin(2*phi)**2",
+    "background_enters_quadratic_action": true,
+    "perturbation_first_enters_cubic_order": true,
+    "linear_branch_selection_closed": false,
+    "unique_DCC_vector_speed_derived": false
+  },
+  "identifiability": {
+    "single_orientation_full_DCC_rank": 4,
+    "aligned_single_orientation_full_DCC_rank": 4,
+    "two_orientation_full_DCC_rank": 5,
+    "two_orientation_det": "-1/((c1 + c4)**2*(2*c1 + 2*c3 - zeta_C - 2)**2)",
+    "two_orientation_structural_rank5": true,
+    "conditional_cminus_zeta_separation": true,
+    "cminus_physically_derived": false,
+    "zeta_physically_derived": false,
+    "full_DCC_identifiability_closed": false
+  },
+  "SI": {
+    "unconditional_full_DCC_coupling_rank": 3,
+    "conditional_single_speed_full_DCC_rank": 4,
+    "conditional_two_speed_full_DCC_rank": 5,
+    "full_DCC_parameter_count": 5,
+    "formal_source_matched_scale_rank": 2,
+    "universal_theory_selected_scale_rank": 0,
+    "matching_ledger": [
+      {
+        "benchmark": "coupled spin-1 EA",
+        "GVH_quantity": "s_V^2(zeta=0)",
+        "reference_quantity": "EA spin-1 speed",
+        "matching_equation": "(2c1-c1^2+c3^2)/(2c14(1-c13))",
+        "dimension": "1",
+        "status": "INTERNALLY_DERIVED_AND_EXTERNAL_REFERENCE_MATCHED",
+        "rank_increment": 0,
+        "SI_identifiability": "dimensionless speed ratio"
+      },
+      {
+        "benchmark": "triad orientation",
+        "GVH_quantity": "chi",
+        "reference_quantity": "O_C/sigma^2",
+        "matching_equation": "chi=sin^2(2phi)",
+        "dimension": "1",
+        "status": "DERIVED_BACKGROUND_ORIENTATION_FACTOR",
+        "rank_increment": 0,
+        "SI_identifiability": "dimensionless"
+      },
+      {
+        "benchmark": "single vector speed chi=0",
+        "GVH_quantity": "s0^2",
+        "reference_quantity": "coupled vector mode",
+        "matching_equation": "closes c_minus if speed physically identified",
+        "dimension": "1",
+        "status": "CONDITIONAL_FULL_EA_RANK4_ROUTE",
+        "rank_increment": 1,
+        "SI_identifiability": "v/c only"
+      },
+      {
+        "benchmark": "single vector speed chi=1",
+        "GVH_quantity": "s1^2",
+        "reference_quantity": "coupled cubic vector mode",
+        "matching_equation": "mixes c_minus and zeta_C",
+        "dimension": "1",
+        "status": "FULL_DCC_RANK4_OF_5",
+        "rank_increment": 0,
+        "SI_identifiability": "v/c only"
+      },
+      {
+        "benchmark": "two orientation-resolved speeds",
+        "GVH_quantity": "(s0^2,s1^2)",
+        "reference_quantity": "orientation-resolved vector spectrum",
+        "matching_equation": "algebraically separates c_minus,zeta_C",
+        "dimension": "1",
+        "status": "STRUCTURAL_CONDITIONAL_RANK5_OF_5",
+        "rank_increment": 1,
+        "SI_identifiability": "no new universal scale"
+      },
+      {
+        "benchmark": "triad branch selection",
+        "GVH_quantity": "delta e_A",
+        "reference_quantity": "linearized auxiliary triad EOM",
+        "matching_equation": "delta e enters at O(epsilon^3)",
+        "dimension": "1",
+        "status": "NOT_SELECTED_AT_LINEAR_ORDER",
+        "rank_increment": 0,
+        "SI_identifiability": "not applicable"
+      },
+      {
+        "benchmark": "Mercury preferred-frame",
+        "GVH_quantity": "alpha1,alpha2",
+        "reference_quantity": "solar-system PPN",
+        "matching_equation": "still blocked by physical branch selection",
+        "dimension": "1",
+        "status": "LOCKED",
+        "rank_increment": 0,
+        "SI_identifiability": "real-data prediction not authorized"
+      }
+    ]
+  },
+  "locks": {
+    "preferred_frame_alpha1_alpha2_identifiability_closed": false,
+    "preferred_frame_numeric_Mercury_correction_authorized": false,
+    "Mercury_full_real_data_prediction_authorized": false,
+    "unique_GVH_DCC_Mercury_deviation_derived": false,
+    "new_GVH_physics_validated": false,
+    "real_data_ready": false
+  },
+  "verdict": {
+    "G2811_LOCAL_AUDIT_PASS": true,
+    "obstructions": [
+      "LINEARIZED_TRIAD_PERTURBATION_DECOUPLES_FROM_QUADRATIC_VECTOR_ACTION",
+      "BACKGROUND_TRIAD_ORIENTATION_CHI_REMAINS_UNSELECTED",
+      "MULTIPLE_AUXILIARY_TRIAD_STATIONARY_BRANCHES_REMAIN",
+      "TWO_ORIENTATION_RANK5_ROUTE_IS_STRUCTURAL_NOT_YET_PHYSICAL",
+      "CMINUS_NOT_YET_PHYSICALLY_DERIVED",
+      "ZETA_C_NOT_YET_PHYSICALLY_DERIVED",
+      "FULL_DCC_COUPLING_IDENTIFIABILITY_NOT_CLOSED",
+      "PREFERRED_FRAME_ALPHA1_ALPHA2_NOT_CLOSED",
+      "SOLAR_SYSTEM_AETHER_PHYSICAL_FRAME_BRIDGE_REMAINS_OPEN",
+      "FULL_REAL_DATA_MERCURY_PREDICTION_NOT_AUTHORIZED",
+      "NO_UNIQUE_GVH_DCC_MERCURY_DEVIATION"
+    ],
+    "next_authorized": "0.3.2.7.3.7.3.3.28.12_NONLINEAR_AUXILIARY_TRIAD_BRANCH_SELECTION_STABILITY_AND_ORIENTATION_RESOLVED_VECTOR_SPECTRUM_AUDIT"
+  }
+}
