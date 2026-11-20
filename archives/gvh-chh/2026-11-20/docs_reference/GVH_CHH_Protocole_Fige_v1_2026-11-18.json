@@ -1,0 +1,40 @@
+{
+  "protocol_id": "GVH_CHH_PROTOCOL_FROZEN_v1.0",
+  "effective_date": "2026-11-18",
+  "protocol_sha256": "14813b9a1445051b903f4b0e6b524acee103e4e4d125d952117fc9847ea0be1a",
+  "reference_markdown": "GVH_CHH_Protocole_Fige_CHH_Non_Derivation_ROOT22_v1_2026-11-18.md",
+  "principles": {
+    "chh_intrinsic_derivative": false,
+    "subcubes_preserve_heterogeneous_structure_and_manifestations": true,
+    "auxiliary_derivatives_allowed_with_explicit_hypotheses": true,
+    "chh_composition_distinct_from_action_derived_dynamics": true,
+    "theoretical_exploration_allowed_beyond_existing_literature": true,
+    "compare_primary_sources_and_prior_notebooks": true,
+    "sqrt22_status": "historical_algebraic_root_open_hypothesis_not_universal_constant",
+    "frozen_result": "kepler_orbital_invariant_test_no_root22_advantage_over_free_constant",
+    "scientific_claims_revisable_with_new_evidence": true
+  },
+  "mandatory_levels": [
+    "GVH_CHH",
+    "ESTABLISHED_PHYSICS",
+    "MINIMAL_ANALYTICAL_NUMERICAL_TEST",
+    "SCIENTIFIC_VERDICT"
+  ],
+  "result_tags": [
+    "CHH-STRUCTURE",
+    "AUX-DERIVATIVE",
+    "EOM-GVH",
+    "KNOWN-PHYSICS",
+    "NEW-HYPOTHESIS",
+    "INVERSE-INFERENCE",
+    "NUMERICAL-TEST",
+    "EMPIRICAL-TEST",
+    "OPEN-LOCK"
+  ],
+  "historical_sqrt22": {
+    "c2": "(sqrt(22)-4)/9",
+    "omega2_over_kappa2": "(sqrt(22)-2)/9",
+    "no_universal_status_claim": true,
+    "historical_reduced_kinetic_health_warning": true
+  }
+}
