@@ -1,0 +1,9 @@
+Jupiter change-t-elle le moment où la Terre repasse dans la même direction autour du Soleil ?
+
+Dans mon projet CHH → GVH Diagonal Cubic, j’ai comparé deux simulations newtoniennes. Toutes deux partent de la même position et de la même vitesse de la Terre. L’une y ajoute l’attraction de Jupiter.
+
+Au 12ᵉ retour dans la direction initiale, la Terre passe environ 1 h 25 min plus tôt avec Jupiter. À cet instant de retour, sa distance au Soleil est supérieure d’environ 18 km à celle mesurée au retour dans l’autre modèle.
+
+C’est un exemple synthétique qui montre pourquoi le temps de retour et la distance au retour sont deux informations distinctes. La simulation sert de témoin classique pour tester une éventuelle correction issue de GVH.
+
+https://github.com/col38470682/Univers/blob/main/notebooks/chh/bridge/GVH_CHH_Cycles_Emboites_Terre_Jupiter_v01.md
